@@ -7,6 +7,8 @@
   background-size:cover; background-position:center; 
   background-repeat:no-repeat;
 }
+.banner-01 .swiper-pagination-bullets{bottom:1.25rem;}
+/* .banner-01 .swiper-pagination-bullets{width:max-content; margin:0 auto;} */
 
 
 /* Section 01 */

@@ -8,6 +8,7 @@
   --bradius: .5rem;
 }
 
+.color-01, .h-color-01:hover{color:#5F5E5D!important;}
 .color-gray-01, .h-color-gray-01:hover{color:#AEADAD!important;}
 
 
@@ -175,12 +176,29 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-box.xl{max-width:69rem;}
 
 
+/* Special List */
+.ss-list, .ss-list ul{width:100%; padding:0; margin:0; list-style:none;}
+.ss-list > li{position:relative; padding:.1875rem 0 .1875rem 0;}
+.ss-list ul > li{padding:.1875rem 0;} 
+.ss-list > li::before{
+  content:''; position:absolute; top:.625rem; left:0;
+  width:.375rem; height:.375rem; border-radius:50%;
+}
+.ss-list ul > li::before{display:none;}
+
+
 /* Special Card */
 .ss-card{display:block; width:100%;}
 .ss-card .title, .ss-card .desc{
   display:block; display:-webkit-box; text-overflow:ellipsis; overflow:hidden;
   -webkit-box-orient:vertical; transition:color .25s;
 }
+.ss-card .date{
+  position:absolute; top:1rem; right:1rem; border-radius:50%; background:#ff750e;
+  width:4.625rem; height:4.625rem; display:flex; flex-direction:column; justify-content:center; 
+  align-items:center; padding:.25rem;
+}
+.ss-card .date .number{font-size:1.5rem;}
 
 /* Special Card 01 */
 .ss-card-01{position:relative;}
@@ -320,6 +338,14 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-img .hover-container .icon > img{display:block; width:100%; height:auto;}
 .ss-img .hover-container .icon > em{position:relative; z-index:2; font-size:3.5rem;}
 
+
+/* Sep */
+.ss-sep-01{
+  display:block; width:100; max-width:20rem; height:.0625rem; 
+  background:#0E3A8154; margin:0 auto;
+}
+
+
 /* Special Stat */
 .ss-stats{
   width:100%; display:flex; flex-wrap:wrap; margin:.25rem 0 0 0;
@@ -445,8 +471,11 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .op-40{opacity:.4!important;} .op-50{opacity:.5!important;} .op-60{opacity:.6!important;}
 .op-70{opacity:.7!important;} .op-80{opacity:.8!important;} .op-90{opacity:.9!important;}
 
+.h-op-07:hover{opacity:.7;}
+
 .pos-absolute{position:absolute!important;}
 .pos-relative{position:relative!important;}
+.pos-static{position:static!important;}
 
 .d-block{display:block!important;}
 .d-flex{display:flex!important;}

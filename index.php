@@ -25,6 +25,7 @@
         </div>
         <?php }?>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 
@@ -33,7 +34,7 @@
       <img src="public/assets/app/images/pattern/06.png" alt="Pattern" />
     </div>
     <div class="pattern style-02">
-      <img src="public/assets/app/images/pattern/08.png" alt="">
+      <img src="public/assets/app/images/pattern/08.png" alt="Pattern">
     </div>
     <div class="container">
       <div class="ss-box">
@@ -463,6 +464,10 @@
                                   <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
                                   <div class="tag bg-p color-white">
                                     <p class="sm">ข่าวเด่นชลประทาน</p>
+                                  </div>
+                                  <div class="date color-white">
+                                    <p class="number">06</p>
+                                    <p class="xs month-year">ก.ย. <span class="p xxs">2567</span></p>
                                   </div>
                                   <div class="line-1"></div>
                                   <div class="line-2"></div>
