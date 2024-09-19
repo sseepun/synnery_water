@@ -10,11 +10,11 @@
 
 
 /* Section 01 */
-.section-01{position:relative;}
-.section-01 .pattern{position:absolute;}
-.section-01 .pattern.style-01{top:-21rem; left:0;  right:0;}
+.section-01{position:relative; z-index:3;}
+.section-01 .pattern{position:absolute; pointer-events:none;}
+.section-01 .pattern.style-01{top:-21rem; left:0; right:0;}
 .section-01 .pattern.style-01 img{width:100%;}
-.section-01 .pattern.style-02{top:0rem; left:0;  right:0;}
+.section-01 .pattern.style-02{top:-21rem; left:0; right:0;}
 .section-01 .pattern.style-02 img{width:100%;}
 .section-01 .announce .text-container{
   position:relative; background: #008FD329; display:flex; align-items:center;

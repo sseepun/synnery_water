@@ -28,13 +28,13 @@
     </div>
   </section>
 
-  <section class="section-01 pt-5">
+  <section class="section-01 pt-5 ovf-visible">
     <div class="pattern style-01">
       <img src="public/assets/app/images/pattern/06.png" alt="">
     </div>
-    <!-- <div class="pattern style-02">
-      <img src="public/assets/app/images/pattern/07.png" alt="">
-    </div> -->
+    <div class="pattern style-02">
+      <img src="public/assets/app/images/pattern/08.png" alt="">
+    </div>
     <div class="container">
       <div class="ss-box xl">
         <div class="announce" data-aos="fade-up" data-aos-delay="0">
@@ -121,7 +121,7 @@
       <img src="public/assets/app/images/pattern/04.png" alt="">
     </div>
     <div class="img-bg"></div>
-    <div class="container">
+    <div class="container" style="z-index:4;">
       <div class="ss-box xl">
         <div class="ss-title jc-center">
           <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="450">
