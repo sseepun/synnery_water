@@ -30,13 +30,13 @@
 
   <section class="section-01 pt-5 ovf-visible">
     <div class="pattern style-01">
-      <img src="public/assets/app/images/pattern/06.png" alt="">
+      <img src="public/assets/app/images/pattern/06.png" alt="Pattern" />
     </div>
     <div class="pattern style-02">
       <img src="public/assets/app/images/pattern/08.png" alt="">
     </div>
     <div class="container">
-      <div class="ss-box xl">
+      <div class="ss-box">
         <div class="announce" data-aos="fade-up" data-aos-delay="0">
           <div class="text-container">
             <marquee direction="left">
@@ -47,12 +47,16 @@
             <img src="public/assets/app/images/icon/announce.svg" alt="Announce">
           </div>
         </div>
+      </div>
+      <div class="ss-box xl">
         <div class="ss-title jc-center mt-5">
           <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="150">
             พัฒนาแหล่งน้ำและเพิ่มพื้นที่ชลประทาน
           </h3>
         </div>  
-        <p class="lg text-center" data-aos="fade-up" data-aos-delay="300">ตามศักยภาพของลุ่มน้ำให้เกิดความสมดุล</p> 
+        <p class="lg text-center" data-aos="fade-up" data-aos-delay="300">
+          ตามศักยภาพของลุ่มน้ำให้เกิดความสมดุล
+        </p> 
         <div class="menus-slider mt-6 pt-2" data-aos="fade-up" data-aos-delay="450">
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -95,7 +99,7 @@
               <div class="swiper-slide">
                 <div class="menu-item">
                   <div class="icon">
-                    <img src="<?= $d['imgInactive'] ?>" alt="Menu 2">
+                    <img src="<?= $d['imgInactive'] ?>" alt="Menu 2" />
                   </div>
                   <div class="text text-center mt-3">
                     <p class="xs fw-400"><?= $d['title'] ?></p>
@@ -405,19 +409,19 @@
       ['title' => 'จัดซื้อ/จ้ดจ้าง?'], 
     ];
   ?>
-  <section class="section-05 section-padding pt-6 pb-6 tab-container">
+  <section class="section-05 section-padding tab-container">
     <div class="img-bg" style="background-image:url('public/assets/app/images/bg/03.png')"></div>
     <div class="container">
       <div class="ss-box xl">
         <div class="ss-title jc-center mt-5">
-          <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="150">
+          <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="0">
             ชลประทานอัปเดต
           </h3>
         </div>  
         <div class="grids">
           <div class="grid lg-75">
             <div class="grids">
-              <div class="grid lg-25 mt-0">
+              <div class="grid lg-25 mt-0" data-aos="fade-up" data-aos-delay="150">
                 <div class="tabs tabs-01">
                   <?php foreach($tabs01 as $i=>$d) {?>
                     <div class="tab mb-2 <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
@@ -426,7 +430,7 @@
                   <?php } ?>
                 </div>
               </div>
-              <div class="grid lg-75 mt-0">
+              <div class="grid lg-75 mt-0" data-aos="fade-up" data-aos-delay="300">
                 <div class="tab-contents">
                   <?php foreach($tabs01 as $i=>$k){?>
                     <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
@@ -501,7 +505,7 @@
               </div>
             </div>        
           </div>
-          <div class="grid lg-25">
+          <div class="grid lg-25" data-aos="fade-up" data-aos-delay="450">
             <div class="ovf-hidden">
               <div class="swiper-02">
                 <div class="swiper-wrapper">

@@ -14,7 +14,7 @@ nav.topnav > .container::before, nav.topnav > .container > .pattern{
   position:absolute; top:.3125rem; left:calc(50% - 50vw); overflow:hidden;
   width:calc(50vw - 50% + 16.5rem + 6rem); height:2.1875rem;
 }
-nav.topnav > .container::before{content:''; width:calc(50vw - 50% + 16rem); background:#ffffff;}
+nav.topnav > .container::before{content:''; width:calc(50vw - 50% + 2rem); background:#ffffff;}
 nav.topnav > .container > .pattern img{
   position:relative; display:block; height:100%; width:auto; margin:0 0 0 auto;
 }
