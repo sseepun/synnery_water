@@ -125,7 +125,7 @@
       <img src="public/assets/app/images/pattern/04.png" alt="">
     </div>
     <div class="img-bg"></div>
-    <div class="container" style="z-index:4;">
+    <div class="container">
       <div class="ss-box xl">
         <div class="ss-title jc-center">
           <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="450">

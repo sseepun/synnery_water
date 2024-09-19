@@ -44,7 +44,7 @@
 }
 
 /* Section 02 */
-.section-02{position:relative;}
+.section-02{position:relative; z-index:4;}
 .section-02 .pattern{position:absolute;}
 .section-02 .pattern.style-01{top:1rem; left:0; bottom:0; right:0;}
 .section-02 .pattern.style-01 img{width:100%;}
