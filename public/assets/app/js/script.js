@@ -109,6 +109,13 @@ $(function(){ 'use strict';
     new Swiper('.section-03 .swiper', {
       spaceBetween: 16, slidesPerView: 3, speed: 800,
       autoplay: { delay: 5000 }, loop: true,
+      pagination:{ 
+        el: '.swiper-pagination', clickable: true,
+      },
+      navigation:{
+        prevEl: '.arrow.arrow-prev',
+        nextEl: '.arrow.arrow-next',
+      }
     });
   }
 

@@ -50,7 +50,9 @@
         <div class="announce" data-aos="fade-up" data-aos-delay="0">
           <div class="text-container">
             <marquee direction="left">
-              สภาพน้ำท่า วันที่  9 ก.ย.2567 เวลา 06.00 น.(วันนี้),(เมื่อวาน) เขื่อนภูมิพล ระบาย  (35),(35)  ลบ.ม/วิ  เขื่อนสิริกิติ์ ระบาย(116),(116) ลบ.ม./วิ  (P.17) อ.บรรพตพิสัย จ.นครสวรรค์
+              <p class="fw-400">
+                สภาพน้ำท่า วันที่ 9 ก.ย.2567 เวลา 06.00 น.(วันนี้),(เมื่อวาน) เขื่อนภูมิพล ระบาย <span class="color-02">(35),(35)</span> ลบ.ม/วิ  เขื่อนสิริกิติ์ ระบาย <span class="color-02">(116),(116)</span> ลบ.ม./วิ (P.17) อ.บรรพตพิสัย จ.นครสวรรค์
+              </p>
             </marquee>
           </div>  
           <div class="icon">
@@ -74,35 +76,44 @@
                 <?php
                   foreach([
                     [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'imgInactive' => 'public/assets/app/images/icon/menu-01-inactive.svg',
+                      'imgActive' => 'public/assets/app/images/icon/menu-01-active.svg',
                       'title' => 'สถานการณ์น้ำ<br>รายวัน'
                     ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'imgInactive' => 'public/assets/app/images/icon/menu-02-inactive.svg',
+                      'imgActive' => 'public/assets/app/images/icon/menu-02-active.svg',
                       'title' => 'สถานการณ์น้ำ<br>รายสัปดาห์'
                     ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-03.svg',
+                      'imgInactive' => 'public/assets/app/images/icon/menu-03-inactive.svg',
+                      'imgActive' => 'public/assets/app/images/icon/menu-03-active.svg',
                       'title' => 'ปริมาณน้ำ<br>ในอ่าง/เขื่อน'
                     ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-04.svg',
+                      'imgInactive' => 'public/assets/app/images/icon/menu-04-inactive.svg',
+                      'imgActive' => 'public/assets/app/images/icon/menu-04-active.svg',
                       'title' => 'ศูนย์ปฏิบัติการ<br>น้ำอัจฉริยะ'
                     ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-05.svg',
+                      'imgInactive' => 'public/assets/app/images/icon/menu-05-inactive.svg',
+                      'imgActive' => 'public/assets/app/images/icon/menu-05-active.svg',
                       'title' => 'คาดการณ์น้ำท่า'
-                    ],
-                    [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                    ],[
+                      'imgInactive' => 'public/assets/app/images/icon/menu-01-inactive.svg',
+                      'imgActive' => 'public/assets/app/images/icon/menu-01-active.svg',
                       'title' => 'สถานการณ์น้ำ<br>รายวัน'
                     ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'imgInactive' => 'public/assets/app/images/icon/menu-02-inactive.svg',
+                      'imgActive' => 'public/assets/app/images/icon/menu-02-active.svg',
                       'title' => 'สถานการณ์น้ำ<br>รายสัปดาห์'
                     ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'imgInactive' => 'public/assets/app/images/icon/menu-03-inactive.svg',
+                      'imgActive' => 'public/assets/app/images/icon/menu-03-active.svg',
                       'title' => 'ปริมาณน้ำ<br>ในอ่าง/เขื่อน'
                     ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'imgInactive' => 'public/assets/app/images/icon/menu-04-inactive.svg',
+                      'imgActive' => 'public/assets/app/images/icon/menu-04-active.svg',
                       'title' => 'ศูนย์ปฏิบัติการ<br>น้ำอัจฉริยะ'
                     ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'imgInactive' => 'public/assets/app/images/icon/menu-05-inactive.svg',
+                      'imgActive' => 'public/assets/app/images/icon/menu-05-active.svg',
                       'title' => 'คาดการณ์น้ำท่า'
                     ],
                   ] as $i=>$d){
@@ -110,7 +121,8 @@
                 <div class="swiper-slide">
                   <div class="menu-item">
                     <div class="icon">
-                      <img src="<?= $d['imgInactive'] ?>" alt="Menu 2" />
+                      <img class="inactive" src="<?= $d['imgInactive'] ?>" alt="Menu Inactive" />
+                      <img class="active" src="<?= $d['imgActive'] ?>" alt="Menu Active" />
                     </div>
                     <div class="text text-center mt-3">
                       <p class="xs fw-400"><?= $d['title'] ?></p>
@@ -356,48 +368,59 @@
               <h6 class="sm fw-400 color-white">บริการกรมชลประทาน</h6>
             </div>
           </div>
-          <div class="swiper" data-aos="fade-up" data-aos-delay="450">
-            <div class="swiper-wrapper">
-              <?php
-                foreach([
-                  [
-                    'img' => 'public/assets/app/images/highlight/06.jpg',
-                    'title' => 'สมุดโทรศัพท์ กรมชลประทาน'
-                  ], [
-                    'img' => 'public/assets/app/images/highlight/07.jpg',
-                    'title' => 'การยื่นคำขอใบอนุญาตใช้น้ำ'
-                  ], [
-                    'img' => 'public/assets/app/images/highlight/08.jpg',
-                    'title' => 'ระบบบริหารการจัดซื้อจัดจ้าง กรมชลประทาน'
-                  ], [
-                    'img' => 'public/assets/app/images/highlight/06.jpg',
-                    'title' => 'สมุดโทรศัพท์ กรมชลประทาน'
-                  ], [
-                    'img' => 'public/assets/app/images/highlight/07.jpg',
-                    'title' => 'การยื่นคำขอใบอนุญาตใช้น้ำ'
-                  ], [
-                    'img' => 'public/assets/app/images/highlight/08.jpg',
-                    'title' => 'ระบบบริหารการจัดซื้อจัดจ้าง กรมชลประทาน'
-                  ],
-                ] as $i=>$d){
-              ?>
-                <div class="swiper-slide">
-                  <a class="ss-card ss-card-02 highlight bradius" href="#">
-                    <div class="wrapper">
-                      <div class="ss-img">
-                        <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
-                        <div class="hover-filter type-01"></div>
-                        <div class="line-1"></div>
-                        <div class="line-2"></div>
+          <div class="swiper-expand">
+            <div class="swiper" data-aos="fade-up" data-aos-delay="450">
+              <div class="swiper-wrapper">
+                <?php
+                  foreach([
+                    [
+                      'img' => 'public/assets/app/images/highlight/06.jpg',
+                      'title' => 'สมุดโทรศัพท์ กรมชลประทาน'
+                    ], [
+                      'img' => 'public/assets/app/images/highlight/07.jpg',
+                      'title' => 'การยื่นคำขอใบอนุญาตใช้น้ำ'
+                    ], [
+                      'img' => 'public/assets/app/images/highlight/08.jpg',
+                      'title' => 'ระบบบริหารการจัดซื้อจัดจ้าง กรมชลประทาน'
+                    ], [
+                      'img' => 'public/assets/app/images/highlight/06.jpg',
+                      'title' => 'สมุดโทรศัพท์ กรมชลประทาน'
+                    ], [
+                      'img' => 'public/assets/app/images/highlight/07.jpg',
+                      'title' => 'การยื่นคำขอใบอนุญาตใช้น้ำ'
+                    ], [
+                      'img' => 'public/assets/app/images/highlight/08.jpg',
+                      'title' => 'ระบบบริหารการจัดซื้อจัดจ้าง กรมชลประทาน'
+                    ],
+                  ] as $i=>$d){
+                ?>
+                  <div class="swiper-slide">
+                    <a class="ss-card ss-card-02 highlight bradius" href="#">
+                      <div class="wrapper">
+                        <div class="ss-img">
+                          <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
+                          <div class="hover-filter type-01"></div>
+                          <div class="line-1"></div>
+                          <div class="line-2"></div>
+                        </div>
+                        <div class="text-wrapper">
+                          <div class="title"><?= $d['title'] ?></div>
+                        </div>
                       </div>
-                      <div class="text-wrapper">
-                        <div class="title"><?= $d['title'] ?></div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              <?php }?>
-            </div>
+                    </a>
+                  </div>
+                <?php }?>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div> 
+            <div class="arrows">
+              <div class="arrow arrow-prev c-pointer">
+                <em class="fa-solid fa-arrow-left"></em>
+              </div>
+              <div class="arrow arrow-next c-pointer">
+                <em class="fa-solid fa-arrow-right"></em>
+              </div>
+            </div>       
           </div>
         </div>
       </div>
