@@ -15,6 +15,7 @@
             ['img' => 'public/assets/app/images/bg/08.jpg',], 
             ['img' => 'public/assets/app/images/bg/08.jpg',], 
             ['img' => 'public/assets/app/images/bg/08.jpg',], 
+            ['img' => 'public/assets/app/images/bg/08.jpg',],
             ['img' => 'public/assets/app/images/bg/08.jpg',]
           ] as $i=>$d){
         ?>
@@ -26,6 +27,14 @@
         <?php }?>
       </div>
       <div class="swiper-pagination"></div>
+      <div class="arrows">
+        <div class="arrow arrow-prev c-pointer">
+          <em class="fa-solid fa-arrow-left"></em>
+        </div>
+        <div class="arrow arrow-next c-pointer">
+          <em class="fa-solid fa-arrow-right"></em>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -59,55 +68,69 @@
           ตามศักยภาพของลุ่มน้ำให้เกิดความสมดุล
         </p> 
         <div class="menus-slider mt-6 pt-2" data-aos="fade-up" data-aos-delay="450">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <?php
-                foreach([
-                  [
-                    'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
-                    'title' => 'สถานการณ์น้ำ<br>รายวัน'
-                  ], [
-                    'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
-                    'title' => 'สถานการณ์น้ำ<br>รายสัปดาห์'
-                  ], [
-                    'imgInactive' => 'public/assets/app/images/icon/menu-03.svg',
-                    'title' => 'ปริมาณน้ำ<br>ในอ่าง/เขื่อน'
-                  ], [
-                    'imgInactive' => 'public/assets/app/images/icon/menu-04.svg',
-                    'title' => 'ศูนย์ปฏิบัติการ<br>น้ำอัจฉริยะ'
-                  ], [
-                    'imgInactive' => 'public/assets/app/images/icon/menu-05.svg',
-                    'title' => 'คาดการณ์น้ำท่า'
-                  ],
-                  [
-                    'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
-                    'title' => 'สถานการณ์น้ำ<br>รายวัน'
-                  ], [
-                    'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
-                    'title' => 'สถานการณ์น้ำ<br>รายสัปดาห์'
-                  ], [
-                    'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
-                    'title' => 'ปริมาณน้ำ<br>ในอ่าง/เขื่อน'
-                  ], [
-                    'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
-                    'title' => 'ศูนย์ปฏิบัติการ<br>น้ำอัจฉริยะ'
-                  ], [
-                    'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
-                    'title' => 'คาดการณ์น้ำท่า'
-                  ],
-                ] as $i=>$d){
-              ?>
-              <div class="swiper-slide">
-                <div class="menu-item">
-                  <div class="icon">
-                    <img src="<?= $d['imgInactive'] ?>" alt="Menu 2" />
-                  </div>
-                  <div class="text text-center mt-3">
-                    <p class="xs fw-400"><?= $d['title'] ?></p>
+          <div class="swiper-expand">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <?php
+                  foreach([
+                    [
+                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'title' => 'สถานการณ์น้ำ<br>รายวัน'
+                    ], [
+                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'title' => 'สถานการณ์น้ำ<br>รายสัปดาห์'
+                    ], [
+                      'imgInactive' => 'public/assets/app/images/icon/menu-03.svg',
+                      'title' => 'ปริมาณน้ำ<br>ในอ่าง/เขื่อน'
+                    ], [
+                      'imgInactive' => 'public/assets/app/images/icon/menu-04.svg',
+                      'title' => 'ศูนย์ปฏิบัติการ<br>น้ำอัจฉริยะ'
+                    ], [
+                      'imgInactive' => 'public/assets/app/images/icon/menu-05.svg',
+                      'title' => 'คาดการณ์น้ำท่า'
+                    ],
+                    [
+                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'title' => 'สถานการณ์น้ำ<br>รายวัน'
+                    ], [
+                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'title' => 'สถานการณ์น้ำ<br>รายสัปดาห์'
+                    ], [
+                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'title' => 'ปริมาณน้ำ<br>ในอ่าง/เขื่อน'
+                    ], [
+                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'title' => 'ศูนย์ปฏิบัติการ<br>น้ำอัจฉริยะ'
+                    ], [
+                      'imgInactive' => 'public/assets/app/images/icon/menu-02.svg',
+                      'title' => 'คาดการณ์น้ำท่า'
+                    ],
+                  ] as $i=>$d){
+                ?>
+                <div class="swiper-slide">
+                  <div class="menu-item">
+                    <div class="icon">
+                      <img src="<?= $d['imgInactive'] ?>" alt="Menu 2" />
+                    </div>
+                    <div class="text text-center mt-3">
+                      <p class="xs fw-400"><?= $d['title'] ?></p>
+                    </div>
                   </div>
                 </div>
+                <?php }?>
               </div>
-              <?php }?>
+            </div>
+            <div class="arrows">
+              <div class="arrow arrow-prev c-pointer h-op-07">
+                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.266171 7.62938L6.62987 13.7544C6.80133 13.9138 7.03097 14.002 7.26933 14C7.50769 13.998 7.73571 13.9059 7.90426 13.7437C8.07282 13.5815 8.16843 13.362 8.1705 13.1326C8.17257 12.9032 8.08094 12.6822 7.91534 12.5171L3.10347 7.88575L19.0909 7.88575C19.332 7.88575 19.5632 7.79357 19.7337 7.62947C19.9042 7.46538 20 7.24282 20 7.01075C20 6.77869 19.9042 6.55613 19.7337 6.39203C19.5632 6.22794 19.332 6.13575 19.0909 6.13575L3.10347 6.13575L7.91534 1.50438C8.00217 1.42366 8.07142 1.32711 8.11907 1.22036C8.16671 1.1136 8.19179 0.998786 8.19284 0.882604C8.19389 0.766421 8.17089 0.651203 8.12518 0.543669C8.07947 0.436134 8.01196 0.338439 7.92661 0.256283C7.84125 0.174127 7.73975 0.109155 7.62802 0.0651588C7.51629 0.0211629 7.39659 -0.000976661 7.27588 3.32705e-05C7.15517 0.0010432 7.03587 0.0251816 6.92496 0.07104C6.81405 0.116897 6.71373 0.183555 6.62987 0.267127L0.266171 6.39213C0.09574 6.55621 -1.24598e-06 6.77873 -1.26723e-06 7.01075C-1.28848e-06 7.24277 0.09574 7.46529 0.266171 7.62938Z" fill="#008FD3"/>
+                </svg>
+              </div>
+              <div class="arrow arrow-next c-pointer h-op-07">
+                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.7338 6.37063L13.3701 0.245626C13.1987 0.0862378 12.969 -0.00195766 12.7307 3.59052e-05C12.4923 0.00202947 12.2643 0.0940524 12.0957 0.256284C11.9272 0.418516 11.8316 0.637977 11.8295 0.867399C11.8274 1.09682 11.9191 1.31785 12.0847 1.48288L16.8965 6.11425L0.909099 6.11425C0.667991 6.11425 0.436758 6.20643 0.266268 6.37053C0.0957789 6.53462 -9.29902e-07 6.75718 -9.61838e-07 6.98925C-9.93774e-07 7.22131 0.0957788 7.44387 0.266268 7.60796C0.436757 7.77206 0.66799 7.86425 0.909099 7.86425L16.8965 7.86425L12.0847 12.4956C11.9978 12.5763 11.9286 12.6729 11.8809 12.7796C11.8333 12.8864 11.8082 13.0012 11.8072 13.1174C11.8061 13.2336 11.8291 13.3488 11.8748 13.4563C11.9205 13.5639 11.988 13.6616 12.0734 13.7437C12.1588 13.8259 12.2603 13.8908 12.372 13.9348C12.4837 13.9788 12.6034 14.001 12.7241 14C12.8448 13.999 12.9641 13.9748 13.075 13.929C13.186 13.8831 13.2863 13.8164 13.3701 13.7329L19.7338 7.60787C19.9043 7.44379 20 7.22127 20 6.98925C20 6.75723 19.9043 6.53471 19.7338 6.37063Z" fill="#008FD3"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>

@@ -79,11 +79,11 @@ $(function(){ 'use strict';
     new Swiper('.banner-01 .swiper', {
       spaceBetween: 0, slidesPerView: 1, speed: 800,
       autoplay: { delay: 5000 }, loop: true,
-      observer: true,
-      observeParents: true,
+      observer: true, observeParents: true,
       pagination:{ 
         el: '.swiper-pagination', clickable: true,
-      }, navigation:{
+      },
+      navigation:{
         prevEl: '.arrow.arrow-prev',
         nextEl: '.arrow.arrow-next',
       }
@@ -96,6 +96,10 @@ $(function(){ 'use strict';
     new Swiper('.section-01 .swiper', {
       spaceBetween: 10, slidesPerView: 5, speed: 800,
       autoplay: { delay: 5000 }, loop: true,
+      navigation:{
+        prevEl: '.arrow.arrow-prev',
+        nextEl: '.arrow.arrow-next',
+      }
     });
   }
 

@@ -471,6 +471,7 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .op-40{opacity:.4!important;} .op-50{opacity:.5!important;} .op-60{opacity:.6!important;}
 .op-70{opacity:.7!important;} .op-80{opacity:.8!important;} .op-90{opacity:.9!important;}
 
+.h-op-07{transition:opacity .25s;}
 .h-op-07:hover{opacity:.7;}
 
 .pos-absolute{position:absolute!important;}
