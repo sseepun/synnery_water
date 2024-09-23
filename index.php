@@ -170,10 +170,10 @@
         </div>
         <div class="mt-3">
           <div class="grids">
-            <div class="grid mt-0">
+            <div class="grid md-50 sm-100 mt-0">
               <div class="grids" data-aos="fade-up" data-aos-delay="600">
                 <div class="grid">
-                  <h6 class="sm fw-600 color-s text-center">
+                  <h6 class="sm ws-nowrap fw-600 color-s text-center">
                     เขื่อนใหญ่
                   </h6>
                   <div class="wave-slot mt-3">
@@ -199,7 +199,7 @@
                   </div>
                 </div>
                 <div class="grid">
-                  <h6 class="sm fw-600 color-s text-center">
+                  <h6 class="sm ws-nowrap fw-600 color-s text-center">
                     อ่างเก็บน้ำขนาดกลาง
                   </h6>
                   <div class="wave-slot mt-3">
@@ -226,9 +226,14 @@
                 </div>
               </div>
             </div>
-            
-            <div class="grid">
-              <div class="map-slot" data-aos="fade-up" data-aos-delay="300">
+            <div class="grid md-50 sm-100">
+              <div class="ss-height-01" data-aos="fade-up" data-aos-delay="300">
+                <iframe class="map" src="https://swoc.rid.go.th/index1.html" 
+                  style="border-radius:.5rem;" width="100%" height="100%" 
+                  frameborder="0" title="ปริมาณน้ำ">
+                </iframe>  
+              </div>
+              <!-- <div class="map-slot" data-aos="fade-up" data-aos-delay="300">
                 <div class="header">
                   <img class="logo mr-2" src="public/assets/app/images/logo-alone.png" alt="Logo" />
                   <div class="link bradius">SWOC</div>
@@ -244,54 +249,61 @@
                 <div class="body">
                   <div class="img-bg" style="background-image:url('public/assets/app/images/temp/map.jpg')"></div>
                 </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="grids flex-col-reverse-sm">
+            <div class="grid md-50 sm-100">
+              <div class="ss-height-02">
+                <div class="pos-relative" data-aos="fade-up" data-aos-delay="150">
+                  <div class="float-title pb-2">
+                    <h6 class="sm fw-600 color-s text-center">
+                      พื้นที่ชลประทาน
+                    </h6>
+                  </div>
+                  <div class="grids">
+                    <div class="grid sm-1-3 xs-1-3 mt-0">
+                      <div class="ss-card ss-card-03 bradius">
+                        <div class="ss-img">
+                          <div class="img-bg" style="background-image:url('public/assets/app/images/bg/02.jpg');"></div>
+                        </div>
+                        <div class="text-wrapper">
+                          <h4 class="sm fw-600">50%</h4>
+                          <p class="lg fw-400">ข้าว</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid sm-1-3 xs-1-3 mt-0">
+                      <div class="ss-card ss-card-03 bradius">
+                        <div class="ss-img">
+                          <div class="img-bg" style="background-image:url('public/assets/app/images/bg/03.jpg');"></div>
+                        </div>
+                        <div class="text-wrapper">
+                          <h4 class="sm fw-600">26%</h4>
+                          <p class="lg fw-400">พื้นที่อื่นๆ</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid sm-1-3 xs-1-3 mt-0">
+                      <div class="ss-card ss-card-03 bradius">
+                        <div class="ss-img">
+                          <div class="img-bg" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
+                        </div>
+                        <div class="text-wrapper">
+                          <h4 class="sm fw-600">8%</h4>
+                          <p class="lg fw-400">ผลไม้ยืนต้น</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="grid">
-              <div class="pos-relative" data-aos="fade-up" data-aos-delay="150">
-                <div class="float-title pb-2">
-                  <h6 class="sm fw-600 color-s text-center">
-                    พื้นที่ชลประทาน
-                  </h6>
-                </div>
-                <div class="grids">
-                  <div class="grid sm-1-3 mt-0">
-                    <div class="ss-card ss-card-03 bradius">
-                      <div class="ss-img">
-                        <div class="img-bg" style="background-image:url('public/assets/app/images/bg/02.jpg');"></div>
-                      </div>
-                      <div class="text-wrapper">
-                        <h4 class="sm fw-600">50%</h4>
-                        <p class="lg fw-400">ข้าว</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="grid sm-1-3 mt-0">
-                    <div class="ss-card ss-card-03 bradius">
-                      <div class="ss-img">
-                        <div class="img-bg" style="background-image:url('public/assets/app/images/bg/03.jpg');"></div>
-                      </div>
-                      <div class="text-wrapper">
-                        <h4 class="sm fw-600">26%</h4>
-                        <p class="lg fw-400">พื้นที่อื่นๆ</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="grid sm-1-3 mt-0">
-                    <div class="ss-card ss-card-03 bradius">
-                      <div class="ss-img">
-                        <div class="img-bg" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
-                      </div>
-                      <div class="text-wrapper">
-                        <h4 class="sm fw-600">8%</h4>
-                        <p class="lg fw-400">ผลไม้ยืนต้น</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid">
-              <div class="map-slot" data-aos="fade-up" data-aos-delay="300">
+            <div class="grid md-50 sm-100">
+              <iframe class="map" src="https://swoc.rid.go.th/index1.html" data-aos="fade-up" data-aos-delay="300"
+                style="border-radius:.5rem;" width="100%" height="100%" frameborder="0" title="ปริมาณน้ำ">
+              </iframe>
+              <!-- <div class="map-slot" data-aos="fade-up" data-aos-delay="300">
                 <div class="header">
                   <img class="logo mr-2" src="public/assets/app/images/logo-alone.png" alt="Logo" />
                   <div class="link bradius">SWOC</div>
@@ -307,7 +319,7 @@
                 <div class="body">
                   <div class="img-bg" style="background-image:url('public/assets/app/images/temp/map.jpg')"></div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -323,7 +335,7 @@
       <div class="section-padding">
         <div class="ss-box xl">
           <div class="grids">
-            <div class="grid">
+            <div class="grid lg-50 md-100 sm-100">
               <h6 class="fw-600" data-aos="fade-up" data-aos-delay="0">
                 ดำเนินการป้องกันและบรรเทาภัยอันเกิด
               </h6>
@@ -331,7 +343,7 @@
                 จากน้ำตามภารกิจอย่างเหมาะสม
               </h3>
             </div>
-            <div class="grid">
+            <div class="grid lg-50 md-100 sm-100">
               <div class="panel-card bradius" data-aos="fade-up" data-aos-delay="300">
                 <div class="card-title bradius">
                   <p class="lg fw-500">รายงานสถานการณ์น้ำประจำวัน</p>
@@ -431,8 +443,8 @@
     <div class="img-bg" style="background-image:url('public/assets/app/images/bg/09.jpg')"></div>
     <div class="container">
       <div class="grids">
-        <div class="grid lg-50"></div>
-        <div class="grid lg-50">
+        <div class="grid lg-50 md-50 sm-100"></div>
+        <div class="grid lg-50 md-50 sm-100">
           <div class="text-wrapper text-center pos-relative" data-aos="fade-up" data-aos-delay="150">
             <svg width="16" height="21" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.6343 1.84098C11.0526 1.17396 10.4986 0.560299 10 0C9.50138 0.58698 8.94737 1.20064 8.36565 1.84098C4.84765 5.73639 0 11.1526 0 15.3682C0 18.0363 1.10803 20.4376 2.93629 22.1718C4.73684 23.9061 7.22992 25 10 25C12.7701 25 15.2632 23.9328 17.0637 22.1718C18.8643 20.4376 20 18.0096 20 15.3682C20 11.1526 15.1524 5.76307 11.6343 1.84098Z" fill="white"/>
@@ -449,11 +461,11 @@
 
   <?php 
      $tabs01 = [
-      ['title' => 'ข่าวเด่นชลประทาน'], 
-      ['title' => 'รอบรั้วชลประทาน'], 
-      ['title' => 'โครงการพระราชดำริ'], 
-      ['title' => 'ประกาศทั่วไป'], 
-      ['title' => 'จัดซื้อ/จ้ดจ้าง?'], 
+      ['tabTitle' => 'ข่าวเด่นชลประทาน'], 
+      ['tabTitle' => 'รอบรั้วชลประทาน'], 
+      ['tabTitle' => 'โครงการพระราชดำริ'], 
+      ['tabTitle' => 'ประกาศทั่วไป'], 
+      ['tabTitle' => 'จัดซื้อ/จ้ดจ้าง?'], 
     ];
   ?>
   <section class="section-05 section-padding tab-container">
@@ -466,18 +478,18 @@
           </h3>
         </div>  
         <div class="grids">
-          <div class="grid lg-75">
+          <div class="grid lg-75 md-100 sm-100">
             <div class="grids">
-              <div class="grid lg-25 mt-0" data-aos="fade-up" data-aos-delay="150">
+              <div class="grid lg-25 md-30 sm-100 mt-0" data-aos="fade-up" data-aos-delay="150">
                 <div class="tabs tabs-01">
                   <?php foreach($tabs01 as $i=>$d) {?>
                     <div class="tab mb-2 <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-                      <p class="title fw-400"><?= $d['title'] ?></p>
+                      <p class="title fw-400"><?= $d['tabTitle'] ?></p>
                     </div>
                   <?php } ?>
                 </div>
               </div>
-              <div class="grid lg-75 mt-0" data-aos="fade-up" data-aos-delay="300">
+              <div class="grid lg-75 md-70 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
                 <div class="tab-contents">
                   <?php foreach($tabs01 as $i=>$k){?>
                     <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
@@ -487,19 +499,23 @@
                             foreach([
                               [
                                 'img' => 'public/assets/app/images/highlight/09.jpg', 'href' => '#',
-                                'title' => 'รมช.เกษตร ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย',
+                                'title' => 'รมช.เกษตร ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย รมช.เกษตร 
+                                            ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย',
                                 'date' => '5 สิงหาคม 2567'
                               ], [
                                 'img' => 'public/assets/app/images/highlight/09.jpg', 'href' => '#',
-                                'title' => 'รมช.เกษตร ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย',
+                                'title' => 'รมช.เกษตร ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย รมช.เกษตร 
+                                            ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย',
                                 'date' => '5 สิงหาคม 2567'
                               ], [
                                 'img' => 'public/assets/app/images/highlight/09.jpg', 'href' => '#',
-                                'title' => 'รมช.เกษตร ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย',
+                                'title' => 'รมช.เกษตร ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย รมช.เกษตร 
+                                            ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย',
                                 'date' => '1 สิงหาคม 2567'
                               ], [
                                 'img' => 'public/assets/app/images/highlight/09.jpg', 'href' => '#',
-                                'title' => 'รมช.เกษตร ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย',
+                                'title' => 'รมช.เกษตร ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย รมช.เกษตร 
+                                            ลุยตรวจน้ำท่วมเชียงใหม่พร้อมมอบถุงยังชีพช่วยผู้ประสบภัย',
                                 'date' => '1 สิงหาคม 2567'
                               ],
                             ] as $i=>$d){
@@ -508,19 +524,31 @@
                               <a href="<?= $d['href'] ?>" class="ss-card ss-card-04">
                                 <div class="ss-img horizontal">
                                   <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
-                                  <div class="tag bg-p color-white">
-                                    <p class="sm">ข่าวเด่นชลประทาน</p>
-                                  </div>
                                   <div class="date color-white">
                                     <p class="number">06</p>
                                     <p class="xs month-year">ก.ย. <span class="p xxs">2567</span></p>
                                   </div>
-                                  <div class="line-1"></div>
-                                  <div class="line-2"></div>
-                                  <div class="hover-filter"></div>
                                 </div>
-                                <div class="text-container pt-4">
+                                <div class="text-container">
+                                  <div class="wrapper">
+                                    <div class="tag bg-p color-white">
+                                      <?php foreach($tabs01 as $j=>$k) {?>
+                                        <div class="tab-content <?= $j==0? 'active': '' ?>" data-tab="content_<?= $j ?>">
+                                          <p class="sm"><?= $k['tabTitle'] ?></p>
+                                        </div>
+                                      <?php } ?>
+                                    </div>
                                   <h6 class="title fw-500 lh-sm color-t"><?= $d['title'] ?></h6>
+                                  <div class="description mt-1">
+                                    <p class="desc">
+                                      กรมชลฯ ยกทัพจักรกลพร้อมเจ้าหน้าที่ เดินหน้าช่วยเหลือ - ฟื้นฟู บรรเทาความเดือดร้อนให้ประชาชน
+                                      สถานการณ์อุทกภัยที่เกิดขึ้นในหลายพื้นที่ ส่งผลให้ประชาชนได้รับความเดือดร้อน 
+                                      เพื่อเป็นการบรรเทาปัญหาให้กับพี่น้องประชาชน กรมชลประทาน ส่งเครื่องจักร เครื่องมือ 
+                                      และกำลังคนเข้าช่วยเหลือจนกว่าสถานการณ์จะกลับเข้าสู่สภาวะปกติ เดินหน้าเร่งระบายน้ำในพื้นที่เสี่ยง 
+                                      กำจัดวัชพืชสิ่งกีดขวางทางน้ำ ช่วยเพิ่มประสิทธิภาพการระบายน้ำ ตลอดจนภารกิจฟื้นฟูหลังน้ำลด 
+                                      ตามนโยบายของรัฐบาล
+                                    </p>
+                                  </div>
                                   <div class="ss-stats mt-6">
                                     <div class="stat color-gray-01">
                                       <div class="icon">
@@ -540,15 +568,17 @@
                                     </div>
                                   </div>
                                 </div>
+                                </div>
                               </a>
                             </div>
                           <?php }?>
                         </div>
-                        <!-- <div class="btns d-flex ai-end jc-end">
-                          <a href="#" class="btn btn-action btn-p bradius-round">
-                            ดูทั้งหมด
-                          </a>
-                        </div>  -->
+                        <div class="swiper-pagination"></div>
+                          <div id="btn01" class="btns d-flex ai-end jc-end">
+                            <a href="#" class="btn btn-action btn-p bradius-round">
+                              ดูทั้งหมด
+                            </a>
+                          </div> 
                       </div>
                     </div>
                   <?php } ?>
@@ -556,87 +586,101 @@
               </div>
             </div>        
           </div>
-          <div class="grid lg-25" data-aos="fade-up" data-aos-delay="450">
-            <div class="ovf-hidden">
-              <div class="swiper-02">
-                <div class="swiper-wrapper">
-                  <?php
-                    foreach([
-                      ['img' => 'public/assets/app/images/highlight/10.jpg', 'href' => '#',], 
-                      ['img' => 'public/assets/app/images/highlight/10.jpg', 'href' => '#',], 
-                      ['img' => 'public/assets/app/images/highlight/10.jpg', 'href' => '#',], 
-                      ['img' => 'public/assets/app/images/highlight/10.jpg', 'href' => '#',],
-                    ] as $i=>$d){
-                  ?>
-                    <div class="swiper-slide">
-                      <a href="<?= $d['href'] ?>" class="ss-card ss-card-05">
-                        <div class="ss-img bradius">
-                          <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
-                          <div class="line-1"></div>
-                          <div class="line-2"></div>
-                          <div class="hover-filter"></div>
+          <div class="grid lg-25 md-100 sm-100" data-aos="fade-up" data-aos-delay="450">
+            <div class="grids">
+              <div class="grid lg-100 md-50 sm-100 mt-0">
+                <div class="ovf-hidden">
+                  <div class="swiper-02">
+                    <div class="swiper-wrapper">
+                      <?php
+                        foreach([
+                          ['img' => 'public/assets/app/images/highlight/10.jpg', 'href' => '#',], 
+                          ['img' => 'public/assets/app/images/highlight/10.jpg', 'href' => '#',], 
+                          ['img' => 'public/assets/app/images/highlight/10.jpg', 'href' => '#',], 
+                          ['img' => 'public/assets/app/images/highlight/10.jpg', 'href' => '#',],
+                        ] as $i=>$d){
+                      ?>
+                        <div class="swiper-slide">
+                          <a href="<?= $d['href'] ?>" class="ss-card ss-card-05">
+                            <div class="ss-img bradius">
+                              <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
+                              <div class="line-1"></div>
+                              <div class="line-2"></div>
+                              <div class="hover-filter"></div>
+                            </div>
+                          </a>
                         </div>
+                      <?php }?>
+                    </div>
+                    <div class="arrows">
+                      <div class="arrow arrow-prev c-pointer">
+                        <em class="fa-solid fa-arrow-left"></em>
+                      </div>
+                      <div class="arrow arrow-next c-pointer">
+                        <em class="fa-solid fa-arrow-right"></em>
+                      </div>
+                    </div>
+                  </div>                 
+                </div>                           
+              </div>
+              <div class="grid lg-100 md-50 sm-100 mt-0">
+                <div class="panel-card bradius" data-aos="fade-up" data-aos-delay="300">
+                  <p class="h6 fw-700 color-s">เอกสารเผยแพร่</p>
+                    <div class="items">
+                      <div class="item">
+                        <div class="dot"></div>
+                          <div class="text-wrapper">
+                            <p class="title sm fw-500">
+                              สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
+                              <span class="color-danger mr-1">16 ก.ย. 67</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="dot"></div>
+                          <div class="text-wrapper">
+                            <p class="title sm fw-500">
+                              สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
+                              <span class="color-danger mr-1">16 ก.ย. 67</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="dot"></div>
+                          <div class="text-wrapper">
+                            <p class="title sm fw-500">
+                              สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
+                              <span class="color-danger mr-1">16 ก.ย. 67</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="dot"></div>
+                          <div class="text-wrapper">
+                            <p class="title sm fw-500">
+                              สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
+                              <span class="color-danger mr-1">16 ก.ย. 67</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="dot"></div>
+                          <div class="text-wrapper">
+                            <p class="title sm fw-500">
+                              สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
+                              <span class="color-danger mr-1">16 ก.ย. 67</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>               
+                    <div id="btn02" class="btns d-flex ai-end jc-end">
+                      <a href="#" class="btn btn-action btn-p bradius-round">
+                        ดูทั้งหมด
                       </a>
-                    </div>
-                  <?php }?>
+                    </div> 
                 </div>
-              </div>    
-              <div class="panel-card bradius" data-aos="fade-up" data-aos-delay="300">
-                <p class="h6 fw-700 color-s">เอกสารเผยแพร่</p>
-                  <div class="items">
-                    <div class="item">
-                      <div class="dot"></div>
-                        <div class="text-wrapper">
-                          <p class="title sm fw-500">
-                            สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
-                            <span class="color-danger mr-1">16 ก.ย. 67</span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="dot"></div>
-                        <div class="text-wrapper">
-                          <p class="title sm fw-500">
-                            สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
-                            <span class="color-danger mr-1">16 ก.ย. 67</span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="dot"></div>
-                        <div class="text-wrapper">
-                          <p class="title sm fw-500">
-                            สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
-                            <span class="color-danger mr-1">16 ก.ย. 67</span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="dot"></div>
-                        <div class="text-wrapper">
-                          <p class="title sm fw-500">
-                            สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
-                            <span class="color-danger mr-1">16 ก.ย. 67</span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="dot"></div>
-                        <div class="text-wrapper">
-                          <p class="title sm fw-500">
-                            สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
-                            <span class="color-danger mr-1">16 ก.ย. 67</span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                </div>  
-                <div class="btns d-flex ai-end jc-end">
-                  <a href="#" class="btn btn-action btn-p bradius-round">
-                    ดูทั้งหมด
-                  </a>
-                </div>              
-            </div>           
+            </div> 
           </div>
         </div>
       </div>

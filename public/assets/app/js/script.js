@@ -99,7 +99,14 @@ $(function(){ 'use strict';
       navigation:{
         prevEl: '.arrow.arrow-prev',
         nextEl: '.arrow.arrow-next',
-      }
+      },
+      breakpoints: {
+        1200: { slidesPerView: 5 },
+        992: { slidesPerView: 5 },
+        768: { slidesPerView: 5 },
+        576: { slidesPerView: 4 },
+        0: { slidesPerView: 3 }
+      },
     });
   }
 
@@ -115,7 +122,14 @@ $(function(){ 'use strict';
       navigation:{
         prevEl: '.arrow.arrow-prev',
         nextEl: '.arrow.arrow-next',
-      }
+      }, 
+      breakpoints: {
+        1200: { slidesPerView: 3 },
+        992: { slidesPerView: 3 },
+        768: { slidesPerView: 3 },
+        576: { slidesPerView: 1.5 },
+        0: { slidesPerView: 1 }
+      },
     });
   }
 
@@ -125,6 +139,9 @@ $(function(){ 'use strict';
     new Swiper('.section-05 .swiper-01', {
       spaceBetween: 15, slidesPerView: 1, speed: 800,
       autoplay: { delay: 5000 }, loop: true,
+      pagination:{ 
+        el: '.swiper-pagination', clickable: true,
+      },
     });
   }
 
@@ -132,6 +149,10 @@ $(function(){ 'use strict';
     new Swiper('.section-05 .swiper-02', {
       spaceBetween: 0, slidesPerView: 1, speed: 800,
       autoplay: { delay: 5000 }, loop: true,
+      navigation:{
+        prevEl: '.arrow.arrow-prev',
+        nextEl: '.arrow.arrow-next',
+      }
     });
   }
 
@@ -143,9 +164,23 @@ $(function(){ 'use strict';
       autoplay: { delay: 5000 }, loop: true,
       breakpoints: {
         1300: { slidesPerView: 6 },
+        992: { slidesPerView: 5.5 },
+        768: { slidesPerView: 4.5 },
+        576: { slidesPerView: 3.5 },
+        480: { slidesPerView: 2.5 },
+        0:{ slidesPerView: 2 }
       },
     });
   }
+
+
+  $('.ss-card-04').hover(function() {
+    $(this).find('.description').stop().animate({
+      height: "toggle",
+      opacity: "toggle"
+    }, 300);
+  });
+  
 
 
   // Tab Container

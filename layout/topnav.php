@@ -32,8 +32,8 @@
         <a href="#" class="logo">
           <img src="public/assets/app/images/logo.png" alt="Logo" />
           <div class="text">
-            <h1>กรมชลประทาน</h1>
-            <p>Royal Irrigation Department</p>
+            <h1 class="main-title">กรมชลประทาน</h1>
+            <p class="sub-title">Royal Irrigation Department</p>
           </div>
         </a>
       </div>
@@ -48,13 +48,13 @@
             </div>
             <div class="icon icon-text">
               <em class="fa-solid fa-sitemap"></em>
-              <div class="text">แผนผังเว็บไซต์</div>
+              <div class="text hide-tablet">แผนผังเว็บไซต์</div>
             </div>
-            <div class="icon icon-flag active">
+            <div class="icon icon-flag active hide-tablet" >
               <div class="flag" style="background-image:url('public/assets/app/images/flag/TH.jpg')"></div>
               <div class="text">ไทย</div>
             </div>
-            <div class="icon icon-flag">
+            <div class="icon icon-flag hide-tablet">
               <div class="flag" style="background-image:url('public/assets/app/images/flag/EN.jpg')"></div>
               <div class="text">Eng</div>
             </div>

@@ -1,11 +1,12 @@
 <nav class="footer">
-  <div class="img-bg" style="background-image:url('public/assets/app/images/bg/10.png');"></div>
+  <div class="img-bg show-desktop" style="background-image:url('public/assets/app/images/bg/10.png');"></div>
+  <div class="img-bg show-mobile" style="background-image:url('public/assets/app/images/bg/13.jpg');"></div>
   <div class="footer-wrapper h-full">
     <div class="footer-top">
       <div class="container">
         <div class="ss-box xl d-flex jc-center">
           <div class="grids">
-            <div class="grid lg-60">
+            <div class="grid lg-60 md-60 sm-100">
               <div class="d-flex ai-center">
                 <div class="logo">
                   <div class="img-container">
@@ -17,7 +18,7 @@
                   <p class="sm fw-600 lh-sm color-01">Royal Irrigation Department</p>
                 </div>
               </div>
-              <div style="padding-left:5.1875rem;">
+              <div class="ss-padding" style="padding-left:5.1875rem;">
                 <p class="color-s fw-700">
                   กรมชลประทาน กระทรวงเกษตรและสหกรณ์
                 </p>
@@ -50,9 +51,9 @@
             </div>
               </div>
             </div>
-            <div class="grid lg-40">
+            <div class="grid lg-40 md-40 sm-100 mt-0">
               <div class="grids">
-                <div class="grid sm-50">
+                <div class="grid lg-50 md-100 sm-50">
                   <ul class="ss-list">
                     <li>
                       <a href="#" class="menu h-op-07">
@@ -61,38 +62,38 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="menu op-70">
+                      <a href="#" class="menu h-op-07">
                         <div class="drop-water"></div>
                         <div class="text">แผนยุทธศาสตร์</div>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="menu op-70">
+                      <a href="#" class="menu h-op-07">
                         <div class="drop-water"></div>
                         <div class="text">รายงานประจำปี/สารสนเทศ</div>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="menu op-70">
+                      <a href="#" class="menu h-op-07">
                         <div class="drop-water"></div>
                         <div class="text">หน่วยงานในสังกัด</div>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="menu op-70">
+                      <a href="#" class="menu h-op-07">
                         <div class="drop-water"></div>
                         <div class="text">ติดต่อกรม</div>
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="menu op-70">
+                      <a href="#" class="menu h-op-07">
                         <div class="drop-water"></div>
                         <div class="text">แผนผังเว็บไซต์</div>
                       </a>
                     </li>
                   </ul>
                 </div>
-                <div class="grid sm-50">
+                <div class="grid lg-50 md-100 sm-50">
                   <div class="socials d-flex jc-end">
                     <div class="social-wrapper">
                       <a href="#" class="social">
