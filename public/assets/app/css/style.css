@@ -231,6 +231,13 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card-01 .logo img{
   display:block; max-width:100%; width:auto; max-height:auto; height:3rem;
 }
+@media screen and (max-width:490.98px){
+  .ss-card-01 .text-wrapper{font-size:1.125rem;}
+}
+@media screen and (max-width:375.98px){
+  .ss-card-01 .text-wrapper{font-size:1rem;}
+}
+
 
 /* Special Card 02 */
 .ss-card-02{position:relative; overflow:hidden;}

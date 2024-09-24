@@ -105,7 +105,7 @@ $(function(){ 'use strict';
         992: { slidesPerView: 5 },
         768: { slidesPerView: 5 },
         576: { slidesPerView: 4 },
-        0: { slidesPerView: 3 }
+        0: { slidesPerView: 2 }
       },
     });
   }
@@ -126,7 +126,7 @@ $(function(){ 'use strict';
       breakpoints: {
         1200: { slidesPerView: 3 },
         992: { slidesPerView: 3 },
-        768: { slidesPerView: 3 },
+        768: { slidesPerView: 2 },
         576: { slidesPerView: 1.5 },
         0: { slidesPerView: 1 }
       },
@@ -167,7 +167,7 @@ $(function(){ 'use strict';
         992: { slidesPerView: 5.5 },
         768: { slidesPerView: 4.5 },
         576: { slidesPerView: 3.5 },
-        480: { slidesPerView: 2.5 },
+        480: { slidesPerView: 2 },
         0:{ slidesPerView: 2 }
       },
     });
@@ -209,6 +209,26 @@ $(function(){ 'use strict';
           //  AOS.refresh();
         }
       });
+    });
+  }
+
+  // Swiper Tab 01
+  if($('.swiper-tabs-01').length){
+    new Swiper('.swiper-tabs-01', {
+      spaceBetween: 0, slidesPerView: 5, speed: 800,
+      loop: true,
+      breakpoints: {
+        1300: { slidesPerView: 3 },
+        992: { slidesPerView: 3 },
+        768: { slidesPerView: 3 },
+        576: { slidesPerView: 3 },
+        480: { slidesPerView: 2.5 },
+        320: { slidesPerView: 2 },
+        0:{ slidesPerView: 1 }
+      }, navigation:{
+        prevEl: '.arrow.arrow-prev',
+        nextEl: '.arrow.arrow-next',
+      }, 
     });
   }
 

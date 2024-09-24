@@ -50,11 +50,11 @@
               <em class="fa-solid fa-sitemap"></em>
               <div class="text hide-tablet">แผนผังเว็บไซต์</div>
             </div>
-            <div class="icon icon-flag active hide-tablet" >
+            <div class="icon icon-flag active" >
               <div class="flag" style="background-image:url('public/assets/app/images/flag/TH.jpg')"></div>
               <div class="text">ไทย</div>
             </div>
-            <div class="icon icon-flag hide-tablet">
+            <div class="icon icon-flag">
               <div class="flag" style="background-image:url('public/assets/app/images/flag/EN.jpg')"></div>
               <div class="text">Eng</div>
             </div>
@@ -71,9 +71,9 @@
           </div>
         </div>
         <div class="topnav-bottom">
-          <div class="menu-container pos-relative">
+          <div class="menu-container pos-relative" id="topnav-menu">
             <?php foreach($topnavMenu as $i=>$d){?>
-              <div class="menu <?= $i == 0 ? 'active': ''?> <?= $i == 1 ? 'pos-static': ''?>">
+              <div class="menu <?= $i > 0 ? 'has-children': ''?> <?= $i == 0 ? 'active': ''?> <?= $i == 1 ? 'pos-static mega-menu': ''?>">
                 <a href="#">
                   <?= $d['name'] ?> 
                   <?php if($d['hasChildren']){?><div class="dot"></div><?php }?>
@@ -273,9 +273,67 @@
               </div>
             <?php }?>
           </div>
+          <div class="d-flex ai-center">
+            <div class="sidenav-toggle ml-5">
+              <div class="hamburger">
+                <div></div><div></div><div></div>
+              </div>
+            </div>               
+          </div>
         </div>
       </div>
     </div>
   </div>
 </nav>
 <div class="topnav-spacer"></div>
+
+
+<!-- Sidenav -->
+<nav class="sidenav">
+  <div class="wrapper">
+    <a class="logo" href="#">
+      <img src="public/assets/app/images/logo.png" alt="Logo">
+    </a>
+    <div class="sidenav-toggle">
+      <div class="hamburger">
+        <div></div><div></div><div></div>
+      </div>
+    </div>
+    <!-- <div class="options">
+      <div class="option">
+        <div class="icon"><span class="text-lg">ก</span></div>
+        <div class="dropdown">
+          <div class="icon font-size-btn fw-500" data-size="14">
+            <span class="text-xl">-</span>
+          </div>
+          <div class="icon font-size-btn fw-500" data-size="16">
+            <span class="text-lg">ก</span>
+          </div>
+          <div class="icon font-size-btn fw-500" data-size="18">
+            <span class="text-xl">+</span>
+          </div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="icon">C</div>
+        <div class="dropdown">
+          <div class="icon theme-btn" data-theme="0">C</div>
+          <div class="icon theme-btn" data-theme="1">C</div>
+          <div class="icon theme-btn" data-theme="2">C</div>
+        </div>
+      </div>
+      <div class="option">
+        <div class="flag" style="background-image:url('public/assets/app/images/icon/flag.png');"></div>
+        <div class="dropdown">
+          <a href="#">
+            <div class="flag" style="background-image:url('public/assets/app/images/icon/us-flag.png');"></div>
+          </a>
+        </div>
+      </div>
+    </div> -->
+    <div class="scroll-wrapper" data-simplebar>
+      <div class="menu-container"></div>
+    </div>
+  </div>
+</nav>
+<div class="sidenav-filter"></div>
