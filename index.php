@@ -299,8 +299,8 @@
               </div>
             </div>
             <div class="grid md-50 sm-100">
-              <iframe class="map" src="https://swoc.rid.go.th/index1.html" data-aos="fade-up" data-aos-delay="300"
-                style="border-radius:.5rem;" width="100%" height="100%" frameborder="0" title="ปริมาณน้ำ">
+              <iframe class="map" src="https://swoc.rid.go.th/index1.html?layer=tmd" data-aos="fade-up" data-aos-delay="300"
+                style="border-radius:.5rem;" width="100%" height="100%" frameborder="0" title="ปริมาณฝน">
               </iframe>
               <!-- <div class="map-slot" data-aos="fade-up" data-aos-delay="300">
                 <div class="header">
