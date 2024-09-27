@@ -667,15 +667,6 @@
                             </p>
                           </div>
                         </div>
-                        <div class="item">
-                          <div class="dot"></div>
-                          <div class="text-wrapper">
-                            <p class="title sm fw-500">
-                              สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
-                              <span class="color-danger mr-1">16 ก.ย. 67</span>
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>               
                     <div id="btn02" class="btns d-flex ai-end jc-end">
