@@ -160,8 +160,8 @@ $(function(){ 'use strict';
   // Section 06
   if($('.section-06 .swiper').length){
     new Swiper('.section-06 .swiper', {
-      spaceBetween: 0, slidesPerView: 5, speed: 800,
-      autoplay: { delay: 5000 }, loop: true,
+      spaceBetween: 0, slidesPerView: 2, speed: 800,
+      autoplay: { delay: 5000 },
       breakpoints: {
         1300: { slidesPerView: 6 },
         992: { slidesPerView: 5.5 },
@@ -169,6 +169,9 @@ $(function(){ 'use strict';
         576: { slidesPerView: 3.5 },
         480: { slidesPerView: 2 },
         0:{ slidesPerView: 2 }
+      },
+      pagination:{ 
+        el: '.swiper-pagination', clickable: true,
       },
     });
   }

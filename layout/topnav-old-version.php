@@ -53,33 +53,11 @@
             <div class="icon icon-flag active" >
               <div class="flag" style="background-image:url('public/assets/app/images/flag/TH.jpg')"></div>
               <div class="text">ไทย</div>
-              <div class="icon-water">
-                <img src="public/assets/app/images/icon/water.png" alt="">
-              </div>
-              <div class="flag-dropdown border-1">
-              <div class="flag-item">
-                <div class="wrapper">
-                  <div class="icon">
-                    <div class="flag" style="background-image:url('public/assets/app/images/flag/TH.jpg')"></div>
-                  </div>
-                  <div class="p xs title fw-400">ไทย</div>
-                </div>
-              </div>
-              <div class="ss-sep-02"></div>
-              <div class="flag-item border-top-1">
-                <div class="wrapper">
-                  <div class="icon">
-                    <div class="flag" style="background-image:url('public/assets/app/images/flag/EN-02.png')"></div>
-                  </div>
-                  <div class="p xs title fw-400">อังกฤษ</div>
-                </div>
-              </div>
             </div>
-            </div>
-            <!-- <div class="icon icon-flag">
+            <div class="icon icon-flag">
               <div class="flag" style="background-image:url('public/assets/app/images/flag/EN.jpg')"></div>
               <div class="text">Eng</div>
-            </div> -->
+            </div>
             <div class="icon-sep"></div>
             <div class="icon icon-social">
               <em class="fa-brands fa-facebook-f"></em>

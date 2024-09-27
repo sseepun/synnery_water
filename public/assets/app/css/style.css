@@ -231,6 +231,9 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card-01 .logo img{
   display:block; max-width:100%; width:auto; max-height:auto; height:3rem;
 }
+@media screen and (max-width:1199.98px){
+  .ss-card-01 .text-wrapper{font-size:1.0625rem;}
+}
 @media screen and (max-width:490.98px){
   .ss-card-01 .text-wrapper{font-size:1.125rem;}
 }
@@ -265,8 +268,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 /* Special Card 04 */
 .ss-card-04{
-  position:relative; box-shadow:rgb(0 0 0 / 7%) 0px 5px 20px;
-  padding-bottom:8rem;
+  position:relative; 
+  padding-bottom:8rem; border-radius:0 0 var(--bradius) var(--bradius);
+  box-shadow: 0px 3.31px 8.27px 0px #0000001A;
+
 }
 .ss-card-04 .ss-img{
   border-radius:var(--bradius) var(--bradius) 0 0;
@@ -280,7 +285,9 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   background:#ffffff;  border-radius:0 0 var(--bradius) var(--bradius);
   position:absolute; bottom:0; width:100%;
 }
-.ss-card-04 .text-container .wrapper{position:relative; padding:1rem;}
+.ss-card-04 .text-container .wrapper{
+  position:relative; padding:1rem; border-radius:0 0 var(--bradius) var(--bradius);
+}
 .ss-card-04 .text-container .title{-webkit-line-clamp:2;}
 .ss-card-04 .text-container .description {display:none;}
 .ss-card-04.hover .text-container .description {
@@ -392,6 +399,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-sep-01{
   display:block; width:100; max-width:20rem; height:.0625rem; 
   background:#0E3A8154; margin:0 auto;
+}
+.ss-sep-02{
+  display:block; width:100; max-width:5.25rem; height:.0625rem; 
+  background:#EEEEEE; margin:0 auto;
 }
 
 

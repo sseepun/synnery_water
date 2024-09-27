@@ -8,6 +8,9 @@
 <?php include_once('layout/topnav.php'); ?>
 
   <section class="banner-01">
+    <div class="pattern style-01">
+      <img src="public/assets/app/images/pattern/08.png" alt="Pattern">
+    </div>
     <div class="swiper">
       <div class="swiper-wrapper">
         <?php
@@ -42,10 +45,7 @@
     <div class="pattern style-01">
       <img src="public/assets/app/images/pattern/06.png" alt="Pattern" />
     </div>
-    <div class="pattern style-02">
-      <img src="public/assets/app/images/pattern/08.png" alt="Pattern">
-    </div>
-    <div class="container">
+    <div class="container" style="z-index:3;">
       <div class="ss-box">
         <div class="announce" data-aos="fade-up" data-aos-delay="0">
           <div class="text-container">
@@ -120,7 +120,9 @@
                 ?>
                 <div class="swiper-slide">
                   <div class="menu-item">
-                    <div class="icon">
+                    <div class="icon pos-relative">
+                      <div class="img-bg inactive" style="background-image:url('public/assets/app/images/bg/water-inactive.png')"></div>
+                      <div class="img-bg active" style="background-image:url('public/assets/app/images/bg/water-active.png')"></div>
                       <img class="inactive" src="<?= $d['imgInactive'] ?>" alt="Menu Inactive" />
                       <img class="active" src="<?= $d['imgActive'] ?>" alt="Menu Active" />
                     </div>
@@ -438,26 +440,6 @@
     </div>
   </section>
 
-  <section class="section-04">
-    <div class="img-bg" style="background-image:url('public/assets/app/images/bg/09.jpg')"></div>
-    <div class="container">
-      <div class="grids">
-        <div class="grid lg-50 md-50 sm-100"></div>
-        <div class="grid lg-50 md-50 sm-100">
-          <div class="text-wrapper text-center pos-relative" data-aos="fade-up" data-aos-delay="150">
-            <svg width="16" height="21" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6343 1.84098C11.0526 1.17396 10.4986 0.560299 10 0C9.50138 0.58698 8.94737 1.20064 8.36565 1.84098C4.84765 5.73639 0 11.1526 0 15.3682C0 18.0363 1.10803 20.4376 2.93629 22.1718C4.73684 23.9061 7.22992 25 10 25C12.7701 25 15.2632 23.9328 17.0637 22.1718C18.8643 20.4376 20 18.0096 20 15.3682C20 11.1526 15.1524 5.76307 11.6343 1.84098Z" fill="white"/>
-            </svg>
-            <p class="color-white text-center fw-400 mt-3">
-              เพิ่มพื้นที่ชลประทานอย่างยั่งยืนขับเคลื่อนด้วยความร่วมมือ<br> 
-              <span class="h5 fw-700">เพื่อการพัฒนาทรัพยากรน้ำ<br>ที่ทั่วถึงและเป็นธรรม</span>
-            </p>      
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <?php 
      $tabs01 = [
       ['tabTitle' => 'ข่าวเด่นชลประทาน'], 
@@ -502,7 +484,7 @@
         <div class="grids">
           <div class="grid lg-75 md-100 sm-100">
             <div class="grids">
-              <div class="grid lg-25 md-30 sm-100 mt-0" data-aos="fade-up" data-aos-delay="150">
+              <div class="grid lg-30 md-30 sm-100 mt-0" data-aos="fade-up" data-aos-delay="150">
                 <div class="tabs tabs-01 hide-mobile">
                   <?php foreach($tabs01 as $i=>$d) {?>
                     <div class="tab mb-2 <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
@@ -511,7 +493,7 @@
                   <?php } ?>
                 </div>
               </div>
-              <div class="grid lg-75 md-70 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
+              <div class="grid lg-70 md-70 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
                 <div class="tab-contents">
                   <?php foreach($tabs01 as $i=>$k){?>
                     <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
@@ -709,7 +691,27 @@
     </div>
   </section>
 
-  <section class="section-06 ovf-hidden" data-aos="fade-in" data-aos-delay="0">
+  <section class="section-04">
+    <div class="img-bg" style="background-image:url('public/assets/app/images/bg/09.jpg')"></div>
+    <div class="container">
+      <div class="grids">
+        <div class="grid lg-50 md-50 sm-100"></div>
+        <div class="grid lg-50 md-50 sm-100">
+          <div class="text-wrapper text-center pos-relative" data-aos="fade-up" data-aos-delay="150">
+            <svg width="16" height="21" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6343 1.84098C11.0526 1.17396 10.4986 0.560299 10 0C9.50138 0.58698 8.94737 1.20064 8.36565 1.84098C4.84765 5.73639 0 11.1526 0 15.3682C0 18.0363 1.10803 20.4376 2.93629 22.1718C4.73684 23.9061 7.22992 25 10 25C12.7701 25 15.2632 23.9328 17.0637 22.1718C18.8643 20.4376 20 18.0096 20 15.3682C20 11.1526 15.1524 5.76307 11.6343 1.84098Z" fill="white"/>
+            </svg>
+            <p class="color-white text-center fw-400 mt-3">
+              เพิ่มพื้นที่ชลประทานอย่างยั่งยืนขับเคลื่อนด้วยความร่วมมือ<br> 
+              <span class="h5 fw-700">เพื่อการพัฒนาทรัพยากรน้ำ<br>ที่ทั่วถึงและเป็นธรรม</span>
+            </p>      
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-06" data-aos="fade-in" data-aos-delay="0">
     <div class="swiper">
       <div class="swiper-wrapper">
         <?php
@@ -741,6 +743,24 @@
               'title' => 'การฌาปนกิจสงเคราะห์ <br /> กรมชลประทาน',
               'logo' => true,
               'imgLogo' => 'public/assets/app/images/logo/03.png',
+            ],[
+              'img' => 'public/assets/app/images/highlight/14.jpg',
+              'title' => 'Open Data กรมชลประทาน',
+              'logo' => false,
+            ], [
+              'img' => 'public/assets/app/images/highlight/11.jpg',
+              'title' => 'ห้องสมุดกรมชลประทาน',
+              'logo' => true,
+              'imgLogo' => 'public/assets/app/images/logo/01.png',
+            ], [
+              'img' => 'public/assets/app/images/highlight/12.jpg',
+              'title' => 'ศูนย์ความรู้กลาง <br /> กรมชลประทาน',
+              'logo' => true,
+              'imgLogo' => 'public/assets/app/images/logo/02.png',
+            ], [
+              'img' => 'public/assets/app/images/highlight/13.jpg',
+              'title' => 'ศูนย์ข้อมูลข่าวสาร <br /> กรมชลประทาน',
+              'logo' => false,
             ],
           ] as $i=>$d){
         ?>
@@ -766,6 +786,7 @@
           </div>
         <?php }?>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
   
