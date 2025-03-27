@@ -9,3 +9,5 @@
 <link rel="stylesheet" href="public/assets/app/css/style.css" />
 <link rel="stylesheet" href="public/assets/app/css/navs.css" />
 <link rel="stylesheet" href="public/assets/app/css/blocks.css" />
+
+<link rel="stylesheet" id="css-theme" href="public/assets/app/css/color-0.css" />

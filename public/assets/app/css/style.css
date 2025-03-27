@@ -131,6 +131,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   outline:none!important; transition:border-color .25s, color .25s;
 }
 
+
 /* Buttons */
 .btn.btn-action{
   font-size:1rem; font-weight:300; text-align:center; width:auto;
@@ -147,6 +148,13 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .btn.btn-p, .btn.btn-p:focus{color:#ffffff; background:var(--color-p); border-color:var(--color-p);}
 .btn.btn-p:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.06);}
 .btn.btn-p:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.12);}
+
+
+/* Background Gradient */
+.background-gradient{
+  position:absolute; top:0; right:0; bottom:0; left:0;
+}
+
 
 /* Hamburger */
 .hamburger{cursor:pointer;}
@@ -559,6 +567,7 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .ai-unset{align-items:unset!important;}
 .fw-wrap{flex-wrap:wrap!important;}
 .fw-unset{flex-wrap:unset!important;}
+.fw-column{flex-direction:column!important;}
 
 .w-auto{width:auto!important; min-width:0!important}
 .w-full{width:100%!important; max-width:100%!important;}
