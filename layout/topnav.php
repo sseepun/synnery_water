@@ -104,22 +104,22 @@
                   <?php if($i === 1){?>
                     <?php 
                       $submenuLeftContent = [
-                        ['title' => 'ประวัติกรมชลประทาน'],
-                        ['title' => 'ตราสัญลักษณ์ประจำกรม'],
-                        ['title' => 'กฎหมายที่สำคัญของกรม'],
-                        ['title' => 'หน้าที่ความรับผิดชอบ'],
-                        ['title' => 'โครงสร้างหน่วยงาน'],
-                        ['title' => 'ทำเนียบผู้บริหาร'],
+                        ['title' => 'Level 2'],
+                        // ['title' => 'ตราสัญลักษณ์ประจำกรม'],
+                        // ['title' => 'กฎหมายที่สำคัญของกรม'],
+                        // ['title' => 'หน้าที่ความรับผิดชอบ'],
+                        // ['title' => 'โครงสร้างหน่วยงาน'],
+                        // ['title' => 'ทำเนียบผู้บริหาร'],
                       ]
                     ?>
                     <?php 
                       $submenuRightContent = [
-                        ['title' => 'ข้อมูลผู้บริหารเทคโนโลยีดิจิทัล'],
-                        ['title' => 'วิสัยทัศน์/ค่านิยม/พันธกิจ'],
-                        ['title' => 'คำรับรองการปฏิบัติราชการ'],
-                        ['title' => 'แผนยุทธศาสตร์กรมชลประทาน'],
-                        ['title' => 'ตัวชี้วัดตามมาตรการปรับปรุงประสิทธิภาพ'],
-                        ['title' => 'แผนปฏิบัติราชการกรมชลประทาน ระยะ 5 ปี'],
+                        ['title' => 'Level 2'],
+                        // ['title' => 'วิสัยทัศน์/ค่านิยม/พันธกิจ'],
+                        // ['title' => 'คำรับรองการปฏิบัติราชการ'],
+                        // ['title' => 'แผนยุทธศาสตร์กรมชลประทาน'],
+                        // ['title' => 'ตัวชี้วัดตามมาตรการปรับปรุงประสิทธิภาพ'],
+                        // ['title' => 'แผนปฏิบัติราชการกรมชลประทาน ระยะ 5 ปี'],
                       ]
                     ?>
                     <div class="submenu-dropdown full-width">
@@ -133,7 +133,7 @@
                           </div>
                           <div class="submenu-wrapper">
                             <?php foreach($submenuLeftContent as $d) {?>
-                              <div class="submenu">
+                              <div class="submenu has-children">
                                 <div class="wrapper">
                                   <div class="drop-water"></div>
                                   <a href="#"><?= $d['title'] ?></a>
@@ -141,15 +141,77 @@
                                     <div class="submenu-pattern">
                                       <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
                                       <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="submenu-dropdown mt-2">
+                                  <div class="submenu sub-mega-menu">
+                                    <div class="wrapper">
+                                      <div class="drop-water-dot"></div>
+                                      <a href="#">Level 3</a>
+                                      <div class="submenu-patterns">
+                                        <div class="submenu-pattern">
+                                          <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                          <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="submenu sub-mega-menu">
+                                  <div class="wrapper">
+                                    <div class="drop-water-dot"></div>
+                                    <a href="#">Level 3</a>
+                                    <div class="submenu-patterns">
+                                      <div class="submenu-pattern">
+                                        <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                        <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="submenu sub-mega-menu">
+                                  <div class="wrapper">
+                                    <div class="drop-water-dot"></div>
+                                    <a href="#">Level 3</a>
+                                    <div class="submenu-patterns">
+                                      <div class="submenu-pattern">
+                                        <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                        <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="submenu sub-mega-menu">
+                                  <div class="wrapper">
+                                    <div class="drop-water-dot"></div>
+                                    <a href="#">Level 3</a>
+                                    <div class="submenu-patterns">
+                                      <div class="submenu-pattern">
+                                        <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                        <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="submenu sub-mega-menu">
+                                  <div class="wrapper">
+                                    <div class="drop-water-dot"></div>
+                                    <a href="#">Level 3</a>
+                                    <div class="submenu-patterns">
+                                      <div class="submenu-pattern">
+                                        <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                        <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
+                            </div>
                             <?php } ?>
                           </div>
                           <div class="submenu-wrapper">
                             <?php foreach($submenuRightContent as $d) {?>
-                              <div class="submenu">
+                              <div class="submenu has-children">
                                 <div class="wrapper">
                                   <div class="drop-water"></div>
                                   <a href="#"><?= $d['title'] ?></a>
@@ -160,6 +222,68 @@
                                     </div>
                                   </div>
                                 </div>
+                                <div class="submenu-dropdown mt-2">
+                                  <div class="submenu sub-mega-menu">
+                                    <div class="wrapper">
+                                      <div class="drop-water-dot"></div>
+                                      <a href="#">Level 3</a>
+                                      <div class="submenu-patterns">
+                                        <div class="submenu-pattern">
+                                          <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                          <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="submenu sub-mega-menu">
+                                  <div class="wrapper">
+                                    <div class="drop-water-dot"></div>
+                                    <a href="#">Level 3</a>
+                                    <div class="submenu-patterns">
+                                      <div class="submenu-pattern">
+                                        <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                        <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="submenu sub-mega-menu">
+                                  <div class="wrapper">
+                                    <div class="drop-water-dot"></div>
+                                    <a href="#">Level 3</a>
+                                    <div class="submenu-patterns">
+                                      <div class="submenu-pattern">
+                                        <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                        <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="submenu sub-mega-menu">
+                                  <div class="wrapper">
+                                    <div class="drop-water-dot"></div>
+                                    <a href="#">Level 3</a>
+                                    <div class="submenu-patterns">
+                                      <div class="submenu-pattern">
+                                        <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                        <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="submenu sub-mega-menu">
+                                  <div class="wrapper">
+                                    <div class="drop-water-dot"></div>
+                                    <a href="#">Level 3</a>
+                                    <div class="submenu-patterns">
+                                      <div class="submenu-pattern">
+                                        <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                        <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                               </div>
                             <?php } ?>
                           </div>
@@ -182,7 +306,7 @@
                     <div class="submenu-container">
                       <div class="submenu-wrapper">
                         <?php foreach($submenu02 as $d) {?>
-                          <div class="submenu">
+                          <div class="submenu has-children">
                             <div class="wrapper">
                               <div class="drop-water"></div>
                               <a href="#"><?= $d['title'] ?></a>
@@ -190,6 +314,96 @@
                                 <div class="submenu-pattern">
                                   <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
                                   <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="submenu-dropdown">
+                              <div class="submenu-container">
+                                <div class="submenu-wrapper">
+                                  <div class="submenu">
+                                    <div class="wrapper">
+                                      <div class="drop-water-dot"></div>
+                                      <a href="#">รายงานประจำปี พ.ศ. 2562</a>
+                                      <div class="submenu-patterns">
+                                        <div class="submenu-pattern">
+                                          <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                          <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="submenu">
+                                    <div class="wrapper">
+                                      <div class="drop-water-dot"></div>
+                                      <a href="#">รายงานประจำปี พ.ศ. 2563</a>
+                                      <div class="submenu-patterns">
+                                        <div class="submenu-pattern">
+                                          <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                          <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="submenu">
+                                    <div class="wrapper">
+                                      <div class="drop-water-dot"></div>
+                                      <a href="#">รายงานประจำปี พ.ศ. 2564</a>
+                                      <div class="submenu-patterns">
+                                        <div class="submenu-pattern">
+                                          <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                          <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="submenu">
+                                    <div class="wrapper">
+                                      <div class="drop-water-dot"></div>
+                                      <a href="#">รายงานประจำปี พ.ศ. 2564</a>
+                                      <div class="submenu-patterns">
+                                        <div class="submenu-pattern">
+                                          <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                          <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="submenu">
+                                    <div class="wrapper">
+                                      <div class="drop-water-dot"></div>
+                                      <a href="#">รายงานประจำปี พ.ศ. 2565</a>
+                                      <div class="submenu-patterns">
+                                        <div class="submenu-pattern">
+                                          <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                          <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="submenu">
+                                    <div class="wrapper">
+                                      <div class="drop-water-dot"></div>
+                                      <a href="#">รายงานประจำปี พ.ศ. 2566</a>
+                                      <div class="submenu-patterns">
+                                        <div class="submenu-pattern">
+                                          <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                          <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="submenu">
+                                    <div class="wrapper">
+                                      <div class="drop-water-dot"></div>
+                                      <a href="#">รายงานประจำปี พ.ศ. 2567</a>
+                                      <div class="submenu-patterns">
+                                        <div class="submenu-pattern">
+                                          <img class="pattern-01" src="public/assets/app/images/icon/submenu-pattern-01.svg" alt="Wave Pattern">
+                                          <img class="pattern-02" src="public/assets/app/images/icon/submenu-pattern-02.svg" alt="Wave Pattern">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>

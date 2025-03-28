@@ -183,7 +183,8 @@ $(function(){ 'use strict';
       direction: 'vertical', loop: true,
       spaceBetween: 0, speed: 800,
       pagination: { 
-        el: '.swiper-pagination', clickable: true,},
+        el: '.swiper-pagination', clickable: true,
+      },
         breakpoints: {
           1299:{ direction: 'vertical', slidesPerView: 4 },
           992:{ direction: 'vertical', slidesPerView: 4 },

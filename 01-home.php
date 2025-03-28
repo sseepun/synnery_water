@@ -25,6 +25,14 @@
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
+            <div class="text-wrapper animate" style="--delay:.4s;">
+              <h1 class="fw-700 font-popins font-gradient-01 text-intro">
+                The Royal<br>Irrigation Department
+              </h1>
+              <p class="xs text-center font-popins desc color-white fw-400 mt-2">
+                To integratedly manage water resources in adequate, thorough and equitable manners
+              </p>
+            </div>
           </div>
         </div>
         <?php }?>
@@ -414,8 +422,6 @@
                         <div class="ss-img">
                           <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
                           <div class="hover-filter type-01"></div>
-                          <div class="line-1"></div>
-                          <div class="line-2"></div>
                         </div>
                         <div class="text-wrapper">
                           <div class="title"><?= $d['title'] ?></div>
@@ -809,6 +815,7 @@
               </a>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>

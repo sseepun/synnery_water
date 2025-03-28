@@ -113,7 +113,7 @@ nav.topnav .menu > *:first-child::after{
 }
 nav.topnav .menu:hover > *:first-child::after,
 nav.topnav .menu.active > *:first-child::after{opacity:1;}
-nav.topnav .submenu-dropdown{
+nav.topnav .menu .submenu-dropdown{
   position:absolute; top:100%; left:0;
   opacity:0; pointer-events:none; border-radius:.5rem;
   transition:opacity .5s, top .5s, left .25s, right .25s;
@@ -127,8 +127,14 @@ nav.topnav .submenu-container{
   box-shadow:0px 4px 8px 4px rgba(0,0,0,.1);
 }
 nav.topnav .submenu-dropdown.full-width .submenu-wrapper{width:calc(100% / 3);}
+nav.topnav .submenu-dropdown.full-width .submenu-wrapper .submenu > .submenu-dropdown{
+  position:relative; top:unset; left:unset; opacity:1; pointer-events:all;
+  padding-left:.875rem;
+}
 nav.topnav .submenu-dropdown.anchor-right .submenu-container::before{left:unset; right:1rem;}
-nav.topnav .submenu-wrapper{display:block; width:280px; border-radius:.5rem; overflow:hidden; padding:.75rem;}
+nav.topnav .submenu-wrapper{
+  display:block; width:280px; border-radius:.5rem; padding:.5rem 0;
+}
 nav.topnav .submenu-wrapper.background{border-radius:0 0 0 .5rem;}
 nav.topnav .submenu-wrapper.background .pattern{
   position:absolute; top:0; right:0; bottom:0; left:0; z-index:2;
@@ -145,28 +151,34 @@ nav.topnav .submenu-wrapper .img-bg{
   background-size:cover; background-position:left; 
   background-repeat:no-repeat;
 }
-nav.topnav .submenu{position:relative; border-bottom:1px solid transparent; border-radius:.5rem; overflow:hidden;}
+nav.topnav .submenu{position:relative; border-bottom:1px solid transparent; border-radius:.5rem; padding:0 .75rem;}
+nav.topnav .submenu.sub-mega-menu{padding-right:0;}
 nav.topnav .submenu:last-child{border-bottom:0;}
 nav.topnav .submenu .wrapper{
   position:relative; transition:background .25s; display:flex; align-items:center;
-  padding:.875rem .875rem .875rem .875rem;
+  padding:.875rem .875rem .875rem .875rem; border-radius:.5rem;
 }
 nav.topnav .submenu .wrapper > .drop-water{
   display:block; width:.5rem; height:.5rem; border:1px solid var(--color-p);
   margin:0 .5rem 0 0; border-radius:50%; transition:border .25s; 
   border-radius:0% 120% 80% 120%; -webkit-transform: rotate(135deg); 
 }
-nav.topnav .submenu .wrapper:hover > .drop-water{border:1px solid #ffffff;}
+nav.topnav .submenu .wrapper > .drop-water-dot{
+  width:.3125rem; height:.3125rem; border-radius:50%; transition:background .25s;
+  margin:0 .5rem 0 0;
+}
+nav.topnav .submenu:hover .wrapper > .drop-water{border:1px solid #ffffff;}
 nav.topnav .submenu .wrapper > a{
   display:block; position:relative; margin:0; 
   font-size:.9375rem; line-height:1.12; font-weight:400; transition:background .25s, color .25s;
   color:#5F5E5D;
 }
-nav.topnav .submenu .wrapper .submenu-patterns{
+nav.topnav .submenu > *:first-child .submenu-patterns{
   position:absolute; bottom:-.375rem; right:1rem; pointer-events:none;
   opacity:0; transition:opacity .25s, transform .25s; transform:translateX(2rem);
 }
-nav.topnav .submenu:hover .submenu-patterns{opacity:1; transform:translateX(-1rem);}
+nav.topnav .submenu:not(.sub-mega-menu):hover > *:first-child .submenu-patterns{opacity:1; transform:translateX(-1rem);}
+nav.topnav .submenu.sub-mega-menu:hover > *:first-child .submenu-patterns{opacity:1; transform:translateX(-1rem);}
 nav.topnav .submenu .wrapper .submenu-patterns .submenu-pattern{position:relative;}
 nav.topnav .submenu .wrapper .submenu-patterns .submenu-pattern .pattern-02{
   position:absolute; bottom:.3125rem; right:-1.125rem; z-index:1;
@@ -181,7 +193,9 @@ nav.topnav .submenu:hover > .submenu-dropdown{opacity:1; left:100%; pointer-even
 nav.topnav .submenu-dropdown.anchor-right .submenu:hover > .submenu-dropdown{right:100%;}
 nav.topnav .menu:hover > *:first-child, nav.topnav .menu.active > *:first-child{color:var(--color-p);}
 nav.topnav .menu > *:first-child::after{background:var(--color-p);}
-nav.topnav .submenu:hover .wrapper, nav.topnav .submenu.active .wrapper{color:#ffffff; background:var(--color-p);}
+
+
+
 nav.topnav .submenu-container{background:#ffffff;}
 nav.topnav .submenu-container::before{background:#ffffff;}
 nav.topnav .hamburger > *{background:var(--color-s);}
@@ -361,15 +375,11 @@ nav.sidenav .menu > *:first-child{border-color:#e1e1e1;}
 nav.sidenav .submenu > *:first-child{border-color:#e1e1e1;}
 nav.sidenav .option > .dropdown{background:#ffffff;}
 nav.sidenav .menu > *:first-child{color:#000000;}
-nav.sidenav .menu:hover > *:first-child,
-nav.sidenav .menu.active > *:first-child{color:#ffffff!important;}
-nav.sidenav .menu:hover::before, nav.sidenav .submenu:not(.level-2):hover::before,
-nav.sidenav .menu.active::before,
-nav.sidenav .submenu:not(.level-2).active::before{background:var(--color-p)}
-nav.sidenav .submenu{color:#ffffff;}
-nav.sidenav .submenu a{color:#141414;}
-nav.sidenav .submenu:hover a{color:var(--color-p);}
-nav.sidenav .submenu .dropdown-toggle{color:#ffffff;}
+
+
+
+
+
 nav.sidenav .submenu > *:first-child{background:#f7f7f7 ; color:#ffffff;}
 nav.sidenav .menu .submenu .submenu.level-2{background:#ffffff;}
 nav.sidenav .menu .submenu .submenu.level-2:hover::before{background:#c2c6c7;}
@@ -377,9 +387,7 @@ nav.sidenav .menu .submenu .submenu.level-2:hover > *:first-child{color:#ffffff;
 nav.sidenav .submenu:hover > *:first-child,
 nav.sidenav .submenu.active > *:first-child{color:var(--color-s);}
 nav.sidenav .dropdown-toggle{color:#232323;}
-nav.sidenav .menu:hover .dropdown-toggle, nav.sidenav .submenu:hover .dropdown-toggle,
-nav.sidenav .menu.active .dropdown-toggle,
-nav.sidenav .submenu.active .dropdown-toggle{color:#ffffff;}
+
 nav.sidenav .option > .dropdown .flag-wrapper:hover{background:#e1e1e1;}
 nav.sidenav .options > .option-btn:hover > a{color:#14206a;}
 

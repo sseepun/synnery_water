@@ -37,3 +37,24 @@ html, body, a, a:hover, table.table{color:#000000;}
 }
 
 
+.font-gradient-01{
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+    background-image:linear-gradient(180deg, rgba(255,255,255,1) 38%, rgba(255,255,255,0) 100%);
+}
+
+
+/* Topnav */
+nav.topnav .submenu > *:first-child  > .drop-water-dot{background:var(--color-p);}
+nav.topnav .submenu:hover > *:first-child  > .drop-water-dot{background:#ffffff;}
+nav.topnav .submenu:not(.sub-mega-menu):hover > *:first-child{background:var(--color-p);}
+nav.topnav .submenu:not(.sub-mega-menu):hover > *:first-child a{color:#ffffff;}
+nav.topnav .submenu.sub-mega-menu:hover > *:first-child{background:var(--color-p);}
+nav.topnav .submenu.sub-mega-menu:hover > *:first-child a{color:#ffffff;}
+
+
+/* Sidenav */
+nav.sidenav .submenu .dropdown-toggle{color:#000000;}
+nav.sidenav .submenu a{color:#141414;}
+/* nav.sidenav .menu:hover > *:first-child{color:#ffffff!important;} */
+/* nav.sidenav .menu.active .dropdown-toggle{} */
+/* nav.sidenav .submenu.active .dropdown-toggle{color:#ffffff;} */

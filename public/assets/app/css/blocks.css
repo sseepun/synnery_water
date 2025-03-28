@@ -8,6 +8,10 @@
 .banner-01 .wrapper{
   position:relative; min-height:24rem;
 }
+.banner-01 .text-wrapper{
+  position:absolute; top:0; right:0; bottom:0; left:0; pointer-events:none;
+  display:flex; flex-direction:column; justify-content:center; align-items:center;
+}
 .banner-01 .wrapper .img-bg{
   position:absolute; top:0; right:0; bottom:0; left:0;
   background-size:cover; background-position:center; 
@@ -34,6 +38,16 @@
   background:rgba(0, 63, 128, 0.5); color:#ffffff; transition:background .25s;
 }
 .banner-01 .swiper .arrows .arrow:hover{background:rgba(0, 63, 128, 1);}
+.banner-01 .swiper-slide .animate{
+  opacity:0; transform:translateY(4rem); transition:all ease-in-out .75s;
+}
+.banner-01 .swiper-slide-active .animate{opacity:1; transform:none; transition-delay:var(--delay);}
+.loading .banner-01 .swiper-slide .animate{opacity:0!important; transform:translateY(4rem)!important;}
+.banner-01 .text-intro{text-align:center; line-height:1.2; padding:0 1rem;}
+@media screen and (min-width:767.98px){
+  .banner-01 .text-intro>br{display:none;}
+
+}
 @media screen and (max-width:1299.98px){
   .banner-01 .pattern.style-01{top:calc(100% - 17rem);}
 }
@@ -43,22 +57,28 @@
 @media screen and (max-width:991.98px){
   .banner-01 .pattern.style-01{top:calc(100% - 13rem);}
   .banner-01 .wrapper{min-height:22rem;}
+  .banner-01 .text-intro{font-size:2.75rem;}
 }
 @media screen and (max-width:767.98px){
   .banner-01 .pattern.style-01{top:calc(100% - 10rem);}
   .banner-01 .wrapper{min-height:15rem;}
+  .banner-01 .text-intro{font-size:2.3125rem;}
+  .banner-01 .swiper-pagination-bullets{bottom:1rem;}
 }
 @media screen and (max-width:575.98px){
   .banner-01 .pattern.style-01{top:calc(100% - 8rem);}
-  .banner-01 .wrapper{min-height:12rem;}
+  .banner-01 .wrapper{min-height:15rem;}
+  .banner-01 .text-intro{font-size:2rem;}
 }
 @media screen and (max-width:490.98px){
   .banner-01 .pattern.style-01{top:calc(100% - 6rem);}
-  .banner-01 .wrapper{min-height:12rem;}
+}
+@media screen and (max-width:390.98px){
+  .banner-01 .text-intro{font-size:1.75rem;}
 }
 @media screen and (max-width:320.98px){
   .banner-01 .pattern.style-01{top:calc(100% - 5rem);}
-  .banner-01 .wrapper{min-height:12rem;}
+  .banner-01 .text-intro{font-size:1.5rem;}
 }
    
 
@@ -425,6 +445,24 @@
   display:block; width:auto; height:5.5rem;
 }
 .section-07 .panel-left .content .logo.sm img{height:4.875rem;}
+.section-07 .panel-left .swiper-pagination-bullets {
+  border-radius: .9375rem; right:1.25rem;
+  background: rgba(0, 0, 0, 0.56);
+  width: auto;
+  padding: .125rem .625rem;
+}
+.section-07 .panel-left .swiper-pagination-bullets .swiper-pagination-bullet {
+  border: 1px solid #ffffff; background: transparent; width:.5rem;
+  height:.5rem; margin:.5rem 0; border-radius:50%;
+  transition: border .25s, background .25s;
+  border-radius: 0% 120% 80% 120%;
+  -webkit-transform: rotate(45deg);
+}
+.section-07 .panel-left .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+.section-07 .swiper-pagination-bullet-active svg{fill:#ffffff;}
 @media screen and (max-width:1299.98px){
   .section-07 .panel-left .organization-menu .title{font-size:1.25rem;}
 }
