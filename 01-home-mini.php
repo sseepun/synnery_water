@@ -8,18 +8,13 @@
 <?php include_once('layout/topnav.php'); ?>
 
   <section class="banner-01">
-    <div class="pattern style-01">
-      <img src="public/assets/app/images/pattern/08.png" alt="Pattern">
-    </div>
     <div class="swiper">
       <div class="swiper-wrapper">
         <?php
           foreach([
-            ['img' => 'public/assets/app/images/banner/01.jpg',], 
-            ['img' => 'public/assets/app/images/banner/01.jpg',], 
-            ['img' => 'public/assets/app/images/banner/01.jpg',], 
-            ['img' => 'public/assets/app/images/banner/01.jpg',],
-            ['img' => 'public/assets/app/images/banner/01.jpg',]
+            ['img' => 'public/assets/app/images/banner/02.jpg',], 
+            ['img' => 'public/assets/app/images/banner/02.jpg',], 
+            ['img' => 'public/assets/app/images/banner/02.jpg',], 
           ] as $i=>$d){
         ?>
         <div class="swiper-slide">
@@ -50,34 +45,9 @@
   </section>
 
   <section class="section-01 pt-5 ovf-visible">
-    <div class="pattern style-01">
-      <img src="public/assets/app/images/pattern/06.png" alt="Pattern" />
-    </div>
     <div class="container" style="z-index:3;">
       <div class="ss-box">
-        <div class="announce" data-aos="fade-up" data-aos-delay="0">
-          <div class="text-container">
-            <marquee direction="left">
-              <p class="fw-400">
-                สภาพน้ำท่า วันที่ 9 ก.ย.2567 เวลา 06.00 น.(วันนี้),(เมื่อวาน) เขื่อนภูมิพล ระบาย <span class="color-02">(35),(35)</span> ลบ.ม/วิ  เขื่อนสิริกิติ์ ระบาย <span class="color-02">(116),(116)</span> ลบ.ม./วิ (P.17) อ.บรรพตพิสัย จ.นครสวรรค์
-              </p>
-            </marquee>
-          </div>  
-          <div class="icon">
-            <img src="public/assets/app/images/icon/announce.svg" alt="Announce">
-          </div>
-        </div>
-      </div>
-      <div class="ss-box xl">
-        <div class="ss-title jc-center mt-5">
-          <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="150">
-            พัฒนาแหล่งน้ำและเพิ่มพื้นที่ชลประทาน
-          </h3>
-        </div>  
-        <p class="lg text-center" data-aos="fade-up" data-aos-delay="300">
-          ตามศักยภาพของลุ่มน้ำให้เกิดความสมดุล
-        </p> 
-        <div class="menus-slider mt-6 pt-2" data-aos="fade-up" data-aos-delay="450">
+        <div class="menus-slider mt-6 pt-2" data-aos="fade-up" data-aos-delay="150">
           <div class="swiper-expand">
             <div class="swiper">
               <div class="swiper-wrapper">
@@ -157,20 +127,26 @@
           </div>
         </div>
       </div>
+      <div class="ss-box xl mt-5">
+        <div class="announce" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-container">
+            <marquee direction="left">
+              <p class="fw-400">
+                สภาพน้ำท่า วันที่ 9 ก.ย.2567 เวลา 06.00 น.(วันนี้),(เมื่อวาน) เขื่อนภูมิพล ระบาย <span class="color-02">(35),(35)</span> ลบ.ม/วิ  เขื่อนสิริกิติ์ ระบาย <span class="color-02">(116),(116)</span> ลบ.ม./วิ (P.17) อ.บรรพตพิสัย จ.นครสวรรค์
+              </p>
+            </marquee>
+          </div>  
+          <div class="icon">
+            <img src="public/assets/app/images/icon/announce.svg" alt="Announce">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section-02 section-padding">
-    <div class="pattern style-01">
-      <img src="public/assets/app/images/pattern/02.png" alt="">
-    </div>
-    <div class="pattern style-02">
-      <img src="public/assets/app/images/pattern/03.png" alt="">
-    </div>
-    <div class="pattern style-03">
-      <img src="public/assets/app/images/pattern/04.png" alt="">
-    </div>
-    <div class="container">
+  <section class="section-02 mini section-padding">
+  
+    <div class="container" style="z-index:15;">
       <div class="ss-box xl">
         <div class="ss-title jc-center">
           <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="450">
@@ -242,23 +218,7 @@
                   frameborder="0" title="ปริมาณน้ำ">
                 </iframe>  
               </div>
-              <!-- <div class="map-slot" data-aos="fade-up" data-aos-delay="300">
-                <div class="header">
-                  <img class="logo mr-2" src="public/assets/app/images/logo-alone.png" alt="Logo" />
-                  <div class="link bradius">SWOC</div>
-                  <div class="options">
-                    <div class="icon">
-                      <em class="fa-solid fa-bars"></em>
-                    </div>
-                    <div class="icon">
-                      <em class="fa-solid fa-bookmark"></em>
-                    </div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="img-bg" style="background-image:url('public/assets/app/images/temp/map.jpg')"></div>
-                </div>
-              </div> -->
+             
             </div>
           </div>
           <div class="grids flex-col-reverse-sm">
@@ -371,23 +331,6 @@
               <iframe class="map" src="https://swoc.rid.go.th/index1.html?layer=tmd" data-aos="fade-up" data-aos-delay="300"
                 style="border-radius:.5rem;" width="100%" height="100%" frameborder="0" title="ปริมาณฝน">
               </iframe>
-              <!-- <div class="map-slot" data-aos="fade-up" data-aos-delay="300">
-                <div class="header">
-                  <img class="logo mr-2" src="public/assets/app/images/logo-alone.png" alt="Logo" />
-                  <div class="link bradius">SWOC</div>
-                  <div class="options">
-                    <div class="icon">
-                      <em class="fa-solid fa-bars"></em>
-                    </div>
-                    <div class="icon">
-                      <em class="fa-solid fa-bookmark"></em>
-                    </div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="img-bg" style="background-image:url('public/assets/app/images/temp/map.jpg')"></div>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
@@ -395,25 +338,14 @@
     </div>
   </section>
 
-  <section class="section-03">
-    <div class="img-bg" data-aos="fade-in" data-aos-delay="0" 
-      style="background-image:url('public/assets/app/images/bg/14.jpg');" 
-    ></div>
-    <img class="pattern" src="public/assets/app/images/pattern/12.png" alt="Pattern Light">
+  <section class="section-03 ovf-visible">
+    <div class="pattern style-01">
+      <img src="public/assets/app/images/pattern/15.png" alt="Pattern">
+    </div>            
     <div class="container">
-      <div class="section-padding">
+      <div class="">
         <div class="ss-box xl">
-          <div class="grids">
-            <div class="grid lg-50 md-100 sm-100">
-              <h6 class="fw-600" data-aos="fade-up" data-aos-delay="0">
-                ดำเนินการป้องกันและบรรเทาภัยอันเกิด
-              </h6>
-              <h3 class="fw-600 color-s mt-1" data-aos="fade-up" data-aos-delay="150">
-                จากน้ำตามภารกิจอย่างเหมาะสม
-              </h3>
-            </div>
-            <div class="grid lg-50 md-100 sm-100">
-              <div class="panel-card bradius" data-aos="fade-up" data-aos-delay="300">
+          <div class="panel-card bradius" data-aos="fade-up" data-aos-delay="300">
                 <div class="card-title bradius">
                   <p class="lg fw-500">รายงานสถานการณ์น้ำประจำวัน</p>
                 </div>
@@ -432,79 +364,103 @@
                   <?php }?>
                 </div>
               </div>
-            </div>
-          </div>
         </div>
       </div>
-      <div class="section-padding ">
-        <div class="ss-box xl">
-          <h6 class="fw-500 color-white text-center" data-aos="fade-up" data-aos-delay="0">
-            เสริมสร้างการมีส่วนร่วมในกระบวนการ
-          </h6>
-          <h4 class="fw-500 color-white text-center mt-1" data-aos="fade-up" data-aos-delay="150">
-            พัฒนาแหล่งน้ำ และการบริหารจัดการน้ำ
-          </h4>
-          <div class="d-flex jc-center" data-aos="fade-up" data-aos-delay="300">
-            <div class="tag-title">
-              <h6 class="sm fw-400 color-white">บริการกรมชลประทาน</h6>
-            </div>
-          </div>
-          <div class="swiper-expand">
-            <div class="swiper" data-aos="fade-up" data-aos-delay="450">
-              <div class="swiper-wrapper">
-                <?php
-                  foreach([
-                    [
-                      'img' => 'public/assets/app/images/highlight/06.jpg',
-                      'title' => 'สมุดโทรศัพท์ กรมชลประทาน'
-                    ], [
-                      'img' => 'public/assets/app/images/highlight/07.jpg',
-                      'title' => 'การยื่นคำขอใบอนุญาตใช้น้ำ'
-                    ], [
-                      'img' => 'public/assets/app/images/highlight/08.jpg',
-                      'title' => 'ระบบบริหารการจัดซื้อจัดจ้าง กรมชลประทาน'
-                    ], [
-                      'img' => 'public/assets/app/images/highlight/06.jpg',
-                      'title' => 'สมุดโทรศัพท์ กรมชลประทาน'
-                    ], [
-                      'img' => 'public/assets/app/images/highlight/07.jpg',
-                      'title' => 'การยื่นคำขอใบอนุญาตใช้น้ำ'
-                    ], [
-                      'img' => 'public/assets/app/images/highlight/08.jpg',
-                      'title' => 'ระบบบริหารการจัดซื้อจัดจ้าง กรมชลประทาน'
-                    ],
-                  ] as $i=>$d){
-                ?>
-                  <div class="swiper-slide">
-                    <a class="ss-card ss-card-02 highlight bradius" href="#">
-                      <div class="wrapper">
-                        <div class="ss-img">
-                          <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
-                          <div class="hover-filter type-01"></div>
-                        </div>
-                        <div class="text-wrapper">
-                          <div class="title"><?= $d['title'] ?></div>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                <?php }?>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div> 
-            <div class="arrows">
-              <div class="arrow arrow-prev c-pointer">
-                <em class="fa-solid fa-arrow-left"></em>
-              </div>
-              <div class="arrow arrow-next c-pointer">
-                <em class="fa-solid fa-arrow-right"></em>
-              </div>
-            </div>       
+
+      
+    
+    </div>
+  </section>
+
+  <section class="section-04">
+    <div class="img-bg" style="background-image:url('public/assets/app/images/bg/09.jpg')"></div>
+    <div class="container">
+      <div class="grids">
+        <div class="grid lg-50 md-50 sm-100"></div>
+        <div class="grid lg-50 md-50 sm-100">
+          <div class="text-wrapper text-center pos-relative" data-aos="fade-up" data-aos-delay="150">
+            <svg width="16" height="21" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6343 1.84098C11.0526 1.17396 10.4986 0.560299 10 0C9.50138 0.58698 8.94737 1.20064 8.36565 1.84098C4.84765 5.73639 0 11.1526 0 15.3682C0 18.0363 1.10803 20.4376 2.93629 22.1718C4.73684 23.9061 7.22992 25 10 25C12.7701 25 15.2632 23.9328 17.0637 22.1718C18.8643 20.4376 20 18.0096 20 15.3682C20 11.1526 15.1524 5.76307 11.6343 1.84098Z" fill="white"/>
+            </svg>
+            <p class="color-white text-center fw-400 mt-3">
+              เพิ่มพื้นที่ชลประทานอย่างยั่งยืนขับเคลื่อนด้วยความร่วมมือ<br> 
+              <span class="h5 fw-700">เพื่อการพัฒนาทรัพยากรน้ำ<br>ที่ทั่วถึงและเป็นธรรม</span>
+            </p>      
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="section-padding">
+    <div class="ss-box xl">
+      <h6 class="fw-500 color-white text-center" data-aos="fade-up" data-aos-delay="0">
+        เสริมสร้างการมีส่วนร่วมในกระบวนการ
+      </h6>
+      <h4 class="fw-500 color-white text-center mt-1" data-aos="fade-up" data-aos-delay="150">
+        พัฒนาแหล่งน้ำ และการบริหารจัดการน้ำ
+      </h4>
+      <div class="d-flex jc-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="tag-title">
+          <h6 class="sm fw-400 color-white">บริการกรมชลประทาน</h6>
+        </div>
+      </div>
+      <div class="swiper-expand">
+        <div class="swiper" data-aos="fade-up" data-aos-delay="450">
+          <div class="swiper-wrapper">
+            <?php
+              foreach([
+                [
+                  'img' => 'public/assets/app/images/highlight/06.jpg',
+                  'title' => 'สมุดโทรศัพท์ กรมชลประทาน'
+                ], [
+                  'img' => 'public/assets/app/images/highlight/07.jpg',
+                  'title' => 'การยื่นคำขอใบอนุญาตใช้น้ำ'
+                ], [
+                  'img' => 'public/assets/app/images/highlight/08.jpg',
+                  'title' => 'ระบบบริหารการจัดซื้อจัดจ้าง กรมชลประทาน'
+                ], [
+                  'img' => 'public/assets/app/images/highlight/06.jpg',
+                  'title' => 'สมุดโทรศัพท์ กรมชลประทาน'
+                ], [
+                  'img' => 'public/assets/app/images/highlight/07.jpg',
+                  'title' => 'การยื่นคำขอใบอนุญาตใช้น้ำ'
+                ], [
+                  'img' => 'public/assets/app/images/highlight/08.jpg',
+                  'title' => 'ระบบบริหารการจัดซื้อจัดจ้าง กรมชลประทาน'
+                ],
+              ] as $i=>$d){
+            ?>
+              <div class="swiper-slide">
+                <a class="ss-card ss-card-02 highlight bradius" href="#">
+                  <div class="wrapper">
+                    <div class="ss-img">
+                      <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
+                      <div class="hover-filter type-01"></div>
+                    </div>
+                    <div class="text-wrapper">
+                      <div class="title"><?= $d['title'] ?></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <?php }?>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div> 
+        <div class="arrows">
+          <div class="arrow arrow-prev c-pointer">
+            <em class="fa-solid fa-arrow-left"></em>
+          </div>
+          <div class="arrow arrow-next c-pointer">
+            <em class="fa-solid fa-arrow-right"></em>
+          </div>
+        </div>       
+      </div>
+    </div>
+  </section>
+
+ 
 
   <?php 
      $swiperTabs02 = [

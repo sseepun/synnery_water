@@ -43,6 +43,10 @@ html, body, a, a:hover, table.table{color:#000000;}
 }
 
 
+/* Special Card 05 */
+.ss-card-05:hover .text-container > .title{color:var(--color-p);}
+
+
 /* Topnav */
 nav.topnav .submenu > *:first-child  > .drop-water-dot{background:var(--color-p);}
 nav.topnav .submenu:hover > *:first-child  > .drop-water-dot{background:#ffffff;}

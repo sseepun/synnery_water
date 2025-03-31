@@ -142,6 +142,11 @@ $(function(){ 'use strict';
       pagination:{ 
         el: '.swiper-pagination', clickable: true,
       },
+       breakpoints: {
+        992:{ direction: 'vertical', slidesPerView: 'auto' },
+        576:{ direction: 'horizontal', slidesPerView: 'auto'},
+        0:{ direction: 'horizontal', slidesPerView: 'auto'},
+      },
     });
   }
 
@@ -155,6 +160,7 @@ $(function(){ 'use strict';
       }
     });
   }
+
 
 
   // Section 06
@@ -195,6 +201,51 @@ $(function(){ 'use strict';
   }
 
 
+  // Section 08
+  let section05Swiper;
+  if($('.section-05 .swiper').length){
+    section05Swiper = new Swiper('.section-05 .swiper', {
+      direction: 'vertical', loop: false,
+      spaceBetween: 0, speed: 800,
+      // pagination: { 
+      //   el: '.swiper-pagination', clickable: true,
+      // },
+      breakpoints: {
+        1299:{ direction: 'vertical', slidesPerView: 'auto' },
+        992:{ direction: 'vertical', slidesPerView: 'auto' },
+        576:{ direction: 'vertical', slidesPerView: 1},
+        0:{ direction: 'vertical', slidesPerView: 'auto'},
+      },
+    });
+  }
+
+    // Swiper Tab 01
+    if($('.swiper-tabs-02').length){
+      new Swiper('.swiper-tabs-02', {
+        direction: 'vertical',
+        spaceBetween: 0, slidesPerView: 5, speed: 800,
+        breakpoints: {
+          992:{ direction: 'vertical', slidesPerView: 'auto' },
+          767:{ direction: 'vertical', slidesPerView: 'auto' },
+          576:{ direction: 'horizontal', slidesPerView:'auto', spaceBetween:'10'},
+          0:{ direction: 'horizontal', slidesPerView:'auto'},
+        },
+      });
+
+  
+      $('.swiper-tabs-02 .swiper-slide').on('click', function () {
+        const index = $(this).index();
+
+        $('.swiper-tabs-02 .swiper-slide').removeClass('active');
+        $(this).addClass('active');
+
+        if (section05Swiper) {
+          section05Swiper.slideTo(index);
+        }
+      });
+    }
+
+
 
   $('.ss-card-04').hover(function() {
     $(this).find('.description').stop().animate({
@@ -202,7 +253,33 @@ $(function(){ 'use strict';
       opacity: "toggle"
     }, 300);
   });
+
+
+  function getColor(type, value) {
+    if (type === 'big') {
+      if (value <= 25) return '#FFFF66';       
+      else if (value <= 50) return '#00FA9A';  
+      else if (value <= 75) return '#4169E1'; 
+      else return '#FF66CC';                   
+    } else if (type === 'medium') {
+      if (value <= 25) return '#FFFF66';       
+      else if (value <= 50) return '#00FA9A';  
+      else if (value <= 75) return '#4169E1'; 
+      else return '#FF66CC';                   
+    }
+    return '#CCCCCC'; 
+  }
   
+
+  $('.water-wave').each(function () {
+    const $wave = $(this);
+    const type = $wave.data('type');            
+    const value = parseFloat($wave.data('value')); 
+
+    const color = getColor(type, value);
+
+    $wave.find('.wave-1, .wave-2, .wave-3').css('background-color', color);
+  });
 
 
   // Tab Container

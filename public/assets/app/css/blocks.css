@@ -113,8 +113,9 @@
   background-size:cover; background-repeat:no-repeat; background-position:center;
 }
 .section-01 .menus-slider .menu-item .icon>.img-bg.active{opacity:0;}
-.section-01 .menus-slider .menu-item .icon:hover>.img-bg.inactive{opacity:0;}
-.section-01 .menus-slider .menu-item .icon:hover>.img-bg.active{opacity:1;}
+.section-01 .menus-slider .menu-item .icon:hover>.img-bg.inactive{opacity:0; transition:transform .3s ease-out;}
+.section-01 .menus-slider .menu-item .icon>.img-bg.active{transform:scale(0); transition:.5s;}
+.section-01 .menus-slider .menu-item .icon:hover>.img-bg.active{opacity:1; transform:scale(1);}
 .section-01 .swiper-expand{position:relative; width:calc(100% + 10rem); margin:0 -5rem; padding:0 5rem;}
 .section-01 .menus-slider .menu-item .icon{padding-top:1rem;}
 .section-01 .menus-slider .menu-item .icon>img{transition:opacity .25s;}
@@ -169,6 +170,7 @@
 .section-02{position:relative; z-index:4;}
 .section-02 .pattern{position:absolute; pointer-events:none;}
 .section-02 .pattern.style-01{top:1rem; left:0; bottom:0; right:0;}
+.section-02.mini .pattern.style-01{top:10rem; left:0; bottom:0; right:0;}
 .section-02 .pattern.style-01 img{width:100%;}
 .section-02 .pattern.style-02{top:-5rem; left:0;}
 .section-02 .pattern.style-02 img{width:100%;}
@@ -222,6 +224,8 @@
 
 /* Section 03 */
 .section-03{position:relative; overflow:hidden;}
+.section-03 .pattern{position:absolute; pointer-events:none;}
+.section-03 .pattern.style-01{top:-42rem; left:0; bottom:0; right:0;}
 .section-03 > .container{position:relative;}
 .section-03 > .img-bg{
   position:absolute; top:0; left:0; width:100%; height:calc(100% + .0625rem);
@@ -385,6 +389,9 @@
   pointer-events:auto; width:2.25rem; height:2.25rem; display:flex; align-items:center;
   transition:background .25s; background:#ffffff; justify-content:center;
 }
+.section-05 .swiper .swiper-slide{height:100%!important; overflow:hidden;}
+.section-05 .swiper{max-height:25rem;}
+
 @media screen and (max-width:991.98px){
   .section-05 #btn02{position:relative; margin-top:.5rem;}
   .section-05 .panel-card{padding:0 0 0 0;}
@@ -526,7 +533,12 @@
   padding:.875rem 1.5rem; transition:background .25s, color .25s;
 }
 .tabs.tabs-01 .tab.active, .tabs.tabs-01 .tab:hover{background:#008FD3; color:#ffffff;}
-
+@media screen and (max-width:767.98px){
+  .tabs.tabs-01 .tab{width:auto; padding:.75rem 1rem;}
+}
+@media screen and (max-width:575.98px){
+  .tabs.tabs-01 .tab{padding:.5rem .85rem;}
+}
 
 
 /* Water Wave */
@@ -556,5 +568,5 @@
 .water-wave.type-02 .wave-3{background:#73d38b;}
 @keyframes waterWaves {
   0% { transform:rotate(0deg); }
-  100% { transform:rotate(360deg); }
+  100% { transform:rotate(100deg); }
 }

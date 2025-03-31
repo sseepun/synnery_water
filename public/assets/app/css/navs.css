@@ -118,19 +118,21 @@ nav.topnav .menu .submenu-dropdown{
   opacity:0; pointer-events:none; border-radius:.5rem;
   transition:opacity .5s, top .5s, left .25s, right .25s;
 }
+nav.topnav .menu:hover > .submenu-dropdown{opacity:1; top:100%; pointer-events:auto;}
 nav.topnav .submenu-dropdown.full-width{right:0; left:-14rem;}
 nav.topnav .submenu-dropdown.anchor-right{left:auto; right:0;}
 nav.topnav .submenu-dropdown.anchor-middle{transform:translateX(-50%);}
-nav.topnav .menu:hover > .submenu-dropdown{opacity:1; top:100%; pointer-events:auto;}
+/* nav.topnav .menu:hover > .submenu-dropdown{} */
 nav.topnav .submenu-container{
   position:relative; display:flex; border-radius:0 0 .5rem .5rem; 
   box-shadow:0px 4px 8px 4px rgba(0,0,0,.1);
 }
 nav.topnav .submenu-dropdown.full-width .submenu-wrapper{width:calc(100% / 3);}
 nav.topnav .submenu-dropdown.full-width .submenu-wrapper .submenu > .submenu-dropdown{
-  position:relative; top:unset; left:unset; opacity:1; pointer-events:all;
+  position:relative; top:unset; left:unset; opacity:1; pointer-events:none;
   padding-left:.875rem;
 }
+nav.topnav .menu:hover > .submenu-dropdown.full-width .submenu-wrapper .submenu > .submenu-dropdown{pointer-events:auto;}
 nav.topnav .submenu-dropdown.anchor-right .submenu-container::before{left:unset; right:1rem;}
 nav.topnav .submenu-wrapper{
   display:block; width:280px; border-radius:.5rem; padding:.5rem 0;
@@ -193,7 +195,6 @@ nav.topnav .submenu:hover > .submenu-dropdown{opacity:1; left:100%; pointer-even
 nav.topnav .submenu-dropdown.anchor-right .submenu:hover > .submenu-dropdown{right:100%;}
 nav.topnav .menu:hover > *:first-child, nav.topnav .menu.active > *:first-child{color:var(--color-p);}
 nav.topnav .menu > *:first-child::after{background:var(--color-p);}
-
 
 
 nav.topnav .submenu-container{background:#ffffff;}
