@@ -80,8 +80,50 @@
   .banner-01 .pattern.style-01{top:calc(100% - 5rem);}
   .banner-01 .text-intro{font-size:1.5rem;}
 }
-   
 
+
+/* Breadcrumb 01 */
+.breadcrumb-01{position:relative;}
+.breadcrumb-01 .breadcrumb-background>.wrapper{position:relative;}
+.breadcrumb-01 .breadcrumb-background{
+  position:absolute; top:0; width:100%; right:0; height:100%;
+}
+
+.breadcrumb-01 .filter-01{position:absolute; top:0; left:0; right:0; bottom:0; z-index:3;}
+.breadcrumb-01 .container{z-index:3;}
+.breadcrumb-01 .wrapper{
+    height:15rem; display:flex; justify-content:center;
+    flex-direction:column; padding:.25rem .875rem;
+}
+.breadcrumb-01 .img-bg{
+    position:absolute; top:0; left:0; right:0; bottom:0;
+    background-size:cover; background-position:center; background-repeat:no-repeat;
+}
+.breadcrumb-01 .link-wrapper{
+    display:flex; align-items:center;
+}
+.breadcrumb-01 .link-wrapper .link{display:flex; align-items:center;}
+.breadcrumb-01 .link-wrapper .link .menu{
+    display:block;  overflow:hidden; white-space:nowrap;
+}
+.breadcrumb-01 .link-wrapper .link:last-child .menu{font-weight:700!important;}
+.breadcrumb-01 .link-wrapper .link .line{
+    width:1.5rem; height:.125rem; margin:0 .5rem;
+}
+.breadcrumb-01 .link-wrapper .link .icon{margin:0 .5rem;}
+.breadcrumb-01 .link-wrapper .link:last-child .icon{display:none;}
+.breadcrumb-01 .text-container{position:relative;}
+.breadcrumb-01 .text-container .patterns{
+  position:absolute; bottom:-.125rem; left:-8rem; display:flex; flex-direction:column; align-items:center;
+  justify-content:space-between; height:calc(100% - 8.5rem);
+}
+.breadcrumb-01 .pattern-02{margin-left:-1.3125rem; margin-top:-3rem;}
+@media screen and (max-width:575.98px){
+  .breadcrumb-01 .text-container{padding:0 0 0 2.5rem;}
+  .breadcrumb-01 .text-container .patterns{left:-5rem;}
+}
+
+   
 
 /* Section 01 */
 .section-01{position:relative;}
@@ -162,7 +204,6 @@
   .section-01 .pattern.style-01{top:-6rem;}
   .section-01 .pattern.style-02{top:-6rem;}
 }
-
 
 
 
@@ -391,6 +432,23 @@
 }
 .section-05 .swiper .swiper-slide{height:100%!important; overflow:hidden;}
 .section-05 .swiper{max-height:25rem;}
+.section-05 .swiper .swiper-pagination-bullets {
+  border-radius: .9375rem; top:unset;  left:50%; bottom:0;
+  width: auto; display:flex; justify-content:center;
+  padding:.125rem .625rem; transform:translateX(-50%);
+}
+.section-05 .swiper .swiper-pagination-bullet {
+  background:none!important; width:auto!important;
+  height:auto!important; opacity:1; margin:0 .125rem!important ;
+  padding:0;
+}
+.section-05 .swiper .swiper-pagination-bullet svg{
+  display:block; width:.625rem; height:.625rem;
+}
+.section-05 .swiper .swiper-pagination-bullet svg path  {
+  fill: transparent; stroke:#AEADAD; transition:fill .25s, stroke .25s;
+}
+.section-05 .swiper .swiper-pagination-bullet-active svg path{fill:#008FD3; stroke:#008FD3;}
 
 @media screen and (max-width:991.98px){
   .section-05 #btn02{position:relative; margin-top:.5rem;}
@@ -512,6 +570,51 @@
   .section-07 .panel-left .md-no-br>br{display:none;}
   .section-07 .panel-left{height:29rem;}
 }
+
+
+/* Section 08 */
+.section-08{position:relative;}
+.section-08 .container{z-index:3;}
+.section-08 .swiper{border-radius:1.5rem;}
+.section-08 .img-bg{
+  position:absolute; top:0; right:0; bottom:0; left:0; pointer-events:none;
+  background-size:cover; background-position:left; background-repeat:no-repeat;
+}
+.section-08 .filter{
+  position:absolute; top:0; left:0; right:0; height:calc(100% - 2rem); z-index:2;
+  pointer-events:none;
+}
+.section-08 .swiper-pagination-bullets {
+  border-radius: .9375rem;  left:50%; bottom:-2.75rem;
+  background:rgba(0, 0, 0, 0.56); width: auto;
+  padding:.125rem .625rem; transform:translateX(-50%);
+}
+.section-08 .swiper-pagination-bullet {
+  background:none!important; width:auto!important;
+  height:auto!important; opacity:1; margin:0 .125rem!important ;
+  padding:0;
+}
+.section-08 .swiper-pagination-bullet svg{
+  display:block; width:.625rem; height:.625rem;
+}
+.section-08 .swiper-pagination-bullet svg path  {
+  fill: transparent; stroke:#ffffff; transition:fill .25s, stroke .25s;
+}
+.section-08 .swiper-pagination-bullet-active svg path{fill: #ffffff;}
+@media screen and (max-width:767.98px){
+  .section-08{padding-bottom:4rem;}
+}
+
+
+/* Section 09 */
+.section-09 .detail-options {
+  display:flex; align-items:center; justify-content:space-between;
+  flex-wrap: wrap;
+}
+.section-09 .panel-right{
+  padding-left:1.25rem;
+}
+
 
 
 

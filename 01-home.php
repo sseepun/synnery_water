@@ -532,14 +532,14 @@
                 <div class="swiper-wrapper tabs tabs-01">
                   <?php foreach($swiperTabs02 as $i=>$d) {?>
                     <div class="swiper-slide tab mb-2 <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-                      <p class="title font-mitr fw-200"><?= $d['tabTitle'] ?></p>
+                      <p class="title font-mitr fw-400"><?= $d['tabTitle'] ?></p>
                     </div>
                   <?php } ?>
                 </div>
                 </div>
               </div>
               <div class="grid lg-70 md-70 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
-                <div>
+             
                 <div class="swiper">
                   <div class="swiper-wrapper">
                     <?php
@@ -623,15 +623,13 @@
                       </div>
                     <?php }?>
                   </div>
+                  <!-- <div id="btn01" class="btns d-flex ai-end jc-end">
+                    <a href="#" class="btn btn-action btn-p bradius-round">
+                      ดูทั้งหมด
+                    </a>
+                  </div>  -->
                   <div class="swiper-pagination"></div>
-                    <!-- <div id="btn01" class="btns d-flex ai-end jc-end">
-                      <a href="#" class="btn btn-action btn-p bradius-round">
-                        ดูทั้งหมด
-                      </a>
-                    </div>  -->
                 </div>
-                </div>
-            
               </div>
             </div>        
           </div>
@@ -938,7 +936,10 @@
     </div>
   </section>
   
-  <?php include_once('layout/footer.php'); ?>
+  <?php 
+    $footerStyle = 'style-01';
+    include_once('layout/footer.php'); 
+  ?>
   <?php include_once('include/script.php'); ?>
 </body>
 </html>

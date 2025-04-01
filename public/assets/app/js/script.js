@@ -135,6 +135,81 @@ $(function(){ 'use strict';
 
 
   // Section 05
+  let section05Swiper;
+  if($('.section-05 .swiper').length){
+    section05Swiper = new Swiper('.section-05 .swiper', {
+      direction: 'vertical', loop: false,
+      spaceBetween: 0, speed: 800,
+      pagination: {
+        el: '.section-05 .swiper .swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `
+            <span class="${className}">
+              <svg viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.75558 0.883549C5.48663 0.563379 5.2305 0.268821 4.99997 -0.00012207C4.76945 0.281628 4.51332 0.576185 4.24437 0.883549C2.6179 2.75335 0.376709 5.35313 0.376709 7.37661C0.376709 8.6573 0.888982 9.80991 1.73423 10.6424C2.56668 11.4748 3.71929 11.9999 4.99997 11.9999C6.28066 11.9999 7.43327 11.4876 8.26572 10.6424C9.09816 9.80991 9.62324 8.64449 9.62324 7.37661C9.62324 5.35313 7.38205 2.76615 5.75558 0.883549Z" fill="white"/>
+              </svg>
+            </span>`;
+        }
+      },
+      breakpoints: {
+        1299:{ direction: 'vertical', slidesPerView: 'auto' },
+        992:{ direction: 'vertical', slidesPerView: 'auto' },
+        576:{ direction: 'vertical', slidesPerView: 1},
+        0:{ direction: 'vertical', slidesPerView: 'auto'},
+      },
+    });
+  }
+
+
+  // Swiper Tab 01
+  if($('.swiper-tabs-01').length){
+    new Swiper('.swiper-tabs-01', {
+      spaceBetween: 0, slidesPerView: 5, speed: 800,
+      loop: true,
+      breakpoints: {
+        1300: { slidesPerView: 3 },
+        992: { slidesPerView: 3 },
+        768: { slidesPerView: 3 },
+        576: { slidesPerView: 3 },
+        480: { slidesPerView: 2.5 },
+        320: { slidesPerView: 2 },
+        0:{ slidesPerView: 1 }
+      }, navigation:{
+        prevEl: '.arrow.arrow-prev',
+        nextEl: '.arrow.arrow-next',
+      }, 
+    });
+  }
+
+
+  // Swiper Tab 02
+  if($('.swiper-tabs-02').length){
+    new Swiper('.swiper-tabs-02', {
+      direction: 'vertical',
+      spaceBetween: 0, slidesPerView: 5, speed: 800,
+      breakpoints: {
+        992:{ direction: 'vertical', slidesPerView: 'auto' },
+        767:{ direction: 'vertical', slidesPerView: 'auto' },
+        576:{ direction: 'horizontal', slidesPerView:'auto', spaceBetween:'10'},
+        0:{ direction: 'horizontal', slidesPerView:'auto'},
+      },
+    });
+
+    $('.swiper-tabs-02 .swiper-slide').on('click', function () {
+      const index = $(this).index();
+
+      $('.swiper-tabs-02 .swiper-slide').removeClass('active');
+      $(this).addClass('active');
+
+      if (section05Swiper) {
+        section05Swiper.slideTo(index);
+      }
+    });
+  }
+
+
+  // Section 05
   if($('.section-05 .swiper-01').length){
     new Swiper('.section-05 .swiper-01', {
       spaceBetween: 15, slidesPerView: 1, speed: 800,
@@ -200,53 +275,33 @@ $(function(){ 'use strict';
     });
   }
 
-
+  
   // Section 08
-  let section05Swiper;
-  if($('.section-05 .swiper').length){
-    section05Swiper = new Swiper('.section-05 .swiper', {
-      direction: 'vertical', loop: false,
-      spaceBetween: 0, speed: 800,
-      // pagination: { 
-      //   el: '.swiper-pagination', clickable: true,
-      // },
-      breakpoints: {
-        1299:{ direction: 'vertical', slidesPerView: 'auto' },
-        992:{ direction: 'vertical', slidesPerView: 'auto' },
-        576:{ direction: 'vertical', slidesPerView: 1},
-        0:{ direction: 'vertical', slidesPerView: 'auto'},
+  if($('.section-08 .swiper').length){
+    new Swiper('.section-08 .swiper', {
+      spaceBetween: 0, slidesPerView: 1, speed: 800,
+      autoplay: { delay: 5000 }, loop: true,
+      navigation:{
+        prevEl: '.arrow.arrow-prev',
+        nextEl: '.arrow.arrow-next',
       },
+      pagination: {
+        el: '.section-08 .swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `
+            <span class="${className}">
+              <svg viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.75558 0.883549C5.48663 0.563379 5.2305 0.268821 4.99997 -0.00012207C4.76945 0.281628 4.51332 0.576185 4.24437 0.883549C2.6179 2.75335 0.376709 5.35313 0.376709 7.37661C0.376709 8.6573 0.888982 9.80991 1.73423 10.6424C2.56668 11.4748 3.71929 11.9999 4.99997 11.9999C6.28066 11.9999 7.43327 11.4876 8.26572 10.6424C9.09816 9.80991 9.62324 8.64449 9.62324 7.37661C9.62324 5.35313 7.38205 2.76615 5.75558 0.883549Z" fill="white"/>
+              </svg>
+            </span>`;
+        }
+      }
     });
   }
 
-    // Swiper Tab 01
-    if($('.swiper-tabs-02').length){
-      new Swiper('.swiper-tabs-02', {
-        direction: 'vertical',
-        spaceBetween: 0, slidesPerView: 5, speed: 800,
-        breakpoints: {
-          992:{ direction: 'vertical', slidesPerView: 'auto' },
-          767:{ direction: 'vertical', slidesPerView: 'auto' },
-          576:{ direction: 'horizontal', slidesPerView:'auto', spaceBetween:'10'},
-          0:{ direction: 'horizontal', slidesPerView:'auto'},
-        },
-      });
 
-  
-      $('.swiper-tabs-02 .swiper-slide').on('click', function () {
-        const index = $(this).index();
-
-        $('.swiper-tabs-02 .swiper-slide').removeClass('active');
-        $(this).addClass('active');
-
-        if (section05Swiper) {
-          section05Swiper.slideTo(index);
-        }
-      });
-    }
-
-
-
+  /* Card Hover */
   $('.ss-card-04').hover(function() {
     $(this).find('.description').stop().animate({
       height: "toggle",
@@ -255,6 +310,7 @@ $(function(){ 'use strict';
   });
 
 
+  /* Change color according to water level value */
   function getColor(type, value) {
     if (type === 'big') {
       if (value <= 25) return '#FFFF66';       
@@ -270,7 +326,6 @@ $(function(){ 'use strict';
     return '#CCCCCC'; 
   }
   
-
   $('.water-wave').each(function () {
     const $wave = $(this);
     const type = $wave.data('type');            
@@ -280,6 +335,8 @@ $(function(){ 'use strict';
 
     $wave.find('.wave-1, .wave-2, .wave-3').css('background-color', color);
   });
+  /* End - Change color according to water level value */
+
 
 
   // Tab Container
@@ -308,26 +365,6 @@ $(function(){ 'use strict';
            AOS.refresh();
         }
       });
-    });
-  }
-
-  // Swiper Tab 01
-  if($('.swiper-tabs-01').length){
-    new Swiper('.swiper-tabs-01', {
-      spaceBetween: 0, slidesPerView: 5, speed: 800,
-      loop: true,
-      breakpoints: {
-        1300: { slidesPerView: 3 },
-        992: { slidesPerView: 3 },
-        768: { slidesPerView: 3 },
-        576: { slidesPerView: 3 },
-        480: { slidesPerView: 2.5 },
-        320: { slidesPerView: 2 },
-        0:{ slidesPerView: 1 }
-      }, navigation:{
-        prevEl: '.arrow.arrow-prev',
-        nextEl: '.arrow.arrow-next',
-      }, 
     });
   }
 

@@ -1,4 +1,4 @@
-<nav class="footer">
+<nav class="footer <?= isset($footerStyle)? $footerStyle: '' ?>">
   <div class="img-bg show-desktop" style="background-image:url('public/assets/app/images/bg/10.png');"></div>
   <div class="img-bg show-mobile" style="background-image:url('public/assets/app/images/bg/13.jpg');"></div>
   <div class="footer-wrapper h-full">

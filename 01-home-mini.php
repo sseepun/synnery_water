@@ -364,12 +364,9 @@
                   <?php }?>
                 </div>
               </div>
-        </div>
+            </div>
+          </div>
       </div>
-
-      
-    
-    </div>
   </section>
 
   <section class="section-04">

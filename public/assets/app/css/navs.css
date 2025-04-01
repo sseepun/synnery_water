@@ -395,7 +395,8 @@ nav.sidenav .options > .option-btn:hover > a{color:#14206a;}
 
 
 /* Footer */
-nav.footer{position:relative; height:calc(100dvh + 2rem); padding:2.5rem; z-index:1; margin-top:-2rem;}
+nav.footer{position:relative; height:calc(100dvh + 2rem); padding:2.5rem; z-index:1;}
+nav.footer.style-01{margin-top:-2rem;}
 nav.footer .img-bg{
   position:absolute; top:0; left:0; width:100%; height:100%;
   background-size:cover; background-position:top;
