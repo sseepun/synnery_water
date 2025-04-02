@@ -282,8 +282,8 @@ $(function(){ 'use strict';
       spaceBetween: 0, slidesPerView: 1, speed: 800,
       autoplay: { delay: 5000 }, loop: true,
       navigation:{
-        prevEl: '.arrow.arrow-prev',
-        nextEl: '.arrow.arrow-next',
+        prevEl: '.section-08 .arrow.arrow-prev',
+        nextEl: '.section-08 .arrow.arrow-next',
       },
       pagination: {
         el: '.section-08 .swiper-pagination',
