@@ -479,8 +479,87 @@
       </div>
     </div>
   </section>
+
+  <section class="section-06" data-aos="fade-in" data-aos-delay="0">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <?php
+          foreach([
+            [
+              'img' => 'public/assets/app/images/highlight/14.jpg',
+              'title' => 'Open Data กรมชลประทาน',
+              'logo' => false,
+            ], [
+              'img' => 'public/assets/app/images/highlight/11.jpg',
+              'title' => 'ห้องสมุดกรมชลประทาน',
+              'logo' => true,
+              'imgLogo' => 'public/assets/app/images/logo/01.png',
+            ], [
+              'img' => 'public/assets/app/images/highlight/12.jpg',
+              'title' => 'ศูนย์ความรู้กลาง <br /> กรมชลประทาน',
+              'logo' => true,
+              'imgLogo' => 'public/assets/app/images/logo/02.png',
+            ], [
+              'img' => 'public/assets/app/images/highlight/13.jpg',
+              'title' => 'ศูนย์ข้อมูลข่าวสาร <br /> กรมชลประทาน',
+              'logo' => false,
+            ], [
+              'img' => 'public/assets/app/images/highlight/15.jpg',
+              'title' => 'ศูนย์ปฏิบัติการต่อต้าน <br /> การทุจริต กรมชลประทาน',
+              'logo' => false,
+            ], [
+              'img' => 'public/assets/app/images/highlight/16.jpg',
+              'title' => 'การฌาปนกิจสงเคราะห์ <br /> กรมชลประทาน',
+              'logo' => true,
+              'imgLogo' => 'public/assets/app/images/logo/03.png',
+            ],[
+              'img' => 'public/assets/app/images/highlight/14.jpg',
+              'title' => 'Open Data กรมชลประทาน',
+              'logo' => false,
+            ], [
+              'img' => 'public/assets/app/images/highlight/11.jpg',
+              'title' => 'ห้องสมุดกรมชลประทาน',
+              'logo' => true,
+              'imgLogo' => 'public/assets/app/images/logo/01.png',
+            ], [
+              'img' => 'public/assets/app/images/highlight/12.jpg',
+              'title' => 'ศูนย์ความรู้กลาง <br /> กรมชลประทาน',
+              'logo' => true,
+              'imgLogo' => 'public/assets/app/images/logo/02.png',
+            ], [
+              'img' => 'public/assets/app/images/highlight/13.jpg',
+              'title' => 'ศูนย์ข้อมูลข่าวสาร <br /> กรมชลประทาน',
+              'logo' => false,
+            ],
+          ] as $i=>$d){
+        ?>
+          <div class="swiper-slide">
+            <a class="ss-card ss-card-01 highlight" href="#">
+              <div class="wrapper">
+                <div class="ss-img square">
+                  <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
+                  <div class="hover-filter type-02"></div>
+                  <div class="line-1"></div>
+                  <div class="line-2"></div>
+                  <?php if( $d['logo'] === true ) {?>
+                    <div class="logo">
+                      <img src="<?= $d['imgLogo'] ?>" alt="Logo">
+                    </div>
+                  <?php } ?>
+                </div>
+                <div class="text-wrapper">
+                  <div class="title"><?= $d['title'] ?></div>
+                </div>
+              </div>
+            </a>
+          </div>
+        <?php }?>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
   
-  <?php include_once('layout/footer.php'); ?>
+  <?php $footerStyle = 'style-01'; include_once('layout/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
 </body>
 </html>

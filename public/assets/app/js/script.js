@@ -237,7 +237,6 @@ $(function(){ 'use strict';
   }
 
 
-
   // Section 06
   if($('.section-06 .swiper').length){
     new Swiper('.section-06 .swiper', {
@@ -301,6 +300,31 @@ $(function(){ 'use strict';
   }
 
 
+  // Section 09
+  if($('.section-09.section-gallery .swiper').length){
+    new Swiper('.section-09.section-gallery .swiper', {
+      spaceBetween: 0, slidesPerView: 1, speed: 800,
+      autoplay: { delay: 5000 }, loop: true,
+      navigation:{
+        prevEl: '.section-09.section-gallery .arrow.arrow-prev',
+        nextEl: '.section-09.section-gallery .arrow.arrow-next',
+      },
+      pagination: {
+        el: '.section-09.section-gallery .swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `
+            <span class="${className}">
+              <svg viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.75558 0.883549C5.48663 0.563379 5.2305 0.268821 4.99997 -0.00012207C4.76945 0.281628 4.51332 0.576185 4.24437 0.883549C2.6179 2.75335 0.376709 5.35313 0.376709 7.37661C0.376709 8.6573 0.888982 9.80991 1.73423 10.6424C2.56668 11.4748 3.71929 11.9999 4.99997 11.9999C6.28066 11.9999 7.43327 11.4876 8.26572 10.6424C9.09816 9.80991 9.62324 8.64449 9.62324 7.37661C9.62324 5.35313 7.38205 2.76615 5.75558 0.883549Z" fill="white"/>
+              </svg>
+            </span>`;
+        }
+      }
+    });
+  }
+
+
   /* Card Hover */
   $('.ss-card-04').hover(function() {
     $(this).find('.description').stop().animate({
@@ -337,6 +361,17 @@ $(function(){ 'use strict';
   });
   /* End - Change color according to water level value */
 
+
+  /* E-book Reader */
+  var source_pdf = "./public/assets/app/document/01.pdf";
+  var option_pdf = {
+    webgl:true,
+  };
+  let flipBookContainer =  $("#flipbookPDFContainer");
+
+  if(flipBookContainer.length){
+      flipBookContainer.flipBook(source_pdf,option_pdf);
+  }
 
 
   // Tab Container

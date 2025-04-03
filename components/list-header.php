@@ -15,7 +15,7 @@
           </div>
         <?php }?>
         <?php if(in_array('date-01', $listHeader)){?>
-          <div class="option cate">
+          <div class="option date">
             <div class="date-wrapper w-full">
               <input type="text" id="#datepicker" class="date-picker form-control datepicker-input" placeholder="วันที่">
               <span class="input-group-addon">
@@ -76,7 +76,7 @@
         <?php if(in_array('category', $listHeader)){?>
           <div class="option cate">
             <select class="ui dropdown">
-              <option value="0">เลือกหมวดหมู่</option>
+              <option value="0">หมวดหมู่</option>
               <option value="1">ข่าวประชาสัมพันธ์ 1</option>
               <option value="2">ข่าวประชาสัมพันธ์ 2</option>
               <option value="3">ข่าวประชาสัมพันธ์ 3</option>
@@ -146,6 +146,34 @@
             </div>
           </div>
         <?php }?>
+        <?php if(in_array('cate-order', $listHeader)){?>
+        <div class="option cate size-02">
+          <select class="ui dropdown">
+            <option value="">ประเภท</option>
+            <option value="1">ประเภท 1</option>
+            <option value="2">ประเภท 2</option>
+            <option value="3">ประเภท 3</option>
+          </select>
+          <div class="dropdown-icon">
+            <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="fill-black-theme" d="M6.5 7L0.00480902 0.25L12.9952 0.250001L6.5 7Z" fill="#0E3A81"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="option order size-02">
+          <select class="ui dropdown">
+            <option value="1">เรียงลำดับ</option>
+            <option value="2">ใหม่ล่าสุด</option>
+            <option value="3">เก่าที่สุด</option>
+            <option value="4">จำนวนเข้าชม</option>
+          </select>
+          <div class="dropdown-icon">
+            <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="fill-black-theme" d="M6.5 7L0.00480902 0.25L12.9952 0.250001L6.5 7Z" fill="#0E3A81"/>
+            </svg>
+          </div>
+        </div>
+      <?php }?>
         <?php if(in_array('view-grid', $listHeader)){?>
           <div class="option view">
             <div class="wrapper">
@@ -186,6 +214,11 @@
                       <rect width="22" height="22" fill="white" transform="translate(0.5)"/>
                     </clipPath>
                   </defs>
+                </svg>
+              </a>
+              <a class="icon-view bcolor-white-theme ml-1" href="#">
+                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.7874 8.75006C10.0152 8.75006 9.26241 8.82767 8.53603 8.97512C7.85946 9.11246 7.19968 8.67534 7.06234 7.99877C6.925 7.32221 7.36213 6.66242 8.03869 6.52509C8.92785 6.3446 9.84721 6.25006 10.7874 6.25006C18.3813 6.25006 24.5373 12.4061 24.5373 20C24.5373 20.9401 24.4428 21.8595 24.2623 22.7486C24.125 23.4253 23.4652 23.8624 22.7887 23.725C22.1121 23.5876 21.675 22.9279 21.8123 22.2514C21.9597 21.525 22.0373 20.7723 22.0373 20C22.0373 13.7869 17.0006 8.75006 10.7874 8.75006ZM9.56303 15C9.19921 15 8.84361 15.0309 8.49846 15.09C7.81803 15.2066 7.1719 14.7495 7.05531 14.0691C6.93871 13.3886 7.3958 12.7425 8.07624 12.626C8.56028 12.543 9.05711 12.5 9.56303 12.5C14.3955 12.5 18.313 16.4175 18.313 21.25C18.313 21.7455 18.2717 22.2323 18.1921 22.7069C18.0778 23.3876 17.4333 23.847 16.7525 23.7328C16.0716 23.6185 15.6123 22.974 15.7266 22.2931C15.7833 21.9548 15.813 21.6063 15.813 21.25C15.813 17.7981 13.0148 15 9.56303 15ZM7.03735 21.25C7.03735 19.8693 8.15664 18.75 9.53735 18.75C10.9181 18.75 12.0374 19.8693 12.0374 21.25C12.0374 22.6308 10.9181 23.75 9.53735 23.75C8.15664 23.75 7.03735 22.6308 7.03735 21.25Z" fill="#008FD3"/>
                 </svg>
               </a>
             </div>

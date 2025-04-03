@@ -157,9 +157,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .btn.btn-mw-01{min-width:14rem;}
 .btn.btn-action.sm{font-size: .875rem; padding: .25rem 1rem;}
 .btn.btn-gallery{
-  width:2.875rem; height:2.875rem; display:flex;
+  width:2.875rem; height:2.875rem; display:flex; transition:opacity .25s;
   justify-content:center; align-items:center; border-radius:50%;
 }
+.btn.btn-gallery:hover{opacity:.85;}
 .btn.btn-gallery .icon{
   display:block; max-width:100%; width:auto; max-height:100%; height:1.375rem;
 }
@@ -315,6 +316,14 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   position:relative; width:100%; display:flex; align-items:center;
   justify-content:space-between; padding:.125rem 0; margin:0;
 }
+.list-header.option-02{flex-wrap:wrap;}
+.list-header.option-02 .option.search{width:30%;}
+.list-header.option-02 .option.date{width:23%;}
+.list-header.option-02 .option.cate, .list-header.option-02 .option.order{width:15%;}
+.list-header.option-02 .option.view{width:17%;}
+
+
+/* .list-header .option.cate, .list-header .option.order, .list-header .option.date */
 .list-header > .block{display:block;}
 .list-header .option{
   display:inline-block; width:2.25rem; height:2.25rem; text-align:center;
@@ -360,6 +369,9 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   display:block; max-width:100%; width:auto; max-height:100%; height:1.5rem;
 }
 .list-header .option .icon-view.disable{pointer-events:none;}
+
+.list-header .option.cate.size-02{width:25%;}
+.list-header .option.order.size-02{width:25%; padding-left:1rem;}
 @media screen and (max-width:1199.98px){
   .list-header .option.search{width:33.33%;}
   .list-header .option.cate, .list-header .option.order,
@@ -367,6 +379,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   .list-header .option.sub-cate, .list-header.style-03 .option.search{width:33.33%;}
   .list-header .option.view{width:100%; margin-top:1rem; justify-content:center;}
   .list-header.minisite .option.view.view-grid{width:100%;}
+
+  .list-header.option-02 .option.date{width:30%;}
+  .list-header.option-02 .option.cate, .list-header.option-02 .option.order{width:20%;}
+  .list-header.option-02 .option.view{width:100%;}
 }
 @media screen and (max-width:991.98px){
   .list-header .option.search, .list-header.style-03 .option.search{width:100%;}
@@ -384,6 +400,9 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   .list-header.style-02.order-md-pl-0 .option.order,   
   .list-header.style-02.cate-md-pl-0 .option.cate{padding-left:0;}
   .list-header.style-02 .option.rss{width:100%; margin-top:1rem !important; justify-content:center;}
+
+  .list-header.option-02 .option.search, .list-header.option-02 .option.date{margin-top:0; width:50%;}
+  .list-header.option-02 .option.cate, .list-header.option-02 .option.order{width:50%;}
 }
 @media screen and (max-width:575.98px){
   .list-header .option{width:100%;}
@@ -395,6 +414,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   .list-header.style-02 .option.sub-cate{width:100%; padding-left:0;}
   .list-header .option.view{justify-content:center;}
   .list-header .option > span{display:none;}
+
+  .list-header.option-02 .option.search, .list-header.option-02 .option.date,
+  .list-header.option-02 .option.cate, .list-header.option-02 .option.order{width:100%;}
+  .list-header.option-02 .option.date{margin-top:1rem;}
 }
 
 
@@ -540,6 +563,11 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 }
 .ss-card-05 .ss-stats{margin-top:3rem;}
 .ss-card-05 .stat .title{font-weight:400; font-size:.875rem!important;}
+
+.ss-card-05.type-magazine .ss-img{padding:135% 0 0 0;}
+.ss-card-05.type-magazine .tag{top:unset; bottom:100%;}
+.ss-card-05.type-magazine .text-container{padding:.975rem .975rem .975rem .975rem;}
+.ss-card-05.type-magazine .ss-stats{margin-top:1rem;}
 @media screen and (max-width:767.98px){
   .ss-card-05 .ss-stats{margin-top:1rem;}
 }
@@ -564,7 +592,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   position:relative; padding:2.875rem 1.5rem 1.5rem 1.5rem; 
   border-radius:0 .625rem .625rem 0;
 }
-.ss-card-06 .text-container{border-radius:0 0 1.5rem 1.5rem;}
+.ss-card-06 .text-container{position:relative; border-radius:0 0 1.5rem 1.5rem;}
 .ss-card-06 .text-container > .title{
   font-size:1.25rem; font-weight:500; -webkit-line-clamp:1;
   transition:color .25s; min-height:2rem;
@@ -579,6 +607,17 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card-06 .text-container > .desc{min-height:2.875rem; font-size:.9375rem;}
 .ss-card-06 .img-container .ss-img{border-radius:.625rem 0 0 .625rem; height:100%;}
 .ss-card-06 .btn{position:absolute; bottom:1rem; right:2rem;}
+.ss-card-06.type-video .ss-stats, .ss-card-06.type-gallery .ss-stats{position:absolute; left:1.5rem; bottom:1.5rem;}
+.ss-card-06.type-video .btn-play, .ss-card-06.type-gallery .btn-gallery{
+  position:absolute; right:1.5rem; bottom:1.5rem; z-index:1;
+  transform:translate(0, 0); top:unset; left:unset;
+}
+
+.ss-card-06.type-magazine .ss-img{padding:135% 0 0 0;}
+.ss-card-06.type-magazine .img-container{width:20%;}
+.ss-card-06.type-magazine .text-container{width:80%;}
+.ss-card-06.type-magazine .tag{top:unset; bottom:0; padding:.5rem 1.5rem;}
+.ss-card-06.type-magazine .text-container > .desc{max-width:calc(100% - 15rem);}
 @media screen and (max-width:991.98px){
   .ss-card-06{border-radius:1.5rem;}
   .ss-card-06 .img-container, .ss-card-06 .text-container{width:100%;}
@@ -586,12 +625,26 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   .ss-card-06 .text-container > .desc, .ss-card-06 .btn.btn-icon{display:none;}
   .ss-card-06 .ss-stats{margin-top:3rem;}
   .ss-card-06 .img-container .ss-img{border-radius:1.5rem 1.5rem 0 0;}
+  .ss-card-06.type-video .ss-stats, .ss-card-06.type-gallery .ss-stats{position:relative; left:unset; bottom:unset;}
+  .ss-card-06.type-video .text-container > .title, .ss-card-06.type-gallery .text-container > .title{min-height:3.25rem;}
+
+  .ss-card-06.type-magazine .img-container{width:100%;}
+  .ss-card-06.type-magazine .text-container{width:100%;}
+  .ss-card-06.type-magazine .tag{bottom:100%;}
+  .ss-card-06.type-magazine .text-container{padding: .975rem .975rem .975rem .975rem;}
+  .ss-card-06.type-magazine .ss-stats{margin-top:1rem;}
 }
 @media screen and (max-width:767.98px){
   .ss-card-06 .ss-stats{margin-top:1rem;}
+  .ss-card-06.type-video .img-container, .ss-card-06.type-gallery .img-container{position:relative;}
+  .ss-card-06.type-video .btn-play, .ss-card-06.type-gallery .btn-gallery{
+    position:absolute; right:unset; bottom:unset; top:50%; left:50%;
+    transform:translate(-50%, -50%);
+  }
 }
 @media screen and (max-width:575.98px){
-  .ss-card-06 .text-container > .title{min-height:unset;}
+  .ss-card-06 .text-container > .title, .ss-card-06.type-video .text-container > .title,
+  .ss-card-06.type-gallery .text-container > .title{min-height:unset;}
 }
 
 
@@ -604,6 +657,9 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   position:relative; width:35%; padding:7rem 1.5rem 1.5rem 1.5rem; 
   border-radius:0 1.5rem 1.5rem 0;
 }
+.ss-card-07 .btn-gallery{
+  position:absolute; right:1.5rem; bottom:1.5rem;
+}
 .ss-card-07 .tag{
   position:absolute; top:2.9375rem; left:-1rem; height:2.25rem; 
   padding:.5rem .875rem; display:flex; justify-content:center; align-items:center;
@@ -613,11 +669,20 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card-07 .ss-stats{
   position:absolute; bottom:2rem; left:1.5rem;
 }
+.ss-card-07.type-magazine .img-container{width:45%;}
+.ss-card-07.type-magazine .img-container .ss-img{padding:135% 0 0 0;}
+.ss-card-07.type-magazine .text-container{width:55%; padding:9rem 1.5rem 1.5rem 1.5rem;}
+.ss-card-07.type-magazine .tag{top:5rem;}
+.ss-card-07.type-magazine .ss-stats{bottom:13rem;}
 @media screen and (max-width:991.98px){
   .ss-card-07 .img-container{width:60%;}
   .ss-card-07 .text-container{width:40%; padding:5rem 1.5rem 1.5rem 1.5rem;}
   .ss-card-07 .tag{top:2rem;}
   .ss-card-07 .desc{-webkit-line-clamp:3;}
+  .ss-card-07 .btn-gallery{
+    position:absolute; right:1.5rem; bottom:unset; top:1.5rem;
+  } 
+  .ss-card-07.type-magazine .ss-stats{bottom:5rem;}
 }
 @media screen and (max-width:767.98px){
   .ss-card-07 .img-container{width:100%;}
@@ -625,6 +690,20 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   .ss-card-07 .tag{top:-1rem; left:0;}
   .ss-card-07 .img-container .ss-img{border-radius:0 0 0 0;}
   .ss-card-07 .ss-stats{position:relative; left:unset; bottom:unset; margin-top:1rem;}
+  .ss-card-07 .btn-gallery{
+    position:absolute; right:1.5rem; bottom:1rem; top:unset;
+  } 
+  .ss-card-07 .ss-stats{margin-top:1rem;}
+
+  .ss-card-07.type-magazine .text-container{padding:9rem 1.5rem 1.5rem 1.5rem;}
+  .ss-card-07.type-magazine .tag{left:-1.125rem;}
+  .ss-card-07.type-magazine .ss-stats{bottom:0;}
+}
+@media screen and (max-width:575.98px){
+  .ss-card-07.type-magazine .img-container{width:100%;}
+  .ss-card-07.type-magazine .text-container{width:100%;}
+  .ss-card-07.type-magazine .tag{left:0; top:-1.3125rem;}
+  .ss-card-07.type-magazine .text-container{padding:2.5rem 1.5rem 1.5rem 1.5rem;}
 }
 
 
@@ -767,7 +846,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 /* Special Tag */
 .ss-tags{position:relative; display:flex; flex-wrap:wrap; overflow:hidden;}
 .ss-tags > .tag{
-    position:relative; display:block; font-size:.8125rem; font-weight:300; padding:.5rem .875rem .5rem .875rem;
+    position:relative; display:block; font-size:.8125rem; font-weight:400; padding:.5rem .875rem .5rem .875rem;
     transition:background .25s, color .25s; margin:.25rem .25rem; border-radius:1000em;
 }
 
@@ -1085,7 +1164,7 @@ table.table.table-download.style-01 tr > td.text-container {
 }
 table.table.table-download.card-01 tr > td.text-container{width:calc(100% - 11.25rem); padding-left:1rem;}
 table.table.table-download.style-01 tr > td.text-container .title{
-  -webkit-line-clamp:1; transition:.25s; max-width:calc(100% - 1rem);
+  -webkit-line-clamp:1; transition:.25s; max-width:calc(100% - 1rem); font-weight:400;
 }
 table.table.table-download.style-01 tr > td.text-container .title.size-01{max-width:55rem;}
 table.table.table-download.style-01 tr > td.text-container .file-size{padding:0 1rem;}

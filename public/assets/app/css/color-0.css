@@ -19,6 +19,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .color-01, .h-color-01:hover{color:#5F5E5D!important;}
 .color-02, .h-color-02:hover{color:#FF0000!important;}
 .color-03, .h-color-03:hover{color:#8589AB!important;}
+.color-04, .h-color-04:hover{color:#D2E0F7!important;}
 
 
 .bg-white{background:#ffffff!important;}
@@ -75,6 +76,12 @@ html, body, a, a:hover, table.table{color:#000000;}
 .breadcrumb-01 .filter-01{background:linear-gradient(90deg, rgba(14, 58, 129, 0.7) 0%, rgba(0, 143, 211, 0.3) 29.51%, rgba(0, 143, 211, 0) 50%);}
 .breadcrumb-01 .link-wrapper .link .menu{color:#ffffff;}
 .breadcrumb-01 .link-wrapper .link:last-child .menu{color:#ffffff;}
+
+
+/* E-book */
+.ebook-container canvas{background:#666666;}
+.ebook-container .df-container > .df-ui-next, 
+.ebook-container .df-container > .df-ui-prev{color:#ffffff;}
 
 
 /* Inputs */
@@ -139,6 +146,10 @@ input::placeholder{color:#666666;}
 .section-08 .filter{background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);}
 .section-08 .pagination{background:rgba(0,0,0,.56);}
 .section-08 .arrows .arrow, .section-08 .arrows .arrow::before{background:#ffffff;}
+
+
+/* Section 09 */
+.section-09 .arrows .arrow, .section-09 .arrows .arrow::before{background:#ffffff;}
 
 
 /* Special Card 05 */

@@ -178,8 +178,8 @@
     <section class="section-padding pt-6">
       <div class="container" data-aos="fade-up" data-aos-delay="150">
         <?php
-          $listHeaderClass = 'mt-5';
-          $listHeader = ['search', 'category', 'order', 'view-grid'];
+          $listHeaderClass = 'mt-5 option-02';
+          $listHeader = ['search', 'date-01', 'category', 'order', 'view-grid'];
           include('components/list-header.php');
         ?>
         <div class="grids">
@@ -215,9 +215,7 @@
                       <p class="title">999k</p>
                     </div>
                   </div>
-              
                 </div>
-
               </div>
             </div>
           <?php } ?>
