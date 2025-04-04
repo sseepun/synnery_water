@@ -5,28 +5,27 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-<?php include_once('layout/topnav-minisite.php'); ?>
+<?php include_once('layout/topnav.php'); ?>
 
-  <section class="banner-01 minisite">
+  <section class="banner-01">
     <div class="swiper">
       <div class="swiper-wrapper">
         <?php
           foreach([
-            ['img' => 'public/assets/app/images/banner/02.jpg',], 
-            ['img' => 'public/assets/app/images/banner/02.jpg',], 
-            ['img' => 'public/assets/app/images/banner/02.jpg',], 
+            ['img' => 'public/assets/app/images/banner/03.jpg',], 
+            ['img' => 'public/assets/app/images/banner/03.jpg',], 
+            ['img' => 'public/assets/app/images/banner/03.jpg',], 
           ] as $i=>$d){
         ?>
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
             <div class="text-wrapper animate" style="--delay:.4s;">
-              <h3 class="fw-700 color-white text-intro">
-                กรมชลประทาน
-              </h3>
-              <p class="lg text-center lh-md desc color-white fw-500 mt-1">
-                เป็นองค์กรอัจฉริยะ ที่มุ่งสร้างความมั่นคงด้านน้ำ<br>
-                เพื่อเพิ่มคุณค่าการบริการ ภายในปี 2580
+              <h1 class="fw-700 font-popins font-gradient-01 text-intro">
+                The Royal<br>Irrigation Department
+              </h1>
+              <p class="xs text-center font-popins desc color-white fw-400 mt-2">
+                To integratedly manage water resources in adequate, thorough and equitable manners
               </p>
             </div>
           </div>
@@ -156,15 +155,15 @@
     ]
   ?>
   <section class="section-padding section-10 pt-3">
-    <div class="container" data-aos="fade-up" data-aos-delay="300">
+    <div class="container">
       <div class="grids">
-        <div class="grid xl-75 lg-70 md-60 sm-100">
+        <div class="grid xl-75 lg-2-3 md-60 sm-100">
           <div class="pos-relative">
             <div class="swiper">
               <div class="swiper-wrapper">
                 <?php foreach($news as $d) {?>
                   <div class="swiper-slide">
-                    <div class="ss-card ss-card-07 minisite">
+                    <div class="ss-card ss-card-07">
                       <div class="wrapper">
                         <div class="img-container">
                           <div class="ss-img">
@@ -210,15 +209,15 @@
             <div class="swiper-pagination"></div>  
           </div>    
         </div>    
-        <div class="grid xl-25 lg-30 md-40 sm-50">
+        <div class="grid xl-25 lg-1-3 md-40 sm-50">
           <div class="ss-card ss-card-08">
             <div class="ss-img vertical bradius-2">
-              <div class="img-bg" style="background-image:url('public/assets/app/images/administator/01.png')"></div>
+              <div class="img-bg" style="background-image:url('public/assets/app/images/administator/02.jpg')"></div>
             </div>
             <div class="text-container text-center">
               <div class="wrapper">
-                <h5 class="lg color-white fw-700">นายอัฏฐวิชย์ นาควัชระ</h5> 
-                <p class="color-white">ผู้อำนวยการ<br>สำนักงานชลประทานที่ 1</p> 
+                <h5 class="lg color-white fw-700">นายธนพล สงวนตระกูล</h5> 
+                <p class="color-white">ผู้อำนวยการ<br>ศูนย์เทคโนโลยีสารสนเทศและการสื่อสาร</p> 
                 <svg class="pattern-01" width="242" height="27" viewBox="0 0 242 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 20C0 8.9543 8.9543 0 20 0H27H92.9796H145.469H192.305C196.002 0 199.627 1.02468 202.776 2.96024L241.354 26.6667H183H0V20Z" fill="url(#paint0_linear_48_3879)"/>
                   <defs>
@@ -256,7 +255,7 @@
           ข่าวสาร
         </h3>
       </div> 
-      <div class="swiper-tabs-03 mt-2 ovf-hidden" data-aos="fade-up" data-aos-delay="600">
+      <div class="swiper-tabs-03 mt-2 ovf-hidden" data-aos="fade-up" data-aos-delay="150">
         <div class="swiper-wrapper tabs tabs-02 jc-center">
           <?php foreach($tabsData as $i=>$d) {?>
             <div class="swiper-slide tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
@@ -265,7 +264,7 @@
           <?php } ?>
         </div>
       </div>  
-      <div class="tab-contents mt-4" data-aos="fade-up" data-aos-delay="750">
+      <div class="tab-contents mt-4">
         <?php foreach($tabsData as $i=>$d) {?>   
           <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
             <?php 
@@ -281,231 +280,8 @@
     </div>                
   </section>
 
-  <section class="section-02 mini section-padding">
-    <div class="container" style="z-index:15;">
-      <div class="ss-box xl">
-        <div class="ss-title jc-center">
-          <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="900">
-            ปริมาณน้ำวันนี้
-          </h3>
-        </div>
-        <div class="mt-3">
-          <div class="grids" data-aos="fade-up" data-aos-delay="1050">
-            <div class="grid md-50 sm-100 mt-0">
-              <div class="grids">
-                <div class="grid">
-                  <h6 class="sm ws-nowrap fw-600 color-s text-center">
-                    เขื่อนใหญ่
-                  </h6>
-                  <div class="wave-slot mt-3">
-                    <div class="water-wave" data-type="big" data-value="54.7">
-                      <div class="wrapper">
-                        <div class="inner-wrapper">
-                          <div class="waves">
-                            <div class="wave-1"  id="wave1"></div>
-                            <div class="wave-2"  id="wave2"></div>
-                            <div class="wave-3"  id="wave3"></div>
-                          </div>
-                          <div class="text-top">
-                            <p class="xxs color-s fw-600" id="percentage-text">ปริมาณน้ำปัจจุบัน</p>
-                            <p class="lg color-s fw-800 mt-1" id="volume-text">54.7%</p>
-                          </div>
-                          <div class="text-bottom">
-                            <p class="lg color-white fw-500">4846.35</p>
-                            <p class="xxs color-white fw-300">พันล้าน ลบ.ม</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="grid">
-                  <h6 class="sm ws-nowrap fw-600 color-s text-center">
-                    อ่างเก็บน้ำขนาดกลาง
-                  </h6>
-                  <div class="wave-slot mt-3">
-                    <div class="water-wave type-02" data-type="medium" data-value="10.1">
-                      <div class="wrapper">
-                        <div class="inner-wrapper">
-                          <div class="waves">
-                            <div class="wave-1"></div>
-                            <div class="wave-2"></div>
-                            <div class="wave-3"></div>
-                          </div>
-                          <div class="text-top">
-                            <p class="xxs color-s fw-600">ปริมาณน้ำปัจจุบัน</p>
-                            <p class="lg color-s fw-800 mt-1">10.1 มม.</p>
-                          </div>
-                          <div class="text-bottom">
-                            <p class="lg color-white fw-500">1046.10</p>
-                            <p class="xxs color-white fw-300">พันล้าน ลบ.ม</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid md-50 sm-100">
-              <div class="ss-height-01" data-aos="fade-up" data-aos-delay="300">
-                <iframe class="map" src="https://swoc.rid.go.th/index1.html" 
-                  style="border-radius:.5rem;" width="100%" height="100%" 
-                  frameborder="0" title="ปริมาณน้ำ">
-                </iframe>  
-              </div>
-            </div>
-          </div>
-          <div class="grids flex-col-reverse-sm">
-            <div class="grid md-50 sm-100">
-              <div class="ss-height-02">
-                <div class="pos-relative" data-aos="fade-up" data-aos-delay="150">
-                  <div class="float-title pb-2">
-                    <h6 class="sm fw-600 color-s text-center">พื้นที่ชลประทาน
-                    </h6>
-                  </div>
-                  <div class="grids">
-                    <div class="grid sm-1-3 xs-1-3 mt-0">
-                      <div class="card-flip">
-                        <div class="inner-card">
-                          <div class="front-side">
-                            <div class="ss-card ss-card-03 bradius">
-                              <div class="ss-img">
-                                <div class="img-bg" style="background-image:url('public/assets/app/images/bg/02.jpg');"></div>
-                              </div>
-                              <div class="text-wrapper">
-                                <h4 class="sm fw-600">50%</h4>
-                                <p class="lg fw-400">ข้าว</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="back-side">
-                            <div class="ss-card ss-card-03 bradius">
-                              <div class="ss-img">
-                                <div class="img-bg" style="background-image:url('public/assets/app/images/bg/02.jpg');"></div>
-                              </div>
-                              <div class="text-wrapper">
-                                <h4 class="sm fw-600">50%</h4>
-                                <p class="lg fw-400">ข้าว</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="grid sm-1-3 xs-1-3 mt-0">
-                      <div class="card-flip">
-                      <div class="inner-card">
-                        <div class="front-side">
-                          <div class="ss-card ss-card-03 bradius">
-                            <div class="ss-img">
-                              <div class="img-bg" style="background-image:url('public/assets/app/images/bg/03.jpg');"></div>
-                            </div>
-                            <div class="text-wrapper">
-                              <h4 class="sm fw-600">26%</h4>
-                              <p class="lg fw-400">พื้นที่อื่นๆ</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="back-side">
-                          <div class="ss-card ss-card-03 bradius">
-                            <div class="ss-img">
-                              <div class="img-bg" style="background-image:url('public/assets/app/images/bg/03.jpg');"></div>
-                            </div>
-                            <div class="text-wrapper">
-                              <h4 class="sm fw-600">26%</h4>
-                              <p class="lg fw-400">พื้นที่อื่นๆ</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="grid sm-1-3 xs-1-3 mt-0">
-                      <div class="card-flip">
-                        <div class="inner-card">
-                          <div class="front-side">
-                            <div class="ss-card ss-card-03 bradius">
-                              <div class="ss-img">
-                                <div class="img-bg" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
-                              </div>
-                              <div class="text-wrapper">
-                                <h4 class="sm fw-600">8%</h4>
-                                <p class="lg fw-400">ผลไม้ยืนต้น</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="back-side">
-                            <div class="ss-card ss-card-03 bradius">
-                              <div class="ss-img">
-                                <div class="img-bg" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
-                              </div>
-                              <div class="text-wrapper">
-                                <h4 class="sm fw-600">8%</h4>
-                                <p class="lg fw-400">ผลไม้ยืนต้น</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="ss-card ss-card-03 bradius op-0 pe-none">
-                        <div class="ss-img">
-                          <div class="img-bg" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
-                        </div>
-                        <div class="text-wrapper">
-                          <h4 class="sm fw-600">8%</h4>
-                          <p class="lg fw-400">ผลไม้ยืนต้น</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid md-50 sm-100">
-              <iframe class="map" src="https://swoc.rid.go.th/index1.html?layer=tmd" data-aos="fade-up" data-aos-delay="300"
-                style="border-radius:.5rem;" width="100%" height="100%" frameborder="0" title="ปริมาณฝน">
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-padding section-03 ovf-visible">
-    <div class="pattern style-01">
-      <img src="public/assets/app/images/pattern/15.png" alt="Pattern">
-    </div>            
-    <div class="container">
-      <div class="">
-        <div class="ss-box xl">
-          <div class="panel-card bradius" data-aos="fade-up" data-aos-delay="300">
-                <div class="card-title bradius">
-                  <p class="lg fw-500">รายงานสถานการณ์น้ำประจำวัน</p>
-                </div>
-                <div class="items">
-                  <?php foreach([1,2,3,4,5] as $i=>$d){?>
-                    <div class="item">
-                      <div class="dot"></div>
-                      <div class="text-wrapper">
-                        <p class="sm fw-500">
-                          สถานการณ์น้ำและการบริหารจัดการน้ำฤดูฝนปี 2567 
-                          <span class="color-danger mr-1">16 ก.ย. 67</span>
-                          <span class="tag">NEW</span>
-                        </p>
-                      </div>
-                    </div>
-                  <?php }?>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-  </section>
-
   <section class="section-04">
-    <div class="img-bg" style="background-image:url('public/assets/app/images/bg/23.jpg')"></div>
+    <div class="img-bg" style="background-image:url('public/assets/app/images/bg/25.jpg')"></div>
     <div class="container">
       <div class="grids">
         <div class="grid lg-50 md-50 sm-100"></div>
@@ -524,63 +300,64 @@
     </div>
   </section>
 
+  <?php 
+      $content = [
+        [
+          "imgBg" => 'public/assets/app/images/magazine/07.png',
+          "title" => 'แผนพัฒนารัฐบาลดิจิทัลของประเทศไทย พ.ศ. 2566-2570',
+        ],[
+          "imgBg" => 'public/assets/app/images/magazine/08.png',
+          "title" => 'มาตรฐานแอปพลิเคชันภาครัฐสำหรับ อุปกรณ์เคลื่อนที่',
+        ],[
+          "imgBg" => 'public/assets/app/images/magazine/09.png',
+          "title" => 'คู่มือ Cyber Security สำหรับประชาชน',
+        ],[
+          "imgBg" => 'public/assets/app/images/magazine/10.png',
+          "title" => 'หนังสือกฎหมายคุ้มครองข้อมูล ส่วนบุคคล',
+        ],
+      ]
+    ?>
+
   <section class="section-padding section-03 minisite">
-    <div class="ss-box xl">
+    <div class="container">
       <div class="ss-title jc-center">
-        <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="450">บริการกรมชลประทาน</h3>
+        <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="450">เอกสารเผยแพร่จากภายนอก</h3>
       </div>
-      <div class="swiper-expand mt-4">
-        <div class="swiper" data-aos="fade-up" data-aos-delay="450">
-          <div class="swiper-wrapper">
-            <?php
-              foreach([
-                [
-                  'img' => 'public/assets/app/images/highlight/06.jpg',
-                  'title' => 'สมุดโทรศัพท์ กรมชลประทาน'
-                ], [
-                  'img' => 'public/assets/app/images/highlight/07.jpg',
-                  'title' => 'การยื่นคำขอใบอนุญาตใช้น้ำ'
-                ], [
-                  'img' => 'public/assets/app/images/highlight/08.jpg',
-                  'title' => 'ระบบบริหารการจัดซื้อจัดจ้าง กรมชลประทาน'
-                ], [
-                  'img' => 'public/assets/app/images/highlight/06.jpg',
-                  'title' => 'สมุดโทรศัพท์ กรมชลประทาน'
-                ], [
-                  'img' => 'public/assets/app/images/highlight/07.jpg',
-                  'title' => 'การยื่นคำขอใบอนุญาตใช้น้ำ'
-                ], [
-                  'img' => 'public/assets/app/images/highlight/08.jpg',
-                  'title' => 'ระบบบริหารการจัดซื้อจัดจ้าง กรมชลประทาน'
-                ],
-              ] as $i=>$d){
-            ?>
-              <div class="swiper-slide">
-                <a class="ss-card ss-card-02 highlight bradius" href="#">
-                  <div class="wrapper">
-                    <div class="ss-img">
-                      <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
-                      <div class="hover-filter type-01"></div>
-                    </div>
-                    <div class="text-wrapper">
-                      <div class="title"><?= $d['title'] ?></div>
-                    </div>
-                  </div>
-                </a>
+      <div class="grids jc-center mt-4">
+        <?php foreach($content as $d) {?>
+          <div class="grid lg-25">
+            <a href="#" class="ss-card ss-card-05 type-magazine minisite">
+              <div class="img-container">
+                <div class="ss-img">
+                  <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>')"></div>
+                </div>
               </div>
-            <?php }?>
+              <div class="text-container">
+                <h6 class="title"><?= $d['title'] ?></h6>
+                <div class="ss-stats color-gray-01">
+                  <div class="stat">
+                    <div class="icon"><em class="fa-solid fa-calendar"></em></div>
+                    <p class="title">28 ม.ค. 68</p>
+                  </div>
+                  <div class="stat">
+                    <div class="icon"><em class="fa-solid fa-eye"></em></div>
+                    <p class="title">999k</p>
+                  </div>
+                  <div class="stat">
+                    <div class="icon"><em class="fa-solid fa-share-nodes"></em></div>
+                    <p class="title">999k</p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="swiper-pagination"></div>
-        </div> 
-        <div class="arrows">
-          <div class="arrow arrow-prev c-pointer">
-            <em class="fa-solid fa-arrow-left"></em>
-          </div>
-          <div class="arrow arrow-next c-pointer">
-            <em class="fa-solid fa-arrow-right"></em>
-          </div>
-        </div>       
+        <?php } ?>
       </div>
+      <div class="btns d-flex ai-end jc-center mt-6">
+        <a href="#" class="btn btn-action btn-p bradius-round">
+          ดูทั้งหมด
+        </a>
+      </div> 
     </div>
   </section>
 
@@ -673,7 +450,7 @@
     </div>
   </section>
   
-  <?php include_once('layout/footer-minisite.php'); ?>
+  <?php include_once('layout/footer-minisite-ict.php'); ?>
   <?php include_once('include/script.php'); ?>
 </body>
 </html>

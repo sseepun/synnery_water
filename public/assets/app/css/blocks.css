@@ -44,6 +44,7 @@
 .banner-01 .swiper-slide-active .animate{opacity:1; transform:none; transition-delay:var(--delay);}
 .loading .banner-01 .swiper-slide .animate{opacity:0!important; transform:translateY(4rem)!important;}
 .banner-01 .text-intro{text-align:center; line-height:1.2; padding:0 1rem;}
+
 @media screen and (min-width:767.98px){
   .banner-01 .text-intro>br{display:none;}
 
@@ -309,6 +310,9 @@
 .section-03{position:relative; overflow:hidden;}
 .section-03 .pattern{position:absolute; pointer-events:none;}
 .section-03 .pattern.style-01{top:-42rem; left:0; bottom:0; right:0;}
+.section-03 .pattern.style-01 img{
+  display:block; max-width:100%; max-height:100%; width:auto; height:auto;
+}
 .section-03 > .container{position:relative;}
 .section-03 > .img-bg{
   position:absolute; top:0; left:0; width:100%; height:calc(100% + .0625rem);
@@ -705,6 +709,23 @@
 }
 
 
+/* Section 10 */
+.section-10 .swiper-pagination-bullets {
+  border-radius: .9375rem;  left:50%; bottom:-2.75rem;
+  width:auto; padding:.125rem .625rem; transform:translateX(-50%);
+}
+.section-10 .swiper-pagination-bullet {
+  background:none!important; width:auto!important;
+  height:auto!important; opacity:1; margin:0 .125rem!important ;
+  padding:0;
+}
+.section-10 .swiper-pagination-bullet svg{
+  display:block; width:.625rem; height:.625rem;
+}
+.section-10 .swiper-pagination-bullet svg path  {
+  fill: transparent; stroke:#008FD3; transition:fill .25s, stroke .25s;
+}
+.section-10 .swiper-pagination-bullet-active svg path{fill:#008FD3;}
 
 
 
@@ -720,6 +741,7 @@
   display:block; position:absolute; opacity:0; transform:translateY(1.5rem); pointer-events:none;
 }
 
+/* Tab 01 */
 .tabs.tabs-01 .tab{
   border-radius:var(--bradius); background:#f7f7f7;
   padding:.875rem 1.5rem; transition:background .25s, color .25s;
@@ -730,6 +752,13 @@
 }
 @media screen and (max-width:575.98px){
   .tabs.tabs-01 .tab{padding:.5rem .85rem;}
+}
+
+/* Tab 02 */
+.tabs.tabs-02 .tab{
+  margin:.5rem .5rem 0 0; border:2px solid transparent; border-radius:1000em; width:max-content;
+  padding:1rem 1rem; transition:background .25s, color .25s, border .25s; cursor:pointer;
+  display:flex; align-items:center; justify-content:center; height:2.1875rem;
 }
 
 

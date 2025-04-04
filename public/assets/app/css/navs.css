@@ -204,6 +204,8 @@ nav.topnav + .topnav-spacer{display:block; width:100%; height:5.5rem;}
 nav.topnav .sidenav-toggle {
   display:none; align-items:center; justify-content:center;
 }
+nav.topnav.minisite .logo h1{font-size:1.5rem; font-weight:700; color:var(--color-p); line-height:1;}
+nav.topnav.minisite .sub-title{font-size:1rem; font-weight:400;}
 @media screen and (max-width:1299.98px){
   nav.topnav .topnav-left{padding:.875rem 0 0 0;}
   nav.topnav > .container::before, nav.topnav > .container > .pattern{height:2rem; top:.75rem;}
@@ -416,6 +418,25 @@ nav.footer .footer-bottom .wrapper{
 nav.footer .footer-bottom .policy{text-align:center; border-top:1px solid transparent; padding-top:.5rem;}
 nav.footer .footer-bottom .policy a{margin:0 .5rem;}
 nav.footer .footer-bottom .policy{border-color:#ffffff;}
+nav.footer.minisite{height:100%; overflow:hidden;}
+nav.footer.minisite .logo{
+  width:4.5rem; height:4.5rem; display:flex; justify-content:center;
+  align-items:center; border-radius:50%;
+}
+nav.footer.minisite .logo img{
+  display:block; max-width:100%; width:auto; max-height:100%; height:3.25rem;
+}
+nav.footer.minisite .menu{font-weight:300;}
+nav.footer.minisite .container{z-index:3;}
+nav.footer.minisite .filter{
+  position:absolute; top:0; right:0; bottom:0; left:0; z-index:1;
+}
+nav.footer.minisite .social-wrapper{display:flex; align-items:center;}
+nav.footer.minisite .social svg{
+  display:block; max-width:100%; width:auto; max-height:100%; height:1.875rem;
+}
+nav.footer.minisite .stat-count{margin-top:6.5rem;}
+nav.footer.minisite .footer-bottom{margin-top:3rem;}
 @media screen and (max-width:991.98px){
   nav.footer .contact-wrapper{flex-direction:column;}
   nav.footer .contact-wrapper .list-item{margin-bottom:.5rem;}
@@ -428,9 +449,10 @@ nav.footer .footer-bottom .policy{border-color:#ffffff;}
   nav.footer .ss-padding{padding-left:0!important;}
   nav.footer .img-bg.show-desktop{display:none;}
   nav.footer .img-bg.show-mobile{display:block;}
+  nav.footer.minisite .stat-count{margin-top:4rem;}
 }
 @media screen and (max-width:575.98px){
   nav.footer .socials{justify-content:flex-start!important;}
-  nav.footer .text-right{text-align:center!important; color:#ffffff!important; margin-top:.5rem!important;}
+  nav.footer:not(.minisite) .text-right{text-align:center!important; color:#ffffff!important; margin-top:.5rem!important;}
   nav.footer{height:unset; min-height:calc(100dvh + 2rem); padding:2rem .25rem;}
 }
