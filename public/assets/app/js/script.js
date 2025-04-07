@@ -350,10 +350,61 @@ $(function(){ 'use strict';
   }
 
 
+  // Swiper 03
+  if($('.swiper-03').length){
+    new Swiper('.swiper-03', {
+      spaceBetween: 18, slidesPerView: 1, speed: 800,
+      autoplay: { delay: 5000 }, loop: true,
+      pagination: {
+        el: '.swiper-03',
+        clickable: true,
+      },
+      breakpoints: {
+        992:{slidesPerView: 3},
+        768:{ slidesPerView: 2},
+        576:{ slidesPerView: 1.5},
+        490:{ slidesPerView: 1.5},
+        0:{ slidesPerView: 1}
+      }, 
+    });
+  }
+
+
+   // Client 01
+   if($('.client-01 .swiper').length){
+    new Swiper('.client-01 .swiper', {
+      spaceBetween: 18, slidesPerView: 1, speed: 800,
+      autoplay: { delay: 5000 }, loop: true,
+      breakpoints: {
+        992:{slidesPerView: 4},
+        768:{ slidesPerView: 3},
+        576:{ slidesPerView: 2.5},
+        490:{ slidesPerView: 2},
+        0:{ slidesPerView: 1}
+      },  navigation:{
+        prevEl: '.client-01 .arrow.arrow-prev',
+        nextEl: '.client-01 .arrow.arrow-next',
+      },
+      pagination: {
+        el: '.client-01 .swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `
+            <span class="${className}">
+              <svg viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.75558 0.883549C5.48663 0.563379 5.2305 0.268821 4.99997 -0.00012207C4.76945 0.281628 4.51332 0.576185 4.24437 0.883549C2.6179 2.75335 0.376709 5.35313 0.376709 7.37661C0.376709 8.6573 0.888982 9.80991 1.73423 10.6424C2.56668 11.4748 3.71929 11.9999 4.99997 11.9999C6.28066 11.9999 7.43327 11.4876 8.26572 10.6424C9.09816 9.80991 9.62324 8.64449 9.62324 7.37661C9.62324 5.35313 7.38205 2.76615 5.75558 0.883549Z" fill="white"/>
+              </svg>
+            </span>`;
+        }
+      }
+    });
+  }
+
+
   // Swiper Tab 02
   if($('.swiper-tabs-03').length){
     new Swiper('.swiper-tabs-03', {
-      spaceBetween: 15, slidesPerView: 10, speed: 800,
+      spaceBetween:0, speed: 800,
       observer: true, observeParents: true,
       breakpoints: {
         992:{slidesPerView: 'auto'},
@@ -373,6 +424,7 @@ $(function(){ 'use strict';
       opacity: "toggle"
     }, 300);
   });
+
 
 
   /* Change color according to water level value */

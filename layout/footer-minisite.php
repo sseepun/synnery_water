@@ -7,23 +7,20 @@
       <div class="container">
         <div class="ss-box xl d-flex jc-center">
           <div class="grids">
-            <div class="grid lg-60 md-60 sm-100">
-              <div class="d-flex ai-center">
+            <div class="grid lg-60 md-60 sm-100 mt-0">
+              <div class="logo-container">
                 <div class="logo">
                   <div class="img-container">
                     <img src="public/assets/app/images/logo/10.png" alt="Website Logo">
                   </div>
                 </div>
-                <div class="text-wrapper pl-2">
+                <div class="text-wrapper mt-4">
                   <h6 class="fw-700 lh-xs color-white">สำนักงานชลประทานที่ 1 กรมชลประทาน</h6>
                   <p class="color-white mt-1 lh-md">
                     27 สำนักงานชลประทานที่ 1 ถนนทุ่งโฮเต็ล<br>
                     ตำบลวัดเกต อำเภอเมือง จังหวัดเชียงใหม่ 50000
                   </p>
-                </div>
-              </div>
-              <div class="ss-padding" style="padding-left:5.1875rem;">
-                <div class="contacts mt-6">
+                  <div class="contacts mt-6">
                   <div class="contact-wrapper">
                     <a href="#" class="list-item d-flex">
                       <div class="icon color-white">
@@ -41,11 +38,12 @@
                     </a>
                   </div>
                 </div>
+                </div>
               </div>
             </div>
             <div class="grid lg-40 md-40 sm-100 mt-0">
               <div class="grids">
-                <div class="grid lg-50 md-50 sm-50 xs-50">
+                <div class="grid lg-50 md-50 sm-50 xs-100">
                   <ul class="ss-list">
                     <?php 
                       $iconWater = '<svg class="icon-water" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +95,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="grid lg-50 md-50 sm-50 xs-50">
+                <div class="grid lg-50 md-50 sm-50 xs-100">
                   <div class="socials d-flex jc-end">
                     <div class="social-wrapper">
                       <a href="#" class="social mr-2">
@@ -134,7 +132,7 @@
                   </div>
                   <div class="stat-count">
                     <p class="text-right color-white">จำนวนผู้เยี่ยมชมเว็บไซต์</p>
-                    <p class="h4 text-right color-p color-05 fw-600 mt-1" style="letter-spacing:2px">1911286</p>
+                    <p class="h4 text-right text-number color-p color-05 fw-600 mt-1" style="letter-spacing:2px">1911286</p>
                   </div>
                 </div>
               </div>

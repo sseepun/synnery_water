@@ -45,7 +45,7 @@
     </div>
   </section>
 
-  <section class="section-01 pt-5 ovf-visible">
+  <section class="section-01 minisite pt-5 ovf-visible">
     <div class="container" style="z-index:3;">
       <div class="ss-box">
         <div class="menus-slider mt-6 pt-2" data-aos="fade-up" data-aos-delay="150">
@@ -157,7 +157,7 @@
   ?>
   <section class="section-padding section-10 pt-3">
     <div class="container" data-aos="fade-up" data-aos-delay="300">
-      <div class="grids">
+      <div class="grids flex-col-reverse-sm jc-center">
         <div class="grid xl-75 lg-70 md-60 sm-100">
           <div class="pos-relative">
             <div class="swiper">
@@ -210,7 +210,7 @@
             <div class="swiper-pagination"></div>  
           </div>    
         </div>    
-        <div class="grid xl-25 lg-30 md-40 sm-50">
+        <div class="grid xl-25 lg-30 md-40 sm-100">
           <div class="ss-card ss-card-08">
             <div class="ss-img vertical bradius-2">
               <div class="img-bg" style="background-image:url('public/assets/app/images/administator/01.png')"></div>
@@ -257,7 +257,7 @@
         </h3>
       </div> 
       <div class="swiper-tabs-03 mt-2 ovf-hidden" data-aos="fade-up" data-aos-delay="600">
-        <div class="swiper-wrapper tabs tabs-02 jc-center">
+        <div class="swiper-wrapper tabs tabs-02 jc-center sm-jc-start">
           <?php foreach($tabsData as $i=>$d) {?>
             <div class="swiper-slide tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
               <p class="title text-center fw-400"><?= $d['tabTitle'] ?></p>

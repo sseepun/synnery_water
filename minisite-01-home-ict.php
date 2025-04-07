@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-<?php include_once('layout/topnav.php'); ?>
+  <?php include_once('layout/topnav.php'); ?>
 
   <section class="banner-01">
     <div class="swiper">
@@ -44,89 +44,80 @@
     </div>
   </section>
 
-  <section class="section-01 pt-5 ovf-visible">
-    <div class="container" style="z-index:3;">
-      <div class="ss-box">
-        <div class="menus-slider mt-6 pt-2" data-aos="fade-up" data-aos-delay="150">
-          <div class="swiper-expand">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <?php
-                  foreach([
-                    [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-01-inactive.svg',
-                      'imgActive' => 'public/assets/app/images/icon/menu-01-active.svg',
-                      'title' => 'สถานการณ์น้ำ<br>รายวัน'
-                    ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-02-inactive.svg',
-                      'imgActive' => 'public/assets/app/images/icon/menu-02-active.svg',
-                      'title' => 'สถานการณ์น้ำ<br>รายสัปดาห์'
-                    ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-03-inactive.svg',
-                      'imgActive' => 'public/assets/app/images/icon/menu-03-active.svg',
-                      'title' => 'ปริมาณน้ำ<br>ในอ่าง/เขื่อน'
-                    ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-04-inactive.svg',
-                      'imgActive' => 'public/assets/app/images/icon/menu-04-active.svg',
-                      'title' => 'ศูนย์ปฏิบัติการ<br>น้ำอัจฉริยะ'
-                    ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-05-inactive.svg',
-                      'imgActive' => 'public/assets/app/images/icon/menu-05-active.svg',
-                      'title' => 'คาดการณ์น้ำท่า'
-                    ],[
-                      'imgInactive' => 'public/assets/app/images/icon/menu-01-inactive.svg',
-                      'imgActive' => 'public/assets/app/images/icon/menu-01-active.svg',
-                      'title' => 'สถานการณ์น้ำ<br>รายวัน'
-                    ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-02-inactive.svg',
-                      'imgActive' => 'public/assets/app/images/icon/menu-02-active.svg',
-                      'title' => 'สถานการณ์น้ำ<br>รายสัปดาห์'
-                    ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-03-inactive.svg',
-                      'imgActive' => 'public/assets/app/images/icon/menu-03-active.svg',
-                      'title' => 'ปริมาณน้ำ<br>ในอ่าง/เขื่อน'
-                    ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-04-inactive.svg',
-                      'imgActive' => 'public/assets/app/images/icon/menu-04-active.svg',
-                      'title' => 'ศูนย์ปฏิบัติการ<br>น้ำอัจฉริยะ'
-                    ], [
-                      'imgInactive' => 'public/assets/app/images/icon/menu-05-inactive.svg',
-                      'imgActive' => 'public/assets/app/images/icon/menu-05-active.svg',
-                      'title' => 'คาดการณ์น้ำท่า'
-                    ],
-                  ] as $i=>$d){
-                ?>
-                <div class="swiper-slide">
-                  <div class="menu-item">
-                    <div class="icon pos-relative">
-                      <div class="img-bg inactive" style="background-image:url('public/assets/app/images/bg/water-inactive.png')"></div>
-                      <div class="img-bg active" style="background-image:url('public/assets/app/images/bg/water-active.png')"></div>
-                      <img class="inactive" src="<?= $d['imgInactive'] ?>" alt="Menu Inactive" />
-                      <img class="active" src="<?= $d['imgActive'] ?>" alt="Menu Active" />
-                    </div>
-                    <div class="text text-center mt-3">
-                      <p class="xs fw-400"><?= $d['title'] ?></p>
-                    </div>
-                  </div>
-                </div>
-                <?php }?>
-              </div>
-            </div>
-            <div class="arrows">
-              <div class="arrow arrow-prev c-pointer h-op-07">
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0.266171 7.62938L6.62987 13.7544C6.80133 13.9138 7.03097 14.002 7.26933 14C7.50769 13.998 7.73571 13.9059 7.90426 13.7437C8.07282 13.5815 8.16843 13.362 8.1705 13.1326C8.17257 12.9032 8.08094 12.6822 7.91534 12.5171L3.10347 7.88575L19.0909 7.88575C19.332 7.88575 19.5632 7.79357 19.7337 7.62947C19.9042 7.46538 20 7.24282 20 7.01075C20 6.77869 19.9042 6.55613 19.7337 6.39203C19.5632 6.22794 19.332 6.13575 19.0909 6.13575L3.10347 6.13575L7.91534 1.50438C8.00217 1.42366 8.07142 1.32711 8.11907 1.22036C8.16671 1.1136 8.19179 0.998786 8.19284 0.882604C8.19389 0.766421 8.17089 0.651203 8.12518 0.543669C8.07947 0.436134 8.01196 0.338439 7.92661 0.256283C7.84125 0.174127 7.73975 0.109155 7.62802 0.0651588C7.51629 0.0211629 7.39659 -0.000976661 7.27588 3.32705e-05C7.15517 0.0010432 7.03587 0.0251816 6.92496 0.07104C6.81405 0.116897 6.71373 0.183555 6.62987 0.267127L0.266171 6.39213C0.09574 6.55621 -1.24598e-06 6.77873 -1.26723e-06 7.01075C-1.28848e-06 7.24277 0.09574 7.46529 0.266171 7.62938Z" fill="#008FD3"/>
-                </svg>
-              </div>
-              <div class="arrow arrow-next c-pointer h-op-07">
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19.7338 6.37063L13.3701 0.245626C13.1987 0.0862378 12.969 -0.00195766 12.7307 3.59052e-05C12.4923 0.00202947 12.2643 0.0940524 12.0957 0.256284C11.9272 0.418516 11.8316 0.637977 11.8295 0.867399C11.8274 1.09682 11.9191 1.31785 12.0847 1.48288L16.8965 6.11425L0.909099 6.11425C0.667991 6.11425 0.436758 6.20643 0.266268 6.37053C0.0957789 6.53462 -9.29902e-07 6.75718 -9.61838e-07 6.98925C-9.93774e-07 7.22131 0.0957788 7.44387 0.266268 7.60796C0.436757 7.77206 0.66799 7.86425 0.909099 7.86425L16.8965 7.86425L12.0847 12.4956C11.9978 12.5763 11.9286 12.6729 11.8809 12.7796C11.8333 12.8864 11.8082 13.0012 11.8072 13.1174C11.8061 13.2336 11.8291 13.3488 11.8748 13.4563C11.9205 13.5639 11.988 13.6616 12.0734 13.7437C12.1588 13.8259 12.2603 13.8908 12.372 13.9348C12.4837 13.9788 12.6034 14.001 12.7241 14C12.8448 13.999 12.9641 13.9748 13.075 13.929C13.186 13.8831 13.2863 13.8164 13.3701 13.7329L19.7338 7.60787C19.9043 7.44379 20 7.22127 20 6.98925C20 6.75723 19.9043 6.53471 19.7338 6.37063Z" fill="#008FD3"/>
-                </svg>
-              </div>
-            </div>
+  <?php 
+    $tabsServices = [
+      ['title' => 'สารสนเทศ ศทส.'], ['title' => 'ระบบสารสนเทศและการให้บริการ']
+    ];
+    $menuServices01 = [
+      ["imgBg" => "public/assets/app/images/content/49.png", "title" => "ข้อมูลผู้บริหารเทคโนโลยีดิจิทัล",],
+      ["imgBg" => "public/assets/app/images/content/50.png", "title" => "แผนปฏิบัติการดิจิทัล<br>กรมชลประทาน",],
+      ["imgBg" => "public/assets/app/images/content/51.png", "title" => "แผนบริหารความต่อเนื่อง<br>ด้านเทคโนโลยีสารสนเทศ ปี 68",],
+      ["imgBg" => "public/assets/app/images/content/52.png", "title" => "แผนรองรับสถานการณ์<br>ฉุกเฉินจากภัยพิบัติ ปี 68",],
+      ["imgBg" => "public/assets/app/images/content/53.png", "title" => "คลังความรู้ศูนย์เทคโนโลยี<br>สารสนเทศฯ",],
+      ["imgBg" => "public/assets/app/images/content/54.png", "title" => "รวมแอปพลิเคชัน",],
+    ];
+
+    $menuServices02 = [
+      ["imgBg" => "public/assets/app/images/content/55.png", "title" => "Network, Server, E-Mail",],
+      ["imgBg" => "public/assets/app/images/content/56.png", "title" => "Database, GIS, Website",],
+      ["imgBg" => "public/assets/app/images/content/57.png", "title" => "E-Office",],
+      ["imgBg" => "public/assets/app/images/content/58.png", "title" => "VDO Conference",],
+      ["imgBg" => "public/assets/app/images/content/59.png", "title" => "Project /Spec. ICT",],
+      ["imgBg" => "public/assets/app/images/content/60.png", "title" => "Mobile",],
+    ];
+  ?>
+  <section class="section-01 tab-container">
+    <div class="services-container" data-aos="fade-up" data-aos-delay="300">
+      <div class="header tabs">
+        <?php foreach($tabsServices as $i=>$d) {?>
+          <div class="topic color-white tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+            <?= $d['title'] ?>
           </div>
+        <?php } ?>
+      </div>
+      <div class="body">
+        <div class="tab-contents">
+          <?php foreach($tabsServices as $i=>$k){?>
+            <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+              <div class="menus-services">
+                <?php if($i == 0) { ?>
+                  <?php foreach($menuServices01 as $d) { ?>
+                    <div class="menu-item">
+                      <a href="#" class="ss-card ss-card-09">
+                        <div class="ss-img square">
+                          <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>')"></div>
+                        </div>
+                        <div class="text-container">
+                          <div class="wrapper">
+                            <p class="text-center color-white fw-500 title"><?= $d['title'] ?></p>
+                          </div>
+                        </div>
+                      </a>
+                    </div> 
+                  <?php } ?>
+                  <?php } else { ?>
+                    <?php foreach($menuServices02 as $d) { ?>
+                      <div class="menu-item">
+                      <a href="#" class="ss-card ss-card-09">
+                        <div class="ss-img square">
+                          <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>')"></div>
+                        </div>
+                        <div class="text-container">
+                          <div class="wrapper">
+                            <p class="text-center color-white fw-500 title"><?= $d['title'] ?></p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <?php } ?>
+                  <?php } ?>
+              </div>
+            </div>
+          <?php }?>
         </div>
       </div>
+    </div>
+    <div class="container" style="z-index:3;">
       <div class="ss-box xl mt-5">
         <div class="announce" data-aos="fade-up" data-aos-delay="300">
           <div class="text-container">
@@ -154,16 +145,16 @@
       ["imgBg" => 'public/assets/app/images/content/19.png',],
     ]
   ?>
-  <section class="section-padding section-10 pt-3">
+  <section class="section-padding section-10 pt-3" data-aos="fade-up" data-aos-delay="450">
     <div class="container">
-      <div class="grids">
+      <div class="grids flex-col-reverse-sm">
         <div class="grid xl-75 lg-2-3 md-60 sm-100">
           <div class="pos-relative">
             <div class="swiper">
               <div class="swiper-wrapper">
                 <?php foreach($news as $d) {?>
                   <div class="swiper-slide">
-                    <div class="ss-card ss-card-07">
+                    <div class="ss-card ss-card-07 minisite">
                       <div class="wrapper">
                         <div class="img-container">
                           <div class="ss-img">
@@ -209,7 +200,7 @@
             <div class="swiper-pagination"></div>  
           </div>    
         </div>    
-        <div class="grid xl-25 lg-1-3 md-40 sm-50">
+        <div class="grid xl-25 lg-1-3 md-40 sm-100">
           <div class="ss-card ss-card-08">
             <div class="ss-img vertical bradius-2">
               <div class="img-bg" style="background-image:url('public/assets/app/images/administator/02.jpg')"></div>
@@ -251,7 +242,7 @@
   <section class="section section-padding tab-container pt-6">
     <div class="container">
       <div class="ss-title jc-center">
-        <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="450">
+        <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="0">
           ข่าวสาร
         </h3>
       </div> 
@@ -264,7 +255,7 @@
           <?php } ?>
         </div>
       </div>  
-      <div class="tab-contents mt-4">
+      <div class="tab-contents mt-4" data-aos="fade-up" data-aos-delay="300">
         <?php foreach($tabsData as $i=>$d) {?>   
           <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
             <?php 
@@ -281,19 +272,20 @@
   </section>
 
   <section class="section-04">
+    <div class="filter bg-gradient-09"></div>
     <div class="img-bg" style="background-image:url('public/assets/app/images/bg/25.jpg')"></div>
     <div class="container">
       <div class="grids">
-        <div class="grid lg-50 md-50 sm-100"></div>
-        <div class="grid lg-50 md-50 sm-100">
+        <div class="grid xl-50 lg-45 md-50 sm-100"></div>
+        <div class="grid xl-50 lg-55 md-50 sm-100">
           <div class="text-wrapper text-center pos-relative" data-aos="fade-up" data-aos-delay="150">
             <svg width="16" height="21" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.6343 1.84098C11.0526 1.17396 10.4986 0.560299 10 0C9.50138 0.58698 8.94737 1.20064 8.36565 1.84098C4.84765 5.73639 0 11.1526 0 15.3682C0 18.0363 1.10803 20.4376 2.93629 22.1718C4.73684 23.9061 7.22992 25 10 25C12.7701 25 15.2632 23.9328 17.0637 22.1718C18.8643 20.4376 20 18.0096 20 15.3682C20 11.1526 15.1524 5.76307 11.6343 1.84098Z" fill="white"/>
             </svg>
-            <h6 class="color-white text-center fw-400 mt-3">
+            <h6 class="color-white text-center fw-400 mt-3 xs-no-br">
               เพิ่มพื้นที่ชลประทานอย่างยั่งยืนขับเคลื่อนด้วยความร่วมมือ<br> 
-              <span class="h4 fw-700">เพื่อการพัฒนาทรัพยากรน้ำ<br>ที่ทั่วถึงและเป็นธรรม</span>
-            </h6>      
+            </h6> 
+            <p class="h4 color-white fw-700 sm-no-br">เพื่อการพัฒนาทรัพยากรน้ำ<br>ที่ทั่วถึงและเป็นธรรม</p>
           </div>
         </div>
       </div>
@@ -323,7 +315,7 @@
       <div class="ss-title jc-center">
         <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="450">เอกสารเผยแพร่จากภายนอก</h3>
       </div>
-      <div class="grids jc-center mt-4">
+      <div class="grids jc-center mt-4" data-aos="fade-up" data-aos-delay="600">
         <?php foreach($content as $d) {?>
           <div class="grid lg-25">
             <a href="#" class="ss-card ss-card-05 type-magazine minisite">
@@ -448,6 +440,51 @@
         <?php }?>
       </div>
     </div>
+  </section>
+
+  <?php 
+    $clients = [
+      ['logo' => 'public/assets/app/images/logo/12.png', 'title' => 'กระทรวงเกษตร<br>และสหกรณ์'],
+      ['logo' => 'public/assets/app/images/logo/14.png', 'title' => 'สำนักนายกรัฐมนตรี'],
+      ['logo' => 'public/assets/app/images/logo/13.png', 'title' => 'ระบบจัดซื้อจัดจ้าง ภาครัฐ'],
+      ['logo' => 'public/assets/app/images/logo/14.png', 'title' => 'สำนักงานคณะกรรมการ<br>ข้อมูลข่าวสารของรายการ'],
+      ['logo' => 'public/assets/app/images/logo/12.png', 'title' => 'กระทรวงเกษตร<br>และสหกรณ์'],
+    ]
+  ?>
+  <section class="section-padding client-01">
+    <div class="pattern" data-aos="fade-up" data-aos-delay="0">
+      <img src="public/assets/app/images/pattern/16.png" alt="Pattern">
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="150">
+      <div class="ss-box">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <?php foreach($clients as $d) {?>
+              <div class="swiper-slide">
+                <div class="logo-container">
+                  <div class="logo">
+                    <img src="<?= $d['logo'] ?>" alt="Logo">
+                  </div>
+                  <div class="title fw-500 text-center mt-2">
+                    <?= $d['title'] ?>
+                  </div>
+                </div>
+              </div>
+            <?php } ?>
+          </div>
+        </div> 
+        <div class="swiper-pagination"></div>
+          <div class="arrows">
+            <div class="arrow arrow-prev c-pointer">
+              <em class="fa-solid fa-arrow-left"></em>
+            </div>
+            <div class="arrow arrow-next c-pointer">
+              <em class="fa-solid fa-arrow-right"></em>
+            </div>
+        </div> 
+        </div> 
+      </div>            
+    </div>                
   </section>
   
   <?php include_once('layout/footer-minisite-ict.php'); ?>

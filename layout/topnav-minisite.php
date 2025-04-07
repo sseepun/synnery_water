@@ -5,25 +5,25 @@
       'name' => 'หน้าหลัก',
       'hasChildren' => false,
     ], [
-      'name' => 'เกี่ยวกับกรม',
+      'name' => 'ข้อมูลทั่วไป',
       'hasChildren' => true,
     ], [
-      'name' => 'รายงานประจำปี/สารสนเทศ',
+      'name' => 'หน่วยงานภายใน',
       'hasChildren' => true,
     ], [
-      'name' => 'ข่าวประชาสัมพันธ์',
+      'name' => 'บุคลากร',
       'hasChildren' => true,
     ], [
-      'name' => 'หน่ายงานในสังกัด',
+      'name' => 'สารสนเทศภายใน',
       'hasChildren' => true,
     ], [
-      'name' => 'ติดต่อกรม',
+      'name' => 'ติดต่อหน่วยงาน',
       'hasChildren' => true,
     ], 
   ];
 ?>
 <nav class="topnav minisite">
-  <div class="container">
+  <div class="container topnav-container">
     <div class="pattern">
       <img src="public/assets/app/images/pattern/01.png" alt="Pattern" />
     </div>
@@ -40,8 +40,9 @@
       <div class="topnav-right">
         <div class="topnav-top">
           <div class="pattern style-01">
-            <img src="public/assets/app/images/pattern/09.png" alt="Pattern" />
+            <img src="public/assets/app/images/pattern/wave.svg" alt="Pattern" />
           </div>
+          <p class="color-white sm text-title">กรมชลประทาน กระทรวงเกษตรและสหกรณ์</p>
           <div class="options">
             <div class="icon icon-circle">
               <em class="fa-solid fa-magnifying-glass"></em>
@@ -76,10 +77,6 @@
               </div>
             </div>
             </div>
-            <!-- <div class="icon icon-flag">
-              <div class="flag" style="background-image:url('public/assets/app/images/flag/EN.jpg')"></div>
-              <div class="text">Eng</div>
-            </div> -->
             <div class="icon-sep"></div>
             <div class="icon icon-social">
               <em class="fa-brands fa-facebook-f"></em>
@@ -105,21 +102,11 @@
                     <?php 
                       $submenuLeftContent = [
                         ['title' => 'Level 2'],
-                        // ['title' => 'ตราสัญลักษณ์ประจำกรม'],
-                        // ['title' => 'กฎหมายที่สำคัญของกรม'],
-                        // ['title' => 'หน้าที่ความรับผิดชอบ'],
-                        // ['title' => 'โครงสร้างหน่วยงาน'],
-                        // ['title' => 'ทำเนียบผู้บริหาร'],
                       ]
                     ?>
                     <?php 
                       $submenuRightContent = [
                         ['title' => 'Level 2'],
-                        // ['title' => 'วิสัยทัศน์/ค่านิยม/พันธกิจ'],
-                        // ['title' => 'คำรับรองการปฏิบัติราชการ'],
-                        // ['title' => 'แผนยุทธศาสตร์กรมชลประทาน'],
-                        // ['title' => 'ตัวชี้วัดตามมาตรการปรับปรุงประสิทธิภาพ'],
-                        // ['title' => 'แผนปฏิบัติราชการกรมชลประทาน ระยะ 5 ปี'],
                       ]
                     ?>
                     <div class="submenu-dropdown full-width">

@@ -328,6 +328,8 @@
     /* New Custom */
     .gallery-grids > .grid.xl-14{width:calc(14.28% - var(--ggs));}
     .gallery-grids > .grid.xl-16{width:calc(16.66% - var(--ggs));}
+
+   
 }
 @media screen and (min-width:992px) and (max-width: 1299.98px){
     /* xs */
