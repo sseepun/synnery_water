@@ -40,11 +40,27 @@ input[type=text], input[type=email], input[type=password], input[type=date], inp
 input[type=number], input[type=phone], input[type=submit], nput[type=file], select, 
 textarea, button{font-family:var(--fw);}
 
-button, .btn{
-  display:flex; align-items:center; justify-content:center; width:auto; height:auto;
-  background:unset; border:unset; box-shadow:unset; outline:unset; text-decoration:unset;
-  white-space:nowrap; cursor:pointer; line-height:var(--lh); transition:all .25s;
+
+/* Buttons */
+.btns{
+  display:flex; align-items:center; flex-wrap:wrap;
+  margin:-.25rem -.125rem 0 -.125rem; width:calc(100% + .25rem);
 }
+.btns > .btn{margin:.25rem .125rem 0 .125rem;}
+
+.btn.btn-action{
+  display:block; outline:none; box-shadow:none; text-align:center;
+  padding:0.375rem; min-width:7.6875rem; font-weight:400;
+  white-space:nowrap; text-decoration:none; border-radius:0.5rem; cursor:pointer;
+  border:.125rem solid transparent; transition:all .25s; 
+}
+
+.btn.md{min-width:9rem; padding:.4375rem;}
+@media screen and (max-width:767.98px){
+  .btn.md{min-width:7rem; padding:.375rem 1.5rem;}
+}
+
+
 
 
 /* Scrollbar */
@@ -287,6 +303,13 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 .ss-card .btn-play{
   position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
+}
+
+
+/* Background Gradient */
+.bg-gradient{
+  position:absolute; top:0; right:0; bottom:0; left:0; z-index:2;
+  pointer-events:none;
 }
 
 

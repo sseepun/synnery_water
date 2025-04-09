@@ -5,9 +5,9 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('layout/topnav.php'); ?>
+  <?php include_once('layout/topnav-minisite-ict.php'); ?>
 
-  <section class="banner-01">
+  <section class="banner-03">
     <div class="swiper">
       <div class="swiper-wrapper">
         <?php
@@ -19,14 +19,22 @@
         ?>
         <div class="swiper-slide">
           <div class="wrapper">
+            <div class="bg-gradient bg-gradient-10"></div>
             <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
-            <div class="text-wrapper animate" style="--delay:.4s;">
-              <h1 class="fw-700 font-popins font-gradient-01 text-intro">
-                The Royal<br>Irrigation Department
-              </h1>
-              <p class="xs text-center font-popins desc color-white fw-400 mt-2">
-                To integratedly manage water resources in adequate, thorough and equitable manners
-              </p>
+            <div class="container">
+              <div class="text-wrapper animate" style="--delay:.4s;">
+                <h1 class="title fw-700 color-white lh-sm">
+                  บริการข้อมูลสารสนเทศภูมิศาสตร์
+                </h1>
+                <p class="h2 desc color-white mt-2 lh-sm">
+                  กรมชลประทาน
+                </p>
+                <div class="btns mt-1">
+                  <a href="#" class="btn btn-action btn-p md bradius-round">
+                    คลิกที่นี่
+                  </a>
+                </div> 
+              </div>
             </div>
           </div>
         </div>

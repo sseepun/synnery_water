@@ -7,7 +7,7 @@
 <body class="loading">
 <?php include_once('layout/topnav-minisite.php'); ?>
 
-  <section class="banner-01 minisite">
+  <section class="banner-02 minisite">
     <div class="swiper">
       <div class="swiper-wrapper">
         <?php
@@ -20,14 +20,20 @@
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
-            <div class="text-wrapper animate" style="--delay:.4s;">
-              <h3 class="fw-700 color-white text-intro">
-                กรมชลประทาน
-              </h3>
-              <p class="lg text-center lh-md desc color-white fw-500 mt-1">
-                เป็นองค์กรอัจฉริยะ ที่มุ่งสร้างความมั่นคงด้านน้ำ<br>
-                เพื่อเพิ่มคุณค่าการบริการ ภายในปี 2580
-              </p>
+            <div class="container">
+              <div class="text-wrapper animate" style="--delay:.4s;">
+                <div class="inner-content">
+                  <img class="quota" src="public/assets/app/images/icon/quota-top.png" alt="Quoate">
+                  <h2 class="fw-700 color-white text-center title mt-2">
+                    กรมชลประทาน
+                  </h2>
+                  <p class="h6 lh-md desc text-center color-white fw-500 mb-2 xs-no-br">
+                    เป็นองค์กรอัจฉริยะ ที่มุ่งสร้างความมั่นคงด้านน้ำ<br>
+                    เพื่อเพิ่มคุณค่าการบริการ ภายในปี 2580
+                  </p>
+                  <img class="quota" src="public/assets/app/images/icon/quota-bottom.png" alt="Quoate">
+                </div>
+              </div>
             </div>
           </div>
         </div>

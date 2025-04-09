@@ -22,7 +22,7 @@
     ], 
   ];
 ?>
-<nav class="topnav minisite">
+<nav class="topnav minisite ict">
   <div class="container topnav-container">
     <div class="pattern">
       <img src="public/assets/app/images/pattern/01.png" alt="Pattern" />
@@ -30,10 +30,9 @@
     <div class="topnav-wrapper">
       <div class="topnav-left">
         <a href="#" class="logo">
-          <img src="public/assets/app/images/logo.png" alt="Logo" />
+          <img src="public/assets/app/images/logo/ict.svg" alt="Logo" />
           <div class="text">
-            <h1 class="main-title">สำนักงานชลประทานที่ 1</h1>
-            <p class="sub-title">จัดหวัดเชียงใหม่ กรมชลประทาน</p>
+            <h1 class="main-title">ศูนย์เทคโนโลยีสารสนเทศ<br>และการสื่อสาร</h1>
           </div>
         </a>
         <p class="color-white sm text-title hide-tablet">กรมชลประทาน กระทรวงเกษตรและสหกรณ์</p>
