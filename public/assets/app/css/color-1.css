@@ -797,4 +797,18 @@ nav.chat{background:#ffffff;}
 .social-options .options .option svg circle{fill:#ffffff;}
 .social-options .options .option svg path{fill:#000000;}
 
+/* Faq */
+.faq-01 .answer,
+.faq-01 > .content.active .wrapper > table.table.table-download tr,
+table.table.table-download tr,
+table.table.table-download.sub tr,
+table.table.table-download.sub tr:hover {background: #000000 !important; color: #ffffff; border-color: #ffffff !important;}
+.faq-01.style-03 > .content {border-color: #ffffff;}
+.faq-01 > .content.active .wrapper > table.table.table-download .option{color: #ffffff !important;}
+.faq-01 > .content.active .wrapper > table.table.table-download .btn-collap path{fill: #ffffff;}
+table.table.table-download:not(.sub) .file-container svg.in-icon path {fill: #000;}
+.faq-01 .answer table.table.table-download.sub.style-02 .file-container svg.in-icon {filter: grayscale(1);}
+table.table.table-download.style-02 tr > td.button-container svg path,
+table.table.table-download tr > td.file-container .icon .show-inactive svg:first-child path {fill: #ffffff;}
+
 

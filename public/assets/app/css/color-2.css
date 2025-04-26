@@ -780,3 +780,20 @@ nav.quicklink-nav .list-items .arrows .arrow {color: #fecb00;}
 .social-options .social-wrapper .social svg path:nth-child(5){fill:#fecb00;}
 .social-options .options .option svg circle{fill:#fecb00;}
 .social-options .options .option svg path{fill:#000000;}
+
+/* Faq */
+
+.faq-01 .answer,
+.faq-01 > .content.active .wrapper > table.table.table-download tr,
+table.table.table-download tr,
+table.table.table-download.sub tr,
+table.table.table-download.sub tr:hover {background: #000000 !important; color: #fecb00; border-color: #fecb00 !important;}
+.faq-01.style-03 > .content {border-color: #fecb00;}
+.faq-01 > .content.active .wrapper > table.table.table-download .option{color: #fecb00 !important;}
+.faq-01 > .content.active .wrapper > table.table.table-download .btn-collap path{fill: #fecb00;}
+table.table.table-download:not(.sub) .file-container svg.in-icon path {fill: #000;}
+.faq-01 .answer table.table.table-download.sub.style-02 .file-container svg.in-icon {filter: grayscale(1);}
+table.table.table-download.style-02 tr > td.button-container svg path,
+table.table.table-download tr > td.file-container .icon .show-active svg:first-child path,
+table.table.table-download tr > td.file-container .icon .show-inactive svg:first-child path,
+table.table.table-download.sub tr > td.file-container .icon svg:first-child path {fill: #fecb00;}

@@ -274,3 +274,26 @@ nav.footer.minisite .menu{color:#ffffff!important;}
 .social-options .social-wrapper .social:hover circle {
   fill: var(--color-t) !important;
 }
+
+/* Faq */
+.faq-01 .answer {background: #F8F8F8;}
+.faq-01 > .content.active .wrapper > table.table.table-download tr {background: linear-gradient(90deg, #008FD3 25.31%, #003F80 101.69%);}
+.faq-01 > .content.active .wrapper > table.table.table-download .option{color: #ffffff !important;}
+.faq-01 > .content.active .wrapper > table.table.table-download .btn-collap path{fill: #ffffff;}
+.faq-01 > .content.active .wrapper > table.table.table-download .title {color: #ffffff !important;}
+.water-wave.type-02{border-color:#73d38b;}
+.water-wave.type-02 .wrapper{border-color:#d7ffe1;}
+.water-wave.type-02 .wave-1, .water-wave.type-02 .wave-2,
+.water-wave.type-02 .wave-3{background:#73d38b;}
+.answer table.table.table-download tr{background-color: transparent; border-color: #f8f8f8 !important;}
+
+
+/* Mini Box Toggle */
+.mini-box-toggle .content .wrapper {background-color: #F7F7F7;}
+.mini-box-toggle .content.active .wrapper {background-color: var(--color-p);}
+.mini-box-toggle .content.active .title .icon svg path,
+.mini-box-toggle .content.active .wrapper .btn-toggle svg path {fill: #ffffff;}
+.mini-box-toggle .content.active .title .text {color: #ffffff;}
+
+.mini-box-toggle .content .answer::-webkit-scrollbar-track{background: #EDF1FF;}
+.mini-box-toggle .content .answer::-webkit-scrollbar-thumb{background:var(--color-p);}

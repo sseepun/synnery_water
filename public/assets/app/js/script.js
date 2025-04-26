@@ -309,7 +309,66 @@ $(function(){ 'use strict';
       }
     });
   }
+// Faq 01
+var faq01 = $('.faq-01:not(.not-dropdown)');
+var contents = faq01.find('> .content');
+var content = $('.faq-01:not(.not-dropdown) .content');
+var faq01ExpandAll = $('.btn-expand-all');
+var faq01CollapseAll = $('.btn-collapse-all');
 
+
+if(faq01.length){
+  faq01.each(function(){
+    $(this).find('.content > .wrapper').click(function(e){
+      e.preventDefault();
+      var parent = $(this).parent();
+      if(parent.hasClass('active')){
+          parent.removeClass('active');
+          parent.find('> .answer').slideUp();
+      }else{
+          parent.addClass('active');
+          parent.find('> .answer').slideDown();
+      }
+    });
+  });
+
+  faq01ExpandAll.click(function(e) {
+    e.preventDefault();
+    faq01CollapseAll.removeClass('active');
+    faq01ExpandAll.addClass('active');
+    content.addClass('active');
+    content.find('> .answer').slideDown();
+  });
+
+  faq01CollapseAll.click(function(e) {
+    e.preventDefault();
+    faq01ExpandAll.removeClass('active');
+    faq01CollapseAll.addClass('active');
+    content.removeClass('active');
+    content.find('> .answer').slideUp();
+  });
+}
+
+
+  // Mini Box Toggle
+  var mini = $('.mini-box-toggle');
+  var contents = mini.find('> .content');
+  
+  if(mini.length){
+    mini.each(function(){
+      $(this).find('.content > .wrapper').click(function(e){
+        e.preventDefault();
+        var parent = $(this).parent();
+        if(parent.hasClass('active')){
+            parent.removeClass('active');
+            parent.find('> .answer').slideUp();
+        }else{
+            parent.addClass('active');
+            parent.find('> .answer').slideDown();
+        }
+      });
+    });
+  }
 
   // Section 05
   if($('.section-05 .swiper-01').length){
