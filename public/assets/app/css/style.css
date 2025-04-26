@@ -1141,6 +1141,9 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .bradius-0{border-radius:0!important;}
 .bradius-1{border-radius:17px!important;}
 .bradius-2{border-radius:20px!important;}
+.bradius-3{border-radius:12px!important;}
+.bradius-4{border-radius:16px!important;}
+.bradius-10{border-radius:25px!important;}
 .bradius-round{border-radius:1000em!important;}
 
 .box-shadow{box-shadow:rgb(0 0 0 / 7%) 0px 10px 20px;}

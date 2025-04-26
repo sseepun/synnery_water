@@ -761,5 +761,22 @@ nav.side-panel .icon-header svg path{fill:#fecb00;}
 nav.side-panel .option-row .icon-color svg path{fill:#fecb00;}
 nav.side-panel .option-row .icon-color.yellow svg image{fill:#fecb00;}
 
+/* Quicklink */
+nav.quicklink-nav > .wrapper > .title {background: #000000;color: #fecb00; border-color: #fecb00 !important;}
+nav.quicklink-nav .list-items .item {background: #fecb00;}
+nav.quicklink-nav .list-items .item:hover {background: #000000;}
+nav.quicklink-nav .list-items .item .text {color: #000000;}
+nav.quicklink-nav .list-items .item:hover .text {color: #fecb00;}
+nav.quicklink-nav .list-items .item .icon {filter: grayscale(1);}
+nav.quicklink-nav .list-items .arrows .arrow {color: #fecb00;}
 
-
+/* Social Share */
+.social-options .social-wrapper .social svg circle{fill:#fecb00;}
+.social-options .social-wrapper .social svg path:nth-child(1){fill:#000000;}
+.social-options .social-wrapper .social svg path:nth-child(2){fill:#000000;}
+.social-options .social-wrapper .social svg path:nth-child(3){fill:#fecb00;}
+.social-options .social-wrapper .social svg path:nth-child(6){fill:#fecb00;}
+.social-options .social-wrapper .social svg path:nth-child(4){fill:#fecb00;}
+.social-options .social-wrapper .social svg path:nth-child(5){fill:#fecb00;}
+.social-options .options .option svg circle{fill:#fecb00;}
+.social-options .options .option svg path{fill:#000000;}

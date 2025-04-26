@@ -27,7 +27,15 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bg-black{background:#000000!important;}
 .bg-p{background:var(--color-p)!important;}
 .bg-s{background:var(--color-s)!important;}
-
+.bg-t, .h-bg-t:hover{background:var(--color-t)!important;}
+.bg-bluesky-01{background:#DCF0F9!important;}
+.bg-bluesky-02{background:#009DDC!important;}
+.bg-gray-07{background:#F1F1F1!important;}
+.bg-gray-09{background:#F9F9F9!important;}
+.bg-gradian-01{background:linear-gradient(180deg, #009DDC 0%, #0E3A81 100%);}
+.bg-gradian-02{background: linear-gradient(180deg, #008FD3 0%, rgba(0, 143, 211, 0) 70%); opacity: .3;}
+.bg-gradian-03{background: linear-gradient(0deg, #008FD3 0%, rgba(0, 143, 211, 0) 50%); opacity: .3;}
+.bg-gradian-04{background: linear-gradient(90deg, #0E3A81 0%, #008FD3 100%);}
 
 .bg-gradient-01{background: linear-gradient(270deg, rgba(0, 159, 98, 0) 0%, #018D57 36%, #027A4D 100%);}
 .bg-gradient-02{background: linear-gradient(270deg, rgba(111, 192, 5, 0) 0%, #6FC005 36%, #F0F71D 100%);}
@@ -198,8 +206,8 @@ table.table.table-download tr{background:#F0F0F0;}
 
 
 /* Accessibility */
-nav.side-panel .icon{background: linear-gradient(180deg, #122C54 0%, #0A142F 100%); fill:#ffffff;}
-nav.side-panel > .wrapper > .icon:hover{background:var(--color-t);}
+nav.side-panel .icon{background: var(--color-p); fill:#ffffff;}
+nav.side-panel > .wrapper > .icon:hover{background:var(--color-s);}
 nav.side-panel.active > .wrapper > .icon{background:var(--color-s);}
 nav.side-panel .panel-row{background:#ffffff; color:#000000; border-color:#0A112B;
   ;}
@@ -211,10 +219,28 @@ nav.side-panel .option:not(.btn-cursor):hover, nav.side-panel .option:not(.btn-c
   background:var(--color-s); color:#ffffff; fill:#ffffff;
 }
 nav.side-panel .option-row{color:#000000;}
-nav.side-panel .option-row:first-child.active{background:#fec52d; color:#ffffff;}
+nav.side-panel .option-row:first-child.active{background:var(--color-p); color:#ffffff;}
 nav.side-panel .option-row .icon + *::before{background:var(--color-p);}
 nav.side-panel .hamburger > *{background:#ffffff;}
 
+
+/* Quicklink */
+nav.quicklink-nav > .wrapper > .title {background: var(--color-p);color: #ffffff}
+nav.quicklink-nav > .wrapper > .title:hover,
+nav.quicklink-nav.active > .wrapper > .title {background: var(--color-s); color: #ffffff}
+nav.quicklink-nav .list-items .item {background: #ffffff;}
+nav.quicklink-nav .list-items .item:hover {background: var(--color-p);}
+nav.quicklink-nav .list-items .item:hover .text {color: #ffffff;}
+nav.quicklink-nav .list-items .arrows .arrow {color: var(--color-p);}
+
+/* Nav System */
+.navbar-custom {background: linear-gradient(90deg, #008FD3 25.31%, #003F80 101.69%);}
+.leftside-menu .menu .user-avatar {background: #ffffff;}
+.leftside-menu .menu .menu-item {color: #ffffff;}
+.leftside-menu .menu .menu-item.active,
+.leftside-menu .menu .menu-item:hover {background: var(--color-p);}
+
+.box-card .box-title {background: linear-gradient(90deg, #008FD3 25.31%, #003F80 101.69%); color: #ffffff;}
 
 /* Topnav */
 nav.topnav .submenu > *:first-child  > .drop-water-dot{background:var(--color-p);}
@@ -241,3 +267,10 @@ nav.sidenav .submenu a{color:#141414;}
 
 nav.footer.minisite .logo{background:#ffffff;}
 nav.footer.minisite .menu{color:#ffffff!important;}
+
+
+/* Social Share */
+.social-options .options .option:hover circle,
+.social-options .social-wrapper .social:hover circle {
+  fill: var(--color-t) !important;
+}

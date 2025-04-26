@@ -586,6 +586,35 @@ $(function(){ 'use strict';
       }
   });
 
+  // Quicklink
+  var quicklink = $('nav.quicklink-nav');
+  quicklink.find('> .wrapper > .title').click(function(e){
+      e.preventDefault();
+      quicklink.toggleClass('active');
+  });
+  $(document).mouseup(function(e) {
+    if (!quicklink.is(e.target) && quicklink.has(e.target).length === 0) {
+        $('nav.quicklink-nav').removeClass('active');
+    }
+  });
+
+  if($('.quicklink-nav .swiper-container').length){
+    new Swiper('.quicklink-nav .swiper-container', {
+      spaceBetween: 10, slidesPerView: 5, speed: 800, 
+      breakpoints: {
+        1300: { slidesPerView: 5 },
+        992: { slidesPerView: 4 },
+        768: { slidesPerView: 3 },
+        576: { slidesPerView: 3 },
+        320: { slidesPerView: 2 },
+        0:{ slidesPerView: 2 }
+      }, 
+      navigation:{
+        prevEl: '.quicklink-nav .arrow.arrow-prev',
+        nextEl: '.quicklink-nav .arrow.arrow-next',
+      }, 
+    });
+  }
 
   // Themes
   var themeBtns = $('.theme-btn');

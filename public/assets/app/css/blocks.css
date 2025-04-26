@@ -1003,3 +1003,12 @@
   0% { transform:rotate(0deg); }
   100% { transform:rotate(100deg); }
 }
+
+/* Social Share */
+.social-options>.wrapper{display:flex; align-items:center;}
+.social-options .social-wrapper{display:flex; align-items:center;}
+.social-options .social-wrapper .social{margin:0 .25rem; transition:opacity .25s;}
+.social-options .social-wrapper .social:hover{opacity:.85;}
+.social-options .options{display:flex; align-items:center;}
+.social-options .options .option{margin:0 .25rem; transition:opacity .25s}
+.social-options .options .option:hover{opacity:.85;}
