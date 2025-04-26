@@ -1212,6 +1212,7 @@ table.table.table-download.style-02.minisite td:last-child{padding:.25rem 1rem;}
 .fw-unset{flex-wrap:unset!important;}
 .fw-column{flex-direction:column!important;}
 
+.mw-100{max-width:100%!important;}
 .w-auto{width:auto!important; min-width:0!important}
 .w-full{width:100%!important; max-width:100%!important;}
 .h-auto{height:auto!important; min-height:0!important;}

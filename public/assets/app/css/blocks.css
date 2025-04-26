@@ -811,6 +811,16 @@
   .section-07 .panel-left{height:29rem;}
 }
 
+.section-07 > .img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* Section 08 */
 .section-08{position:relative;}
