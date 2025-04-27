@@ -827,3 +827,6 @@ table.table.table-download.style-02 tr > td.button-container svg path,
 table.table.table-download tr > td.file-container .icon .show-active svg:first-child path,
 table.table.table-download tr > td.file-container .icon .show-inactive svg:first-child path,
 table.table.table-download.sub tr > td.file-container .icon svg:first-child path {fill: #fecb00;}
+
+/* No Result */
+.no-result svg path {stroke: #fecb00 !important;}

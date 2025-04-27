@@ -1181,3 +1181,20 @@
 .social-options .options{display:flex; align-items:center;}
 .social-options .options .option{margin:0 .25rem; transition:opacity .25s}
 .social-options .options .option:hover{opacity:.85;}
+
+/* Inner Shadow */
+.form-inner-shadow {
+  margin-top: 4rem; margin-bottom: 3rem;
+  padding: 3rem 5rem; border-radius: 0 0 1.875rem 1.875rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1), inset 0px 5px 0px #0E3A81;
+}
+@media screen and (max-width: 575.98px) {
+  .form-inner-shadow {padding: 3rem 1rem;}
+}
+
+
+.no-result {
+  display: flex; justify-content: center; align-items: center;flex-wrap: wrap;
+  align-content: center; gap: 2rem;
+  height: 458px;
+}

@@ -851,3 +851,5 @@ table.table.table-download.style-02 tr > td.button-container svg path,
 table.table.table-download tr > td.file-container .icon .show-inactive svg:first-child path {fill: #ffffff;}
 
 
+/* No Result */
+.no-result svg path {stroke: #ffffff !important;}
