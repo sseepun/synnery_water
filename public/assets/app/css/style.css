@@ -1384,6 +1384,18 @@ content:""; position:absolute; display:none;
 }
 .ss-title-02 .wrapper {position: relative;}
 
+/* Special Separation 03 */
+.ss-sep-03{
+  display:flex; justify-content:center; width:100%;
+  overflow:hidden; margin:.875rem 0;
+}
+.ss-sep-03>*{position:relative; padding: 0 1rem;}
+.ss-sep-03 > *::before, .ss-sep-03 > *::after {
+  content: ''; position:absolute; top:calc(50% - .0625rem);
+  width:100vw; height:1px;
+}
+.ss-sep-03 >*::before {right:100%;}
+.ss-sep-03 >*::after{left:100%;}
 
 
 /* Special Stat */

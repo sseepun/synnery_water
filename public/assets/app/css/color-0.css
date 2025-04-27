@@ -369,6 +369,8 @@ input.validate-error, textarea.validate-error {border-color: #FF2B2B !important;
 .ss-card-16:hover .text-container {background-color: var(--color-t);}
 
 .ss-card-water, .ss-card-water .icon-wrapper {border-color: #ffffff !important;}
+/* sep 02 */
+.ss-sep-03 > *::before, .ss-sep-03 > *::after{background:#E4E4E4;}
 
 /* Timeline */
 .timeline .timeline__content .timeline__year::before,
