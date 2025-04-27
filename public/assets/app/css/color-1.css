@@ -225,6 +225,29 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 input::placeholder, textarea::placeholder{color:#000000!important}
 input.invalid::placeholder{color:#000000!important;}
 
+/* Special Card */
+.ss-card .readmore svg circle {stroke: #ffffff; fill: #000000;}
+.ss-card .readmore svg path {stroke: #ffffff;}
+.ss-card .readmore.vdo svg path {fill: #ffffff;}
+.ss-card-column .tag, 
+.ss-card-04,
+.ss-card-04 .tag,
+.ss-card-05,
+.ss-card-05 .tag,
+.ss-card-16 .wrapper,
+.ss-card-16 .tag,
+.ss-card-water {border-color: #ffffff !important;}
+.ss-card-04 .text-container .wrapper,
+.ss-card-water {background: #000000;}
+.ss-tags > .tag, .cate-list p {background: #000000; color: #ffffff; border-color: #ffffff;}
+.ss-card-16 .text-container {background-color: #000000;}
+.ss-card-16 .ss-stats .stat:not(:last-child) svg path,
+.ss-card-water .icon-wrapper svg path {fill: #ffffff !important;}
+.ss-card-16 .ss-stats .stat:last-child svg path {stroke: #ffffff !important; fill: transparent;}
+.ss-card-16 .title, 
+.ss-card-16 .desc,
+.ss-card-16 .tag p,
+.ss-card-16 .ss-stats p {color: #ffffff !important;}
 
 /* Filter */
 .filter-03{background:rgba(0, 0, 0, .8);}
@@ -720,6 +743,8 @@ nav.footer .socials .social.twitter svg path:nth-child(2){fill:#000000;}
 nav.footer .footer-top.minisite::before{
   background: linear-gradient(to right, #000000 0%, #000000 100%); opacity:.8;
 }
+
+
 
 
 .popup-container .box-body .icon{filter:grayscale(1)!important;}

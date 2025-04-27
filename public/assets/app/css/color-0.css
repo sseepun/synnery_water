@@ -212,6 +212,16 @@ input::placeholder{color:#666666;}
 /* Special Card 05 */
 .ss-card-05:hover .text-container > .title{color:var(--color-p);}
 
+/* Special Card */
+.ss-card .date{background:#ff750e;}
+.ss-card .readmore {color: var(--color-p);}
+.ss-tags > .tag, .cate-list p {background: #E9F1FF; color: var(--color-p);}
+.ss-card-04:hover .text-container {background-color: var(--color-t);}
+.ss-card-16 .text-container {background-color: #F0F0F0;}
+.ss-card-16:hover .text-container {background-color: var(--color-t);}
+
+.ss-card-water, .ss-card-water .icon-wrapper {border-color: #ffffff !important;}
+
 /* Timeline */
 .timeline .timeline__content .timeline__year::before,
 .timeline.up::before {border-color: #D1D1D1 !important;}

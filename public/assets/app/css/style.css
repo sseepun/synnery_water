@@ -1043,10 +1043,16 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 
 /* Special Tag */
+.ss-tags, .cate-list {position:relative; display:flex; flex-wrap:wrap; overflow:hidden;}
 .ss-tags{position:relative; display:flex; flex-wrap:wrap; overflow:hidden;}
 .ss-tags > .tag{
     position:relative; display:block; font-size:.8125rem; font-weight:400; padding:.5rem .875rem .5rem .875rem;
     transition:background .25s, color .25s; margin:.25rem .25rem; border-radius:1000em;
+}
+.cate-list p {
+  position:relative; display:block; font-size:.8125rem; font-weight:300; padding:.5rem .875rem .5rem .875rem;
+  transition:background .25s, color .25s; margin:.25rem .25rem; border-radius:1000em;
+  border: 1px solid transparent; cursor:pointer;
 }
 
 
