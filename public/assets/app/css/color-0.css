@@ -185,7 +185,19 @@ input::placeholder{color:#666666;}
 /* Special Card 05 */
 .ss-card-05:hover .text-container > .title{color:var(--color-p);}
 
+/* Timeline */
+.timeline .timeline__content .timeline__year::before,
+.timeline.up::before {border-color: #D1D1D1 !important;}
+.timeline .timeline__content .timeline__year::after {border-color: var(--color-p) !important;}
+.timeline.white .timeline__content .timeline__year::before,
+.timeline.white .timeline__content .timeline__year::after,
+.timeline.up.white::before {border-color: #ffffff !important;}
 
+.filter-03{background:linear-gradient(180deg, rgba(0, 143, 211, 0.8) 0%, rgba(14, 58, 129, 0.8) 100%);}
+.filter-04{
+  background:linear-gradient(to right, rgba(14, 58, 129, 1) 11%, 
+  rgba(14, 58, 129, 1) 47%,rgba(14, 58, 129, 0.15) 81%,rgba(14, 58, 129, 0) 100%);
+}
 /* Special Card 06 */
 .ss-card-06:hover .btn.btn-icon .icon svg{fill:var(--color-p);}
 .ss-card-06:hover .text-container > .title{color:var(--color-p);}

@@ -812,7 +812,8 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card:hover .hover-filter.type-01{height:140%;}
 .ss-card .hover-filter.type-02{height:9rem;}
 .ss-card:hover .hover-filter.type-02{height:140%;}
-
+.filter-03{position:absolute; top:0; right:0; bottom:0; left:0;}
+.filter-04{position:absolute; top:0; right:0; bottom:0; left:0;}
 /* Special Card Hover Line */
 .ss-card .line-1::before, .ss-card .line-1::after,
 .ss-card .line-2::before, .ss-card .line-2::after,

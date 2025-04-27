@@ -344,7 +344,7 @@ section .content-wrapper.bg-right::before{background:#000000;}
 .ss-card-16 .text-container .stat svg path{fill:#fecb00;}
 .ss-card-16.minisite .title .highlight{background:#fecb00; color:#000000;}
 
-
+.filter-03{background: rgba(0, 0, 0, 0.8);;}
 /* Section 17 */
 .section-17.oit a, .section-17.oit table th{color:#000000!important;}
 .section-17 table.oit tr{background:#fecb00;}
