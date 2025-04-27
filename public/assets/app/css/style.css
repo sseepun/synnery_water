@@ -44,7 +44,8 @@ textarea, button{font-family:var(--fw);}
 /* Buttons */
 .btns{
   display:flex; align-items:center; flex-wrap:wrap;
-  margin:-.25rem -.125rem 0 -.125rem; width:calc(100% + .25rem);
+  /* margin:-.25rem -.125rem 0 -.125rem;  */
+  width:calc(100% + .25rem);
 }
 .btns > .btn{margin:.25rem .125rem 0 .125rem;}
 
@@ -174,8 +175,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .btn.btn-icon{width:2.875rem; height:2.5rem; border:1.5px solid transparent;}
 .btn.btn-icon img{display:block; height:1.5rem; width:auto;}
 .btn.btn-mw-01{min-width:14rem;}
-.btn.btn-action.style-02{border-radius:.375rem; font-size:.9375rem; font-weight:300;}
-.btn.btn-action.style-02.sm{padding:.3rem .875rem;}
+
 .btn.btn-action.style-03{border-radius: 1000em; padding:.5rem 1rem; }
 .btn.btn-action.md{padding:.5rem 1.25rem; min-width:7rem; text-align:center;}
 .btn.btn-action.xs{font-size:.875rem; padding:.3125rem .5rem;}
@@ -239,7 +239,6 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .btn.btn-icon img{display:block; height:1.5rem; width:auto;}
 .btn.btn-mw-01{min-width:14rem;}
 .btn.btn-action.style-02{border-radius:.375rem; font-size:.9375rem; font-weight:300;}
-.btn.btn-action.style-02.sm{padding:.3rem .875rem;}
 .btn.btn-action.style-03{border-radius: 1000em; padding:.5rem 1rem; }
 .btn.btn-action.md{padding:.5rem 1.25rem; min-width:7rem; text-align:center;}
 .btn.btn-action.xs{font-size:.875rem; padding:.3125rem .5rem;}

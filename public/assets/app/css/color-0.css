@@ -85,16 +85,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 /* Button */
 .btn.btn-icon:hover .icon svg{fill:var(--color-p);}
 
-.btn.btn-calendar, .btn.btn-calendar:focus{color:var(--color-p); background:#D9F4FF; border-color:#D9F4FF;}
-.btn.btn-calendar.sm, .btn.btn-calendar.sm:focus{color:var(--color-p); background:#ffffff; border-color:var(--color-p);}
-.btn.btn-calendar:hover, .btn.btn-calendar.sm.active{color:#ffffff; background:var(--color-p); border-color:var(--color-p);}
-.btn.btn-calendar.inactive{color:#ffffff; background:var(--color-p); border-color:var(--color-p);}
-.btn.btn-calendar:active{color:var(--color-p); background:var(--color-t); border-color:var(--color-t);}
 
-.btn.btn-calendar.minisite, .btn.btn-calendar.minisite:focus{color:#7B7B7B; background:transparent; border-color:transparent;}
-.btn.btn-calendar.minisite:hover, .btn.btn-calendar.minisite.active{color:#ffffff; background:var(--color-t); border-color:var(--color-t);}
-.btn.btn-calendar.minisite.inactive{color:#ffffff; background:var(--color-p); border-color:var(--color-p);}
-.btn.btn-calendar.minisite:active{color:#ffffff; background:var(--color-t); border-color:var(--color-t);}
 
 .btn-play:before, .btn-play:after{background:#FF0000;}
 .btn-play.primary::before, .btn-play.primary::after{background:#D5E4FC;}
