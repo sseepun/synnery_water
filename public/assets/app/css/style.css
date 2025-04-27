@@ -1443,8 +1443,19 @@ content:""; position:absolute; display:none;
 .ss-stats .stat .icon img{
   display:block; width:.875rem; height:auto;
 }
-
-
+.youtube-player {
+  width: 100%; min-height: 35rem;
+}
+@media screen and (max-width:1199.98px){
+  .youtube-player{min-height:20rem;}
+}
+@media screen and (max-width:991.98px){
+  .youtube-player{min-height:17rem;}
+}
+@media screen and (max-width:490.98px){
+  .youtube-player{min-height:14rem;}
+  .youtube-player.size-02{min-height:14rem;}
+}
 /* Special Tag */
 .ss-tags, .cate-list {position:relative; display:flex; flex-wrap:wrap; overflow:hidden;}
 .ss-tags{position:relative; display:flex; flex-wrap:wrap; overflow:hidden;}
