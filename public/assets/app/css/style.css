@@ -849,6 +849,13 @@ content:""; position:absolute; display:none;
   display:block; height:auto!important; opacity:1!important;
 }
 .ss-card-04 .text-container .desc{-webkit-line-clamp:3;}
+
+.ss-card-04.ss-tag-in-text {padding-bottom: 10rem;}
+.ss-card-04.ss-tag-in-text .text-container .wrapper {
+  display: flex; flex-wrap: wrap; align-content: space-between;
+  padding-top: 3rem; min-height: 10.7rem;
+}
+.ss-card-04.ss-tag-in-text .tag {top: 0; bottom: unset;}
 @media screen and (max-width:767.98px){
   .ss-card-04{padding-bottom:6rem;}
   .ss-card-04 .text-container .title{-webkit-line-clamp:1;}
@@ -1329,7 +1336,12 @@ content:""; position:absolute; display:none;
 .ss-img{display:block; position:relative; width:100%; padding:65% 0 0 0; overflow:hidden;}
 .ss-img.square{padding:100% 0 0 0;}
 .ss-img.horizontal{padding:50% 0 0 0;}
+.ss-img.horizontal-2{padding:68% 0 0 0;}
+.ss-img.horizontal-3{padding:40% 0 0 0;}
 .ss-img.vertical{padding:145% 0 0 0;}
+.ss-img.vertical-2{padding:130% 0 0 0;}
+.ss-img.vertical-3{padding:26% 0 0 0;}
+.ss-img.vertical-4{padding: 20% 0 0 0;}
 .ss-img > .img-bg{
   position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
   background-position:center; background-repeat:no-repeat; transition:transform .3s;

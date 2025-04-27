@@ -511,6 +511,11 @@ table.table.table-download.style-02 .btn-collap{background:#000000;}
 table.table.table-download.style-02 .file-container svg:not(.pattern) path{fill:#ffff00;}
 table.table.table-download.style-02 tr > td.button-container .icon-download svg path{fill:#ffff00;}
 
+/* Section */
+.section-03 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {background: #fecb00;}
+.section-03 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {border-color: #fecb00;}
+.section-03 .swiper-expand.swiper-horizontal .arrows .arrow {background: #fecb00;color: #000000;}
+.section-03 .swiper-expand.swiper-horizontal .arrows .arrow::before {background: rgba(254, 203, 0, 0.4);}
 
 /* upload-container */
 .upload-container{border-color:#ffff00;}
