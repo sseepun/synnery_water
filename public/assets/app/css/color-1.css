@@ -656,6 +656,11 @@ nav.stopnav .icon.icon-flag:hover .flag-dropdown .flag-item.active, nav.stopnav 
   background: rgba(255,255,255,.7);
 }
 
+.btn.btn-calendar, .btn.btn-calendar:focus{color:#ffffff; background:transparent; border-color:#ffffff;}
+.btn.btn-calendar:hover, .btn.btn-calendar.active{color:#000000; background:#ffffff; border-color:#ffffff;}
+.btn.btn-calendar.inactive{color:#ffffff; background:#000000; border-color:#ffffff;}
+.btn.btn-calendar:active{color:#000000; background:#ffffff; border-color:#ffffff;}
+
 /* Topnav */
 nav.topnav {background:#000000;}
 nav.topnav .hamburger > *{background:#ffffff;}
@@ -720,7 +725,15 @@ nav.footer .footer-top.minisite::before{
 .popup-container .box-body .icon{filter:grayscale(1)!important;}
 .popup-container .box-body, .popup-container .box-body .color-p{color:#000000!important;}
 .popup-container .box-body .btn{background:#000000; color:#ffffff;}
-
+.popup-container.report-file{  
+  background:linear-gradient(to right,rgba(0,0,0, 0.8) 0%, rgba(0,0,0, 0.8) 100% );
+}
+.popup-container.report-file input[type=text], .popup-container.report-file input[type=email], 
+.popup-container.report-file input[type=password], .popup-container.report-file input[type=date], 
+.popup-container.report-file input[type=tel], .popup-container.report-file input[type=number], .popup-container.report-file input[type=phone], 
+.popup-container.report-file input[type=submit], .popup-container.report-file input[type=file], 
+.popup-container.report-file select, .popup-container.report-file textarea{border-color:#000000;}
+.popup-container svg {filter: grayscale(1);}
 
 .popup-container.report-file{  
   background:linear-gradient(to right,rgba(0,0,0, 0.8) 0%, rgba(0,0,0, 0.8) 100% );
