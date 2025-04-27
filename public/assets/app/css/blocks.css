@@ -1173,6 +1173,28 @@
   .mini-box-toggle {max-width: 100%;}
 }
 
+/* Upload Container */
+.upload-container{
+  display:flex; justify-content:center; flex-direction:column;
+  align-items:center; border:1px solid transparent; padding:2.25rem;
+  border-radius:.375rem;
+}
+.upload-container.style-02{position:relative; padding:0 0 0 1rem; height:2.3rem; align-items:start;}
+.upload-container.style-02 .upload-btn{position:absolute; top:-.0875rem; right:-.0875rem; bottom:-.0875rem;border-radius: 0 .375rem .375rem 0;}
+.upload-container.style-03{width:15rem; height:15rem; position:relative; max-width:100%; overflow:hidden;}
+.upload-container.style-03 input{
+  position:absolute; top:0; left:0; right:0; bottom:0; opacity:0;
+  cursor: pointer;
+}
+.upload-container.style-03 #preview{position:absolute; top:0; left:0; right:0; bottom:0; pointer-events:none;}
+.upload-container.style-03 #preview img{width:100%; height:100%; opacity: .5;}
+.upload-container.style-02.bradius-round{border-radius: 25px;}
+.upload-container.style-02.bradius-round .upload-btn{border-radius: 0 25px 25px 0 !important;}
+
+
+/* Dflip */
+._df_book{max-height: 50rem; background-color: rgb(119, 119, 119) !important;}
+
 /* Social Share */
 .social-options>.wrapper{display:flex; align-items:center;}
 .social-options .social-wrapper{display:flex; align-items:center;}

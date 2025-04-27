@@ -223,6 +223,14 @@ input.invalid::placeholder{color:#000000!important;}
 }
 
 .multi-day::after {border-color: #fecb00;}
+
+/* Form Check */
+.form-check .checkmark {background:#fecb00;}
+.form-check .checkmark:after {border-color:#000000;}
+.rating-option input[type="radio"]:checked + label::before{background-color: #000000; border-color: #fecb00;}
+.rating-option {border-color: #fecb00 !important;}
+
+
 /* Floating Label */
 .floating-label label{color:#000000!important;}
 
@@ -827,6 +835,15 @@ table.table.table-download.style-02 tr > td.button-container svg path,
 table.table.table-download tr > td.file-container .icon .show-active svg:first-child path,
 table.table.table-download tr > td.file-container .icon .show-inactive svg:first-child path,
 table.table.table-download.sub tr > td.file-container .icon svg:first-child path {fill: #fecb00;}
+
+/* Inner Shadow */
+.form-inner-shadow {background: #000000;}
+
+
+/* Webboard */
+.profile-icon {border-color: #fecb00 !important;}
+.webboard,
+.sub-webboard {border-color: #fecb00 !important;}
 
 /* No Result */
 .no-result svg path {stroke: #fecb00 !important;}

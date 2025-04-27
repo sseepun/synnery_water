@@ -258,6 +258,10 @@ input.invalid::placeholder{color:#000000!important;}
 
 .multi-day::after {border-color: #ffffff;}
 
+/* Form Check */
+.form-check .checkmark {background:#ffffff;}
+.form-check .checkmark:after {border-color:#000000;}
+
 /* Floating Label */
 .floating-label label{color:#000000!important;}
 
@@ -850,6 +854,8 @@ table.table.table-download:not(.sub) .file-container svg.in-icon path {fill: #00
 table.table.table-download.style-02 tr > td.button-container svg path,
 table.table.table-download tr > td.file-container .icon .show-inactive svg:first-child path {fill: #ffffff;}
 
+/* Inner Shadow */
+.form-inner-shadow {background: #000000;}
 
 /* No Result */
 .no-result svg path {stroke: #ffffff !important;}

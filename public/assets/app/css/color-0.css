@@ -378,6 +378,20 @@ input.validate-error, textarea.validate-error {border-color: #FF2B2B !important;
 .timeline.white .timeline__content .timeline__year::after,
 .timeline.up.white::before {border-color: #ffffff !important;}
 
+
+/* Form Check */
+.form-check .checkmark {background:#eeeeee;}
+.form-check input:checked ~ .checkmark {background:var(--color-p);}
+.form-check .checkmark:after{border-color:#ffffff;}
+.form-check.style-02 .checkmark{border-color:var(--color-p); background:#ffffff;}
+.form-check input:checked ~ .checkmark{background:#009DDC;}
+.form-check.style-03 .checkmark{border-color:var(--color-p)!important; background:#ffffff;}
+.form-check.style-03 input:checked ~ .checkmark{background:var(--color-p);}
+.form-check.style-03 .checkmark:after{border-color:#ffffff;}
+.form-check.style-04 .checkmark{background:#BECAF2;}
+.form-check.style-04 input:checked ~ .checkmark{background:#BECAF2;}
+.form-check.style-04 .checkmark:after{border-color:#ffffff;}
+
 .filter-03{background:linear-gradient(180deg, rgba(0, 143, 211, 0.8) 0%, rgba(14, 58, 129, 0.8) 100%);}
 .filter-04{
   background:linear-gradient(to right, rgba(14, 58, 129, 1) 11%, 
@@ -609,6 +623,9 @@ nav.footer.minisite .menu{color:#ffffff!important;}
   fill: var(--color-t) !important;
 }
 
+/* Inner Shadow */
+.form-inner-shadow {background: #ffffff;}
+
 /* Faq */
 .faq-01 .answer {background: #F8F8F8;}
 .faq-01 > .content.active .wrapper > table.table.table-download tr {background: linear-gradient(90deg, #008FD3 25.31%, #003F80 101.69%);}
@@ -631,3 +648,8 @@ nav.footer.minisite .menu{color:#ffffff!important;}
 
 .mini-box-toggle .content .answer::-webkit-scrollbar-track{background: #EDF1FF;}
 .mini-box-toggle .content .answer::-webkit-scrollbar-thumb{background:var(--color-p);}
+
+/* upload-container */
+.upload-container{border-color:#0E3A81; background:#f8f8f8;}
+.upload-container.style-02{border-color:#DADCE0; background:#f8f8f8;}
+.upload-container.style-03{background:#EFF6FF;}
