@@ -768,7 +768,18 @@ content:""; position:absolute; display:none;
   .list-footer .option{flex-direction:column;}
 }
 
-
+/* Password Level */
+.password-level{display:block; width:100%;}
+.password-level > .levels{
+    width:calc(100% - 12rem); max-width: 12rem; 
+    display:flex; align-items:center; justify-content:space-between;
+    margin:.4375rem 0 .3125rem 0;
+}
+.password-level > .levels > *{
+    display:block; width:calc((100% - 1.25rem) / 3); max-width: 4rem; height:.3125rem; transition:background .25s;
+}
+.password-level > .levels.bradius > *{border-radius:.3rem;}
+.password-level > p > span{transition:color .25s;}
 /* Pagination */
 .paginate{display:flex; align-items: center;}
 .paginate .pages{display:flex; align-items: center; margin: 0 .0625rem;}
