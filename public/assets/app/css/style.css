@@ -639,7 +639,12 @@ content:""; position:absolute; display:none;
   .list-header.option-02 .option.cate, .list-header.option-02 .option.order{width:100%;}
   .list-header.option-02 .option.date{margin-top:1rem;}
 }
-
+@media screen and (min-width: 992px) {
+  .list-header .option.cate{width: 15%;}
+  .list-header .option.order{width: 15%;}
+  .list-header .option.search{width: 35%;}
+  .list-header .option.date{width: 20%;}
+}
 /* List Header Calendar */
 .list-header-calendar{display:flex;}
 .list-header-calendar .options{

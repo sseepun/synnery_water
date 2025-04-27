@@ -590,6 +590,8 @@ nav.quicklink-nav .list-items .arrows .arrow {color: var(--color-p);}
 .calendar-year .activity-list{background:#fafafa;}
 
 
+.section-17 .wrapper .tag .tab-content {background-color: #EFEFEF; color: #008FD3;}
+.section-17 .wrapper .tag .tab-content:hover {background-color: var(--color-p); color: #ffffff;}
 /* Topnav */
 nav.topnav .submenu > *:first-child  > .drop-water-dot{background:var(--color-p);}
 nav.topnav .submenu:hover > *:first-child  > .drop-water-dot{background:#ffffff;}
