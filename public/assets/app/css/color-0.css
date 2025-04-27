@@ -311,6 +311,9 @@ input.validate-error, textarea.validate-error {border-color: #FF2B2B !important;
 .rating-option label::before{border-color:#d8d8d8;}
 .rating-option.result{border-color:#DADCE0; background:#D7E1FC;}
 
+/* List Footer */
+.list-footer .option select{border-color: #E9E9E9;}
+
 /* Paginate */
 .paginate .page.active, .paginate .page:hover{background:var(--color-p); color:#ffffff;}
 .paginate .page{color:#9D9D9D;}
