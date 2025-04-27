@@ -445,6 +445,9 @@ table.table.table-download.style-02 .btn-collap{background:#000000;}
 table.table.table-download.style-02 .file-container svg:not(.pattern) path{fill:#ffffff;}
 table.table.table-download.style-02 tr > td.button-container .icon-download svg path{fill:#ffffff;}
 
+/* Section */
+.section-03 .swiper-expand.swiper-horizontal .arrows .arrow {background: #ffffff;color: #000000;}
+.section-08 .swiper-container .arrows .arrow {color: #000000;}
 
 /* upload-container */
 .upload-container{border-color:#ffffff;}

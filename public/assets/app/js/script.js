@@ -468,7 +468,23 @@ if(faq01.length){
       },
     });
   }
+  
+  // Section 03 - 02
+  if($('.section-03 .swiper-02').length){
+    new Swiper('.section-03 .swiper-02', {
+      spaceBetween: 15, slidesPerView: 1, speed: 800,
+      // autoplay: { delay: 5000 }, loop: true,
+      pagination:{ 
+        el: '.swiper-pagination', clickable: true,
+      },
+      navigation:{
+        prevEl: '.section-03 .arrow.arrow-prev',
+        nextEl: '.section-03 .arrow.arrow-next',
+      }, 
+    });
+  }
 
+  // Section 05 - 02
   if($('.section-05 .swiper-02').length){
     new Swiper('.section-05 .swiper-02', {
       spaceBetween: 0, slidesPerView: 1, speed: 800,
@@ -670,6 +686,16 @@ if(faq01.length){
   });
 
 
+  if($('.section-08 .swiper-container').length){
+    new Swiper('.section-08 .swiper-container', {
+      spaceBetween: 10, slidesPerView: 1, speed: 800,
+      autoplay: { delay: 5000 }, loop: true,
+      navigation:{
+        prevEl: '.section-08 .arrow.arrow-prev',
+        nextEl: '.section-08 .arrow.arrow-next',
+      }
+    });
+  }
 
   /* Change color according to water level value */
   function getColor(type, value) {

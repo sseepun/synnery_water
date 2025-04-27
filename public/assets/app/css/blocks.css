@@ -574,6 +574,37 @@
   color:#ffffff; transition:background .25s; background:rgba(0, 0, 0, 0.5);
 }
 .section-03 .swiper-expand .arrows .arrow:hover{background:rgba(0, 0, 0, 1);}
+
+.section-03 .swiper-expand .swiper-02 {overflow: hidden;}
+.section-03 .swiper-expand.swiper-horizontal .arrows .arrow {position: relative; background: #ffffff; color: #008FD3;}
+.section-03 .swiper-expand.swiper-horizontal .arrows .arrow::before {
+  content: ''; position: absolute; width: 100%;
+  height: 100%; border-radius: 100%; background: rgba(255, 255, 255, 0.4); opacity: 0;
+}
+.section-03 .swiper-expand.swiper-horizontal .arrows .arrow:hover::before {animation: waves 1.5s linear infinite;}
+.section-03 .swiper-expand .swiper-pagination-bullets{position: relative;}
+
+.section-03 .magazine-recommend {
+  max-width: 1000px;
+  margin: 2rem auto 1rem !important;
+}
+.section-03 .magazine-recommend .swiper-slide {padding: 1rem;}
+@media screen and (max-width:1299.98px){
+  .section-03 .swiper-expand{width:100%; margin:0 0; padding:0 4rem;}
+  .section-03 .swiper-expand .arrows{top:-1.875rem; padding:0 0;}
+}
+@media screen and (max-width:1199.98px){
+  .section-03 .swiper-expand{width:100%; margin:0 0; padding:0 3.5rem;}
+  .section-03 .swiper-expand.swiper-horizontal{padding: 0;}
+  .section-03 .swiper-expand.swiper-horizontal .arrows .arrow {display: none;}
+}
+@media screen and (max-width:991.98px){
+  .section-03 .panel-card{margin-top:1.5rem;}
+}
+@media screen and (max-width:490.98px){
+  .section-03 .swiper-expand .arrows .arrow{width:2rem; height:2rem; font-size:.875rem;}
+}
+
 .section-03 .pattern{position:absolute; top:-32rem; left:0; right:0;}
 @media screen and (max-width:1299.98px){
   .section-03 .swiper-expand{width:100%; margin:0 0; padding:0 4rem;}
@@ -891,6 +922,24 @@
   .section-08{padding-bottom:4rem;}
 }
 
+/* Sectopn 08 */
+.section-08 .swiper-container{position: relative; overflow: hidden;}
+.section-08 .swiper-container .arrows{
+  position:absolute; top:0; right:0; bottom:0; left:0; z-index:2; 
+  pointer-events:none; display:flex; align-items:center; justify-content:space-between;
+  padding:0 2rem;
+}
+.section-08 .swiper-container .arrows .arrow{
+  position: relative;
+  pointer-events:all; width:2.25rem; height:2.25rem; border-radius:50%;
+  display:flex; justify-content:center; align-items:center;
+  transition:background .25s; background:rgba(255, 255, 255, 1);
+}
+.section-08 .swiper-container .arrows .arrow::before {
+  content: ''; position: absolute; width: 100%;
+  height: 100%; border-radius: 100%; background: rgba(255, 255, 255, 0.4); opacity: 0;
+}
+.section-08 .swiper-container .arrows .arrow:hover::before {animation: waves 1.5s linear infinite;}
 
 /* Section 09 */
 .section-09 .detail-options{

@@ -595,6 +595,8 @@ nav.quicklink-nav .list-items .arrows .arrow {color: var(--color-p);}
 .calendar-year .fc-popover .fc-popover-body .fc-event.event-yellow .title{color:#EEAA00;}
 .calendar-year .activity-list{background:#fafafa;}
 
+/* Section */
+.section-08 .swiper-container .arrows .arrow {color: var(--color-p);}
 
 .section-17 .wrapper .tag .tab-content {background-color: #EFEFEF; color: #008FD3;}
 .section-17 .wrapper .tag .tab-content:hover {background-color: var(--color-p); color: #ffffff;}
@@ -661,6 +663,9 @@ nav.footer.minisite .menu{color:#ffffff!important;}
 .upload-container{border-color:#0E3A81; background:#f8f8f8;}
 .upload-container.style-02{border-color:#DADCE0; background:#f8f8f8;}
 .upload-container.style-03{background:#EFF6FF;}
+
+/* Popup */
+.popup-container.member-popup{background: linear-gradient(102.66deg, rgba(14, 58, 129, 0.8) 0%, rgba(0, 143, 211, 0.8) 100%);}
 
 /* Webboard */
 .sub-webboard table.table.table-download.sub tr {
