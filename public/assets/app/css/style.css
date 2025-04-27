@@ -39,9 +39,7 @@ img.img{display:block; width:100%; height:auto;}
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=number], input[type=phone], input[type=submit], nput[type=file], select, 
 textarea, button{font-family:var(--fw);}
-.form-groups {
-  display: flex;
-}
+
 .gender-option {display: none;}
 .gender-label {
   padding: .4375rem .75rem; border: 1px solid transparent; border-radius: 6px;
@@ -510,6 +508,21 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   line-height:var(--lh); font-weight:300; padding:.4375rem .75rem; margin:0;
   outline:none!important; transition:border-color .25s, color .25s; font-size: 1rem;
   width:100%; 
+}
+
+.form-input {position: relative;}
+.form-input select {appearance: none;}
+.form-input .dropdown-icon {
+  position: absolute; right: 0;
+  pointer-events: none;
+  width: 2.5rem; height: 100%;
+  border-radius: 0 .375rem .375rem 0;
+  top: 0; bottom: 0;
+  display: flex; justify-content: center; align-items: center;
+  border: 1px solid transparent;
+}
+.form-groups {
+  display: flex;
 }
 
 /* Input Form Check */
