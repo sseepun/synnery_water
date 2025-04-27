@@ -869,7 +869,7 @@ content:""; position:absolute; display:none;
 .ss-card-04 .text-container .wrapper{
   position:relative; padding:1rem; border-radius:0 0 var(--bradius) var(--bradius);
 }
-.ss-card-04 .text-container .title{-webkit-line-clamp:2;}
+.ss-card-04 .text-container .title{-webkit-line-clamp:2;min-height: 2.65rem;}
 .ss-card-04 .text-container .description {display:none;}
 .ss-card-04.hover .text-container .description {
   display:block; height:auto!important; opacity:1!important;
