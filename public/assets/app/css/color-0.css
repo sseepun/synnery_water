@@ -21,7 +21,11 @@ html, body, a, a:hover, table.table{color:#000000;}
 .color-03, .h-color-03:hover{color:#8589AB!important;}
 .color-04, .h-color-04:hover{color:#D2E0F7!important;}
 .color-05, .h-color-05:hover{color:#FFF61D!important;}
-
+.color-gray-08, .h-color-gray-08:hover{color:#727272!important;}
+.color-blue-01, .h-color-blue-01:hover{color:#0E3A81!important;}
+.color-blue-02, .h-color-blue-02:hover{color:#232B4F!important;}
+.color-bluesky-03, .h-color-bluesky-03:hover{color:#D2E0F7!important;}
+.text-danger {color: #FF2B2B;}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
