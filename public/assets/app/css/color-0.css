@@ -378,6 +378,12 @@ input.validate-error, textarea.validate-error {border-color: #FF2B2B !important;
 .timeline.white .timeline__content .timeline__year::after,
 .timeline.up.white::before {border-color: #ffffff !important;}
 
+/* Color Table */
+table.table.table-download tr{background-color:#F0F0F0;border-color: #ffffff !important;}
+table.table.table-download tr:hover{background-color:#D2E0F7;}
+table.table.table-download .file-container .icon{background-color:var(--color-p);}
+table.table.table-download tr.hover-01:hover{background-color:#D5E4FC!important;}
+table.table.table-download.sub tr.hover-01:hover{background-color:transparent!important;}
 
 /* Form Check */
 .form-check .checkmark {background:#eeeeee;}
@@ -655,3 +661,8 @@ nav.footer.minisite .menu{color:#ffffff!important;}
 .upload-container{border-color:#0E3A81; background:#f8f8f8;}
 .upload-container.style-02{border-color:#DADCE0; background:#f8f8f8;}
 .upload-container.style-03{background:#EFF6FF;}
+
+/* Webboard */
+.sub-webboard table.table.table-download.sub tr {
+    background-image: url(../images/bg/dowload-02.png);
+}

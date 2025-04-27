@@ -105,7 +105,8 @@ textarea, button{font-family:var(--fw);}
 
 /* Buttons */
 .btns{
-  display:flex; align-items:center; flex-wrap:wrap;
+  display:flex; align-items:center; 
+  flex-wrap:wrap;
   /* margin:-.25rem -.125rem 0 -.125rem;  */
   width:calc(100% + .25rem);
 }
@@ -1548,6 +1549,44 @@ table.table.table-download.style-02.minisite td:last-child{padding:.25rem 1rem;}
   table.table.table-download.style-02.minisite .option:nth-child(2).ml-5{width:100%;}
 }
 
+/* Table */
+table.table{width:100%; border-spacing:0; border:0; margin:0;}
+table.table th, table.table td{
+  vertical-align:middle; border-color:transparent;
+  border-left:0!important; border-right:0!important;
+}
+table.table td{
+  padding:1.35rem .625rem; font-size:.9375rem; font-weight:300;
+  border:0; border-bottom:1px solid transparent;
+}
+table.table td:first-child{padding:.5625rem 1rem;}
+table.table tr:last-child > td{border-bottom:0;}
+table.table td:last-child{padding:.5625rem 0 .5625rem .625rem; text-align:right;}
+table.table.table-download.sub tr {
+  background-image: url('../images/bg/dowload-01.png'); background-color: transparent; background-size: cover; background-position: 94%; background-position: right;
+  border-radius: 1.25rem; border: 1px solid transparent !important;
+}
+table.table.table-download.sub tr:hover {
+  background-image: url('../images/bg/dowload-02.png') !important; background-size: cover !important; background-position: center !important; background-position: right !important;
+}
+@media screen and (max-width:567.98px){
+  table.table.table-download.sub tr {background-position: center;}
+  
+}
+
+/* Table Sizes */
+table.table.table-lg td, table.table.table-lg th{padding:.6875rem .625rem;}
+table.table.table-lg td:first-child,
+table.table.table-lg th:first-child{padding:.6875rem .625rem .6875rem 0;}
+table.table.table-lg td:last-child,
+table.table.table-lg th:last-child{padding:.6875rem 0 .6875rem .625rem;}
+
+table.table.table-sm td, table.table.table-sm th{padding:.4375rem .5625rem;}
+table.table.table-sm td:first-child,
+table.table.table-sm th:first-child{padding:.4375rem .5625rem .4375rem 0;}
+table.table.table-sm td:last-child,
+table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
+
 
 /* Spacing */
 .p-0{padding:0!important;}
@@ -1640,6 +1679,7 @@ table.table.table-download.style-02.minisite td:last-child{padding:.25rem 1rem;}
 
 .d-block{display:block!important;}
 .d-flex{display:flex!important;}
+.btns.d-flex{flex-wrap: unset;}
 .d-inline{display:inline!important;}
 .d-inline-block{display:inline-block!important;}
 .d-none{display:none!important;}
