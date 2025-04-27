@@ -1341,6 +1341,9 @@ content:""; position:absolute; display:none;
 .ss-img.horizontal-2{padding:68% 0 0 0;}
 .ss-img.horizontal-3{padding:40% 0 0 0;}
 .ss-img.vertical{padding:145% 0 0 0;}
+.magazine-recommend .ss-img.vertical {
+  padding: 59% 0 0 0;
+}
 .ss-img.vertical-2{padding:130% 0 0 0;}
 .ss-img.vertical-3{padding:26% 0 0 0;}
 .ss-img.vertical-4{padding: 20% 0 0 0;}
