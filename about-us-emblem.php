@@ -62,7 +62,7 @@
     <div class="container">
       <!-- รูปภาพที่เกี่ยวข้อง -->
       <div class="mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
-        <div class="ss-title-01 mt-6">
+        <div class="ss-title-01 mt-6 ss-title-02">
           <p class="title">รูปภาพที่เกี่ยวข้อง</p>
           <svg class="pattern-01" width="56" height="19" viewBox="0 0 56 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M25.5 19.0001C21.4714 4.75227 17.5573 0.834769 4.63929 0.500062H0.5C1.9752 0.468933 3.35196 0.466707 4.63929 0.500062H44.2951C47.5519 0.139309 51.4023 0.15172 56 0.500062H44.2951C33.0872 1.74154 28.9093 7.40239 25.5 19.0001Z" fill="white"/>
@@ -116,7 +116,7 @@
       <!-- Doc -->
       <div class="faq-01 mt-5 pt-5" data-aos="fade-up" data-aos-delay="200">
         
-        <div class="ss-title-01 mt-6">
+        <div class="ss-title-01 mt-6 ss-title-02">
           <p class="title">ไฟล์เอกสาร</p>
           <svg class="pattern-01" width="56" height="19" viewBox="0 0 56 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M25.5 19.0001C21.4714 4.75227 17.5573 0.834769 4.63929 0.500062H0.5C1.9752 0.468933 3.35196 0.466707 4.63929 0.500062H44.2951C47.5519 0.139309 51.4023 0.15172 56 0.500062H44.2951C33.0872 1.74154 28.9093 7.40239 25.5 19.0001Z" fill="white"/>

@@ -922,6 +922,18 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   background:#EEEEEE; margin:0 auto;
 }
 
+/* Special Title */
+.ss-title-02 {
+  position: relative; padding: 0.5rem 3rem; margin-bottom: 1rem;
+}
+.ss-title-02 .img-bg {
+  position: absolute; top: 0; left: 0;
+  height: 100%; width: 100%;
+  background-repeat: no-repeat;
+}
+.ss-title-02 .wrapper {position: relative;}
+
+
 
 /* Special Stat */
 .ss-stats{
