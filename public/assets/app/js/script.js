@@ -697,6 +697,24 @@ if(faq01.length){
     });
   }
 
+  // Intro 01
+  if($('.intro-01 .swiper').length){
+    new Swiper('.intro-01 .swiper', {
+      spaceBetween:0, slidesPerView: 1, speed: 800,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination', 
+        clickable: true,
+      },
+      navigation: {
+        prevEl: '.arrow-prev',
+        nextEl: '.arrow-next',
+      },
+    });
+  }
+  
+
+
   /* Change color according to water level value */
   function getColor(type, value) {
     if (type === 'big') {
