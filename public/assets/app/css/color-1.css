@@ -862,3 +862,8 @@ table.table.table-download tr > td.file-container .icon .show-inactive svg:first
 
 /* No Result */
 .no-result svg path {stroke: #ffffff !important;}
+
+/* Webboard */
+.profile-icon {border-color: #ffffff !important;}
+.webboard,
+.sub-webboard {border-color: #ffffff !important;}
