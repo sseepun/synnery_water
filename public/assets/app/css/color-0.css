@@ -66,6 +66,10 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bcolor-01{border-color:#73BEE7!important;}
 .bcolor-02{border-color:#EAEAEA!important;}
 .bcolor-03{border-color:#cccccc!important;}
+.bcolor-gray-06, .h-bcolor-gray-06:hover{border-color:#D9D9D9!important;}
+.bcolor-gray-08, .h-bcolor-gray-07:hover{border-color:#ECECEC!important;}
+.bcolor-white, .h-bcolor-white:hover{border-color:#ffffff!important;}
+
 
 
 .font-gradient-01{
