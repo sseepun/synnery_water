@@ -273,6 +273,9 @@ input[type=file]:focus, select:focus, textarea:focus{
 input::placeholder{color:#666666;}
 input.validate-error, textarea.validate-error {border-color: #FF2B2B !important;}
 
+.gender-label {border-color: #D9D9D9 !important; background-color: white;}
+.gender-option:checked + .gender-label {background-color: #aee3ff; border-color:  var(--color-p) !important; color: var(--color-p);}
+.gender-option:checked + .gender-label::before {color: var(--color-p);}
 
 /* List Header */
 .list-header .option .icon-view{background:#F3F3F3;}

@@ -39,7 +39,9 @@ img.img{display:block; width:100%; height:auto;}
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
 input[type=number], input[type=phone], input[type=submit], nput[type=file], select, 
 textarea, button{font-family:var(--fw);}
-
+.form-groups {
+  display: flex;
+}
 .gender-option {display: none;}
 .gender-label {
   padding: .4375rem .75rem; border: 1px solid transparent; border-radius: 6px;
