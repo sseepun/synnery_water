@@ -256,6 +256,7 @@ input.invalid::placeholder{color:#000000!important;}
   rgba(0, 0, 0, 1) 47%,rgba(0, 0, 0, 0.15) 81%,rgba(0, 0, 0, 0) 100%);
 }
 
+.multi-day::after {border-color: #ffffff;}
 
 /* Floating Label */
 .floating-label label{color:#000000!important;}

@@ -59,6 +59,89 @@ $(function(){ 'use strict';
     sidenav.removeClass('active');
   });
 
+  /* Login Form */
+  const loginForm = $('#login-form');
+
+  if (loginForm.length) {
+    loginForm.on('submit', function (e) {
+      e.preventDefault(); 
+
+      const usernameInput = $('#username');
+      const passwordInput = $('#password');
+      const usernameError = $('#username-error');
+      const passwordError = $('#password-error');
+      const submitButton = loginForm.find('button[type="submit"]');
+
+      const correctUsername = "user@example.com";
+      const correctPassword = "123456";
+
+      let isValid = true;
+
+      if (usernameInput.val().trim() === "" || usernameInput.val() !== correctUsername) {
+        usernameInput.css('border', '1px solid #FF0000');
+        usernameError.show().text("กรุณากรอกชื่อผู้ใช้งานหรืออีเมลที่ถูกต้อง");
+        isValid = false;
+      } else {
+        usernameInput.css('border', '');
+        usernameError.hide();
+      }
+
+      if (passwordInput.val().trim() === "" || passwordInput.val() !== correctPassword) {
+        passwordInput.css('border', '1px solid #FF0000');
+        passwordError.show().text("รหัสผ่านไม่ถูกต้อง");
+        isValid = false;
+      } else {
+        passwordInput.css('border', '');
+        passwordError.hide();
+      }
+
+      submitButton.blur();
+
+      if (isValid) {
+        alert("เข้าสู่ระบบ");
+      }
+    });
+  }
+
+
+  // Button Popup
+  $('.btn-popup-toggle').click(function(e) {
+    e.preventDefault();
+
+    let popupToOpen = $(this).data('popup');
+
+    $('.popup-container').not('[data-popup="' + popupToOpen + '"]').removeClass('active');
+
+    $('.popup-container[data-popup="' + popupToOpen + '"]').toggleClass('active');
+  });
+
+  $('.btn-popup-close-all').click(function(e) {
+      e.preventDefault();
+      $('.popup-container').removeClass('active');
+  });
+
+  
+  /* Toggle Password */
+  function setupTogglePassword(toggleSelector, inputSelector) {
+    const toggleElements = $(toggleSelector);
+
+    toggleElements.each(function(){
+      const toggleButton = $(this);
+      const passwordInput = $(toggleButton.data('target'));
+
+      if (passwordInput.length) {
+        toggleButton.on('click', function(){
+          const type = passwordInput.attr('type') === 'password' ? 'text' : 'password';
+          passwordInput.attr('type', type);
+
+          toggleButton.toggleClass('fa-eye fa-eye-slash');
+        });
+      }
+    });
+  }
+  setupTogglePassword('[data-toggle="password"]');
+
+
 
   // Accessibility
   var accessibility = $('nav.access-panel');
