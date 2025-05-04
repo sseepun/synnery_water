@@ -27,32 +27,7 @@
     <div class="container">
       <h4 class="fw-700 color-black text-left font-mitr pt-3">โครงการอ่างเก็บน้ำแม่หินหลวงน้อย" แหล่งน้ำต้นทุน แห่งใหม่ จ.ตาก</h4>
       <div class="d-flex ai-center mt-2 mb-5 pb-5">
-        <div class="ss-stats">
-          <div class="stat color-gray-01">
-            <div class="icon">
-              <em class="fa-solid fa-calendar"></em>
-            </div>
-            <div class="text">
-              <p class="xs">9 ธ.ค. 67</p>
-            </div>
-          </div>
-          <div class="stat color-gray-01">
-            <div class="icon">
-              <em class="fa-solid fa-eye"></em>
-            </div>
-            <div class="text">
-              <p class="xs">999k</p>
-            </div>
-          </div>
-          <div class="stat color-gray-01">
-            <div class="icon">
-              <em class="fa-solid fa-share-nodes"></em>
-            </div>
-            <div class="text">
-              <p class="xs">999k</p>
-            </div>
-          </div>
-        </div>
+        <?php include('components/stats.php'); ?>
         <?php include_once('components/social-share.php'); ?>
       </div>
       <iframe class="youtube-player" width="560" height="315" src="https://www.youtube.com/embed/IX3rP4sB1I8?si=X4-kR9PblBlJRxxT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -135,7 +110,7 @@
                           <span class="p xs color-gray-01 fw-200">|</span>
                         </div>
                         <div class="option">
-                          <span class="p xs c-pointer color-p color-03 fw-500 btn-popup-toggle a link" data-popup="82">แจ้งไฟล์เสีย</span>
+                          <span class="p xs c-pointer color-p fw-500 btn-popup-toggle a link" data-popup="82">แจ้งไฟล์เสีย</span>
                         </div>
                       </div>
                       <div class="show-mobile d-none">
@@ -148,7 +123,7 @@
                     </div>
                   </td>
                   <td class="button-container">
-                    <div class="icon">
+                    <a href="#" class="icon">
                       <?php if ($d['type'] === 'link') { ?>
                         <svg width="30" height="29" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path class="stroke-white-theme" d="M20 16.4992L32.3 4.19922" stroke="#008FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -160,7 +135,7 @@
                           <path class="fill-white-theme" d="M0 18.3496C0 22.6918 3.53334 26.2246 7.875 26.2246H13.5C14.1218 26.2246 14.625 25.7209 14.625 25.0996C14.625 24.4783 14.1218 23.9746 13.5 23.9746H7.875C4.77366 23.9746 2.25 21.451 2.25 18.3496C2.25 15.2483 4.77366 12.7246 7.875 12.7246H9C9.62184 12.7246 10.125 12.2209 10.125 11.5996C10.125 7.25739 13.6583 3.72461 18 3.72461C22.3417 3.72461 25.875 7.25739 25.875 11.5996C25.875 12.2209 26.3782 12.7246 27 12.7246H28.125C31.2263 12.7246 33.75 15.2483 33.75 18.3496C33.75 21.451 31.2263 23.9746 28.125 23.9746H22.5C21.8782 23.9746 21.375 24.4783 21.375 25.0996C21.375 25.7209 21.8782 26.2246 22.5 26.2246H28.125C32.4667 26.2246 36 22.6918 36 18.3496C36 14.0074 32.4667 10.4746 28.125 10.4746H28.0623C27.5009 5.41914 23.2031 1.47461 18 1.47461C12.7969 1.47461 8.49909 5.41914 7.93772 10.4746H7.875C3.53306 10.4746 0 14.0074 0 18.3496ZM14.2954 28.8042L16.875 31.3839V17.2246C16.875 16.6033 17.3782 16.0996 18 16.0996C18.6218 16.0996 19.125 16.6033 19.125 17.2246V31.3839L21.7046 28.8042C22.1442 28.3646 22.8561 28.3646 23.2954 28.8042C23.7347 29.2438 23.735 29.9557 23.2954 30.395L18.7954 34.895C18.5757 35.1146 18.2877 35.2246 18 35.2246C17.7123 35.2246 17.4243 35.1146 17.2046 34.895L12.7046 30.395C12.265 29.9554 12.265 29.2435 12.7046 28.8042C13.1442 28.3649 13.8561 28.3646 14.2954 28.8042Z" fill="#008FD3" />
                         </svg>
                       <?php } ?>
-                    </div>
+                    </a>
                     <a href="#" class="p title xs color-p border-bottom-1 bcolor-p">
                       <?= $d['type'] === 'link' ? 'คลิกลิงก์' : 'ดาวน์โหลด' ?>
                     </a>
@@ -203,7 +178,7 @@
         <div class="grids jc-center" data-aos="fade-up" data-aos-delay="150">
           <?php foreach ($titleMag as $i => $d) { ?>
             <div class="grid lg-1-3">
-              <a href="<?= $d['href'] ?>" class="ss-card ss-card-04 ss-tag-in-text bradius-4 ovf-hidden h-bg-t">
+              <a href="<?= $d['href'] ?>" class="ss-card ss-card-04 ss-tag-in-text bradius-4 ovf-hidden h-bg-bluesky-01">
                 <div class="ss-img horizontal-2">
                   <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
                 </div>
@@ -218,32 +193,10 @@
                     </div>
                   <p class="title lg fw-500 lh-sm color-t"><?= $d['title'] ?></p>
                   <div class="d-flex jc-space-between w-full">
-                    <div class="ss-stats mt-6">
-                      <div class="stat color-gray-01">
-                        <div class="icon p xxs">
-                          <em class="fa-solid fa-calendar"></em>
-                        </div>
-                        <div class="text">
-                          <p class="xxs">9 ธ.ค. 67</p>
-                        </div>
-                      </div>
-                      <div class="stat color-gray-01">
-                        <div class="icon p xxs">
-                          <em class="fa-solid fa-eye"></em>
-                        </div>
-                        <div class="text">
-                          <p class="xxs">999k</p>
-                        </div>
-                      </div>
-                      <div class="stat color-gray-01">
-                        <div class="icon p xxs">
-                          <em class="fa-solid fa-share-nodes"></em>
-                        </div>
-                        <div class="text">
-                          <p class="xxs">999k</p>
-                        </div>
-                      </div>
-                    </div>
+                    <?php 
+                      $headerClass = 'mt-6';
+                      include('components/stats.php'); 
+                    ?>
                     <div class="readmore vdo d-flex ai-end" style="margin-bottom: -1.5rem;margin-right: -1rem;">
                       <svg width="50" height="50" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="29.5" cy="29.5" r="29.5" fill="#D5E4FC"/>

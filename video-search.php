@@ -80,7 +80,7 @@
             ?>
             <?php foreach ($titleMag as $i => $d) { ?>
               <div class="swiper-slide">
-                <a href="<?= $d['href'] ?>" class="ss-card ss-card-column card-column-02 bg-white h-bg-t">
+                <a href="<?= $d['href'] ?>" class="ss-card ss-card-column card-column-02 bg-white h-bg-bluesky-01">
                   <div class="ss-img horizontal-3">
                     <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
                     <div class="icon">
@@ -100,32 +100,10 @@
                         <?php } ?>
                       </div>
                     <h6 class="title fw-500 lh-sm color-t"><?= $d['title'] ?></h6>
-                    <div class="ss-stats mt-6 pt-4">
-                      <div class="stat color-gray-01">
-                        <div class="icon">
-                          <em class="fa-solid fa-calendar"></em>
-                        </div>
-                        <div class="text">
-                          <p class="xs">9 ธ.ค. 67</p>
-                        </div>
-                      </div>
-                      <div class="stat color-gray-01">
-                        <div class="icon">
-                          <em class="fa-solid fa-eye"></em>
-                        </div>
-                        <div class="text">
-                          <p class="xs">999k</p>
-                        </div>
-                      </div>
-                      <div class="stat color-gray-01">
-                        <div class="icon">
-                          <em class="fa-solid fa-share-nodes"></em>
-                        </div>
-                        <div class="text">
-                          <p class="xs">999k</p>
-                        </div>
-                      </div>
-                    </div>
+                    <?php 
+                      $headerClass = 'mt-6 pt-4';
+                      include('components/stats.php'); 
+                    ?>
                   </div>
                   </div>
                 </a>
@@ -148,7 +126,7 @@
 
   <section class="section-padding pt-4 bg-white">
     <div class="container">
-      <div data-aos="fade-up" data-aos-delay="0">
+      <div style="position: relative; z-index: 1;" data-aos="fade-up" data-aos-delay="0">
         <?php
         $listHeaderClass = 'mt-3 mb-3 pb-5';
         $listHeader = ['search', 'date-01', 'category', 'order', 'view-grid'];
@@ -160,7 +138,7 @@
       <div class="grids jc-center" data-aos="fade-up" data-aos-delay="150">
         <?php foreach ($titleMag as $i => $d) { ?>
           <div class="grid lg-1-3">
-            <a href="<?= $d['href'] ?>" class="ss-card ss-card-04 ss-tag-in-text bradius-4 ovf-hidden h-bg-t">
+            <a href="<?= $d['href'] ?>" class="ss-card ss-card-04 ss-tag-in-text bradius-4 ovf-hidden h-bg-bluesky-01">
               <div class="ss-img horizontal-2">
                 <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
               </div>
@@ -175,32 +153,10 @@
                   </div>
                 <p class="title lg fw-500 lh-sm color-t"><?= $d['title'] ?></p>
                 <div class="d-flex jc-space-between w-full">
-                  <div class="ss-stats mt-6">
-                    <div class="stat color-gray-01">
-                      <div class="icon p xxs">
-                        <em class="fa-solid fa-calendar"></em>
-                      </div>
-                      <div class="text">
-                        <p class="xxs">9 ธ.ค. 67</p>
-                      </div>
-                    </div>
-                    <div class="stat color-gray-01">
-                      <div class="icon p xxs">
-                        <em class="fa-solid fa-eye"></em>
-                      </div>
-                      <div class="text">
-                        <p class="xxs">999k</p>
-                      </div>
-                    </div>
-                    <div class="stat color-gray-01">
-                      <div class="icon p xxs">
-                        <em class="fa-solid fa-share-nodes"></em>
-                      </div>
-                      <div class="text">
-                        <p class="xxs">999k</p>
-                      </div>
-                    </div>
-                  </div>
+                  <?php 
+                    $headerClass = 'mt-6';
+                    include('components/stats.php'); 
+                  ?>
                   <div class="readmore vdo d-flex ai-end" style="margin-bottom: -1.5rem;margin-right: -1rem;">
                     <svg width="50" height="50" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="29.5" cy="29.5" r="29.5" fill="#D5E4FC"/>

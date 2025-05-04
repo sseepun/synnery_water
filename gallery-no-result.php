@@ -80,7 +80,7 @@
             ?>
             <?php foreach ($titleMag as $i => $d) { ?>
               <div class="swiper-slide">
-                <a href="<?= $d['href'] ?>" class="ss-card ss-card-column card-column-02 bg-white h-bg-t">
+                <a href="<?= $d['href'] ?>" class="ss-card ss-card-column card-column-02 bg-white h-bg-bluesky-01">
                   <div class="ss-img horizontal-3">
                     <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
                   </div>
@@ -99,32 +99,10 @@
                           เย็นวันนี้ (22  มกราคม 2568) นายสุริยพล นุชอนงค์ อธิบดีกรมชลประทาน พร้อมด้วย นายฐนันดร์  สุทธิพิศาล รองอธิบดีฝ่ายก่อสร้าง และนายวรพจน์ เพชรนรชาติ  รองอธิบดีฝ่ายบริหาร เข้าร่วมงานแสดงความยินดีแด่นิสิตเก่าวิศวกรรมศาสตร์  มหาวิทยาลัยเกษตรศาสตร์ ที่ได้รับการเลื่อนตำแหน่งเป็นผู้บริหารระดับสูง  ประจำปี 2567 ซึ่งจัดขึ้นโดยสมาคมศิษย์เก่าวิศวกรรมชลประทาน  ในพระบรมราชูปถัมภ์ ร่วมกับ สมาคมนิสิตเก่ามหาวิทยาลัยเกษตรศาสตร์ ณ ห้องวิภาวดีบอลรูม AB โรงแรมเซ็นทาราแกรนด์ แอท เซ็นทรัลพลาซ่า ลาดพร้าว กรุงเทพฯ
                         </p>
                       </div>
-                      <div class="ss-stats mt-6 pt-4">
-                        <div class="stat color-gray-01">
-                          <div class="icon">
-                            <em class="fa-solid fa-calendar"></em>
-                          </div>
-                          <div class="text">
-                            <p class="xs">9 ธ.ค. 67</p>
-                          </div>
-                        </div>
-                        <div class="stat color-gray-01">
-                          <div class="icon">
-                            <em class="fa-solid fa-eye"></em>
-                          </div>
-                          <div class="text">
-                            <p class="xs">999k</p>
-                          </div>
-                        </div>
-                        <div class="stat color-gray-01">
-                          <div class="icon">
-                            <em class="fa-solid fa-share-nodes"></em>
-                          </div>
-                          <div class="text">
-                            <p class="xs">999k</p>
-                          </div>
-                        </div>
-                      </div>
+                      <?php 
+                        $headerClass = 'mt-6 pt-4';
+                        include('components/stats.php'); 
+                      ?>
                       <div class="readmore">
                         <svg width="50" height="50" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="29.5" cy="29.5" r="29.5" fill="#D5E4FC"></circle>

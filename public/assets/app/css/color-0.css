@@ -16,6 +16,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .color-gray-01, .h-color-gray-01:hover{color:#AEADAD!important;}
 .color-gray-02, .h-color-gray-02:hover{color:#AEADAD!important;}
 .color-gray-03, .h-color-gray-03:hover{color:#909090!important;}
+.color-gray-04, .h-color-gray-04:hover{color:#626262!important;}
 .color-01, .h-color-01:hover{color:#5F5E5D!important;}
 .color-02, .h-color-02:hover{color:#FF0000!important;}
 .color-03, .h-color-03:hover{color:#8589AB!important;}
@@ -32,7 +33,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .bg-p{background:var(--color-p)!important;}
 .bg-s{background:var(--color-s)!important;}
 .bg-t, .h-bg-t:hover{background:var(--color-t)!important;}
-.bg-bluesky-01{background:#DCF0F9!important;}
+.bg-bluesky-01, .h-bg-bluesky-01:hover{background:#DCF0F9!important;}
 .bg-bluesky-02{background:#009DDC!important;}
 .bg-gray-07{background:#F1F1F1!important;}
 .bg-gray-09{background:#F9F9F9!important;}
@@ -132,7 +133,7 @@ html, body, a, a:hover, table.table{color:#000000;}
 .btn.btn-delete-comment:active{color:#ffffff; background:var(--color-p); border-color:var(--color-p);}
 
 .btn.btn-cancel, .btn.btn-cancel:focus{color:var(--color-p); background:#CDEFFF; border-color:#CDEFFF;}
-.btn.btn-cancel:hover{background:var(--color-t); border-color:var(--color-t); color:var(--color-s);}
+.btn.btn-cancel:hover{background:var(--color-t); border-color:var(--color-t); color:#ffffff;}
 .btn.btn-cancel:active{background:var(--color-t); border-color:var(--color-t);}
 
 .btn.btn-agendar, .btn.btn-agendar:focus{color:var(--color-p); background:#ffffff; border-color:#CDEFFF;}
@@ -271,7 +272,7 @@ input[type=file]:focus, select:focus, textarea:focus{
     border-color:var(--color-p)!important;
 }
 input::placeholder{color:#666666;}
-input.validate-error, textarea.validate-error {border-color: #FF2B2B !important;}
+input.validate-error, textarea.validate-error, select.validate-error {border-color: #FF2B2B !important;}
 
 .gender-label {border-color: #D9D9D9 !important; background-color: white;}
 .gender-option:checked + .gender-label {background-color: #aee3ff; border-color:  var(--color-p) !important; color: var(--color-p);}
@@ -350,6 +351,10 @@ input.validate-error, textarea.validate-error {border-color: #FF2B2B !important;
 /* Special Tag */
 .ss-tags > .tag{background:#E9F1FF; color:#008FD3;}
 
+.ss-cate > .item{background:#EFEFEF; color:#008FD3;}
+.ss-cate > .item:hover,
+.ss-cate > .item.active{background:#008FD3; color:#ffffff;}
+
 
 /* Services Container  */
 .services-container .header .topic{background:var(--color-t);}
@@ -384,6 +389,7 @@ input.validate-error, textarea.validate-error {border-color: #FF2B2B !important;
 .ss-tags > .tag, .cate-list p {background: #E9F1FF; color: var(--color-p);}
 .ss-card-16 .text-container {background-color: #F0F0F0;}
 .ss-card-16:hover .text-container {background-color: var(--color-t);}
+.ss-card.h-bg-bluesky-01:hover .text-container {background-color: #DCF0F9;}
 
 .ss-card-water, .ss-card-water .icon-wrapper {border-color: #ffffff !important;}
 /* sep 02 */
@@ -403,6 +409,15 @@ table.table.table-download tr:hover{background-color:#D2E0F7;}
 table.table.table-download .file-container .icon{background-color:var(--color-p);}
 table.table.table-download tr.hover-01:hover{background-color:#D5E4FC!important;}
 table.table.table-download.sub tr.hover-01:hover{background-color:transparent!important;}
+table.table.table-download.style-02 tr{border-color: transparent !important;}
+
+/* Chart 02 */
+.chart-container-02 .chart-data .list-item:nth-child(1) .dot{background:#3E74CB;}
+.chart-container-02 .chart-data .list-item:nth-child(2) .dot{background:#305EA8;}
+.chart-container-02 .chart-data .list-item:nth-child(3) .dot{background:#0049BF;}
+.chart-container-02 .chart-data .list-item:nth-child(4) .dot{background:#0E3A81;}
+.chart-container-02 .chart-data .list-item:nth-child(5) .dot{background:#01235A;}
+
 
 /* Form Check */
 .form-check .checkmark {background:#eeeeee;}
@@ -649,7 +664,7 @@ nav.footer.minisite .menu{color:#ffffff!important;}
 /* Social Share */
 .social-options .options .option:hover circle,
 .social-options .social-wrapper .social:hover circle {
-  fill: var(--color-t) !important;
+  fill: #DCF0F9 !important;
 }
 
 /* Inner Shadow */

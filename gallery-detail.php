@@ -162,11 +162,14 @@
 
             <!-- Pic File -->
             <div class="faq-01 mt-5 pt-5" data-aos="fade-up" data-aos-delay="200">
-              <div class="ss-title-02">
-                <div class="img-bg" style="background-image:url('public/assets/app/images/bg/title-01.png');"></div>
-                <div class="wrapper">
-                  <p class="h6 sm title fw-600 color-white">ไฟล์ภาพ</p>
-                </div>
+              <div class="ss-title-01" data-aos="fade-up" data-aos-delay="300">
+                <p class="title">ไฟล์ภาพ</p>
+                <svg class="pattern-01" width="56" height="19" viewBox="0 0 56 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.5 19.0001C21.4714 4.75227 17.5573 0.834769 4.63929 0.500062H0.5C1.9752 0.468933 3.35196 0.466707 4.63929 0.500062H44.2951C47.5519 0.139309 51.4023 0.15172 56 0.500062H44.2951C33.0872 1.74154 28.9093 7.40239 25.5 19.0001Z" fill="white"/>
+                </svg>
+                <svg class="pattern-02" width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.15374 0.898991C4.92105 0.632182 4.69945 0.386717 4.5 0.162598C4.30055 0.39739 4.07895 0.642854 3.84626 0.898991C2.43906 2.45715 0.5 4.62364 0.5 6.30988C0.5 7.37711 0.943213 8.33762 1.67452 9.03133C2.39474 9.72503 3.39197 10.1626 4.5 10.1626C5.60803 10.1626 6.60526 9.7357 7.32548 9.03133C8.04571 8.33762 8.5 7.36644 8.5 6.30988C8.5 4.62364 6.56094 2.46783 5.15374 0.898991Z" fill="white"/>
+                </svg>
               </div>
               <?php include_once('data/fileIcon.php'); ?>
               <div class="answer d-block mt-5 p-0 bg-white border-0">
@@ -213,7 +216,7 @@
                                 <span class="p xs color-gray-01 fw-200">|</span>
                               </div>
                               <div class="option">
-                                <span class="p xs c-pointer color-p color-03 fw-500 btn-popup-toggle a link" data-popup="82">แจ้งไฟล์เสีย</span>
+                                <span class="p xs c-pointer color-p fw-500 btn-popup-toggle a link" data-popup="82">แจ้งไฟล์เสีย</span>
                               </div>
                             </div>
                             <div class="show-mobile d-none">
@@ -226,7 +229,7 @@
                           </div>
                         </td>
                         <td class="button-container">
-                          <div class="icon">
+                          <a href="#" class="icon">
                             <?php if ($d['type'] === 'link') { ?>
                               <svg width="30" height="29" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="stroke-white-theme" d="M20 16.4992L32.3 4.19922" stroke="#008FD3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -238,7 +241,7 @@
                                 <path class="fill-white-theme" d="M0 18.3496C0 22.6918 3.53334 26.2246 7.875 26.2246H13.5C14.1218 26.2246 14.625 25.7209 14.625 25.0996C14.625 24.4783 14.1218 23.9746 13.5 23.9746H7.875C4.77366 23.9746 2.25 21.451 2.25 18.3496C2.25 15.2483 4.77366 12.7246 7.875 12.7246H9C9.62184 12.7246 10.125 12.2209 10.125 11.5996C10.125 7.25739 13.6583 3.72461 18 3.72461C22.3417 3.72461 25.875 7.25739 25.875 11.5996C25.875 12.2209 26.3782 12.7246 27 12.7246H28.125C31.2263 12.7246 33.75 15.2483 33.75 18.3496C33.75 21.451 31.2263 23.9746 28.125 23.9746H22.5C21.8782 23.9746 21.375 24.4783 21.375 25.0996C21.375 25.7209 21.8782 26.2246 22.5 26.2246H28.125C32.4667 26.2246 36 22.6918 36 18.3496C36 14.0074 32.4667 10.4746 28.125 10.4746H28.0623C27.5009 5.41914 23.2031 1.47461 18 1.47461C12.7969 1.47461 8.49909 5.41914 7.93772 10.4746H7.875C3.53306 10.4746 0 14.0074 0 18.3496ZM14.2954 28.8042L16.875 31.3839V17.2246C16.875 16.6033 17.3782 16.0996 18 16.0996C18.6218 16.0996 19.125 16.6033 19.125 17.2246V31.3839L21.7046 28.8042C22.1442 28.3646 22.8561 28.3646 23.2954 28.8042C23.7347 29.2438 23.735 29.9557 23.2954 30.395L18.7954 34.895C18.5757 35.1146 18.2877 35.2246 18 35.2246C17.7123 35.2246 17.4243 35.1146 17.2046 34.895L12.7046 30.395C12.265 29.9554 12.265 29.2435 12.7046 28.8042C13.1442 28.3649 13.8561 28.3646 14.2954 28.8042Z" fill="#008FD3" />
                               </svg>
                             <?php } ?>
-                          </div>
+                          </a>
                           <a href="#" class="p title xs color-p border-bottom-1 bcolor-p">
                             <?= $d['type'] === 'link' ? 'คลิกลิงก์' : 'ดาวน์โหลด' ?>
                           </a>
@@ -285,7 +288,7 @@
           <div class="grids jc-center" data-aos="fade-up" data-aos-delay="150">
             <?php foreach ($titleMag as $i => $d) { ?>
               <div class="grid sm-100">
-                <a href="<?= $d['href'] ?>" class="ss-card ss-card-04 ss-tag-in-text bradius-4 ovf-hidden h-bg-t">
+                <a href="<?= $d['href'] ?>" class="ss-card ss-card-04 ss-tag-in-text bradius-4 ovf-hidden h-bg-bluesky-01">
                   <div class="ss-img horizontal-2">
                     <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
                   </div>

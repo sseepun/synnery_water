@@ -12,10 +12,10 @@
             <div class="grids">
               <div class="grid sm-100 mt-0">
                 <div class="form-group style-03">
-                  <label class="fw-400" for="username">อีเมล/ชื่อผู้ใช้งาน</label>
-                  <input type="text" id="username" class="mt-1" placeholder="กรอกอีเมล/ชื่อผู้ใช้งาน">
+                  <label class="fw-400" for="username">อีเมล</label>
+                  <input type="text" id="username" class="mt-1" placeholder="กรอกอีเมล">
                 </div>
-                <p class="sm" id="username-error" style="color:#FF0000; display:none;">กรุณากรอกชื่อผู้ใช้งานหรืออีเมลที่ถูกต้อง</p>
+                <p class="sm" id="username-error" style="color:#FF0000; display:none;">กรุณากรอกอีเมลที่ถูกต้อง</p>
               </div>
               <div class="grid sm-100 mt-2">
                 <div class="form-group pos-relative">
@@ -34,7 +34,7 @@
                 <div class="d-flex sm-jc-center">
                   <img src="public/assets/app/images/content/captcha.png" alt="Captcha">
                 </div>
-                <p class="xs message-error text-danger ml-1">กรุณายืนยันตัวตน</p>
+                <!-- <p class="xs message-error text-danger ml-1">กรุณายืนยันตัวตน</p> -->
               </div>
               <div class="grid md-50 sm-100 mt-1">
                 <div class="btns ai-center h-full d-flex jc-end sm-jc-center sm-mt-4">
@@ -68,7 +68,7 @@
                 <span class="ml-2 fw-400">เข้าสู่ระบบผ่านบัญชี Google</span>
               </div>
             </div>
-            <div class="btn btn-action bcolor-white-theme style-02 btn-fb p-2 bradius-round">
+            <div class="btn bcolor-white-theme style-02 btn-fb p-2 bradius-round">
               <div class="icon d-flex ai-center">
                 <svg class="pattern" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_2174_83183)">
@@ -82,7 +82,7 @@
                 </svg>
               </div>
             </div>
-            <div class="btn btn-action bcolor-white-theme style-02 btn-line p-2 bradius-round">
+            <div class="btn bcolor-white-theme style-02 btn-line p-2 bradius-round">
               <div class="icon d-flex ai-center">
                 <svg class="pattern" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95433 31.0457 0 20 0C8.95433 0 0 8.95433 0 20C0 31.0457 8.95433 40 20 40ZM19.9965 8.37488C26.5905 8.37488 31.9712 12.507 32.2693 17.6931C32.2896 18.011 32.2936 18.3298 32.2811 18.6481C32.2637 18.8976 32.2313 19.1458 32.1842 19.3914C32.0299 20.3368 31.712 21.2479 31.2447 22.084C31.0247 22.4808 29.9473 23.991 29.6167 24.3887C27.8006 26.5768 24.7586 29.1023 19.672 31.5569C19.5643 31.6092 19.4446 31.6316 19.3253 31.6219C19.206 31.6122 19.0915 31.5707 18.9937 31.5017C18.8958 31.4327 18.8183 31.3388 18.7691 31.2297C18.7199 31.1206 18.7008 31.0003 18.7139 30.8813L18.9701 28.5743C18.98 28.4869 18.9724 28.3984 18.9479 28.3139C18.9234 28.2294 18.8825 28.1505 18.8274 28.0819C18.7723 28.0133 18.7042 27.9562 18.627 27.914C18.5498 27.8718 18.4651 27.8452 18.3776 27.8359C12.3568 27.2057 7.71005 23.1085 7.71005 18.1475C7.71042 12.7501 13.2112 8.37488 19.9965 8.37488Z" fill="white"/>
@@ -189,7 +189,7 @@
               </div>
               <div class="grid md-50 sm-100 mt-3">
                 <div class="btns ai-center h-full d-flex jc-end sm-jc-center sm-mt-4">
-                  <div class="btn btn-action btn-white-theme md btn-cancel mr-1 bradius-round">
+                  <div class="btn btn-action btn-white-theme md btn-cancel mr-1 bradius-round d-none">
                     <p class="color-black-theme">ยกเลิก</p>          
                   </div>
                   <button class="btn btn-action btn-white-theme md btn-p btn-popup-toggle bradius-round">
@@ -222,7 +222,7 @@
                 <span class="ml-2 fw-400">เข้าสู่ระบบผ่านบัญชี Google</span>
               </div>
             </div>
-            <div class="btn btn-action bcolor-white-theme style-02 btn-fb p-2 bradius-round">
+            <div class="btn bcolor-white-theme style-02 btn-fb p-2 bradius-round">
               <div class="icon d-flex ai-center">
                 <svg class="pattern" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_2174_83183)">
@@ -236,7 +236,7 @@
                 </svg>
               </div>
             </div>
-            <div class="btn btn-action bcolor-white-theme style-02 btn-line p-2 bradius-round">
+            <div class="btn bcolor-white-theme style-02 btn-line p-2 bradius-round">
               <div class="icon d-flex ai-center">
                 <svg class="pattern" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95433 31.0457 0 20 0C8.95433 0 0 8.95433 0 20C0 31.0457 8.95433 40 20 40ZM19.9965 8.37488C26.5905 8.37488 31.9712 12.507 32.2693 17.6931C32.2896 18.011 32.2936 18.3298 32.2811 18.6481C32.2637 18.8976 32.2313 19.1458 32.1842 19.3914C32.0299 20.3368 31.712 21.2479 31.2447 22.084C31.0247 22.4808 29.9473 23.991 29.6167 24.3887C27.8006 26.5768 24.7586 29.1023 19.672 31.5569C19.5643 31.6092 19.4446 31.6316 19.3253 31.6219C19.206 31.6122 19.0915 31.5707 18.9937 31.5017C18.8958 31.4327 18.8183 31.3388 18.7691 31.2297C18.7199 31.1206 18.7008 31.0003 18.7139 30.8813L18.9701 28.5743C18.98 28.4869 18.9724 28.3984 18.9479 28.3139C18.9234 28.2294 18.8825 28.1505 18.8274 28.0819C18.7723 28.0133 18.7042 27.9562 18.627 27.914C18.5498 27.8718 18.4651 27.8452 18.3776 27.8359C12.3568 27.2057 7.71005 23.1085 7.71005 18.1475C7.71042 12.7501 13.2112 8.37488 19.9965 8.37488Z" fill="white"/>
@@ -274,8 +274,8 @@
             <div class="grids pt-5">
               <div class="grid sm-100 mt-3">
                 <div class="form-input">
-                  <label class="fw-400" for="username">อีเมล/ชื่อผู้ใช้งาน</label>
-                  <input type="text" id="username" class="mt-1" placeholder="กรอกอีเมล/ชื่อผู้ใช้งาน">
+                  <label class="fw-400" for="username">อีเมล</label>
+                  <input type="text" id="username" class="mt-1" placeholder="กรอกอีเมล">
                 </div>
               </div>
               <div class="grid sm-100 mt-1">
@@ -331,7 +331,7 @@
               </div>
               <div class="grid sm-100 mt-3">
                 <div class="form-group mt-0 pos-relative">
-                  <label class="fw-400" for="password02">ยืนยันรหัสผ่าน</label>
+                  <label class="fw-400" for="password1">ยืนยันรหัสผ่าน</label>
                   <input type="password" id="password1" placeholder="กรอกยืนยันรหัสผ่าน">
                   <div class="dropdown-icon color-gray-03" style="pointer-events:auto;">
                     <em class="fa fa-eye-slash" id="togglePassword" data-toggle="password" data-target="#password1"></em>

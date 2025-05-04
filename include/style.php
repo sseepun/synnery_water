@@ -14,5 +14,6 @@
 <link rel="stylesheet" href="public/assets/app/css/navs.css?=v<?=time()?>" />
 <link rel="stylesheet" href="public/assets/app/css/nav-system.css?v=<?= time() ?>" />
 <link rel="stylesheet" href="public/assets/app/css/blocks.css?=v<?=time()?>" />
+<link rel="stylesheet" href="public/assets/app/css/style2.css?=v<?=time()?>" />
 
 <link rel="stylesheet" id="css-theme" href="public/assets/app/css/color-0.css?=v<?=time()?>" />

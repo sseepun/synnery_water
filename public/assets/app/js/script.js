@@ -142,6 +142,78 @@ $(function(){ 'use strict';
   setupTogglePassword('[data-toggle="password"]');
 
 
+  
+
+
+  /* Password Criteria*/
+  $(document).ready(function(){
+    function handlePasswordStrength(inputSelector, levelsSelector, textIndicatorSelector, criteriaSelector) {
+        const $passwordInput = $(inputSelector);
+        const $levels = $(levelsSelector).find('> div');
+        const $textIndicator = $(textIndicatorSelector);
+        const $criteriaItems = $(criteriaSelector).find('.criteria-item');
+
+        $levels.css('background-color', '#F2F2F2');
+        $textIndicator.text('').hide();
+
+        $passwordInput.on('input', function(){
+            const password = $(this).val();
+            let level = 0;
+
+            const conditions = {
+                length: password.length >= 8, 
+                lowercase: /[a-z]/.test(password), 
+                uppercase: /[A-Z]/.test(password),
+                digit: /[0-9]/.test(password), 
+                special: /[!@#$%^&*(),.?":{}|<>]/.test(password),
+            };
+
+            $criteriaItems.each(function(){
+                const criteria = $(this).data('criteria');
+                if (conditions[criteria]) {
+                    $(this).addClass('valid'); 
+                } else {
+                    $(this).removeClass('valid');
+                }
+            });
+
+            level = Object.values(conditions).filter(Boolean).length;
+
+            $levels.css('background-color', '#F2F2F2');
+            $textIndicator.css('color', '#999');
+
+            if (password.length === 0) {
+                $textIndicator.text('').hide();
+            } else {
+                let levelColor = '#F2F2F2'; 
+                for (let i = 0; i < Math.min(level, $levels.length); i++) {
+                    if (level === 1) levelColor = '#C70000'; // ง่าย
+                    if (level === 2) levelColor = '#FCB913'; // ปานกลาง
+                    if (level >= 3) levelColor = '#00861F'; // ยาก
+                    $levels.eq(i).css('background-color', levelColor); // สีของ levels
+                }
+
+                $textIndicator.show();
+                if (level === 1) {
+                  $textIndicator.text('ง่าย').css('color', '#C70000');
+                } else if (level === 2) {
+                  $textIndicator.text('ปานกลาง').css('color', '#FCB913');
+                } else if (level >= 3) {
+                  $textIndicator.text('ยาก').css('color', '#00861F');
+                }
+            }
+        });
+    }
+
+    handlePasswordStrength(
+        '#password02', 
+        '.levels', 
+        '.password-level .text',
+        '#password-criteria'
+    );
+  });
+
+
 
   // Accessibility
   var accessibility = $('nav.access-panel');
@@ -844,6 +916,15 @@ if(faq01.length){
       });
     });
   }
+
+
+  // Date-Picker
+  $('input.date-picker').each(function(){
+    new Datepicker($(this)[0], {
+      clearButton: true,
+      todayButton: true,
+    });
+  });
 
 
   // Page Loader
