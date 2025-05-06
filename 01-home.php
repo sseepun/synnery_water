@@ -225,8 +225,8 @@
                             <p class="lg color-s fw-800 mt-1">10.1 มม.</p>
                           </div>
                           <div class="text-bottom">
-                            <p class="lg color-white fw-500">1046.10</p>
-                            <p class="xxs color-white fw-300">พันล้าน ลบ.ม</p>
+                            <p class="lg water-quantity fw-500">1046.10</p>
+                            <p class="xxs water-quantity fw-300">พันล้าน ลบ.ม</p>
                           </div>
                         </div>
                       </div>
@@ -623,13 +623,15 @@
                       </div>
                     <?php }?>
                   </div>
-                  <!-- <div id="btn01" class="btns d-flex ai-end jc-end">
+                 
+                  <div class="swiper-pagination"></div>
+                  
+                </div>
+                <div id="btn01" class="btns d-flex ai-end jc-end">
                     <a href="#" class="btn btn-action btn-p bradius-round">
                       ดูทั้งหมด
                     </a>
-                  </div>  -->
-                  <div class="swiper-pagination"></div>
-                </div>
+                  </div> 
               </div>
             </div>        
           </div>
@@ -721,11 +723,11 @@
                         </div>
                       </div>
                     </div>               
-                    <!-- <div id="btn02" class="btns d-flex ai-end jc-end">
+                    <div id="btn02" class="btns d-flex ai-end jc-end">
                       <a href="#" class="btn btn-action btn-p bradius-round">
                         ดูทั้งหมด
                       </a>
-                    </div>  -->
+                    </div> 
                 </div>
             </div> 
           </div>

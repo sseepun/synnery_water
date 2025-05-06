@@ -183,29 +183,47 @@
                   </div>
                 </div>
                 <div class="text-container">
-                  <div class="tag bg-p color-white">
-                    <p class="sm fw-500"><?= $d['cate'] ?></p>
+                  <div class="text-wrapper">
+                    <div class="tag bg-p color-white">
+                      <p class="sm fw-500"><?= $d['cate'] ?></p>
+                    </div>
+                    <h6 class="title"><?= $d['title'] ?></h6>
+                    <p class="desc mt-3">
+                      เย็นวันนี้ (22  มกราคม 2568) นายสุริยพล นุชอนงค์ อธิบดีกรมชลประทาน พร้อมด้วย นายฐนันดร์  
+                      สุทธิพิศาล รองอธิบดีฝ่ายก่อสร้าง และนายวรพจน์ เพชรนรชาติ รองอธิบดีฝ่ายบริหาร 
+                      เข้าร่วมงานแสดงความยินดีแด่นิสิตเก่าวิศวกรรมศาสตร์  มหาวิทยาลัยเกษตรศาสตร์ 
+                      ที่ได้รับการเลื่อนตำแหน่งเป็นผู้บริหารระดับสูง  ประจำปี 2567 ซึ่งจัดขึ้นโดยสมาคมศิษย์เก่าวิศวกรรมชลประทาน  
+                      ในพระบรมราชูปถัมภ์ ร่วมกับ สมาคมนิสิตเก่ามหาวิทยาลัยเกษตรศาสตร์ ณ ห้องวิภาวดีบอลรูม AB โรงแรมเซ็นทาราแกรนด์ 
+                      แอท เซ็นทรัลพลาซ่า ลาดพร้าว กรุงเทพฯ
+                    </p>
                   </div>
-                  <h6 class="title"><?= $d['title'] ?></h6>
-                  <div class="ss-stats color-gray-01">
-                    <div class="stat">
-                      <div class="icon"><em class="fa-solid fa-calendar"></em></div>
-                      <p class="title">28 ม.ค. 68</p>
-                    </div>
-                    <div class="stat">
-                      <div class="icon"><em class="fa-solid fa-eye"></em></div>
-                      <p class="title">999k</p>
-                    </div>
-                    <div class="stat">
-                      <div class="icon"><em class="fa-solid fa-share-nodes"></em></div>
-                      <p class="title">999k</p>
+                  <div class="card-footer">
+                    <div class="ss-stats color-gray-01">
+                      <div class="stat">
+                        <div class="icon"><em class="fa-solid fa-calendar"></em></div>
+                        <p class="title">28 ม.ค. 68</p>
+                      </div>
+                      <div class="stat">
+                        <div class="icon"><em class="fa-solid fa-eye"></em></div>
+                        <p class="title">999k</p>
+                      </div>
+                      <div class="stat">
+                        <div class="icon"><em class="fa-solid fa-share-nodes"></em></div>
+                        <p class="title">999k</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </a>
             </div>
           <?php } ?>
-        </div> 
+        </div>
+        <div class="mt-6 pt-4" data-aos="fade-up" data-aos-delay="300">
+          <?php
+            $listFooter = ['total', 'paginate', 'pp'];
+            include('components/list-footer.php');
+          ?>
+        </div>  
       </div>
     </section>
   

@@ -208,7 +208,13 @@
               </div>
             </div>
           <?php } ?>
-        </div> 
+        </div>
+        <div class="mt-6 pt-4" data-aos="fade-up" data-aos-delay="300">
+          <?php
+            $listFooter = ['total', 'paginate', 'pp'];
+            include('components/list-footer.php');
+          ?>
+        </div>  
       </div>
     </section>
   

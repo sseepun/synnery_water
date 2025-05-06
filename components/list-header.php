@@ -119,7 +119,7 @@
         <?php if(in_array('order', $listHeader)){?>
           <div class="option order">
             <select class="ui dropdown">
-              <option value="1">ทั้งหมด</option>
+              <option value="1">เรียงลำดับ</option>
               <option value="2">ใหม่ล่าสุด</option>
               <option value="3">เก่าที่สุด</option>
               <option value="4">จำนวนเข้าชม</option>

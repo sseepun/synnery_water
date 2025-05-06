@@ -255,10 +255,10 @@ $(function(){ 'use strict';
         }
       },
       breakpoints: {
-        1299:{ direction: 'vertical', slidesPerView: 'auto' },
-        992:{ direction: 'vertical', slidesPerView: 'auto' },
+        1299:{ direction: 'vertical', slidesPerView: 1 },
+        992:{ direction: 'vertical', slidesPerView: 1 },
         576:{ direction: 'vertical', slidesPerView: 1},
-        0:{ direction: 'vertical', slidesPerView: 'auto'},
+        0:{ direction: 'vertical', slidesPerView: 1},
       },
     });
   }
@@ -452,6 +452,12 @@ $(function(){ 'use strict';
   }
 
 
+   // Date Picker
+   $('input.date-picker').each(function(){
+    new Datepicker($(this)[0], {});
+  });
+
+
   // Swiper 03
   if($('.swiper-03').length){
     new Swiper('.swiper-03', {
@@ -553,6 +559,10 @@ $(function(){ 'use strict';
     const color = getColor(type, value);
 
     $wave.find('.wave-1, .wave-2, .wave-3').css('background-color', color);
+
+    if(type === 'medium' && value <= 25){
+      $wave.find('.water-quantity').css('color', '#004990');
+    }
   });
   /* End - Change color according to water level value */
 
@@ -567,6 +577,23 @@ $(function(){ 'use strict';
   if(flipBookContainer.length){
       flipBookContainer.flipBook(source_pdf,option_pdf);
   }
+
+  
+  // Button Popup
+  $('.btn-popup-toggle').click(function(e) {
+    e.preventDefault();
+
+    let popupToOpen = $(this).data('popup');
+
+    $('.popup-container').not('[data-popup="' + popupToOpen + '"]').removeClass('active');
+
+    $('.popup-container[data-popup="' + popupToOpen + '"]').toggleClass('active');
+  });
+
+  $('.btn-popup-close-all').click(function(e) {
+      e.preventDefault();
+      $('.popup-container').removeClass('active');
+  });
 
 
   // Font Sizes

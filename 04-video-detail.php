@@ -377,6 +377,11 @@
       <div class="swiper-pagination"></div>
     </div>
   </section>
+
+  <?php
+    $listResult= ['report-file', 'report-file-success'];
+    include_once('components/popup.php');
+  ?>
   
   <?php $footerStyle = 'style-01'; include_once('layout/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
