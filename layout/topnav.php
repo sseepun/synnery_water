@@ -32,7 +32,7 @@
         <a href="#" class="logo">
           <img src="public/assets/app/images/logo.png" alt="Logo" />
           <div class="text">
-            <h1 class="main-title">กรมชลประทาน</h1>
+            <p class="main-title">กรมชลประทาน</p>
             <p class="sub-title">Royal Irrigation Department</p>
           </div>
         </a>

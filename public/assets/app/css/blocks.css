@@ -658,7 +658,6 @@
   color:#ffffff; transition:background .25s; background:rgba(0, 0, 0, 0.5);
 }
 .section-05 .swiper-02 .arrows .arrow:hover{background:rgba(0, 0, 0, 1);}
-.section-05 .btns{position:absolute; right:0; bottom:0rem; z-index:1;}
 .section-05 .show-mobile{position:absolute; opacity:0; pointer-events:none;}
 .section-05 .swiper-tabs-01 .tab.active{color:var(--color-p);}
 .section-05 .swiper-expand{position:relative; padding:0 1.5rem;}
@@ -670,18 +669,16 @@
   pointer-events:auto; width:2.25rem; height:2.25rem; display:flex; align-items:center;
   transition:background .25s; background:#ffffff; justify-content:center;
 }
-.section-05 .swiper .swiper-slide{
-  height:100%!important; 
-  overflow:hidden;}
-.section-05 .swiper{max-height:25rem;}
+.section-05 .swiper .swiper-slide{height:100%!important; overflow:hidden;}
+.section-05 .swiper{height:455px;}
 .section-05 .swiper .swiper-pagination-bullets {
-  border-radius: .9375rem; top:unset;  left:50%; bottom:0;
+  border-radius: .9375rem; top:unset; left:50%; bottom:0;
   width: auto; display:flex; justify-content:center;
   padding:.125rem .625rem; transform:translateX(-50%);
 }
 .section-05 .swiper .swiper-pagination-bullet {
-  background:none!important; width:auto!important;
-  height:auto!important; opacity:1; margin:0 .125rem!important ;
+  /* background:none!important; */
+  opacity:1; margin:0 .125rem!important ;
   padding:0;
 }
 .section-05 .swiper .swiper-pagination-bullet svg{
@@ -691,7 +688,9 @@
   fill: transparent; stroke:#AEADAD; transition:fill .25s, stroke .25s;
 }
 .section-05 .swiper .swiper-pagination-bullet-active svg path{fill:#008FD3; stroke:#008FD3;}
-
+@media screen and (max-width:1199.98px){
+  .section-05 .swiper{height:427px;}
+}
 @media screen and (max-width:991.98px){
   .section-05 #btn02{position:relative; margin-top:.5rem;}
   .section-05 .panel-card{padding:0 0 0 0;}
@@ -704,6 +703,16 @@
   .section-05 #btn02{display:flex; align-items:center!important; justify-content:center!important;}
   .section-05 .show-mobile{position:relative; opacity:1; pointer-events:all;}
   .section-05 .hide-mobile{position:absolute; opacity:0; pointer-events:none;}
+  .section-05 .swiper{height:400px;}
+}
+@media screen and (max-width:490.98px){
+  .section-05 .swiper{height:370px;}
+}
+@media screen and (max-width:390.98px){
+  .section-05 .swiper{height:300px;}
+}
+@media screen and (max-width:320.98px){
+  .section-05 .swiper{height:270px;}
 }
 
 

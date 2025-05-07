@@ -241,25 +241,53 @@ $(function(){ 'use strict';
   if($('.section-05 .swiper').length){
     section05Swiper = new Swiper('.section-05 .swiper', {
       direction: 'vertical', loop: false,
-      spaceBetween: 0, speed: 800,
-      pagination: {
-        el: '.section-05 .swiper .swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return `
-            <span class="${className}">
-              <svg viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.75558 0.883549C5.48663 0.563379 5.2305 0.268821 4.99997 -0.00012207C4.76945 0.281628 4.51332 0.576185 4.24437 0.883549C2.6179 2.75335 0.376709 5.35313 0.376709 7.37661C0.376709 8.6573 0.888982 9.80991 1.73423 10.6424C2.56668 11.4748 3.71929 11.9999 4.99997 11.9999C6.28066 11.9999 7.43327 11.4876 8.26572 10.6424C9.09816 9.80991 9.62324 8.64449 9.62324 7.37661C9.62324 5.35313 7.38205 2.76615 5.75558 0.883549Z" fill="white"/>
-              </svg>
-            </span>`;
-        }
-      },
+      spaceBetween: 15, speed: 800,
       breakpoints: {
         1299:{ direction: 'vertical', slidesPerView: 1 },
         992:{ direction: 'vertical', slidesPerView: 1 },
         576:{ direction: 'vertical', slidesPerView: 1},
         0:{ direction: 'vertical', slidesPerView: 1},
       },
+    });
+
+
+    // Swiper Tab 02
+    if($('.swiper-tabs-02').length){
+      new Swiper('.swiper-tabs-02', {
+        direction: 'vertical',
+        spaceBetween: 0, slidesPerView: 5, speed: 800,
+        breakpoints: {
+          992:{ direction: 'vertical', slidesPerView: 'auto' },
+          767:{ direction: 'vertical', slidesPerView: 'auto' },
+          576:{ direction: 'horizontal', slidesPerView:'auto', spaceBetween:'10'},
+          0:{ direction: 'horizontal', slidesPerView:'auto'},
+        },
+      });
+
+      $('.swiper-tabs-02 .swiper-slide').on('click', function () {
+        const index = $(this).index();
+
+        $('.swiper-tabs-02 .swiper-slide').removeClass('active');
+        $(this).addClass('active');
+
+        if (section05Swiper) {
+          section05Swiper.slideTo(index);
+        }
+      });
+    }
+  
+
+    const innerSwipers = document.querySelectorAll('.inner-swiper');
+    innerSwipers.forEach((el, index) => {
+      new Swiper(el, {
+        slidesPerView: 1,
+        pagination: {
+          el: el.querySelector('.outer-pagination'),
+          clickable: true,
+        },
+        nested: true,
+        preventInteractionOnTransition: true
+      });
     });
   }
 
@@ -281,32 +309,6 @@ $(function(){ 'use strict';
         prevEl: '.arrow.arrow-prev',
         nextEl: '.arrow.arrow-next',
       }, 
-    });
-  }
-
-
-  // Swiper Tab 02
-  if($('.swiper-tabs-02').length){
-    new Swiper('.swiper-tabs-02', {
-      direction: 'vertical',
-      spaceBetween: 0, slidesPerView: 5, speed: 800,
-      breakpoints: {
-        992:{ direction: 'vertical', slidesPerView: 'auto' },
-        767:{ direction: 'vertical', slidesPerView: 'auto' },
-        576:{ direction: 'horizontal', slidesPerView:'auto', spaceBetween:'10'},
-        0:{ direction: 'horizontal', slidesPerView:'auto'},
-      },
-    });
-
-    $('.swiper-tabs-02 .swiper-slide').on('click', function () {
-      const index = $(this).index();
-
-      $('.swiper-tabs-02 .swiper-slide').removeClass('active');
-      $(this).addClass('active');
-
-      if (section05Swiper) {
-        section05Swiper.slideTo(index);
-      }
     });
   }
 

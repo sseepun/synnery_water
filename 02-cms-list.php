@@ -210,8 +210,8 @@
   <section class="section-padding pt-6">
     <div class="container" data-aos="fade-up" data-aos-delay="150">
       <?php
-        $listHeaderClass = 'mt-5 option-02';
-        $listHeader = ['search', 'date-01', 'category', 'order', 'view-grid'];
+        $listHeaderClass = 'mt-5 option-02 w-style-02';
+        $listHeader = ['search', 'date-01', 'category', 'sub-category', 'order', 'view-grid'];
         include('components/list-header.php');
       ?>
       <div class="grids">
@@ -244,8 +244,8 @@
                       <p class="title">999k</p>
                     </div>
                   </div>
-                  <div class="btn btn-icon">
-                    <span class="mr-2 color-p ws-nowrap fw-400">อ่านต่อ</span>
+                  <div class="btn btn-action btn-icon bradius-rouded style-02">
+                    <span class="pr-2 text color-p fw-400">อ่านต่อ</span>
                     <div class="icon">
                       <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.347 6.39998L14.347 6.39992L14.3391 6.40659L14.3284 6.41558C13.069 7.4746 11.6177 8.69503 10.1526 9.65442C8.6586 10.6328 7.28007 11.25 6.16435 11.25C4.67587 11.25 3.30786 10.6495 2.33315 9.70078L2.33316 9.70076L2.32903 9.69681C1.34417 8.75273 0.75 7.45024 0.75 6C0.75 4.55445 1.35787 3.24849 2.33315 2.29922L2.33316 2.29924L2.33723 2.29521C3.30752 1.33627 4.65521 0.75 6.16435 0.75C7.28048 0.75 8.6635 1.36763 10.1594 2.34585C11.6297 3.30731 13.0851 4.53172 14.3363 5.59108C14.5006 5.73102 14.6637 5.86954 14.8249 6.00513C14.6707 6.13365 14.5117 6.26534 14.347 6.39998Z" stroke="#008FD3" stroke-width="1.5"/>

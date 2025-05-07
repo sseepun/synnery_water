@@ -73,6 +73,10 @@ html, body, a, a:hover, table.table{color:#000000;}
 /* Button */
 .btn.btn-icon:hover .icon svg{fill:var(--color-p);}
 
+.btn.btn-icon.style-02:hover{background:var(--color-t);}
+.btn.btn-icon.style-02:hover .icon{background:#ffffff;}
+
+
 .btn-play:before, .btn-play:after{background:#FF0000;}
 .btn-play.primary::before, .btn-play.primary::after{background:#D5E4FC;}
 .btn-play.primary svg path{fill:#008FD3;}
@@ -209,7 +213,11 @@ input.validate-error, textarea.validate-error {
 
 
 /* Special Card 06 */
-.ss-card-06:hover .btn.btn-icon .icon svg{fill:var(--color-p);}
+.ss-card-06:hover .btn.btn-icon.style-02 .icon svg{fill:var(--color-t);}
+.ss-card-06:hover .btn.btn-icon.style-02 .icon svg path{stroke:var(--color-t);}
+.ss-card-06:hover .btn.btn-icon.style-02 .text{color:#ffffff!important;}
+.ss-card-06:hover .btn.btn-icon.style-02{background:var(--color-t);}
+.ss-card-06:hover .btn.btn-icon.style-02 .icon{background:#ffffff;}
 .ss-card-06:hover .text-container > .title{color:var(--color-p);}
 
 

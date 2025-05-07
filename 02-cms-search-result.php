@@ -168,8 +168,8 @@
     <section class="section-padding pt-6">
       <div class="container" data-aos="fade-up" data-aos-delay="150">
         <?php
-          $listHeaderClass = 'mt-5 option-02';
-          $listHeader = ['search', 'date-01', 'category', 'order', 'view-grid'];
+          $listHeaderClass = 'mt-5 option-02 w-style-02';
+          $listHeader = ['search', 'date-01', 'category', 'sub-category', 'order', 'view-grid'];
           include('components/list-header.php');
         ?>
         <p class="mt-4 mb-2 fw-400">ผลการค้นหา <span class="color-s fw-600">"กรมชลประทาน"</span> ค้นพบ <span class="color-s fw-600">6</span> รายการ</p>

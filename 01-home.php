@@ -26,9 +26,9 @@
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
             <div class="text-wrapper animate" style="--delay:.4s;">
-              <h1 class="fw-700 font-popins font-gradient-01 text-intro">
+              <p class="h1 fw-700 font-popins font-gradient-01 text-intro">
                 The Royal<br>Irrigation Department
-              </h1>
+              </p>
               <p class="xs text-center font-popins desc color-white fw-400 mt-2">
                 To integratedly manage water resources in adequate, thorough and equitable manners
               </p>
@@ -57,11 +57,11 @@
       <div class="ss-box">
         <div class="announce" data-aos="fade-up" data-aos-delay="0">
           <div class="text-container">
-            <marquee direction="left">
+            <div class="marquee">
               <p class="fw-400">
                 สภาพน้ำท่า วันที่ 9 ก.ย.2567 เวลา 06.00 น.(วันนี้),(เมื่อวาน) เขื่อนภูมิพล ระบาย <span class="color-02">(35),(35)</span> ลบ.ม/วิ  เขื่อนสิริกิติ์ ระบาย <span class="color-02">(116),(116)</span> ลบ.ม./วิ (P.17) อ.บรรพตพิสัย จ.นครสวรรค์
               </p>
-            </marquee>
+            </div>
           </div>  
           <div class="icon">
             <img src="public/assets/app/images/icon/announce.svg" alt="Announce">
@@ -70,9 +70,9 @@
       </div>
       <div class="ss-box xl">
         <div class="ss-title jc-center mt-5">
-          <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="150">
+          <p class="h3 fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="150">
             พัฒนาแหล่งน้ำและเพิ่มพื้นที่ชลประทาน
-          </h3>
+          </p>
         </div>  
         <p class="lg text-center" data-aos="fade-up" data-aos-delay="300">
           ตามศักยภาพของลุ่มน้ำให้เกิดความสมดุล
@@ -173,9 +173,9 @@
     <div class="container">
       <div class="ss-box xl">
         <div class="ss-title jc-center">
-          <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="450">
+          <p class="h3 fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="450">
             ปริมาณน้ำวันนี้
-          </h3>
+          </p>
         </div>
         <div class="mt-3">
           <div class="grids">
@@ -237,28 +237,9 @@
             </div>
             <div class="grid md-50 sm-100">
               <div class="ss-height-01" data-aos="fade-up" data-aos-delay="300">
-                <iframe class="map" src="https://swoc.rid.go.th/index1.html" 
-                  style="border-radius:.5rem;" width="100%" height="100%" 
-                  frameborder="0" title="ปริมาณน้ำ">
+                <iframe class="map" src="https://swoc.rid.go.th/index1.html" title="ปริมาณน้ำ">
                 </iframe>  
               </div>
-              <!-- <div class="map-slot" data-aos="fade-up" data-aos-delay="300">
-                <div class="header">
-                  <img class="logo mr-2" src="public/assets/app/images/logo-alone.png" alt="Logo" />
-                  <div class="link bradius">SWOC</div>
-                  <div class="options">
-                    <div class="icon">
-                      <em class="fa-solid fa-bars"></em>
-                    </div>
-                    <div class="icon">
-                      <em class="fa-solid fa-bookmark"></em>
-                    </div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="img-bg" style="background-image:url('public/assets/app/images/temp/map.jpg')"></div>
-                </div>
-              </div> -->
             </div>
           </div>
           <div class="grids flex-col-reverse-sm">
@@ -279,7 +260,7 @@
                                 <div class="img-bg" style="background-image:url('public/assets/app/images/bg/02.jpg');"></div>
                               </div>
                               <div class="text-wrapper">
-                                <h4 class="sm fw-600">50%</h4>
+                                <p class="h4 sm fw-600">50%</p>
                                 <p class="lg fw-400">ข้าว</p>
                               </div>
                             </div>
@@ -290,7 +271,7 @@
                                 <div class="img-bg" style="background-image:url('public/assets/app/images/bg/02.jpg');"></div>
                               </div>
                               <div class="text-wrapper">
-                                <h4 class="sm fw-600">50%</h4>
+                                <p class="h4 sm fw-600">50%</p>
                                 <p class="lg fw-400">ข้าว</p>
                               </div>
                             </div>
@@ -307,7 +288,7 @@
                               <div class="img-bg" style="background-image:url('public/assets/app/images/bg/03.jpg');"></div>
                             </div>
                             <div class="text-wrapper">
-                              <h4 class="sm fw-600">26%</h4>
+                              <p class="h4 sm fw-600">26%</p>
                               <p class="lg fw-400">พื้นที่อื่นๆ</p>
                             </div>
                           </div>
@@ -318,7 +299,7 @@
                               <div class="img-bg" style="background-image:url('public/assets/app/images/bg/03.jpg');"></div>
                             </div>
                             <div class="text-wrapper">
-                              <h4 class="sm fw-600">26%</h4>
+                              <p class="h4 sm fw-600">26%</p>
                               <p class="lg fw-400">พื้นที่อื่นๆ</p>
                             </div>
                           </div>
@@ -335,7 +316,7 @@
                                 <div class="img-bg" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
                               </div>
                               <div class="text-wrapper">
-                                <h4 class="sm fw-600">8%</h4>
+                                <p class="h4 sm fw-600">8%</p>
                                 <p class="lg fw-400">ผลไม้ยืนต้น</p>
                               </div>
                             </div>
@@ -346,7 +327,7 @@
                                 <div class="img-bg" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
                               </div>
                               <div class="text-wrapper">
-                                <h4 class="sm fw-600">8%</h4>
+                                <p class="h4 sm fw-600">8%</p>
                                 <p class="lg fw-400">ผลไม้ยืนต้น</p>
                               </div>
                             </div>
@@ -358,7 +339,7 @@
                           <div class="img-bg" style="background-image:url('public/assets/app/images/bg/04.jpg');"></div>
                         </div>
                         <div class="text-wrapper">
-                          <h4 class="sm fw-600">8%</h4>
+                          <p class="h4 sm fw-600">8%</p>
                           <p class="lg fw-400">ผลไม้ยืนต้น</p>
                         </div>
                       </div>
@@ -369,25 +350,8 @@
             </div>
             <div class="grid md-50 sm-100">
               <iframe class="map" src="https://swoc.rid.go.th/index1.html?layer=tmd" data-aos="fade-up" data-aos-delay="300"
-                style="border-radius:.5rem;" width="100%" height="100%" frameborder="0" title="ปริมาณฝน">
+                  title="ปริมาณฝน">
               </iframe>
-              <!-- <div class="map-slot" data-aos="fade-up" data-aos-delay="300">
-                <div class="header">
-                  <img class="logo mr-2" src="public/assets/app/images/logo-alone.png" alt="Logo" />
-                  <div class="link bradius">SWOC</div>
-                  <div class="options">
-                    <div class="icon">
-                      <em class="fa-solid fa-bars"></em>
-                    </div>
-                    <div class="icon">
-                      <em class="fa-solid fa-bookmark"></em>
-                    </div>
-                  </div>
-                </div>
-                <div class="body">
-                  <div class="img-bg" style="background-image:url('public/assets/app/images/temp/map.jpg')"></div>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
@@ -408,9 +372,9 @@
               <h6 class="fw-600" data-aos="fade-up" data-aos-delay="0">
                 ดำเนินการป้องกันและบรรเทาภัยอันเกิด
               </h6>
-              <h3 class="fw-600 color-s mt-1" data-aos="fade-up" data-aos-delay="150">
+              <p class="h3 fw-600 color-s mt-1" data-aos="fade-up" data-aos-delay="150">
                 จากน้ำตามภารกิจอย่างเหมาะสม
-              </h3>
+              </p>
             </div>
             <div class="grid lg-50 md-100 sm-100">
               <div class="panel-card bradius" data-aos="fade-up" data-aos-delay="300">
@@ -438,12 +402,12 @@
       </div>
       <div class="section-padding ">
         <div class="ss-box xl">
-          <h6 class="fw-500 color-white text-center" data-aos="fade-up" data-aos-delay="0">
+          <p class="h6 fw-500 color-white text-center" data-aos="fade-up" data-aos-delay="0">
             เสริมสร้างการมีส่วนร่วมในกระบวนการ
-          </h6>
-          <h4 class="fw-500 color-white text-center mt-1" data-aos="fade-up" data-aos-delay="150">
+          </p>
+          <p class="h4 fw-500 color-white text-center mt-1" data-aos="fade-up" data-aos-delay="150">
             พัฒนาแหล่งน้ำ และการบริหารจัดการน้ำ
-          </h4>
+          </p>
           <div class="d-flex jc-center" data-aos="fade-up" data-aos-delay="300">
             <div class="tag-title">
               <h6 class="sm fw-400 color-white">บริการกรมชลประทาน</h6>
@@ -514,124 +478,180 @@
       ['tabTitle' => 'ประกาศทั่วไป'], 
       ['tabTitle' => 'จัดซื้อ/จ้ดจ้าง?'], 
     ];
+
+    $newsData = [
+      0 => [
+        [
+          'img' => 'public/assets/app/images/content/01.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '5 สิงหาคม 2567'
+        ], [
+          'img' => 'public/assets/app/images/content/01.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '5 สิงหาคม 2567'
+        ],
+      ],
+      1 => [
+        [
+          'img' => 'public/assets/app/images/content/02.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ], [
+          'img' => 'public/assets/app/images/content/03.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ],[
+          'img' => 'public/assets/app/images/content/01.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ],
+      ],
+      2 => [
+        [
+          'img' => 'public/assets/app/images/content/08.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ], [
+          'img' => 'public/assets/app/images/content/10.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ],[
+          'img' => 'public/assets/app/images/content/04.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ],
+      ],
+      3 => [
+        [
+          'img' => 'public/assets/app/images/content/12.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ], [
+          'img' => 'public/assets/app/images/content/16.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ],[
+          'img' => 'public/assets/app/images/content/18.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ],
+      ],
+      4 => [
+        [
+          'img' => 'public/assets/app/images/content/31.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ],[
+          'img' => 'public/assets/app/images/content/36.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ],[
+          'img' => 'public/assets/app/images/content/42.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ],[
+          'img' => 'public/assets/app/images/content/49.png', 'href' => '#',
+          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
+          'date' => '1 สิงหาคม 2567'
+        ], 
+      ],
+    ];
   ?>
   <section class="section-05 section-padding tab-container">
     <div class="img-bg" style="background-image:url('public/assets/app/images/bg/03.png')"></div>
     <div class="container">
       <div class="ss-box xl ovf-hidden">
         <div class="ss-title jc-center mt-5">
-          <h3 class="fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="0">
+          <p class="h3 fw-700 text-center pt-1" data-aos="fade-up" data-aos-delay="0">
             ชลประทานอัปเดต
-          </h3>
+          </p>
         </div>  
         <div class="grids">
           <div class="grid lg-75 md-100 sm-100">
             <div class="grids">
               <div class="grid lg-30 md-30 sm-100 mt-0" data-aos="fade-up" data-aos-delay="150">
                 <div class="swiper-tabs-02">
-                <div class="swiper-wrapper tabs tabs-01">
-                  <?php foreach($swiperTabs02 as $i=>$d) {?>
-                    <div class="swiper-slide tab mb-2 <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-                      <p class="title font-mitr fw-400"><?= $d['tabTitle'] ?></p>
-                    </div>
-                  <?php } ?>
-                </div>
+                  <div class="swiper-wrapper tabs tabs-01">
+                    <?php foreach($swiperTabs02 as $i=>$d) {?>
+                      <div class="swiper-slide tab mb-2 <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                        <p class="title font-mitr fw-400"><?= $d['tabTitle'] ?></p>
+                      </div>
+                    <?php } ?>
+                  </div>
                 </div>
               </div>
               <div class="grid lg-70 md-70 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
-             
                 <div class="swiper">
                   <div class="swiper-wrapper">
-                    <?php
-                      foreach([
-                        [
-                          'img' => 'public/assets/app/images/content/01.png', 'href' => '#',
-                          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
-                          'date' => '5 สิงหาคม 2567'
-                        ], [
-                          'img' => 'public/assets/app/images/content/01.png', 'href' => '#',
-                          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
-                          'date' => '5 สิงหาคม 2567'
-                        ], [
-                          'img' => 'public/assets/app/images/content/01.png', 'href' => '#',
-                          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
-                          'date' => '1 สิงหาคม 2567'
-                        ], [
-                          'img' => 'public/assets/app/images/content/01.png', 'href' => '#',
-                          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
-                          'date' => '1 สิงหาคม 2567'
-                        ],[
-                          'img' => 'public/assets/app/images/content/01.png', 'href' => '#',
-                          'title' => 'แล้งนี้ต้องรอด!! ชป.เดินหน้าจ้างแรงงานกว่า 8.4 หมื่นคน หวังช่วยเกษตรกรทั่วประเทศ',
-                          'date' => '1 สิงหาคม 2567'
-                        ],
-                      ] as $i=>$d){
-                    ?>
+                    <?php foreach ($newsData as $categoryIndex => $newsList) { ?>
                       <div class="swiper-slide">
-                        <a href="<?= $d['href'] ?>" class="ss-card ss-card-04">
-                          <div class="ss-img horizontal">
-                            <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
-                          </div>
-                          <div class="text-container">
-                            <div class="wrapper">
-                              <div class="tag bg-p color-white">
-                              <?php 
-                                $tabTitle = isset($swiperTabs02[$i]['tabTitle']) ? $swiperTabs02[$i]['tabTitle'] : '';
-                              ?>
-                              <p class="sm"><?= $tabTitle ?></p>
-                            </div>
-                            <h6 class="title fw-500 lh-sm"><?= $d['title'] ?></h6>
-                            <div class="description mt-1">
-                              <p class="desc">
-                                กรมชลฯ ยกทัพจักรกลพร้อมเจ้าหน้าที่ เดินหน้าช่วยเหลือ - ฟื้นฟู บรรเทาความเดือดร้อนให้ประชาชน
-                                สถานการณ์อุทกภัยที่เกิดขึ้นในหลายพื้นที่ ส่งผลให้ประชาชนได้รับความเดือดร้อน 
-                                เพื่อเป็นการบรรเทาปัญหาให้กับพี่น้องประชาชน กรมชลประทาน ส่งเครื่องจักร เครื่องมือ 
-                                และกำลังคนเข้าช่วยเหลือจนกว่าสถานการณ์จะกลับเข้าสู่สภาวะปกติ เดินหน้าเร่งระบายน้ำในพื้นที่เสี่ยง 
-                                กำจัดวัชพืชสิ่งกีดขวางทางน้ำ ช่วยเพิ่มประสิทธิภาพการระบายน้ำ ตลอดจนภารกิจฟื้นฟูหลังน้ำลด 
-                                ตามนโยบายของรัฐบาล
-                              </p>
-                            </div>
-                            <div class="ss-stats mt-6">
-                              <div class="stat color-gray-01">
-                                <div class="icon">
-                                  <em class="fa-solid fa-calendar"></em>
-                                </div>
-                                <div class="text">
-                                  <p class="xs fw-400">9 ธ.ค. 67</p>
-                                </div>
+                        <div class="inner-swiper inner-swiper-<?= $categoryIndex ?>">
+                          <div class="swiper-wrapper">
+                            <?php foreach ($newsList as $news) { ?>
+                              <div class="swiper-slide ovf-visible p-1">
+                                <a href="<?= $news['href'] ?>" class="ss-card ss-card-04">
+                                  <div class="ss-img horizontal">
+                                    <div class="img-bg" style="background-image:url('<?= $news['img'] ?>');"></div>
+                                  </div>
+                                  <div class="text-container">
+                                    <div class="wrapper">
+                                      <div class="tag bg-p color-white">
+                                      <p class="sm"><?= $swiperTabs02[$categoryIndex]['tabTitle'] ?></p>
+                                    </div>
+                                    <h6 class="title fw-500 lh-sm"><?= $news['title'] ?></h6>
+                                    <div class="description mt-1">
+                                      <p class="desc">
+                                        กรมชลฯ ยกทัพจักรกลพร้อมเจ้าหน้าที่ เดินหน้าช่วยเหลือ - ฟื้นฟู บรรเทาความเดือดร้อนให้ประชาชน
+                                        สถานการณ์อุทกภัยที่เกิดขึ้นในหลายพื้นที่ ส่งผลให้ประชาชนได้รับความเดือดร้อน 
+                                        เพื่อเป็นการบรรเทาปัญหาให้กับพี่น้องประชาชน กรมชลประทาน ส่งเครื่องจักร เครื่องมือ 
+                                        และกำลังคนเข้าช่วยเหลือจนกว่าสถานการณ์จะกลับเข้าสู่สภาวะปกติ เดินหน้าเร่งระบายน้ำในพื้นที่เสี่ยง 
+                                        กำจัดวัชพืชสิ่งกีดขวางทางน้ำ ช่วยเพิ่มประสิทธิภาพการระบายน้ำ ตลอดจนภารกิจฟื้นฟูหลังน้ำลด 
+                                        ตามนโยบายของรัฐบาล
+                                      </p>
+                                    </div>
+                                    <div class="ss-stats mt-6">
+                                      <div class="stat color-gray-01">
+                                        <div class="icon">
+                                          <em class="fa-solid fa-calendar"></em>
+                                        </div>
+                                        <div class="text">
+                                          <p class="xs fw-400">9 ธ.ค. 67</p>
+                                        </div>
+                                      </div>
+                                      <div class="stat color-gray-01">
+                                        <div class="icon">
+                                          <em class="fa-solid fa-eye"></em>
+                                        </div>
+                                        <div class="text">
+                                          <p class="xs fw-400">999k</p>
+                                        </div>
+                                      </div>
+                                      <div class="stat color-gray-01">
+                                        <div class="icon">
+                                          <em class="fa-solid fa-share-nodes"></em>
+                                        </div>
+                                        <div class="text">
+                                          <p class="xs fw-400">999k</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </a>
                               </div>
-                              <div class="stat color-gray-01">
-                                <div class="icon">
-                                  <em class="fa-solid fa-eye"></em>
-                                </div>
-                                <div class="text">
-                                  <p class="xs fw-400">999k</p>
-                                </div>
-                              </div>
-                              <div class="stat color-gray-01">
-                                <div class="icon">
-                                  <em class="fa-solid fa-share-nodes"></em>
-                                </div>
-                                <div class="text">
-                                  <p class="xs fw-400">999k</p>
-                                </div>
-                              </div>
-                            </div>
+                            <?php } ?>
                           </div>
-                          </div>
-                        </a>
+                          <div class="swiper-pagination outer-pagination"></div>
+                        </div>
                       </div>
-                    <?php }?>
+                    <?php } ?>
                   </div>
-                 
-                  <div class="swiper-pagination"></div>
-                  
                 </div>
-                <div id="btn01" class="btns d-flex ai-end jc-end">
-                    <a href="#" class="btn btn-action btn-p bradius-round">
-                      ดูทั้งหมด
-                    </a>
-                  </div> 
+                <div class="d-flex ai-end jc-end sm-jc-center mt-2 sm-mt-4">
+                  <a href="#" class="btn btn-action btn-p bradius-round">
+                    ดูทั้งหมด
+                  </a>
+                </div>              
               </div>
             </div>        
           </div>
@@ -650,7 +670,7 @@
                         ] as $i=>$d){
                       ?>
                         <div class="swiper-slide">
-                          <a href="<?= $d['href'] ?>" class="ss-card ss-card-05">
+                          <a href="<?= $d['href'] ?>" class="ss-card ss-card-05" aria-label="ดูรายละเอียดข้อมูลข่าวสาร">
                             <div class="ss-img bradius">
                               <div class="img-bg" style="background-image:url('<?= $d['img'] ?>');"></div>
                               <div class="line-1"></div>
@@ -723,7 +743,7 @@
                         </div>
                       </div>
                     </div>               
-                    <div id="btn02" class="btns d-flex ai-end jc-end">
+                    <div class="d-flex ai-end jc-end sm-jc-center mt-2 sm-mt-4">
                       <a href="#" class="btn btn-action btn-p bradius-round">
                         ดูทั้งหมด
                       </a>
@@ -757,7 +777,7 @@
         <div class="swiper" data-aos="fade-in" data-aos-delay="150">
           <div class="swiper-wrapper tabs tabs-01 style-02">
             <div class="swiper-slide">
-              <a href="#" class="organization-menu">
+              <a href="#" class="organization-menu" aria-label="ดูรายละเอียดบริการสำนักงาน">
                 <div class="menu-bg" style="background-image:url('public/assets/app/images/bg/17.jpg')"></div> 
                 <div class="content">
                   <div class="logo">
@@ -774,7 +794,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="organization-menu">
+              <a href="#" class="organization-menu" aria-label="ดูรายละเอียดบริการสำนักงาน">
                 <div class="menu-bg" style="background-image:url('public/assets/app/images/bg/18.jpg')"></div> 
                 <div class="background-gradient bg-gradient-02"></div>          
                 <div class="content">
@@ -791,7 +811,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="organization-menu">
+              <a href="#" class="organization-menu" aria-label="ดูรายละเอียดบริการสำนักงาน">
                 <div class="menu-bg" style="background-image:url('public/assets/app/images/bg/20.jpg')"></div>  
                 <div class="background-gradient bg-gradient-03"></div>
                 <div class="content">
@@ -802,7 +822,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="organization-menu">
+              <a href="#" class="organization-menu" aria-label="ดูรายละเอียดบริการสำนักงาน">
                 <div class="menu-bg" style="background-image:url('public/assets/app/images/bg/19.jpg')"></div>     
                 <div class="background-gradient bg-gradient-04"></div>      
                 <div class="content">
@@ -819,7 +839,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="organization-menu">
+              <a href="#" class="organization-menu" aria-label="ดูรายละเอียดบริการสำนักงาน">
                 <div class="menu-bg" style="background-image:url('public/assets/app/images/bg/17.jpg')"></div> 
                 <div class="content">
                   <div class="logo">
@@ -836,7 +856,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="organization-menu">
+              <a href="#" class="organization-menu" aria-label="ดูรายละเอียดบริการสำนักงาน">
                 <div class="menu-bg" style="background-image:url('public/assets/app/images/bg/18.jpg')"></div> 
                 <div class="background-gradient bg-gradient-02"></div>          
                 <div class="content">

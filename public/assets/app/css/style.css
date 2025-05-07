@@ -19,6 +19,12 @@
 .color-gray-01, .h-color-gray-01:hover{color:#AEADAD!important;}
 
 
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+
 /* Reset */
 html, body{
   padding:0; margin:0; font-family:var(--fw); color:#000000;
@@ -49,7 +55,7 @@ textarea, button{font-family:var(--fw);}
 .btn.btn-action{
   display:block; outline:none; box-shadow:none; text-align:center;
   min-width:7.6875rem; font-weight:400;
-  white-space:nowrap; text-decoration:none; border-radius:0.5rem; cursor:pointer; transition:all .25s; 
+  white-space:nowrap; text-decoration:none; border-radius:1000em; cursor:pointer; transition:all .25s; 
   font-size:1rem; font-weight:400; text-align:center;
   padding:.4375rem 1.5rem; border:1.5px solid transparent;
 }
@@ -201,6 +207,12 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .btn.btn-icon{width:2.875rem; height:2.5rem; border:1.5px solid transparent;}
 .btn.btn-icon img{display:block; height:1.5rem; width:auto;}
 .btn.btn-mw-01{min-width:14rem;}
+.btn.btn-icon.style-02{width:unset; padding:.4375rem .25rem;}
+.btn.btn-icon.style-02 .text{width:calc(100% - 2rem);}
+.btn.btn-icon.style-02 .icon{
+  width:2rem; height:2rem; display:flex; align-items:center;
+  justify-content:center; transition:background .25s; border-radius:50%;
+}
 .btn.btn-action.sm{font-size: .875rem; padding: .25rem 1rem;}
 .btn.btn-gallery{
   width:2.875rem; height:2.875rem; display:flex; transition:opacity .25s;
@@ -245,6 +257,22 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .background-gradient{
   position:absolute; top:0; right:0; bottom:0; left:0;
 }
+
+.marquee {
+  width: 100%; overflow: hidden; white-space:nowrap;
+  box-sizing: border-box;
+}
+
+.marquee p {
+  display: inline-block; padding-left: 100%;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee p:hover, .marquee p:focus {
+  animation-play-state: paused;
+}
+
+.map{border:none; width:100%; height:100%; border-radius:.5rem;}
 
 
 /* Filter */
@@ -370,6 +398,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .list-header.option-02 .option.cate, .list-header.option-02 .option.order{width:15%;}
 .list-header.option-02 .option.view{width:17%;}
 
+.list-header.option-02.w-style-02 .option.search{width:20%;}
+.list-header.option-02.w-style-02 .option.date{width:20%;}
+.list-header.option-02.w-style-02 .option.view{width:15%;}
+
 
 /* .list-header .option.cate, .list-header .option.order, .list-header .option.date */
 .list-header > .block{display:block;}
@@ -427,10 +459,14 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   .list-header .option.sub-cate, .list-header.style-03 .option.search{width:33.33%;}
   .list-header .option.view{width:100%; margin-top:1rem; justify-content:center;}
   .list-header.minisite .option.view.view-grid{width:100%;}
+  
 
   .list-header.option-02 .option.date{width:30%;}
   .list-header.option-02 .option.cate, .list-header.option-02 .option.order{width:20%;}
   .list-header.option-02 .option.view{width:100%;}
+
+  .list-header.option-02.w-style-02{justify-content:center;}
+  .list-header.option-02.w-style-02 .option.view{width:100%;}
 }
 @media screen and (max-width:991.98px){
   .list-header .option.search, .list-header.style-03 .option.search{width:100%;}
@@ -451,6 +487,15 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
   .list-header.option-02 .option.search, .list-header.option-02 .option.date{margin-top:0; width:50%;}
   .list-header.option-02 .option.cate, .list-header.option-02 .option.order{width:50%;}
+
+  .list-header.option-02.w-style-02 .option.search{width:25%;}
+  .list-header.option-02.w-style-02 .option.date{width:25%;}
+  .list-header.option-02.w-style-02 .option.cate:not(.sub-cate){padding-left:1rem; margin-top:0;}
+}
+@media screen and (max-width:767.98px){
+  .list-header.option-02.w-style-02 .option.search,
+  .list-header.option-02.w-style-02 .option.date{width:50%;}
+  .list-header.option-02.w-style-02 .option.cate:not(.sub-cate){padding-left:0; margin-top:1rem; width:100%;}
 }
 @media screen and (max-width:575.98px){
   .list-header .option{width:100%;}
@@ -466,6 +511,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   .list-header.option-02 .option.search, .list-header.option-02 .option.date,
   .list-header.option-02 .option.cate, .list-header.option-02 .option.order{width:100%;}
   .list-header.option-02 .option.date{margin-top:1rem;}
+
+  
+  .list-header.option-02.w-style-02 .option.search,
+  .list-header.option-02.w-style-02 .option.date{width:100%;}
 }
 
 
@@ -689,7 +738,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card-06 .stat .title{font-weight:400; font-size:.875rem!important;}
 .ss-card-06 .text-container > .desc{min-height:2.875rem; font-size:.9375rem;}
 .ss-card-06 .img-container .ss-img{border-radius:.625rem 0 0 .625rem; height:100%;}
-.ss-card-06 .btn{position:absolute; bottom:1rem; right:3rem;}
+.ss-card-06 .btn{position:absolute; bottom:1rem; right:1.5rem;}
 .ss-card-06.type-video .ss-stats, .ss-card-06.type-gallery .ss-stats{position:absolute; left:1.5rem; bottom:1.5rem;}
 .ss-card-06.type-video .btn-play, .ss-card-06.type-gallery .btn-gallery{
   position:absolute; right:1.5rem; bottom:1.5rem; z-index:1;
@@ -701,6 +750,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card-06.type-magazine .text-container{width:80%;}
 .ss-card-06.type-magazine .tag{top:unset; bottom:0; padding:.5rem 1.5rem;}
 .ss-card-06.type-magazine .text-container > .desc{max-width:calc(100% - 15rem);}
+
+.ss-card-06:hover .btn.btn-icon.style-02 .icon svg{transition: fill .25s;}
+.ss-card-06:hover .btn.btn-icon.style-02 .icon svg path{transition: stroke .25s;}
+.ss-card-06:hover .btn.btn-icon.style-02 .text{transition: color .25s;}
 @media screen and (max-width:991.98px){
   .ss-card-06{border-radius:1.5rem;}
   .ss-card-06 .img-container, .ss-card-06 .text-container{width:100%;}
@@ -1269,6 +1322,7 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
   .ss-height-01{height:auto;}
   .ss-height-02{height:auto;}
 }
+
 
 
 /* Popup Container */
