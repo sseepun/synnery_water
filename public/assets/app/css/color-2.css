@@ -195,13 +195,40 @@ input.invalid::placeholder{color:#000000!important;}
 /* Breadcrumb 02 */
 .breadcrumb-02 .link-wrapper .link .icon svg path{stroke:#fecb00;}
 
-
+/* Special Card */
+.ss-card .readmore svg circle,
+.ss-card-column .ss-img .icon svg circle  {stroke: #fecb00; fill: #000000;}
+.ss-card .readmore svg path {stroke: #fecb00;}
+.ss-card .readmore.vdo svg path,
+.ss-card-column .ss-img .icon svg path {fill: #fecb00;}
+.ss-card-column .tag, 
+.ss-card-04,
+.ss-card-04 .tag,
+.ss-card-05,
+.ss-card-05 .tag,
+.ss-card-16 .wrapper,
+.ss-card-16 .tag,
+.ss-card-water {border-color: #fecb00 !important;}
+.ss-card-04 .text-container .wrapper,
+.ss-card-water {background: #000000;}
+.ss-tags > .tag, .cate-list p {background: #000000; color: #fecb00; border-color: #fecb00;}
+.ss-card-16 .ss-stats .stat:not(:last-child) svg path,
+.ss-card-water .icon-wrapper svg path {fill: #fecb00 !important;}
+.ss-card-16 .ss-stats .stat:last-child svg path {stroke: #fecb00 !important; fill: transparent;}
 /* Filter */
 .filter-03{background:rgba(0, 0, 0, .8);}
 .filter-04{
   background:linear-gradient(to right, rgba(0, 0, 0, 1) 11%, 
   rgba(0, 0, 0, 1) 47%,rgba(0, 0, 0, 0.15) 81%,rgba(0, 0, 0, 0) 100%);
 }
+
+.multi-day::after {border-color: #fecb00;}
+
+/* Form Check */
+.form-check .checkmark {background:#fecb00;}
+.form-check .checkmark:after {border-color:#000000;}
+.rating-option input[type="radio"]:checked + label::before{background-color: #000000; border-color: #fecb00;}
+.rating-option {border-color: #fecb00 !important;}
 
 
 /* Floating Label */
@@ -344,7 +371,7 @@ section .content-wrapper.bg-right::before{background:#000000;}
 .ss-card-16 .text-container .stat svg path{fill:#fecb00;}
 .ss-card-16.minisite .title .highlight{background:#fecb00; color:#000000;}
 
-
+.filter-03{background: rgba(0, 0, 0, 0.8);;}
 /* Section 17 */
 .section-17.oit a, .section-17.oit table th{color:#000000!important;}
 .section-17 table.oit tr{background:#fecb00;}
@@ -484,6 +511,11 @@ table.table.table-download.style-02 .btn-collap{background:#000000;}
 table.table.table-download.style-02 .file-container svg:not(.pattern) path{fill:#ffff00;}
 table.table.table-download.style-02 tr > td.button-container .icon-download svg path{fill:#ffff00;}
 
+/* Section */
+.section-03 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active {background: #fecb00;}
+.section-03 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {border-color: #fecb00;}
+.section-03 .swiper-expand.swiper-horizontal .arrows .arrow {background: #fecb00;color: #000000;}
+.section-03 .swiper-expand.swiper-horizontal .arrows .arrow::before {background: rgba(254, 203, 0, 0.4);}
 
 /* upload-container */
 .upload-container{border-color:#ffff00;}
@@ -654,6 +686,10 @@ nav.stopnav .icon.icon-flag:hover .flag-dropdown .flag-item.active, nav.stopnav 
 nav.stopnav .options em{color:#fecb00;}
 nav.stopnav .icon-sep{background: #fecb00;}
 
+.btn.btn-calendar, .btn.btn-calendar:focus{color:#fecb00; background:transparent; border-color:#fecb00;}
+.btn.btn-calendar:hover, .btn.btn-calendar.active{color:#000000; background:#fecb00; border-color:#fecb00;}
+.btn.btn-calendar.inactive{color:#fecb00; background:#000000; border-color:#fecb00;}
+.btn.btn-calendar:active{color:#000000; background:#fecb00; border-color:#fecb00;}
 
 /* Topnav */
 nav.topnav {background:#000000;}
@@ -742,6 +778,13 @@ nav.footer .footer-top.minisite::before{
 .popup-container.report-file input[type=submit], .popup-container.report-file input[type=file], 
 .popup-container.report-file select, .popup-container.report-file textarea{border-color:#000000;}
 
+.popup-container.report-file input[type=text], .popup-container.report-file input[type=email], 
+.popup-container.report-file input[type=password], .popup-container.report-file input[type=date], 
+.popup-container.report-file input[type=tel], .popup-container.report-file input[type=number], .popup-container.report-file input[type=phone], 
+.popup-container.report-file input[type=submit], .popup-container.report-file input[type=file], 
+.popup-container.report-file select, .popup-container.report-file textarea{border-color:#000000;}
+.popup-container svg {filter: grayscale(1);}
+
 
 
 /* Accessibility & Quick Links */
@@ -761,5 +804,51 @@ nav.side-panel .icon-header svg path{fill:#fecb00;}
 nav.side-panel .option-row .icon-color svg path{fill:#fecb00;}
 nav.side-panel .option-row .icon-color.yellow svg image{fill:#fecb00;}
 
+/* Quicklink */
+nav.quicklink-nav > .wrapper > .title {background: #000000;color: #fecb00; border-color: #fecb00 !important;}
+nav.quicklink-nav .list-items .item {background: #fecb00;}
+nav.quicklink-nav .list-items .item:hover {background: #000000;}
+nav.quicklink-nav .list-items .item .text {color: #000000;}
+nav.quicklink-nav .list-items .item:hover .text {color: #fecb00;}
+nav.quicklink-nav .list-items .item .icon {filter: grayscale(1);}
+nav.quicklink-nav .list-items .arrows .arrow {color: #fecb00;}
+
+/* Social Share */
+.social-options .social-wrapper .social svg circle{fill:#fecb00;}
+.social-options .social-wrapper .social svg path:nth-child(1){fill:#000000;}
+.social-options .social-wrapper .social svg path:nth-child(2){fill:#000000;}
+.social-options .social-wrapper .social svg path:nth-child(3){fill:#fecb00;}
+.social-options .social-wrapper .social svg path:nth-child(6){fill:#fecb00;}
+.social-options .social-wrapper .social svg path:nth-child(4){fill:#fecb00;}
+.social-options .social-wrapper .social svg path:nth-child(5){fill:#fecb00;}
+.social-options .options .option svg circle{fill:#fecb00;}
+.social-options .options .option svg path{fill:#000000;}
+
+/* Faq */
+
+.faq-01 .answer,
+.faq-01 > .content.active .wrapper > table.table.table-download tr,
+table.table.table-download tr,
+table.table.table-download.sub tr,
+table.table.table-download.sub tr:hover {background: #000000 !important; color: #fecb00; border-color: #fecb00 !important;}
+.faq-01.style-03 > .content {border-color: #fecb00;}
+.faq-01 > .content.active .wrapper > table.table.table-download .option{color: #fecb00 !important;}
+.faq-01 > .content.active .wrapper > table.table.table-download .btn-collap path{fill: #fecb00;}
+table.table.table-download:not(.sub) .file-container svg.in-icon path {fill: #000;}
+.faq-01 .answer table.table.table-download.sub.style-02 .file-container svg.in-icon {filter: grayscale(1);}
+table.table.table-download.style-02 tr > td.button-container svg path,
+table.table.table-download tr > td.file-container .icon .show-active svg:first-child path,
+table.table.table-download tr > td.file-container .icon .show-inactive svg:first-child path,
+table.table.table-download.sub tr > td.file-container .icon svg:first-child path {fill: #fecb00;}
+
+/* Inner Shadow */
+.form-inner-shadow {background: #000000;}
 
 
+/* Webboard */
+.profile-icon {border-color: #fecb00 !important;}
+.webboard,
+.sub-webboard {border-color: #fecb00 !important;}
+
+/* No Result */
+.no-result svg path {stroke: #fecb00 !important;}

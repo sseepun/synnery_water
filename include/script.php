@@ -6,5 +6,6 @@
 <script src="public/assets/lib/dflip/js/libs/jquery.min.js"></script>
 <script src="public/assets/lib/dflip/js/dflip.min.js"></script>
 <script src="public/assets/lib/fancybox-3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker-full.min.js"></script>
 
-<script src="public/assets/app/js/script.js"></script>
+<script src="public/assets/app/js/script.js?v=<?= time() ?>"></script>

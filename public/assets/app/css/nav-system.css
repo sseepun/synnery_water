@@ -1,0 +1,163 @@
+:root {
+    --st-topbar-height: 4.6875rem;
+    --st-topbar-height: 4.6875rem;
+    --st-leftside-height: calc(100vh - 7.6875rem);
+    --st-leftside-sm-height: calc(100vh - 7.6875rem);
+    --st-leftbar-width: 22.375rem;
+    --st-leftbar-sm-width: 6.375rem;
+}
+.navbar-custom {
+    min-height: var(--st-topbar-height);
+    margin-left: var(--st-leftbar-width);
+    position: sticky;
+    top: 0;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    z-index: 1000;
+    overflow: hidden;
+}
+.navbar-custom .topbar {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    height: var(--st-topbar-height);
+    margin-right: 2rem;
+}
+.navbar-custom .topbar .pattern.style-01 {
+    position: absolute;
+    bottom: 0rem; left: -6.8rem;
+}
+.navbar-custom .topbar > a {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.leftside-menu {
+    z-index: 1000;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    width: var(--st-leftbar-width);
+    min-width: var(--st-leftbar-width);
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.leftside-menu .bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.leftside-menu .simplebar-wrapper {
+    position: relative;
+}
+.leftside-menu .logo {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.leftside-menu .logo img {
+    display: block;
+    height: 3.625rem;
+    width: auto;
+    margin: 0 1rem 0 0;
+}
+.leftside-menu .logo .main-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.leftside-menu .logo .sub-title {
+    font-size: .875rem;
+    font-weight: 700;
+}
+.leftside-menu .menu {
+    height: var(--st-leftside-height);
+    margin: 1rem;
+    overflow-y: auto;
+}
+.leftside-menu .menu .user-avatar {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+.leftside-menu .menu .menu-item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.2rem;
+    margin-left: 0.2rem;
+    border-radius: 0.75rem;
+    gap: .5rem;
+}
+.leftside-menu .menu .menu-item.active,
+.leftside-menu .menu .menu-item:hover {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+}
+.leftside-menu .menu .menu-item .text {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1199.98px) {
+    .navbar-custom {margin-left: var(--st-leftbar-sm-width);}
+    .leftside-menu {
+        width: var(--st-leftbar-sm-width);
+        min-width: var(--st-leftbar-sm-width);
+    }
+    .leftside-menu .logo {justify-content: center;}
+    .leftside-menu .logo img {margin-right: 0;}
+    .leftside-menu .logo .text,
+    .leftside-menu .menu .user-avatar .text,
+    .leftside-menu .menu .menu-item .text {display: none;}
+}
+
+.content-page {
+    position: relative;
+    margin-left: var(--st-leftbar-width);
+    padding: 2rem 2.5rem;
+    min-height: calc(100vh - var(--st-topbar-height) - 2px);
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.box-card {
+    border-radius: .75rem;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+.box-card .box-title {
+    position: relative;
+    font-size: 1.45rem;
+    font-weight: 500;
+    border-radius: 0.75rem 0.75rem 0 0;
+    padding: 1.5rem 1rem;
+    overflow: hidden;
+}
+.box-card .box-title .pattern img {
+    position: absolute;
+    bottom: 0;
+    left: calc(100% - 14rem);
+    transform: scaleX(-1);
+    height: 90%;
+}
+.box-card .box-content {
+    padding: 2rem 3rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .content-page {margin-left: var(--st-leftbar-sm-width);}
+    .box-card .box-content {padding: 2rem 1.2rem;}
+    .upload-container-round {
+        max-height: 18vw;
+        max-width: 18vw;
+        padding: .5rem;
+    }
+}
