@@ -43,7 +43,7 @@
             <img src="public/assets/app/images/pattern/09.png" alt="Pattern" />
           </div>
           <div class="options">
-            <div class="icon icon-circle">
+            <div class="icon  global-search-toggle  icon-circle">
               <em class="fa-solid fa-magnifying-glass"></em>
             </div>
             <div class="icon icon-text">
@@ -664,22 +664,12 @@
 
 
 <!-- Search Container -->
-<!-- <div class="global-search-container use-gsap">
+<div class="global-search-container use-gsap">
   <div class="pos-relative">
-    <div class="logo-container">
-      <div class="wrapper">
-        <div class="logo">
-          <img src="public/assets/app/images/logo.png" alt="Logo">
-        </div>
-        <div class="text">
-          <p class="h5 fw-400 color-white lh-sm title">กรมคุมประพฤติ<p>
-          <p class="color-white sm lh-sm desc">Department Of Probation</p>
-        </div>
-      </div>
-    </div>
     <div class="wrapper">
       <div class="container">
-        <div class="contents">
+        <div class="contents pos-relative">
+          <img class="search-pattern" src="./public/assets/app/images/pattern/17.png" alt="">
           <form class="form">
             <div class="input-container">
               <div class="input-wrapper">
@@ -722,23 +712,23 @@
               [
                 'title' => 'นายกฯ ประชุม คกก.ยุทธศาสตร์ชาติ สั่งการ สศช.ทบทวน 
                 ปรับปรุงยุทธศาสตร์ชาติให้ทันกับบริบทการพัฒนาโลกอย่างสม่ำเสมอ',
-                'imgBg' => './public/assets/app/images/content/20.jpg'
+                'imgBg' => './public/assets/app/images/content/01.png'
               ],[
                 'title' => 'ที่ปรึกษานายกรัฐมนตรีฝ่ายข้าราชการประจำด้านยุทธศาสตร์และการวางแผน 
                 (นายสุรพงษ์ มาลี) นำบุคลากร สลน. เยี่ยมชมพิพิธภัณฑ์เกษตรเฉลิมพระเกียรติพระบาทสมเด็จพระเจ้าอยู่หัว จังหวัดปทุมธานี',
-                'imgBg' => './public/assets/app/images/content/22.jpg'
+                'imgBg' => './public/assets/app/images/content/02.png'
               ], [
                 'title' => 'เลขาธิการนายกรัฐมนตรี ร่วมพิธีวาง พานพุ่มและถวายบังคมวันชาติ และวันพ่อแห่งชาติ 5 ธันวาคม 2566',
-                'imgBg' => './public/assets/app/images/content/23.jpg'
+                'imgBg' => './public/assets/app/images/content/12.png'
               ]
             ]
           ?>
           <div class="content-lists mt-5">
             <?php foreach($contents as $d) {?>
-              <a href="#" class="ss-card ss-card-30">
+              <a href="#" class="ss-card ss-card-10">
                 <div class="wrapper">
                   <div class="img-container">
-                    <div class="ss-img bradius-2">
+                    <div class="ss-img bradius">
                       <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
                     </div>
                   </div>
@@ -752,7 +742,7 @@
                     </p>
                     <div class="ss-stats">
                     <div class="stat">
-                      <div class="icon color-t">
+                      <div class="icon color-white">
                         <em class="fa-solid fa-calendar"></em>
                       </div>
                       <div class="title">
@@ -760,7 +750,7 @@
                       </div>
                     </div>
                     <div class="stat">
-                      <div class="icon color-t">
+                      <div class="icon color-white">
                         <em class="fa-solid fa-eye"></em>
                       </div>
                       <div class="title">
@@ -768,7 +758,7 @@
                       </div>
                     </div>
                     <div class="stat">
-                      <div class="icon color-t">
+                      <div class="icon color-white">
                         <em class="fa-solid fa-share-nodes"></em>
                       </div>
                       <div class="title">
@@ -783,28 +773,7 @@
           </div>
         </div>        
       </div>
-    </div> 
-    <svg class="pattern-01" width="218" height="313" viewBox="0 0 218 313" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M59.4051 158.592C36.8813 181.116 0.362922 181.116 -22.1609 158.592L-51.7822 128.971L-19.8068 96.9953C2.71704 74.4715 39.2354 74.4715 61.7593 96.9953L91.3805 126.617L59.4051 158.592Z" stroke="white" stroke-width="2.35412"/>
-      <path d="M165.341 156.238C142.817 178.761 106.298 178.761 83.7746 156.238L54.1534 126.616L86.1287 94.641C108.653 72.1172 145.171 72.1172 167.695 94.641L197.316 124.262L165.341 156.238Z" stroke="white" stroke-width="2.35412"/>
-      <path d="M104.742 139.978C127.266 162.502 127.266 199.02 104.742 221.544L75.121 251.165L43.1457 219.19C20.6218 196.666 20.6219 160.148 43.1457 137.624L72.7669 108.003L104.742 139.978Z" stroke="white" stroke-width="2.35412"/>
-      <path d="M102.388 34.0425C124.912 56.5663 124.912 93.0847 102.388 115.609L72.7666 145.23L40.7912 113.254C18.2674 90.7305 18.2674 54.2122 40.7912 31.6883L70.4125 2.06709L102.388 34.0425Z" stroke="white" stroke-width="2.35412"/>
-      <rect x="205.291" y="116.035" width="16.2719" height="16.2719" rx="2.3665" transform="rotate(-135 205.291 116.035)" stroke="white" stroke-width="1.57767"/>
-      <rect x="15.9712" y="311.666" width="69.8193" height="69.8193" rx="11.8325" transform="rotate(-135 15.9712 311.666)" stroke="white" stroke-width="1.57767"/>
-    </svg>
-    
-    <svg class="pattern-02" width="278" height="374" viewBox="0 0 278 374" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g opacity="0.2">
-        <path d="M196.625 280.879C213.777 298.032 241.588 298.032 258.74 280.879L281.219 258.4L256.931 234.112C239.778 216.959 211.968 216.959 194.815 234.112L172.336 256.591L196.625 280.879Z" stroke="white" stroke-width="2.62176"/>
-        <path d="M115.205 279.07C132.358 296.222 160.168 296.222 177.32 279.07L199.8 256.591L175.511 232.302C158.358 215.15 130.548 215.15 113.396 232.302L90.9165 254.781L115.205 279.07Z" stroke="white" stroke-width="2.62176"/>
-        <path d="M161.78 267.146C144.627 284.299 144.627 312.109 161.78 329.262L184.259 351.741L208.547 327.452C225.7 310.3 225.7 282.489 208.547 265.337L186.068 242.858L161.78 267.146Z" stroke="white" stroke-width="2.62176"/>
-        <path d="M163.588 185.727C146.436 202.88 146.436 230.69 163.588 247.843L186.067 270.322L210.356 246.033C227.509 228.881 227.509 201.071 210.356 183.918L187.877 161.439L163.588 185.727Z" stroke="white" stroke-width="2.62176"/>
-        <rect x="-3.12539e-07" y="-1.85387" width="44.57" height="44.57" rx="9.17617" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 295.585 240.317)" stroke="white" stroke-width="2.62176"/>
-        <rect x="-3.12539e-07" y="-1.85387" width="116.025" height="116.025" rx="19.6632" transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 260.789 177.395)" stroke="white" stroke-width="2.62176"/>
-        <path d="M129.456 113.244C110.272 130.447 80.7748 128.841 63.5721 109.657L48.372 92.7062L67.0786 75.9314C86.2624 58.7287 115.759 60.3347 132.962 79.5184L148.162 96.469L129.456 113.244Z" stroke="white" stroke-width="2.78492"/>
-        <path d="M73.2946 28.5043C90.4973 47.6881 88.8913 77.1852 69.7076 94.3879L58.7354 104.227L47.4969 91.694C30.2942 72.5103 31.9001 43.0132 51.0839 25.8105L62.056 15.9715L73.2946 28.5043Z" stroke="white" stroke-width="2.78492"/>
-        <rect x="11.795" y="78.5356" width="20.3417" height="20.3417" rx="10.1709" transform="rotate(-11.6196 11.795 78.5356)" stroke="white" stroke-width="2.26019"/>
-      </g>
-    </svg>       
+    </div>       
   </div>
-</div> -->
+  <div class="search-bg"></div>
+</div>

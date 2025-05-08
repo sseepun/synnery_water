@@ -270,6 +270,18 @@ nav.topnav .submenu.sub-mega-menu:hover > *:first-child a{color:#ffffff;}
 
 
 
+.global-search-container .search-bg{
+    background: linear-gradient(102.66deg, rgba(14, 58, 129, 0.8) 0%, rgba(0, 143, 211, 0.8) 100%);
+    backdrop-filter: blur(20px)
+}
+.global-search-container .hamburger > * {background: #ffffff;}
+.global-search-container .input-inner input {
+    border-color: rgba(157, 157, 157, 0.4)!important;
+    color: #ffffff!important;
+}
+.global-search-container .input-inner input::placeholder{color:#ffffff;}
+
+
 
 /* Sidenav */
 nav.sidenav .submenu .dropdown-toggle{color:#000000;}
