@@ -89,17 +89,109 @@
   ?>
   <section class="section-padding pt-6">
     <div class="container" data-aos="fade-up" data-aos-delay="150">
-    <span class="fw-400">ผลการค้นหา <span class="h5 color-01 fw-600">"การเลือกตั้ง"</span>
-      <span>ค้นพบ <span class="color-01 fw-600">0</span> รายการ</span></span>
-      <div class="search-container style-01 mt-3">
-        <form class="form" action="/action_page.php">
-          <div class="input-wrapper">
-            <input id="input-002" type="search" autocomplete="off" placeholder="ค้นหา..." name="search"/>
+        <div class="search-filter-container mt-5">
+        <div class="d-flex ai-center">
+          <p class="fw-600 h6 color-p">ค้นหาขั้นสูง</p>
+          <div class="btn-collap">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="svg-stroke-white-theme" d="M11 1L6 6L1 1" stroke="#0A112B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="form-wrapper mt-4">
+          <form action="">
+          <div class="grids">
+            <div class="grid lg-20 md-1-3 sm-50">
+              <span class="fw-500">ช่วงเวลา</span>
+              <div class="form-group">
+                  <div class="date-wrapper w-full">
+              <input type="text" name="daterange" class="form-control">
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-calendar"></i>
+                <span class="count"></span>
+              </span>
+              <div class="dropdown-icon">
+               <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.2315 3.78814V1.49969C5.2315 1.14006 4.93727 0.845825 4.57769 0.845825C4.21812 0.845825 3.92383 1.14006 3.92383 1.49969V3.78814C3.92383 4.14776 4.21806 4.442 4.57769 4.442C4.93732 4.442 5.2315 4.14776 5.2315 3.78814Z" fill="#008FD3"/>
+                  <path d="M13.0773 3.78815V1.4997C13.0773 1.14008 12.783 0.84584 12.4234 0.84584C12.0638 0.84584 11.7695 1.14008 11.7695 1.4997V3.78815C11.7695 4.14778 12.0638 4.44202 12.4234 4.44202C12.783 4.44202 13.0773 4.14778 13.0773 3.78815Z" fill="#008FD3"/>
+                  <path d="M16.3466 16.1586V7.71094H0.654297V16.1586C0.654297 17.0904 1.40949 17.8455 2.3412 17.8455H14.6597C15.5914 17.8455 16.3466 17.0904 16.3466 16.1586Z" fill="#008FD3"/>
+                  <path d="M11.1158 3.7882V2.80743H5.88505V3.7882C5.88505 4.51073 5.29985 5.09588 4.57738 5.09588C3.85491 5.09588 3.26965 4.51067 3.26965 3.7882V2.80743H2.3412C1.40949 2.80743 0.654297 3.56263 0.654297 4.49434V7.05742H16.3466V4.49434C16.3466 3.56263 15.5914 2.80743 14.6597 2.80743H13.7313V3.7882C13.7313 4.51073 13.1461 5.09588 12.4236 5.09588C11.7011 5.09588 11.1158 4.51067 11.1158 3.7882Z" fill="#008FD3"/>
+                </svg>
+              </div>
+            </div>
+              </div>
+            </div>
+            <div class="grid lg-20 md-1-3 sm-50">
+              <span class="fw-500">เรียงลำดับ</span>
+              <div class="form-group">
+                   
+            <select class="ui dropdown">
+              <option value="1">เรียงลำดับ</option>
+              <option value="2">ใหม่ล่าสุด</option>
+              <option value="3">เก่าที่สุด</option>
+              <option value="4">จำนวนเข้าชม</option>
+            </select>
+            <div class="dropdown-icon">
+              <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.5 7L0.00480902 0.25L12.9952 0.250001L6.5 7Z" fill="#008FD3"/>
+              </svg>
+            </div>
+         
+              </div>
+            </div>
+            <div class="grid lg-60 md-1-3 sm-50">
+               <p class="fw-500 mt-4">ประเภทเนื้อหา</p>
+                <div class="grids">
+                  <div class="grid sm-20 mt-0">
+                    <div class="form-group">
+                      <label class="form-check">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        <p class="ml-3 fw-400">ข่าวสาร</p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid sm-20 mt-0">
+                    <div class="form-group">
+                      <label class="form-check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p class="ml-3 fw-400">เอกสาร</p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid sm-20 mt-0">
+                    <div class="form-group">
+                      <label class="form-check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p class="ml-3 fw-400">รูปภาพ</p>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="grid sm-20 mt-0">
+                    <div class="form-group">
+                      <label class="form-check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p class="ml-3 fw-400">วิดีโอ</p>
+                      </label>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+         
+          <div class="btns mt-3 jc-end sm-jc-center">
             <button type="submit" class="btn btn-action btn-01">
               <span>ค้นหา</span>
             </button>
+            <button type="submit" class="btn btn-action btn-01 style-03">
+              <span>ล้างข้อมูล</span>
+            </button>
           </div>
-        </form>
+          </form>
+        </div>
       </div>
       <div class="grids">
         <?php foreach($content as $d) {?>

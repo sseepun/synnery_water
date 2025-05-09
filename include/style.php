@@ -8,6 +8,7 @@
 <link href="public/assets/lib/dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
 
 <link rel="stylesheet" href="public/assets/lib/vanilla-datepicker/dist/css/datepicker.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 <link rel="stylesheet" href="public/assets/app/css/grids.css" />
 <link rel="stylesheet" href="public/assets/app/css/style.css" />

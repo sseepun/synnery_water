@@ -60,6 +60,25 @@ $(function(){ 'use strict';
   });
 
 
+    // Search Filter
+  var searchFilter = $('.search-filter-container'),
+      btnCollap = searchFilter.find('.btn-collap');
+  if(searchFilter.length){
+      btnCollap.click(function(e){
+        e.preventDefault();
+            if(searchFilter.hasClass('active')){
+              searchFilter.removeClass('active');
+              btnCollap.removeClass('active'); 
+              searchFilter.find('.form-wrapper').slideUp();
+            }else{
+              searchFilter.addClass('active');
+              btnCollap.addClass('active');
+              searchFilter.find('.form-wrapper').slideDown();
+          }
+      }); 
+  }
+
+
   // Accessibility
   var accessibility = $('nav.access-panel');
   accessibility.find('> .wrapper > .icon, .panel-row:first-child').click(function(e){
@@ -458,6 +477,20 @@ $(function(){ 'use strict';
    $('input.date-picker').each(function(){
     new Datepicker($(this)[0], {});
   });
+
+
+  // Date Range
+    $('input[name="daterange"]').each(function(){
+        new daterangepicker($(this)[0],{opens: 'right',});
+        $('input[name="daterange"]').val('');
+        $('input[name="daterange"]').attr("placeholder","เริ่ม - สิ้นสุดวันที่");
+
+        let applyBtn = $('.applyBtn');
+        let cancelBtn = $('.cancelBtn');
+
+        applyBtn.text('ยืนยัน');
+        cancelBtn.text('ยกเลิก')
+    });
 
 
   // Swiper 03
