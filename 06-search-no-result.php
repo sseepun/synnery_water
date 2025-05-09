@@ -145,7 +145,7 @@
             </div>
           </div>
           <div class="grid xl-60 lg-50 md-100 sm-100">
-              <p class="fw-500">ประเภทเนื้อหา</p>
+            <p class="fw-500">ประเภทเนื้อหา</p>
               <div class="grids mt-3 md-mt-0">
                 <div class="grid sm-20 mt-0">
                   <div class="form-group">
@@ -200,56 +200,33 @@
     </div>
 
       <p class="mt-4 mb-2 fw-400">ผลการค้นหา <span class="color-s fw-600">"กรมชลประทาน"</span> ค้นพบ <span class="color-s fw-600">100</span> รายการ</p>
-      <div class="grids">
-        <?php foreach($content as $d) {?>
-          <div class="grid lg-100">
-            <a href="#" class="ss-card ss-card-06">
-              <div class="wrapper">
-                <div class="img-container">
-                  <div class="ss-img">
-                    <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>')"></div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <div class="tag bg-p color-white">
-                    <p class="sm fw-500"><?= $d['cate'] ?></p>
-                  </div>
-                  <h6 class="title"><?= $d['title'] ?></h6>
-                  <p class="desc"><?= $d['desc'] ?></p>
-                  <div class="ss-stats color-gray-01">
-                    <div class="stat">
-                      <div class="icon"><em class="fa-solid fa-calendar"></em></div>
-                      <p class="title">28 ม.ค. 68</p>
-                    </div>
-                    <div class="stat">
-                      <div class="icon"><em class="fa-solid fa-eye"></em></div>
-                      <p class="title">999k</p>
-                    </div>
-                    <div class="stat">
-                      <div class="icon"><em class="fa-solid fa-share-nodes"></em></div>
-                      <p class="title">999k</p>
-                    </div>
-                  </div>
-                  <div class="btn btn-action btn-icon bradius-rouded style-02">
-                    <span class="pr-2 text color-p fw-400">อ่านต่อ</span>
-                    <div class="icon">
-                      <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.347 6.39998L14.347 6.39992L14.3391 6.40659L14.3284 6.41558C13.069 7.4746 11.6177 8.69503 10.1526 9.65442C8.6586 10.6328 7.28007 11.25 6.16435 11.25C4.67587 11.25 3.30786 10.6495 2.33315 9.70078L2.33316 9.70076L2.32903 9.69681C1.34417 8.75273 0.75 7.45024 0.75 6C0.75 4.55445 1.35787 3.24849 2.33315 2.29922L2.33316 2.29924L2.33723 2.29521C3.30752 1.33627 4.65521 0.75 6.16435 0.75C7.28048 0.75 8.6635 1.36763 10.1594 2.34585C11.6297 3.30731 13.0851 4.53172 14.3363 5.59108C14.5006 5.73102 14.6637 5.86954 14.8249 6.00513C14.6707 6.13365 14.5117 6.26534 14.347 6.39998Z" stroke="#008FD3" stroke-width="1.5"/>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        <?php } ?>
-      </div>
-      <div class="mt-6 pt-4" data-aos="fade-up" data-aos-delay="300">
-        <?php
-          $listFooter = ['total', 'paginate', 'pp'];
-          include('components/list-footer.php');
-        ?>
-      </div>
+       <div class="search-no-result">
+          <svg width="214" height="214" viewBox="0 0 214 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_974_2658)">
+              <mask id="mask0_974_2658" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="214" height="214">
+                <path d="M0 0.000198364H213.333V213.333H0V0.000198364Z" fill="white"/>
+              </mask>
+            <g mask="url(#mask0_974_2658)">
+              <path d="M196.215 126.739C204.403 114.275 209.167 99.3608 209.167 83.3329C209.167 39.6104 173.723 4.16619 130 4.16619C86.2777 4.16619 50.8336 39.6104 50.8336 83.3329C50.8336 127.055 86.2777 162.5 130 162.5C143.029 162.5 155.321 159.351 166.161 153.776" stroke="#D2E0F7" stroke-width="8.33333" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M100.897 28.0134C109.59 23.4309 119.491 20.833 130 20.833C164.518 20.833 192.5 48.8155 192.5 83.333C192.5 96.8026 188.239 109.277 180.992 119.481M133.823 145.718C132.328 145.825 131.523 145.833 130 145.833C95.4824 145.833 67.5003 117.851 67.5003 83.333C67.5003 72.8247 70.0974 62.923 74.6799 54.2322" stroke="#D2E0F7" stroke-width="8.33333" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M83.1106 147.578L27.9964 205.092C22.5635 210.525 13.6739 210.525 8.24098 205.092C2.80806 199.66 2.80806 190.77 8.24098 185.337L65.3747 130.584" stroke="#D2E0F7" stroke-width="8.33333" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M50.1662 147.496L65.8379 163.167" stroke="#D2E0F7" stroke-width="8.33333" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M109.165 83.333H109.169" stroke="#D2E0F7" stroke-width="8.33333" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M129.999 83.333H130.003" stroke="#D2E0F7" stroke-width="8.33333" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M150.832 83.333H150.836" stroke="#D2E0F7" stroke-width="8.33333" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M144.252 153.767H199.792C204.948 153.767 209.167 149.548 209.167 144.392C209.167 139.235 204.948 135.017 199.792 135.017C199.295 128.357 193.735 123.109 186.949 123.109C185.761 123.109 184.61 123.271 183.517 123.572C180.031 117.767 173.674 113.883 166.41 113.883C155.396 113.883 146.468 122.811 146.468 133.825H144.318C138.834 133.825 134.347 138.312 134.347 143.796C134.347 149.215 138.813 153.767 144.252 153.767Z" stroke="#D2E0F7" stroke-width="8.33333" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M72.5704 28.183C70.3375 24.3588 66.19 21.7888 61.4416 21.7888C60.2529 21.7888 59.1025 21.9505 58.01 22.2521C54.5233 16.4471 48.1666 12.563 40.9025 12.563C29.8887 12.563 20.9608 21.4909 20.9608 32.5046H18.8104C13.3258 32.5046 8.83914 36.9913 8.83914 42.4755C8.83914 47.895 13.3058 52.4463 18.7446 52.4463H56.3833" stroke="#D2E0F7" stroke-width="8.33333" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M85.803 39.1387H85.8067" stroke="#D2E0F7" stroke-width="8.33333" stroke-miterlimit="2.613" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            </g>
+            <defs>
+            <clipPath id="clip0_974_2658">
+              <rect width="213.333" height="213.333" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+          <h6 class="color-p fw-800 color-04 search-title">ไม่พบรายการที่คุณค้นหา</h6>
+        </div>
     </div>
   </section>
   

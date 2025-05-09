@@ -1,21 +1,21 @@
 <?php 
   $content = [
     [
-      "imgBg" => 'public/assets/app/images/content/46.png',
+      "imgBg" => 'public/assets/app/images/content/75.png',
       "title" => 'สำนักงานชลประทานที่ 1 จัดกิจกรรมเพื่อพัฒนา คุณภาพการบริหารจัดการโครงการส่งน้ำและบำรุงรักษา/โครงการชลประทาน ระดับสำนักงานชลประทานที่ 1 ประจำปี พ.ศ. 2569',
       "cate" => 'ข่าวสารประชาสัมพันธ์'
     ],[
-      "imgBg" => 'public/assets/app/images/content/47.png',
+      "imgBg" => 'public/assets/app/images/content/75.png',
       "title" => 'สำนักงานชลประทานที่ 1 ดำเนินการสอบคัดเลือก ลูกจ้างประจำ เพื่อปรับระดับชั้นงานเป็นระดับ 4',
       "cate" => 'ข่าวสารประชาสัมพันธ์'
     ],[
-      "imgBg" => 'public/assets/app/images/content/48.png',
+      "imgBg" => 'public/assets/app/images/content/75.png',
       "title" => 'สำนักงานชลประทานที่ 1 จัดกิจกรรมเพื่อพัฒนา คุณภาพการบริหารจัดการโครงการส่งน้ำและบำรุงรักษา/โครงการชลประทาน ระดับสำนักงานชลประทานที่ 1 ประจำปี พ.ศ. 2569',
       "cate" => 'ข่าวสารประชาสัมพันธ์'
     ],
   ]
 ?>
-<div class="swiper-03 mt-4">
+<div class="swiper-05 mt-4">
   <div class="swiper-wrapper">
     <?php foreach($content as $d) {?>
       <div class="swiper-slide">

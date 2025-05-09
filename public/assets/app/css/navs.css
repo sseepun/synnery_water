@@ -127,7 +127,7 @@ nav.topnav .submenu-container{
   position:relative; display:flex; border-radius:0 0 .5rem .5rem; 
   box-shadow:0px 4px 8px 4px rgba(0,0,0,.1);
 }
-nav.topnav .submenu-dropdown.full-width .submenu-wrapper{width:calc(100% / 3);}
+nav.topnav .submenu-dropdown.full-width .submenu-wrapper{width:calc(100% / 3); max-height:18.5rem; overflow-x:hidden; overflow-y:auto;}
 nav.topnav .submenu-dropdown.full-width .submenu-wrapper .submenu > .submenu-dropdown{
   position:relative; top:unset; left:unset; opacity:1; pointer-events:none;
   padding-left:.875rem;
@@ -218,6 +218,7 @@ nav.topnav.minisite .topnav-left .text-title{
   position:absolute; top:25%; left:calc(100% + 5rem); transform:translateY(-50%); 
   white-space:nowrap;
 }
+nav.topnav.minisite.intra .topnav-left .text-title{left:calc(100% + 10rem); }
 nav.topnav.minisite .topnav-top .pattern img{
   display:block; height:auto; width:90rem; overflow:hidden;
 }
@@ -287,7 +288,6 @@ nav.topnav.minisite.ict .logo .main-title{font-size:1.3125rem; line-height:1.1;}
   nav.topnav.minisite .topnav-wrapper{padding:0 0;}
 
   nav.topnav.minisite.ict .logo .main-title{font-size:1rem;}
-  /* nav.topnav.minisite.ict .logo .main-title br{display:none;} */
   nav.topnav.minisite.ict > .container > .pattern{left:calc(23% - 50vw)}
   nav.topnav.minisite.ict .logo img{height:3rem; margin:0 .75rem 0 0;}
   nav.topnav.minisite.ict .logo .main-title{padding:0 .5rem 0 0; font-size:.875rem;}
@@ -515,11 +515,15 @@ nav.footer.minisite .logo img{
   display:block; max-width:100%; width:auto; max-height:100%; height:3.25rem;
 }
 nav.footer.minisite .text-wrapper{width:calc(100% - 4.5rem); padding-left:1rem;}
+
+nav.footer.minisite.intra .text-wrapper {width: calc(100% - 5rem);}
+nav.footer.minisite.intra .logo{background:transparent; width:5rem; height:5rem;}
+nav.footer.minisite.intra .logo img{height:auto;}
 @media screen and (max-width:991.98px){
   nav.footer .contact-wrapper{flex-direction:column;}
   nav.footer .contact-wrapper .list-item{margin-bottom:.5rem;}
   nav.footer .contact-wrapper .list-item.ml-5{margin-left:0!important;}
-  nav.footer .img-bg.show-desktop{filter:blur(2px);}
+  nav.footer .img-bg.show-desktop{filter:fdbblur(2px);}
   nav.footer .socials{justify-content:flex-start!important;}
   nav.footer .text-right{text-align:left!important;}
 }

@@ -9,10 +9,10 @@
 
 <?php
     $breadcrumb = [
-      [ 'url' => '#', 'display' => 'ผลลัพการค้นหา' ],
-      [ 'url' => '#', 'display' => 'ผลลัพธ์การค้นหา' ],
+      [ 'url' => '#', 'display' => 'เกี่ยวกับกรม' ],
+      [ 'url' => '#', 'display' => 'ทำเนียบผู้บริหาร' ],
     ];
-    $breadcrumbTitle = 'ผลลัพการค้นหา';
+    $breadcrumbTitle = 'ทำเนียบผู้บริหาร';
     $breadcrumbBg = 'public/assets/app/images/breadcrumb/02.jpg';
     include('components/breadcrumb.php');
   ?>
@@ -87,170 +87,8 @@
       ],
     ]
   ?>
-  <section class="section-padding pt-6">
-    <div class="container" data-aos="fade-up" data-aos-delay="150">
-      <?php
-      $listHeaderClass = 'mt-5 search';
-      $listHeader = ['search', 'view-grid'];
-      include('components/list-header.php');
-    ?>
-    <div class="search-filter-container mt-5">
-      <div class="d-flex ai-center">
-        <p class="fw-600 h6 color-p">ค้นหาขั้นสูง</p>
-        <div class="btn-collap">
-          <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="svg-stroke-white-theme" d="M11 1L6 6L1 1" stroke="#0A112B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-      </div>
-      <div class="form-wrapper mt-4">
-        <form action="">
-        <div class="grids">
-          <div class="grid xl-20 lg-25 md-100 sm-50">
-            <span class="fw-500">ช่วงเวลา</span>
-            <div class="form-group">
-                <div class="date-wrapper w-full">
-            <input type="text" name="daterange" class="form-control">
-            <span class="input-group-addon">
-              <i class="glyphicon glyphicon-calendar"></i>
-              <span class="count"></span>
-            </span>
-            <div class="dropdown-icon">
-              <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.2315 3.78814V1.49969C5.2315 1.14006 4.93727 0.845825 4.57769 0.845825C4.21812 0.845825 3.92383 1.14006 3.92383 1.49969V3.78814C3.92383 4.14776 4.21806 4.442 4.57769 4.442C4.93732 4.442 5.2315 4.14776 5.2315 3.78814Z" fill="#008FD3"/>
-                <path d="M13.0773 3.78815V1.4997C13.0773 1.14008 12.783 0.84584 12.4234 0.84584C12.0638 0.84584 11.7695 1.14008 11.7695 1.4997V3.78815C11.7695 4.14778 12.0638 4.44202 12.4234 4.44202C12.783 4.44202 13.0773 4.14778 13.0773 3.78815Z" fill="#008FD3"/>
-                <path d="M16.3466 16.1586V7.71094H0.654297V16.1586C0.654297 17.0904 1.40949 17.8455 2.3412 17.8455H14.6597C15.5914 17.8455 16.3466 17.0904 16.3466 16.1586Z" fill="#008FD3"/>
-                <path d="M11.1158 3.7882V2.80743H5.88505V3.7882C5.88505 4.51073 5.29985 5.09588 4.57738 5.09588C3.85491 5.09588 3.26965 4.51067 3.26965 3.7882V2.80743H2.3412C1.40949 2.80743 0.654297 3.56263 0.654297 4.49434V7.05742H16.3466V4.49434C16.3466 3.56263 15.5914 2.80743 14.6597 2.80743H13.7313V3.7882C13.7313 4.51073 13.1461 5.09588 12.4236 5.09588C11.7011 5.09588 11.1158 4.51067 11.1158 3.7882Z" fill="#008FD3"/>
-              </svg>
-            </div>
-          </div>
-            </div>
-          </div>
-          <div class="grid xl-20 lg-25 md-100 sm-50">
-            <span class="fw-500">เรียงลำดับ</span>
-            <div class="form-group">
-                  
-          <select class="ui dropdown">
-            <option value="1">เรียงลำดับ</option>
-            <option value="2">ใหม่ล่าสุด</option>
-            <option value="3">เก่าที่สุด</option>
-            <option value="4">จำนวนเข้าชม</option>
-          </select>
-          <div class="dropdown-icon">
-            <svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.5 7L0.00480902 0.25L12.9952 0.250001L6.5 7Z" fill="#008FD3"/>
-            </svg>
-          </div>
-        
-            </div>
-          </div>
-          <div class="grid xl-60 lg-50 md-100 sm-100">
-              <p class="fw-500">ประเภทเนื้อหา</p>
-              <div class="grids mt-3 md-mt-0">
-                <div class="grid sm-20 mt-0">
-                  <div class="form-group">
-                    <label class="form-check">
-                      <input type="checkbox" checked="checked">
-                      <span class="checkmark"></span>
-                      <p class="ml-2 fw-400">ข่าวสาร</p>
-                    </label>
-                  </div>
-                </div>
-                <div class="grid sm-20 mt-0">
-                  <div class="form-group">
-                    <label class="form-check">
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                      <p class="ml-2 fw-400">เอกสาร</p>
-                    </label>
-                  </div>
-                </div>
-                <div class="grid sm-20 mt-0">
-                  <div class="form-group">
-                    <label class="form-check">
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                      <p class="ml-2 fw-400">รูปภาพ</p>
-                    </label>
-                  </div>
-                </div>
-                <div class="grid sm-20 mt-0">
-                  <div class="form-group">
-                    <label class="form-check">
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                      <p class="ml-2 fw-400">วิดีโอ</p>
-                    </label>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="btns mt-3 jc-end sm-jc-center">
-          <button type="submit" class="btn btn-action btn-p-inverse">
-            <span>ล้างข้อมูล</span>
-          </button>
-          <button type="submit" class="btn btn-action btn-p">
-            <span>ค้นหา</span>
-          </button>
-        </div>
-        </form>
-      </div>
-    </div>
-
-      <p class="mt-4 mb-2 fw-400">ผลการค้นหา <span class="color-s fw-600">"กรมชลประทาน"</span> ค้นพบ <span class="color-s fw-600">100</span> รายการ</p>
-      <div class="grids">
-        <?php foreach($content as $d) {?>
-          <div class="grid lg-100">
-            <a href="#" class="ss-card ss-card-06">
-              <div class="wrapper">
-                <div class="img-container">
-                  <div class="ss-img">
-                    <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>')"></div>
-                  </div>
-                </div>
-                <div class="text-container">
-                  <div class="tag bg-p color-white">
-                    <p class="sm fw-500"><?= $d['cate'] ?></p>
-                  </div>
-                  <h6 class="title"><?= $d['title'] ?></h6>
-                  <p class="desc"><?= $d['desc'] ?></p>
-                  <div class="ss-stats color-gray-01">
-                    <div class="stat">
-                      <div class="icon"><em class="fa-solid fa-calendar"></em></div>
-                      <p class="title">28 ม.ค. 68</p>
-                    </div>
-                    <div class="stat">
-                      <div class="icon"><em class="fa-solid fa-eye"></em></div>
-                      <p class="title">999k</p>
-                    </div>
-                    <div class="stat">
-                      <div class="icon"><em class="fa-solid fa-share-nodes"></em></div>
-                      <p class="title">999k</p>
-                    </div>
-                  </div>
-                  <div class="btn btn-action btn-icon bradius-rouded style-02">
-                    <span class="pr-2 text color-p fw-400">อ่านต่อ</span>
-                    <div class="icon">
-                      <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.347 6.39998L14.347 6.39992L14.3391 6.40659L14.3284 6.41558C13.069 7.4746 11.6177 8.69503 10.1526 9.65442C8.6586 10.6328 7.28007 11.25 6.16435 11.25C4.67587 11.25 3.30786 10.6495 2.33315 9.70078L2.33316 9.70076L2.32903 9.69681C1.34417 8.75273 0.75 7.45024 0.75 6C0.75 4.55445 1.35787 3.24849 2.33315 2.29922L2.33316 2.29924L2.33723 2.29521C3.30752 1.33627 4.65521 0.75 6.16435 0.75C7.28048 0.75 8.6635 1.36763 10.1594 2.34585C11.6297 3.30731 13.0851 4.53172 14.3363 5.59108C14.5006 5.73102 14.6637 5.86954 14.8249 6.00513C14.6707 6.13365 14.5117 6.26534 14.347 6.39998Z" stroke="#008FD3" stroke-width="1.5"/>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        <?php } ?>
-      </div>
-      <div class="mt-6 pt-4" data-aos="fade-up" data-aos-delay="300">
-        <?php
-          $listFooter = ['total', 'paginate', 'pp'];
-          include('components/list-footer.php');
-        ?>
-      </div>
-    </div>
+  <section class="section-padding">
+  
   </section>
   
   <?php include_once('layout/footer.php'); ?>

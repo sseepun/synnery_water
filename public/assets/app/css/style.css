@@ -81,46 +81,26 @@ textarea, button{font-family:var(--fw);}
   padding-left:1.5rem;
 }
 .form-check > input[type="checkbox"], .form-check > input[type="radio"] {
-    font-size: 1rem;
-    width: 1rem;
-    height: 1rem;
-    cursor: pointer;
+  font-size:1rem; width:1rem; height:1rem; cursor:pointer;
 }
 .form-check input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+  position:absolute; opacity:0; cursor:pointer;
+  height:0; width:0;
 }
 .form-check .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: .25rem;
-    height: 1.375rem;
-    width: 1.375rem;
-    cursor: pointer;
+  position:absolute; top:0; left:0; border-radius: .25rem;
+  height:1.375rem; width:1.375rem; cursor:pointer;
 }
 .form-check .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+  content:""; position:absolute; display:none;
 }
 .form-check .checkmark:after {
-    left: .46875rem;
-    top: 4px;
-    width: 5px;
-    height: 9px;
-    border: solid transparent;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+  left:.46875rem; top:4px; width:5px;
+  height:9px; border: solid transparent;
+  border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg); transform: rotate(45deg);
 }
-.form-check input:checked ~ .checkmark:after {
-    display: block;
-}
+.form-check input:checked ~ .checkmark:after{display:block;}
 
 
 /* Form Group */
@@ -449,6 +429,9 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   position:relative; width:100%; display:flex; align-items:center;
   justify-content:space-between; padding:.125rem 0; margin:0;
 }
+.list-header.search .options{justify-content:space-between;}
+.list-header.search .option.search{width:65%;}
+.list-header.search .option.view{width:35%;}
 .list-header.option-02{flex-wrap:wrap;}
 .list-header.option-02 .option.search{width:30%;}
 .list-header.option-02 .option.date{width:23%;}
@@ -460,7 +443,6 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .list-header.option-02.w-style-02 .option.view{width:15%;}
 
 
-/* .list-header .option.cate, .list-header .option.order, .list-header .option.date */
 .list-header > .block{display:block;}
 .list-header .option{
   display:inline-block; width:2.25rem; height:2.25rem; text-align:center;
@@ -524,6 +506,8 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
   .list-header.option-02.w-style-02{justify-content:center;}
   .list-header.option-02.w-style-02 .option.view{width:100%;}
+
+  .list-header.search .option.view{width:35%; margin-top:0;}
 }
 @media screen and (max-width:991.98px){
   .list-header .option.search, .list-header.style-03 .option.search{width:100%;}
@@ -572,6 +556,10 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   
   .list-header.option-02.w-style-02 .option.search,
   .list-header.option-02.w-style-02 .option.date{width:100%;}
+
+  .list-header.search .option.view{width:100%;}
+  .list-header.search .option.search{width:100%;}
+  .list-header.search .option.view{margin-top:1rem;}
 }
 
 
@@ -843,6 +831,7 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 /* Special Card 07 */
 .ss-card-07{border-radius:1.5rem; box-shadow: 0px 4.63px 23.15px 0px #0000001A;}
+.ss-card-07.box-shadow-02{box-shadow: 0px 4.63px 30px 0px #0000001A;}
 .ss-card-07 .wrapper{display:flex; flex-wrap:wrap;}
 .ss-card-07 .img-container{width:65%;}
 .ss-card-07 .img-container .ss-img{border-radius:1.5rem 0 0 1.5rem;}
@@ -947,15 +936,28 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 .ss-card-09 .text-container .wrapper .title{
   position:absolute; transform:translate(-50%, -50%); top:12%; left:50%; white-space:nowrap;
 }
+.ss-card-09.intranet .text-container .wrapper .title{font-size:.75rem;}
 .ss-card-09:hover .text-container .wrapper .title{top:50%;}
 @media screen and (max-width:1299.98px){
   .ss-card-09 .text-container .wrapper .title{font-size:.875rem;}
+  .ss-card-09.intranet .text-container .wrapper .title{font-size:.625rem;}
+}
+@media screen and (max-width:1199.98px){
+  .ss-card-09 .text-container .wrapper .title{font-size:.875rem;}
+  .ss-card-09.intranet .text-container .wrapper .title{font-size:1rem;}
 }
 @media screen and (max-width:991.98px){
   .ss-card-09 .text-container .wrapper .title{font-size:1rem;}
+  .ss-card-09.intranet .text-container .wrapper .title{font-size:.75rem;}
+}
+@media screen and (max-width:767.98px){
+  .ss-card-09.intranet .text-container .wrapper .title{font-size:.625rem;}
 }
 @media screen and (max-width:690.98px){
   .ss-card-09 .text-container .wrapper .title{font-size:.875rem;}
+}
+@media screen and (max-width:559.98px){
+  .ss-card-09.intranet .text-container .wrapper .title{font-size:.75rem;}
 }
 @media screen and (max-width:570.98px){
   .ss-card-09 .text-container .wrapper .title{font-size:.625rem;}
@@ -993,6 +995,15 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
   .global-search-container .content-lists{max-height:18rem; min-height:18rem;}
   .global-search-container .search-pattern{right:calc(100% - 11rem);}
 }
+
+
+/* Special Card 11 */
+.ss-card-11{position:relative;}
+.ss-card-11 .text-container{
+  position:absolute; top:0; left:0; right:0; bottom:0;
+  display:flex; align-items:center;
+}
+.ss-card-11 .text-container .wrapper{padding:.875rem;}
 
 
 /* Special Card Hover Filter */
@@ -1219,6 +1230,9 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .ml-1{margin-left:.25rem!important;} .ml-2{margin-left:.5rem!important;}
 .ml-3{margin-left:.75rem!important;} .ml-4{margin-left:1rem!important;}
 .ml-5{margin-left:1.25rem!important;} .ml-6{margin-left:1.5rem!important;}
+@media screen and (max-width:991.98px){
+  .md-mt-0{margin-top:0!important;}
+}
 @media screen and (max-width:767.98px){
   .sm-mt-4{margin-top:1rem!important;}
 }
@@ -1618,7 +1632,7 @@ table.table.table-download.style-01 tr{transition:background .25s;}
   border-radius:0; border-bottom:1px solid transparent; background:transparent; 
   border-top:0; border-right:0; border-left:0; 
 }
-.search-filter-container .form-wrapper{padding:1rem;}
+.search-filter-container .form-wrapper{padding:1rem; border-radius:1.0625rem; display:none;}
 .search-filter-container .btn-collap {
   width:2rem; height:2rem; display:flex; cursor:pointer; 
   border-radius:50%; align-items:center; justify-content:center;

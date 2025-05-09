@@ -451,7 +451,7 @@ $(function(){ 'use strict';
   // Section 10
   if($('.section-10 .swiper').length){
     new Swiper('.section-10 .swiper', {
-      spaceBetween: 0, slidesPerView: 1, speed: 800,
+      spaceBetween: 15, slidesPerView: 1, speed: 800,
       autoplay: { delay: 5000 }, loop: true,
       navigation:{
         prevEl: '.section-10 .arrow.arrow-prev',
@@ -502,6 +502,42 @@ $(function(){ 'use strict';
         el: '.swiper-03',
         clickable: true,
       },
+      breakpoints: {
+        992:{slidesPerView: 3},
+        768:{ slidesPerView: 2},
+        576:{ slidesPerView: 1.5},
+        490:{ slidesPerView: 1.5},
+        0:{ slidesPerView: 1}
+      }, 
+    });
+  }
+
+
+  // Swiper 04
+  if($('.swiper-04').length){
+    new Swiper('.swiper-04', {
+      spaceBetween: 18, slidesPerView: 1, speed: 800,
+      autoplay: { delay: 5000 }, 
+       navigation:{
+        prevEl: '.arrow.arrow-prev',
+        nextEl: '.arrow.arrow-next',
+      }, 
+      breakpoints: {
+        992:{slidesPerView: 4},
+        768:{ slidesPerView: 2},
+        576:{ slidesPerView: 1.5},
+        490:{ slidesPerView: 1.5},
+        0:{ slidesPerView: 1}
+      }, 
+    });
+  }
+
+
+   // Swiper 03
+  if($('.swiper-05').length){
+    new Swiper('.swiper-05', {
+      spaceBetween: 18, slidesPerView: 1, speed: 800,
+      autoplay: { delay: 5000 }, loop: true,
       breakpoints: {
         992:{slidesPerView: 3},
         768:{ slidesPerView: 2},
