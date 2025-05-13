@@ -441,21 +441,6 @@ nav.sidenav .submenu .wrapper .submenu-patterns .submenu-pattern .pattern-02{
 nav.sidenav .menu.mega-menu .submenu-wrapper.background{display:none;}
 nav.sidenav .menu.mega-menu .submenu-container>.d-flex{display:unset!important;}
 
-/* Sidenav */
-nav.sidenav{background:#ffffff;}
-nav.sidenav .hamburger > *{background:#222325;}
-nav.sidenav .sidenav-toggle, nav.sidenav .options, 
-nav.sidenav .options > .option, nav.sidenav .options > .option-btn,
-nav.sidenav .option > .dropdown, nav.sidenav .option > .dropdown > *, nav.sidenav .scroll-wrapper, 
-nav.sidenav .menu > *:first-child{border-color:#e1e1e1;}
-nav.sidenav .submenu > *:first-child{border-color:#e1e1e1;}
-nav.sidenav .option > .dropdown{background:#ffffff;}
-nav.sidenav .menu > *:first-child{color:#000000;}
-
-
-
-
-
 nav.sidenav .submenu > *:first-child{background:#f7f7f7 ; color:#ffffff;}
 nav.sidenav .menu .submenu .submenu.level-2{background:#ffffff;}
 nav.sidenav .menu .submenu .submenu.level-2:hover::before{background:#c2c6c7;}
@@ -466,7 +451,6 @@ nav.sidenav .dropdown-toggle{color:#232323;}
 
 nav.sidenav .option > .dropdown .flag-wrapper:hover{background:#e1e1e1;}
 nav.sidenav .options > .option-btn:hover > a{color:#14206a;}
-
 
 
 /* Footer */
