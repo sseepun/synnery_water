@@ -1,7 +1,7 @@
 <?php if(!empty($listHeader)){?>
   <div class="list-header <?= isset($listHeaderClass)? $listHeaderClass: '' ?>">
     <?php if(in_array('search', $listHeader) || in_array('category', $listHeader) || in_array('order', $listHeader)){?>
-      <div class="options">
+      <div class="options <?= isset($listOptionClass) ? $listOptionClass : '' ?>">
         <?php if(in_array('search', $listHeader)){?>
           <div class="option search">
             <form class="w-full">

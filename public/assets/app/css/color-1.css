@@ -225,6 +225,29 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 input::placeholder, textarea::placeholder{color:#000000!important}
 input.invalid::placeholder{color:#000000!important;}
 
+/* Special Card */
+.ss-card .readmore svg circle {stroke: #ffffff; fill: #000000;}
+.ss-card .readmore svg path {stroke: #ffffff;}
+.ss-card .readmore.vdo svg path {fill: #ffffff;}
+.ss-card-column .tag, 
+.ss-card-04,
+.ss-card-04 .tag,
+.ss-card-05,
+.ss-card-05 .tag,
+.ss-card-16 .wrapper,
+.ss-card-16 .tag,
+.ss-card-water {border-color: #ffffff !important;}
+.ss-card-04 .text-container .wrapper,
+.ss-card-water {background: #000000;}
+.ss-tags > .tag, .cate-list p {background: #000000; color: #ffffff; border-color: #ffffff;}
+.ss-card-16 .text-container {background-color: #000000;}
+.ss-card-16 .ss-stats .stat:not(:last-child) svg path,
+.ss-card-water .icon-wrapper svg path {fill: #ffffff !important;}
+.ss-card-16 .ss-stats .stat:last-child svg path {stroke: #ffffff !important; fill: transparent;}
+.ss-card-16 .title, 
+.ss-card-16 .desc,
+.ss-card-16 .tag p,
+.ss-card-16 .ss-stats p {color: #ffffff !important;}
 
 /* Filter */
 .filter-03{background:rgba(0, 0, 0, .8);}
@@ -233,6 +256,11 @@ input.invalid::placeholder{color:#000000!important;}
   rgba(0, 0, 0, 1) 47%,rgba(0, 0, 0, 0.15) 81%,rgba(0, 0, 0, 0) 100%);
 }
 
+.multi-day::after {border-color: #ffffff;}
+
+/* Form Check */
+.form-check .checkmark {background:#ffffff;}
+.form-check .checkmark:after {border-color:#000000;}
 
 /* Floating Label */
 .floating-label label{color:#000000!important;}
@@ -417,6 +445,9 @@ table.table.table-download.style-02 .btn-collap{background:#000000;}
 table.table.table-download.style-02 .file-container svg:not(.pattern) path{fill:#ffffff;}
 table.table.table-download.style-02 tr > td.button-container .icon-download svg path{fill:#ffffff;}
 
+/* Section */
+.section-03 .swiper-expand.swiper-horizontal .arrows .arrow {background: #ffffff;color: #000000;}
+.section-08 .swiper-container .arrows .arrow {color: #000000;}
 
 /* upload-container */
 .upload-container{border-color:#ffffff;}
@@ -545,7 +576,7 @@ table.table.table-download.style-02 tr > td.button-container .icon-download svg 
 .ss-card-16 .img-container .date-container>.date h6{color:#000000!important;}
 .ss-card-16 .text-container .stat svg path{fill:#ffffff;}
 
-
+.filter-03{background: rgba(0, 0, 0, 0.8);;}
 /* Special Card 18 */
 .ss-card-18{border-color:#ffffff;}
 .ss-card-18 .btn-p{background:#ffffff!important;}
@@ -656,6 +687,11 @@ nav.stopnav .icon.icon-flag:hover .flag-dropdown .flag-item.active, nav.stopnav 
   background: rgba(255,255,255,.7);
 }
 
+.btn.btn-calendar, .btn.btn-calendar:focus{color:#ffffff; background:transparent; border-color:#ffffff;}
+.btn.btn-calendar:hover, .btn.btn-calendar.active{color:#000000; background:#ffffff; border-color:#ffffff;}
+.btn.btn-calendar.inactive{color:#ffffff; background:#000000; border-color:#ffffff;}
+.btn.btn-calendar:active{color:#000000; background:#ffffff; border-color:#ffffff;}
+
 /* Topnav */
 nav.topnav {background:#000000;}
 nav.topnav .hamburger > *{background:#ffffff;}
@@ -717,10 +753,20 @@ nav.footer .footer-top.minisite::before{
 }
 
 
+
+
 .popup-container .box-body .icon{filter:grayscale(1)!important;}
 .popup-container .box-body, .popup-container .box-body .color-p{color:#000000!important;}
 .popup-container .box-body .btn{background:#000000; color:#ffffff;}
-
+.popup-container.report-file{  
+  background:linear-gradient(to right,rgba(0,0,0, 0.8) 0%, rgba(0,0,0, 0.8) 100% );
+}
+.popup-container.report-file input[type=text], .popup-container.report-file input[type=email], 
+.popup-container.report-file input[type=password], .popup-container.report-file input[type=date], 
+.popup-container.report-file input[type=tel], .popup-container.report-file input[type=number], .popup-container.report-file input[type=phone], 
+.popup-container.report-file input[type=submit], .popup-container.report-file input[type=file], 
+.popup-container.report-file select, .popup-container.report-file textarea{border-color:#000000;}
+.popup-container svg {filter: grayscale(1);}
 
 .popup-container.report-file{  
   background:linear-gradient(to right,rgba(0,0,0, 0.8) 0%, rgba(0,0,0, 0.8) 100% );
@@ -756,7 +802,14 @@ nav.side-panel .icon{background:#000000; fill:#ffffff;}
 nav.side-panel .icon-header svg path{fill:#ffffff;}
 nav.side-panel .option-row .icon-color svg path{fill:#ffffff;}
 
-
+/* Quicklink */
+nav.quicklink-nav > .wrapper > .title {background: #000000;color: #ffffff; border-color: #ffffff !important;}
+nav.quicklink-nav .list-items .item {background: #ffffff;}
+nav.quicklink-nav .list-items .item:hover {background: #000000;}
+nav.quicklink-nav .list-items .item .text {color: #000000;}
+nav.quicklink-nav .list-items .item:hover .text {color: #ffffff;}
+nav.quicklink-nav .list-items .item .icon {filter: grayscale(1);}
+nav.quicklink-nav .list-items .arrows .arrow {color: #ffffff;}
 /* Chat */
 nav.chat{background:#ffffff;}
 
@@ -780,3 +833,37 @@ nav.chat{background:#ffffff;}
 .contact-01 .socials svg path{fill:#ffffff;}
 
 
+/* Social Share */
+.social-options .social-wrapper .social svg path:nth-child(1){fill:#000000;}
+.social-options .social-wrapper .social svg path:nth-child(2){fill:#000000;}
+.social-options .social-wrapper .social svg path:nth-child(3){fill:#ffffff;}
+.social-options .social-wrapper .social svg path:nth-child(6){fill:#ffffff;}
+.social-options .social-wrapper .social svg path:nth-child(4){fill:#ffffff;}
+.social-options .social-wrapper .social svg path:nth-child(5){fill:#ffffff;}
+.social-options .options .option svg circle{fill:#ffffff;}
+.social-options .options .option svg path{fill:#000000;}
+
+/* Faq */
+.faq-01 .answer,
+.faq-01 > .content.active .wrapper > table.table.table-download tr,
+table.table.table-download tr,
+table.table.table-download.sub tr,
+table.table.table-download.sub tr:hover {background: #000000 !important; color: #ffffff; border-color: #ffffff !important;}
+.faq-01.style-03 > .content {border-color: #ffffff;}
+.faq-01 > .content.active .wrapper > table.table.table-download .option{color: #ffffff !important;}
+.faq-01 > .content.active .wrapper > table.table.table-download .btn-collap path{fill: #ffffff;}
+table.table.table-download:not(.sub) .file-container svg.in-icon path {fill: #000;}
+.faq-01 .answer table.table.table-download.sub.style-02 .file-container svg.in-icon {filter: grayscale(1);}
+table.table.table-download.style-02 tr > td.button-container svg path,
+table.table.table-download tr > td.file-container .icon .show-inactive svg:first-child path {fill: #ffffff;}
+
+/* Inner Shadow */
+.form-inner-shadow {background: #000000;}
+
+/* No Result */
+.no-result svg path {stroke: #ffffff !important;}
+
+/* Webboard */
+.profile-icon {border-color: #ffffff !important;}
+.webboard,
+.sub-webboard {border-color: #ffffff !important;}

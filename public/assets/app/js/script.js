@@ -59,6 +59,161 @@ $(function(){ 'use strict';
     sidenav.removeClass('active');
   });
 
+  /* Login Form */
+  const loginForm = $('#login-form');
+
+  if (loginForm.length) {
+    loginForm.on('submit', function (e) {
+      e.preventDefault(); 
+
+      const usernameInput = $('#username');
+      const passwordInput = $('#password');
+      const usernameError = $('#username-error');
+      const passwordError = $('#password-error');
+      const submitButton = loginForm.find('button[type="submit"]');
+
+      const correctUsername = "user@example.com";
+      const correctPassword = "123456";
+
+      let isValid = true;
+
+      if (usernameInput.val().trim() === "" || usernameInput.val() !== correctUsername) {
+        usernameInput.css('border', '1px solid #FF0000');
+        usernameError.show().text("กรุณากรอกชื่อผู้ใช้งานหรืออีเมลที่ถูกต้อง");
+        isValid = false;
+      } else {
+        usernameInput.css('border', '');
+        usernameError.hide();
+      }
+
+      if (passwordInput.val().trim() === "" || passwordInput.val() !== correctPassword) {
+        passwordInput.css('border', '1px solid #FF0000');
+        passwordError.show().text("รหัสผ่านไม่ถูกต้อง");
+        isValid = false;
+      } else {
+        passwordInput.css('border', '');
+        passwordError.hide();
+      }
+
+      submitButton.blur();
+
+      if (isValid) {
+        alert("เข้าสู่ระบบ");
+      }
+    });
+  }
+
+
+  // Button Popup
+  $('.btn-popup-toggle').click(function(e) {
+    e.preventDefault();
+
+    let popupToOpen = $(this).data('popup');
+
+    $('.popup-container').not('[data-popup="' + popupToOpen + '"]').removeClass('active');
+
+    $('.popup-container[data-popup="' + popupToOpen + '"]').toggleClass('active');
+  });
+
+  $('.btn-popup-close-all').click(function(e) {
+      e.preventDefault();
+      $('.popup-container').removeClass('active');
+  });
+
+  
+  /* Toggle Password */
+  function setupTogglePassword(toggleSelector, inputSelector) {
+    const toggleElements = $(toggleSelector);
+
+    toggleElements.each(function(){
+      const toggleButton = $(this);
+      const passwordInput = $(toggleButton.data('target'));
+
+      if (passwordInput.length) {
+        toggleButton.on('click', function(){
+          const type = passwordInput.attr('type') === 'password' ? 'text' : 'password';
+          passwordInput.attr('type', type);
+
+          toggleButton.toggleClass('fa-eye fa-eye-slash');
+        });
+      }
+    });
+  }
+  setupTogglePassword('[data-toggle="password"]');
+
+
+  
+
+
+  /* Password Criteria*/
+  $(document).ready(function(){
+    function handlePasswordStrength(inputSelector, levelsSelector, textIndicatorSelector, criteriaSelector) {
+        const $passwordInput = $(inputSelector);
+        const $levels = $(levelsSelector).find('> div');
+        const $textIndicator = $(textIndicatorSelector);
+        const $criteriaItems = $(criteriaSelector).find('.criteria-item');
+
+        $levels.css('background-color', '#F2F2F2');
+        $textIndicator.text('').hide();
+
+        $passwordInput.on('input', function(){
+            const password = $(this).val();
+            let level = 0;
+
+            const conditions = {
+                length: password.length >= 8, 
+                lowercase: /[a-z]/.test(password), 
+                uppercase: /[A-Z]/.test(password),
+                digit: /[0-9]/.test(password), 
+                special: /[!@#$%^&*(),.?":{}|<>]/.test(password),
+            };
+
+            $criteriaItems.each(function(){
+                const criteria = $(this).data('criteria');
+                if (conditions[criteria]) {
+                    $(this).addClass('valid'); 
+                } else {
+                    $(this).removeClass('valid');
+                }
+            });
+
+            level = Object.values(conditions).filter(Boolean).length;
+
+            $levels.css('background-color', '#F2F2F2');
+            $textIndicator.css('color', '#999');
+
+            if (password.length === 0) {
+                $textIndicator.text('').hide();
+            } else {
+                let levelColor = '#F2F2F2'; 
+                for (let i = 0; i < Math.min(level, $levels.length); i++) {
+                    if (level === 1) levelColor = '#C70000'; // ง่าย
+                    if (level === 2) levelColor = '#FCB913'; // ปานกลาง
+                    if (level >= 3) levelColor = '#00861F'; // ยาก
+                    $levels.eq(i).css('background-color', levelColor); // สีของ levels
+                }
+
+                $textIndicator.show();
+                if (level === 1) {
+                  $textIndicator.text('ง่าย').css('color', '#C70000');
+                } else if (level === 2) {
+                  $textIndicator.text('ปานกลาง').css('color', '#FCB913');
+                } else if (level >= 3) {
+                  $textIndicator.text('ยาก').css('color', '#00861F');
+                }
+            }
+        });
+    }
+
+    handlePasswordStrength(
+        '#password02', 
+        '.levels', 
+        '.password-level .text',
+        '#password-criteria'
+    );
+  });
+
+
 
     // Search Filter
   var searchFilter = $('.search-filter-container'),
@@ -332,6 +487,91 @@ $(function(){ 'use strict';
   }
 
 
+  // Swiper Tab 02
+  if($('.swiper-tabs-02').length){
+    new Swiper('.swiper-tabs-02', {
+      direction: 'vertical',
+      spaceBetween: 0, slidesPerView: 5, speed: 800,
+      breakpoints: {
+        992:{ direction: 'vertical', slidesPerView: 'auto' },
+        767:{ direction: 'vertical', slidesPerView: 'auto' },
+        576:{ direction: 'horizontal', slidesPerView:'auto', spaceBetween:'10'},
+        0:{ direction: 'horizontal', slidesPerView:'auto'},
+      },
+    });
+
+    $('.swiper-tabs-02 .swiper-slide').on('click', function () {
+      const index = $(this).index();
+
+      $('.swiper-tabs-02 .swiper-slide').removeClass('active');
+      $(this).addClass('active');
+
+      if (section05Swiper) {
+        section05Swiper.slideTo(index);
+      }
+    });
+  }
+
+  
+  // Faq 01
+  var faq01 = $('.faq-01:not(.not-dropdown)');
+  var contents = faq01.find('> .content');
+  var content = $('.faq-01:not(.not-dropdown) .content');
+  var faq01ExpandAll = $('.btn-expand-all');
+  var faq01CollapseAll = $('.btn-collapse-all');
+  if(faq01.length){
+    faq01.each(function(){
+      $(this).find('.content > .wrapper').click(function(e){
+        e.preventDefault();
+        var parent = $(this).parent();
+        if(parent.hasClass('active')){
+            parent.removeClass('active');
+            parent.find('> .answer').slideUp();
+        }else{
+            parent.addClass('active');
+            parent.find('> .answer').slideDown();
+        }
+      });
+    });
+
+    faq01ExpandAll.click(function(e) {
+      e.preventDefault();
+      faq01CollapseAll.removeClass('active');
+      faq01ExpandAll.addClass('active');
+      content.addClass('active');
+      content.find('> .answer').slideDown();
+    });
+
+    faq01CollapseAll.click(function(e) {
+      e.preventDefault();
+      faq01ExpandAll.removeClass('active');
+      faq01CollapseAll.addClass('active');
+      content.removeClass('active');
+      content.find('> .answer').slideUp();
+    });
+  }
+
+
+  // Mini Box Toggle
+  var mini = $('.mini-box-toggle');
+  var contents = mini.find('> .content');
+  
+  if(mini.length){
+    mini.each(function(){
+      $(this).find('.content > .wrapper').click(function(e){
+        e.preventDefault();
+        var parent = $(this).parent();
+        if(parent.hasClass('active')){
+            parent.removeClass('active');
+            parent.find('> .answer').slideUp();
+        }else{
+            parent.addClass('active');
+            parent.find('> .answer').slideDown();
+        }
+      });
+    });
+  }
+
   // Section 05
   if($('.section-05 .swiper-01').length){
     new Swiper('.section-05 .swiper-01', {
@@ -347,7 +587,23 @@ $(function(){ 'use strict';
       },
     });
   }
+  
+  // Section 03 - 02
+  if($('.section-03 .swiper-02').length){
+    new Swiper('.section-03 .swiper-02', {
+      spaceBetween: 15, slidesPerView: 1, speed: 800,
+      // autoplay: { delay: 5000 }, loop: true,
+      pagination:{ 
+        el: '.swiper-pagination', clickable: true,
+      },
+      navigation:{
+        prevEl: '.section-03 .arrow.arrow-prev',
+        nextEl: '.section-03 .arrow.arrow-next',
+      }, 
+    });
+  }
 
+  // Section 05 - 02
   if($('.section-05 .swiper-02').length){
     new Swiper('.section-05 .swiper-02', {
       spaceBetween: 0, slidesPerView: 1, speed: 800,
@@ -605,6 +861,34 @@ $(function(){ 'use strict';
   });
 
 
+  if($('.section-08 .swiper-container').length){
+    new Swiper('.section-08 .swiper-container', {
+      spaceBetween: 10, slidesPerView: 1, speed: 800,
+      autoplay: { delay: 5000 }, loop: true,
+      navigation:{
+        prevEl: '.section-08 .arrow.arrow-prev',
+        nextEl: '.section-08 .arrow.arrow-next',
+      }
+    });
+  }
+
+  // Intro 01
+  if($('.intro-01 .swiper').length){
+    new Swiper('.intro-01 .swiper', {
+      spaceBetween:0, slidesPerView: 1, speed: 800,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination', 
+        clickable: true,
+      },
+      navigation: {
+        prevEl: '.arrow-prev',
+        nextEl: '.arrow-next',
+      },
+    });
+  }
+  
+
 
   /* Change color according to water level value */
   function getColor(type, value) {
@@ -684,6 +968,35 @@ $(function(){ 'use strict';
       }
   });
 
+  // Quicklink
+  var quicklink = $('nav.quicklink-nav');
+  quicklink.find('> .wrapper > .title').click(function(e){
+      e.preventDefault();
+      quicklink.toggleClass('active');
+  });
+  $(document).mouseup(function(e) {
+    if (!quicklink.is(e.target) && quicklink.has(e.target).length === 0) {
+        $('nav.quicklink-nav').removeClass('active');
+    }
+  });
+
+  if($('.quicklink-nav .swiper-container').length){
+    new Swiper('.quicklink-nav .swiper-container', {
+      spaceBetween: 10, slidesPerView: 5, speed: 800, 
+      breakpoints: {
+        1300: { slidesPerView: 5 },
+        992: { slidesPerView: 4 },
+        768: { slidesPerView: 3 },
+        576: { slidesPerView: 3 },
+        320: { slidesPerView: 2 },
+        0:{ slidesPerView: 2 }
+      }, 
+      navigation:{
+        prevEl: '.quicklink-nav .arrow.arrow-prev',
+        nextEl: '.quicklink-nav .arrow.arrow-next',
+      }, 
+    });
+  }
 
   // Themes
   var themeBtns = $('.theme-btn');
@@ -727,6 +1040,15 @@ $(function(){ 'use strict';
       });
     });
   }
+
+
+  // Date-Picker
+  $('input.date-picker').each(function(){
+    new Datepicker($(this)[0], {
+      clearButton: true,
+      todayButton: true,
+    });
+  });
 
 
   // Page Loader

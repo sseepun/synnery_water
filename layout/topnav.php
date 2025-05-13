@@ -570,7 +570,6 @@
 </nav>
 <div class="sidenav-filter"></div>
 
-
 <!-- Accessibility -->
 <nav class="side-panel <?= !empty($sidePanelStyle)? $sidePanelStyle: '' ?> access-panel">
   <div class="wrapper">
@@ -659,6 +658,40 @@
 <div class="access-filter"></div>
 
 
+<nav class="quicklink-nav">
+  <?php include_once('data/quicklink.php'); ?>
+  <div class="wrapper">
+    <div class="title">
+      <div class="text">Quicklink</div>
+      <div class="icon"><em class="fa-solid fa-plus"></em></div>
+    </div>
+    <div class="list-items">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <?php foreach($quicklink as $d) : ?>
+            <div class="swiper-slide">
+              <a class="item" href="<?= $d['link'] ?>">
+                <div class="icon">
+                  <div class="show-inactive"><?= $d['icon'] ?></div>
+                  <div class="show-active"><?= $d['iconActive'] ?></div>
+                </div>
+                <div class="text"><?= $d['title'] ?></div>
+              </a>
+            </div>
+            <?php endforeach; ?>
+        </div>
+        <div class="arrows">
+          <div class="arrow arrow-prev">
+            <em class="fa-solid fa-angle-left"></em>
+          </div>
+          <div class="arrow arrow-next">
+            <em class="fa-solid fa-chevron-right"></em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 <!-- Search Container -->
 <div class="global-search-container use-gsap">
   <div class="pos-relative">
